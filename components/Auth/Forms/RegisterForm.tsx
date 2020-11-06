@@ -1,11 +1,10 @@
-import * as React from 'react';
+import React from 'react';
 import { Formik, Form, Field } from 'formik';
 import { Button, LinearProgress } from '@material-ui/core';
 import { TextField } from 'formik-material-ui';
-import Grid from '@material-ui/core/Grid';
-import styles from '../../styles/Auth.module.scss';
+import styles from '../../../styles/Auth.module.scss';
 import { CheckboxWithLabel } from 'formik-material-ui';
-import { withTranslation } from '../../i18n';
+import { withTranslation } from '../../../i18n';
 
 interface Values {
   email: string;

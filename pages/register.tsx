@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.scss';
 import { withTranslation } from '../i18n';
-import AuthContainer from '../components/Register/AuthContainer';
+import AuthContainer from '../components/Auth/AuthContainer';
 
 function Register({ t }) {
   return (

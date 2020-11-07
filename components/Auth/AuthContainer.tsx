@@ -6,9 +6,10 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import AuthHeader from './AuthHeader';
 import LoginForm from './Forms/LoginForm';
+import dynamic from 'next/dynamic'
 
 function AuthContainer({ t }) {
-  const [currentTab, setCurrentTab] = useState<number>(1);
+  const [currentTab, setCurrentTab] = useState<number>(0);
 
   const onTabChange = (tab: number) => setCurrentTab(tab);
 

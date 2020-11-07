@@ -1,14 +1,18 @@
 import React from 'react';
 import { Formik, Form, Field } from 'formik';
 import { Button, LinearProgress } from '@material-ui/core';
-import { TextField } from 'formik-material-ui';
+import { TextField, CheckboxWithLabel } from 'formik-material-ui';
 import styles from '../../../styles/modules/Auth.module.scss';
-import { CheckboxWithLabel } from 'formik-material-ui';
 import { useTranslation } from '../../../i18n';
+import ValidationService from '../../../services/ValidationService';
 
 interface Values {
   email: string;
   password: string;
+  repeatPassword: string;
+  firstName: string;
+  lastName: string;
+  checked: boolean | string;
 }
 
 function RegisterForm() {
@@ -18,17 +22,48 @@ function RegisterForm() {
 
   return (
     <Formik
+      validateOnChange
       initialValues={{
         email: '',
         password: '',
+        repeatPassword: '',
+        firstName: '',
+        lastName: '',
+        checked: false
       }}
       validate={(values) => {
         const errors: Partial<Values> = {};
+        const { email, firstName, lastName, password, repeatPassword, checked } = values;
         if (!values.email) {
-          errors.email = 'Required';
-        } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
-          errors.email = 'Invalid email address';
+          errors.email = t('auth:errorMessages.required');
+        } else if (!ValidationService.isEmailValid(email)) {
+          errors.email = t('auth:errorMessages.invalidEmail');
         }
+
+        if (!firstName) {
+          errors.firstName = t('auth:errorMessages.required');
+        } else if (!ValidationService.isNameValid(firstName)) {
+          errors.firstName = t('auth:errorMessages.invalidName');
+        }
+
+        if (!lastName) {
+          errors.lastName = t('auth:errorMessages.required');
+        } else if (!ValidationService.isNameValid(lastName)) {
+          errors.lastName = t('auth:errorMessages.invalidName');
+        }
+
+        if (!password) {
+          errors.password = t('auth:errorMessages.required');
+        } else if (ValidationService.checkPasswordStrength(password) === 'Weak') {
+          errors.password = t('auth:errorMessages.weakPassword');
+        } else if (password !== repeatPassword) {
+          errors.repeatPassword = t('auth:errorMessages.passwordMismatch');
+        }
+
+        if (!checked) {
+          errors.checked = String(t('auth:errorMessages.acceptTerms'));
+        }
+        console.log('errors :>> ', errors);
         return errors;
       }}
       onSubmit={(values, { setSubmitting }) => {
@@ -38,7 +73,11 @@ function RegisterForm() {
         }, 500);
       }}
     >
-      {({ submitForm, isSubmitting }) => (
+      {({
+        submitForm,
+        isSubmitting,
+        values: { checked, repeatPassword, lastName, firstName, password, email }
+      }) => (
         <Form>
           <Field
             variant='outlined'
@@ -99,7 +138,15 @@ function RegisterForm() {
             <Button
               variant='contained'
               color='primary'
-              disabled={isSubmitting}
+              disabled={
+                !firstName ||
+                !lastName ||
+                !checked ||
+                !email ||
+                !password ||
+                !repeatPassword ||
+                isSubmitting
+              }
               onClick={submitForm}
               className={styles.registerButton}
             >
@@ -114,7 +161,7 @@ function RegisterForm() {
 
 RegisterForm.getInitialProps = async () => {
   return {
-    namespacesRequired: ['auth'],
+    namespacesRequired: ['auth']
   };
 };
 

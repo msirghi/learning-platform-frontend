@@ -11,6 +11,18 @@ $transition-time: 0.5s;
   font-style: normal;
 }
 
+.registerLogo {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  z-index: -1;
+
+  & img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
 .inactiveTab {
   height: 80px;
   background-color: #6200ee;
@@ -30,10 +42,11 @@ $transition-time: 0.5s;
 }
 
 .authContainer {
+  z-index: 1;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  height: 660px;
+  height: fit-content;
   max-width: 650px;
   border-radius: 4px;
   box-shadow: 0px 1px 7.2px 0.8px rgba(0, 0, 0, 0.35);
@@ -48,7 +61,7 @@ $transition-time: 0.5s;
 
 .submitButton {
   display: flex;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   & button {
     margin-left: auto;
   }
@@ -56,6 +69,12 @@ $transition-time: 0.5s;
 
 .formDescription {
   margin-top: 2rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .registerLogo {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 400px) {

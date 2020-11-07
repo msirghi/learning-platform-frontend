@@ -1,8 +1,7 @@
 import Head from 'next/head';
-import styles from '../styles/Home.module.scss';
-import { withTranslation } from '../i18n';
+import styles from '../styles/modules/Home.module.scss';
 
-function Home({ t }) {
+function Home() {
   return (
     <div className={styles.container}>
       <Head>
@@ -10,15 +9,9 @@ function Home({ t }) {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <main className={styles.main}>{t('home:test')}</main>
+      <main className={styles.main}>Home page</main>
     </div>
   );
 }
 
-Home.getInitialProps = async () => {
-  return {
-    namespaceRequired: ['home'],
-  };
-};
-
-export default withTranslation()(Home);
+export default Home;

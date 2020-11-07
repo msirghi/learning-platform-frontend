@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from '../../i18n';
-import styles from '../../styles/Auth.module.scss';
+import styles from '../../styles/modules/Auth.module.scss';
 
 type Props = {
   onTabChange: (tab: number) => void;
@@ -20,7 +20,7 @@ function AuthHeader({ onTabChange, activeTab }: Props) {
         <span>{t('auth:registerTitle')}</span>
       </div>
       <div
-        className={`${!isRegisterTab && styles.inactiveTab} ${styles.tab}`}
+        className={`${!isRegisterTab && styles.inactiveTab} ${styles.tab} ${styles.loginTab}`}
         onClick={() => onTabChange(1)}
       >
         <span>{t('auth:loginTitle')}</span>

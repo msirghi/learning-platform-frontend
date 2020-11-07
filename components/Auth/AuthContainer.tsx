@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { withTranslation } from '../../i18n';
-import styles from '../../styles/Auth.module.scss';
+import styles from '../../styles/modules/Auth.module.scss';
 import RegisterForm from './Forms/RegisterForm';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
@@ -15,15 +15,15 @@ function AuthContainer({ t }) {
   return (
     <Grid container justify='center'>
       <div className={styles.authContainer}>
-        <AuthHeader onTabChange={onTabChange} activeTab={currentTab}/>
+        <AuthHeader onTabChange={onTabChange} activeTab={currentTab} />
         <div>
-          <Grid container xs={12} justify='center'>
+          <Grid container justify='center'>
             <Grid xs={10} item>
               <div className={styles.formDescription}>
                 <Typography>{t('auth:registerFormDescription')}</Typography>
               </div>
             </Grid>
-            <Grid item xs={10} justify='center'>
+            <Grid item xs={10}>
               {currentTab === 0 && <RegisterForm />}
               {currentTab === 1 && <LoginForm />}
             </Grid>

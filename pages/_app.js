@@ -1,4 +1,4 @@
-import '../styles/globals.css';
+import '../styles/globals.scss';
 import { appWithTranslation } from '../i18n';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 

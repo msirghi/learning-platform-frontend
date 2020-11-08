@@ -1,3 +1,4 @@
+import React from 'react';
 import { shallow, ShallowWrapper } from 'enzyme';
 import AuthHeader from '../AuthHeader';
 import toJson from 'enzyme-to-json';

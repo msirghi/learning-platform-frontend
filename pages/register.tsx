@@ -1,3 +1,4 @@
+import React from 'react';
 import Head from 'next/head';
 import styles from '../styles/modules/Auth.module.scss';
 import { withTranslation } from '../i18n';

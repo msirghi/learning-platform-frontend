@@ -97,4 +97,11 @@ describe('RegisterForm component', () => {
     expect(submitButton).toBeEnabled();
     expect(getByText('auth:acceptTermsAndCondition')).toBeDefined();
   });
+
+  it('should get value from getInitialProps', async () => {
+    const props = await RegisterForm.getInitialProps();
+    expect(props).toStrictEqual({
+      namespacesRequired: ['auth']
+    });
+  });
 });

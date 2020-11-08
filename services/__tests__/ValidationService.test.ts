@@ -1,53 +1,52 @@
 import ValidationService from '../ValidationService';
-import { expect, assert } from 'chai';
 
 describe('Validation service', () => {
   describe('isEmailValid', () => {
     it('should return false on invalid email', () => {
-      expect(ValidationService.isEmailValid('invalid')).to.be.false;
+      expect(ValidationService.isEmailValid('invalid')).toBeFalsy();
     });
 
     it('should return true in valid email', () => {
-      expect(ValidationService.isEmailValid('email@mail.com')).to.be.true;
+      expect(ValidationService.isEmailValid('email@mail.com')).toBeTruthy();
     });
   });
 
   describe('isNameValid', () => {
     it('should return false on invalid name', () => {
-      expect(ValidationService.isNameValid('123')).to.be.false;
+      expect(ValidationService.isNameValid('123')).toBeFalsy();
     });
 
     it('should return true in valid name', () => {
-      expect(ValidationService.isNameValid('John')).to.be.true;
+      expect(ValidationService.isNameValid('John')).toBeTruthy();
     });
   });
 
   describe('checkPasswordStrength', () => {
     it('should return `Weak` on weak password', () => {
-      assert.equal(ValidationService.checkPasswordStrength('123'), 'Weak');
+      expect(ValidationService.checkPasswordStrength('123')).toBe('Weak');
     });
 
     it('should return `Medium` on medium password', () => {
-      assert.equal(ValidationService.checkPasswordStrength('passwordQWE'), 'Medium');
+      expect(ValidationService.checkPasswordStrength('passwordQWE')).toBe('Medium');
     });
 
     it('should return `Strong` on strong password', () => {
-      assert.equal(ValidationService.checkPasswordStrength('passaQWE12@!'), 'Strong');
+      expect(ValidationService.checkPasswordStrength('passaQWE12@!')).toBe('Strong');
     });
   });
 
   it('should check if the password is weak', () => {
-    expect(ValidationService.isPasswordWeak('pass')).to.be.true;
-    expect(ValidationService.isPasswordWeak('password12')).not.to.be.true;
+    expect(ValidationService.isPasswordWeak('pass')).toBeTruthy();
+    expect(ValidationService.isPasswordWeak('password12')).toBeFalsy();
   });
 
   it('should check if the password is medium', () => {
-    expect(ValidationService.isPasswordMedium('password12')).to.be.true;
-    expect(ValidationService.isPasswordMedium('pass')).not.to.be.true;
+    expect(ValidationService.isPasswordMedium('password12')).toBeTruthy();
+    expect(ValidationService.isPasswordMedium('pass')).toBeFalsy();
   });
 
   it('should check if the password is strong', () => {
-    expect(ValidationService.isPasswordStrong('passwordQWE12@!')).to.be.true;
-    expect(ValidationService.isPasswordStrong('pass')).not.to.be.true;
+    expect(ValidationService.isPasswordStrong('passwordQWE12@!')).toBeTruthy();
+    expect(ValidationService.isPasswordStrong('pass')).toBeFalsy();
   });
 });

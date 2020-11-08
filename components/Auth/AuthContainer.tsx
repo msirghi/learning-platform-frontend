@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import { withTranslation } from '../../i18n';
 import styles from '../../styles/modules/Auth.module.scss';
-import RegisterForm from './Forms/RegisterForm';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import AuthHeader from './AuthHeader';
 import LoginForm from './Forms/LoginForm';
-import dynamic from 'next/dynamic'
+import RegisterForm from './Forms/RegisterForm';
 
 function AuthContainer({ t }) {
   const [currentTab, setCurrentTab] = useState<number>(0);
@@ -36,7 +35,7 @@ function AuthContainer({ t }) {
 }
 
 AuthContainer.getInitialProps = async () => ({
-  namespacesRequired: ['auth'],
+  namespacesRequired: ['auth']
 });
 
 export default withTranslation()(AuthContainer);

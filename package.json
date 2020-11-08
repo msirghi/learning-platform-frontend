@@ -2,41 +2,52 @@
   "name": "learning-platform-frontend",
   "version": "0.1.0",
   "private": true,
-  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "mocha -r ts-node/register **/*.test.ts **/*.test.tsx"
+    "test": "jest",
+    "test-cover": "jest --coverage"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.0",
-    "@types/chai": "^4.2.14",
     "@types/enzyme": "^3.10.8",
-    "@types/mocha": "^8.0.3",
+    "@types/jest": "^26.0.15",
     "@types/sinon": "^9.0.8",
     "@zeit/next-sass": "^1.0.1",
-    "chai": "^4.2.0",
-    "chai-jest-snapshot": "^2.0.0",
+    "babel-jest": "^26.6.3",
     "check-password-strength": "^1.0.15",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.5",
-    "esm": "^3.2.25",
+    "enzyme-to-json": "^3.6.1",
     "formik": "^2.2.2",
     "formik-material-ui": "^3.0.0",
-    "mocha": "^8.2.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.6.3",
     "next": "10.0.0",
     "next-i18next": "^7.0.1",
     "node-sass": "^5.0.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-hook-form": "^6.11.0",
     "sass": "^1.29.0",
     "sinon": "^9.2.1",
     "ts-node": "^9.0.0"
   },
   "devDependencies": {
+    "@testing-library/dom": "^7.26.5",
+    "@testing-library/jest-dom": "^5.11.5",
+    "@testing-library/react": "^11.1.1",
     "@types/node": "^14.14.6",
     "@types/react": "^16.9.55",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.3.1",
+    "jest-dom": "^4.0.0",
+    "ts-jest": "^26.4.3",
     "typescript": "^4.0.5"
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   }
 }

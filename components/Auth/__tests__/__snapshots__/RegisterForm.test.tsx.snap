@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RegisterForm component should match snapshot 1`] = `
+<form
+  noValidate={true}
+  onSubmit={[Function]}
+>
+  <WithStyles(ForwardRef(TextField))
+    data-test="email"
+    error={false}
+    fullWidth={true}
+    inputProps={
+      Object {
+        "data-testid": "email-field",
+        "name": "email",
+        "ref": [Function],
+      }
+    }
+    label="auth:email"
+    margin="normal"
+    name="email"
+    variant="outlined"
+  />
+  <WithStyles(ForwardRef(TextField))
+    error={false}
+    fullWidth={true}
+    inputProps={
+      Object {
+        "data-testid": "firstName-field",
+        "ref": [Function],
+      }
+    }
+    label="auth:firstName"
+    margin="normal"
+    name="firstName"
+    type="text"
+    variant="outlined"
+  />
+  <WithStyles(ForwardRef(TextField))
+    error={false}
+    fullWidth={true}
+    inputProps={
+      Object {
+        "data-testid": "lastName-field",
+        "ref": [Function],
+      }
+    }
+    label="auth:lastName"
+    margin="normal"
+    name="lastName"
+    type="text"
+    variant="outlined"
+  />
+  <WithStyles(ForwardRef(TextField))
+    error={false}
+    fullWidth={true}
+    inputProps={
+      Object {
+        "data-testid": "password-field",
+        "ref": [Function],
+      }
+    }
+    label="auth:password"
+    margin="normal"
+    name="password"
+    type="password"
+    variant="outlined"
+  />
+  <WithStyles(ForwardRef(TextField))
+    error={false}
+    fullWidth={true}
+    inputProps={
+      Object {
+        "data-testid": "repeatPassword-field",
+        "ref": [Function],
+      }
+    }
+    label="auth:repeatPassword"
+    margin="normal"
+    name="repeatPassword"
+    type="password"
+    variant="outlined"
+  />
+  <WithStyles(ForwardRef(FormControlLabel))
+    control={
+      <WithStyles(ForwardRef(Checkbox))
+        color="primary"
+        inputProps={
+          Object {
+            "data-testid": "checkbox",
+          }
+        }
+        inputRef={[Function]}
+        name="checked"
+      />
+    }
+    label="auth:acceptTermsAndCondition"
+  />
+  <div
+    className="submitButton"
+  >
+    <WithStyles(ForwardRef(Button))
+      className="registerButton"
+      color="primary"
+      data-test="submit-button"
+      data-testid="submit-button"
+      disabled={false}
+      type="submit"
+      variant="contained"
+    >
+      auth:registerButtonLabel
+    </WithStyles(ForwardRef(Button))>
+  </div>
+</form>
+`;

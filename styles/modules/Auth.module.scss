@@ -1,0 +1,95 @@
+$container-border-radius: 5px;
+$transition-time: 0.5s;
+
+.authHeader {
+  display: flex;
+  text-align: center;
+  font-size: 34px;
+  line-height: 70px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+}
+
+.registerLogo {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  z-index: -1;
+
+  & img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.inactiveTab {
+  height: 80px;
+  background-color: #6200ee;
+  color: #fff;
+  transition: all $transition-time;
+  &:hover {
+    background: darken(#6200ee, 10);
+  }
+}
+
+.registerTab.inactiveTab {
+  border-top-left-radius: $container-border-radius;
+}
+
+.loginTab.inactiveTab {
+  border-top-right-radius: $container-border-radius;
+}
+
+.authContainer {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: fit-content;
+  max-width: 650px;
+  border-radius: 4px;
+  box-shadow: 0px 1px 7.2px 0.8px rgba(0, 0, 0, 0.35);
+}
+
+.tab {
+  width: 50%;
+  position: relative;
+  height: 100%;
+  cursor: pointer;
+}
+
+.submitButton {
+  display: flex;
+  padding-bottom: 1rem;
+  & button {
+    margin-left: auto;
+  }
+}
+
+.formDescription {
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .registerLogo {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .authContainer {
+    height: 100%;
+  }
+
+  .registerButton {
+    width: 100%;
+    margin-top: 1rem !important;
+  }
+
+  .tab {
+    & span {
+      font-size: 24px;
+    }
+  }
+}

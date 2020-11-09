@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AuthHeader component should match snapshot 1`] = `
+<div
+  className="authHeader"
+>
+  <div
+    className="inactiveTab tab registerTab"
+    onClick={[Function]}
+  >
+    <span>
+      auth:registerTitle
+    </span>
+  </div>
+  <div
+    className="false tab loginTab"
+    onClick={[Function]}
+  >
+    <span>
+      auth:loginTitle
+    </span>
+  </div>
+</div>
+`;

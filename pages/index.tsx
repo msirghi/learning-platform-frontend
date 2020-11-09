@@ -1,7 +1,8 @@
+import React from 'react';
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+import styles from '../styles/modules/Home.module.scss';
 
-export default function Home() {
+function Home() {
   return (
     <div className={styles.container}>
       <Head>
@@ -9,9 +10,9 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <main className={styles.main}>
-        Home page
-      </main>
+      <main className={styles.main}>Home page</main>
     </div>
   );
 }
+
+export default Home;

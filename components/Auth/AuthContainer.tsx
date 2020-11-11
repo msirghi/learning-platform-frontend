@@ -20,7 +20,9 @@ function AuthContainer({ t }) {
           <Grid container justify='center'>
             <Grid xs={10} item>
               <div className={styles.formDescription}>
-                <Typography>{t('auth:registerFormDescription')}</Typography>
+                <Typography>
+                  {t(`auth:${currentTab === 0 ? 'registerFormDescription' : 'loginDescription'}`)}
+                </Typography>
               </div>
             </Grid>
             <Grid item xs={10}>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
-import RegisterForm from '../Forms/RegisterForm';
+import RegisterForm from '../forms/RegisterForm';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 

@@ -71,6 +71,11 @@ $transition-time: 0.5s;
   margin-top: 2rem;
 }
 
+.loginButton {
+  display: flex;
+  align-items: center;
+}
+
 @media only screen and (max-width: 1000px) {
   .registerLogo {
     display: none;
@@ -82,7 +87,7 @@ $transition-time: 0.5s;
     height: 100%;
   }
 
-  .registerButton {
+  .registerButton, .loginButton {
     width: 100%;
     margin-top: 1rem !important;
   }

@@ -21,7 +21,7 @@ interface Values {
 function RegisterForm() {
   const { t } = useTranslation();
   const [isSubmitting, setSubmitting] = useState<boolean>(false);
-  const { register, handleSubmit, errors, getValues } = useForm<Values>();
+  const { register, handleSubmit, errors, getValues, formState } = useForm<Values>({ mode: 'onChange' });
 
   const onSubmit = (values: Values) => {
     setSubmitting(true);
@@ -166,7 +166,7 @@ function RegisterForm() {
           type={'submit'}
           variant='contained'
           color='primary'
-          disabled={isSubmitting}
+          disabled={isSubmitting || !formState.isValid}
           data-testid='submit-button'
           data-test='submit-button'
           className={styles.registerButton}

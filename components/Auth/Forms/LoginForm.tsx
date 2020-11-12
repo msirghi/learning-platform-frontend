@@ -1,26 +1,47 @@
-import React from 'react';
+import React, { FormEvent, useState } from 'react';
 import { Button, LinearProgress, Typography, TextField } from '@material-ui/core';
 import { useTranslation } from '../../../i18n';
 import styles from '../../../styles/modules/Auth.module.scss';
 import Link from '@material-ui/core/Link';
+import { AlertType } from '../../../common/enums';
 
-function LoginForm() {
+type Props = {
+  onMessage: (type: AlertType, text: string) => void;
+};
+
+function LoginForm({ onMessage }: Props) {
   const { t } = useTranslation();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [isSubmitting, setSubmitting] = useState(false);
+
+  const onSubmit = (e: FormEvent) => {
+    e.preventDefault();
+    setSubmitting(true);
+
+    setTimeout(() => {
+      setSubmitting(false);
+      onMessage(AlertType.ERROR, t('auth:invalidCredentials'));
+    }, 500);
+  };
 
   return (
     <div>
-      <form>
+      {isSubmitting && <LinearProgress />}
+      <form onSubmit={onSubmit}>
         <TextField
           variant='outlined'
           name='email'
           label={t('auth:email')}
           inputProps={{
             'data-testid': 'email-field',
+            'data-test': 'email',
             name: 'email'
           }}
-          data-test='email'
           fullWidth
           margin='normal'
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
         />
 
         <TextField
@@ -29,12 +50,14 @@ function LoginForm() {
           label={t('auth:password')}
           inputProps={{
             'data-testid': 'password-field',
+            'data-test': 'password',
             name: 'password'
           }}
-          data-test='password'
           fullWidth
           type={'password'}
           margin='normal'
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
         />
 
         <Typography className={styles.link}>
@@ -53,7 +76,8 @@ function LoginForm() {
             color='primary'
             data-testid='submit-button'
             data-test='submit-button'
-            className={styles.registerButton}
+            disabled={isSubmitting || !email || !password}
+            className={styles.loginButton}
           >
             {t('auth:signIn')}
           </Button>

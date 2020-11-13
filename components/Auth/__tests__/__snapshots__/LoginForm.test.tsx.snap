@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginForm component should match snapshot 1`] = `
+<div>
+  <form
+    onSubmit={[Function]}
+  >
+    <WithStyles(ForwardRef(TextField))
+      fullWidth={true}
+      inputProps={
+        Object {
+          "data-test": "email",
+          "data-testid": "email-field",
+          "name": "email",
+        }
+      }
+      label="auth:email"
+      margin="normal"
+      name="email"
+      onChange={[Function]}
+      value=""
+      variant="outlined"
+    />
+    <WithStyles(ForwardRef(TextField))
+      fullWidth={true}
+      inputProps={
+        Object {
+          "data-test": "password",
+          "data-testid": "password-field",
+          "name": "password",
+        }
+      }
+      label="auth:password"
+      margin="normal"
+      name="password"
+      onChange={[Function]}
+      type="password"
+      value=""
+      variant="outlined"
+    />
+    <WithStyles(ForwardRef(Typography))
+      className="link"
+    >
+      <WithStyles(ForwardRef(Link))
+        href="#"
+      >
+        auth:forgotPasswordLabel
+      </WithStyles(ForwardRef(Link))>
+    </WithStyles(ForwardRef(Typography))>
+    <WithStyles(ForwardRef(Typography))
+      className="link"
+    >
+      auth:dontHaveAnAccountLabel
+      <WithStyles(ForwardRef(Link))
+        href="#"
+      >
+        auth:signUp
+      </WithStyles(ForwardRef(Link))>
+    </WithStyles(ForwardRef(Typography))>
+    <div
+      className="submitButton"
+    >
+      <WithStyles(ForwardRef(Button))
+        className="loginButton"
+        color="primary"
+        data-test="submit-button"
+        data-testid="submit-button"
+        disabled={true}
+        type="submit"
+        variant="contained"
+      >
+        auth:signIn
+      </WithStyles(ForwardRef(Button))>
+    </div>
+  </form>
+</div>
+`;

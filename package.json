@@ -6,13 +6,16 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "jest",
-    "test-cover": "jest --coverage",
+    "test": "node ./common/preTestHook.ts && jest",
+    "preTest": "node ./common/preTestHook.ts",
+    "preStart": "node ./common/preStartHook.ts",
+    "test:coverage": "npm run preTest && jest --coverage",
     "lint": "eslint . --ext .ts,.tsx",
-    "lint-test": "npm run lint && npm run test-cover"
+    "lint:test": "npm run lint && npm run test-cover"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.0",
+    "@material-ui/lab": "^4.0.0-alpha.56",
     "@types/enzyme": "^3.10.8",
     "@types/jest": "^26.0.15",
     "@types/sinon": "^9.0.8",

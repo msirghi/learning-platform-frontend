@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import styles from '../styles/modules/Auth.module.scss';
 import { withTranslation } from '../i18n';
-import AuthContainer from '../components/Auth/AuthContainer';
+import AuthContainer from '../components/auth/AuthContainer';
 
 function Register({ t }) {
   return (

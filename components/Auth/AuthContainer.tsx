@@ -38,7 +38,7 @@ function AuthContainer({ t }) {
               {currentTab === AuthPage.REGISTER && (
                 <RegisterForm onTabChange={(tab) => setCurrentTab(tab)} onMessage={onMessage} />
               )}
-              {currentTab === AuthPage.LOGIN && <LoginForm onMessage={onMessage} />}
+              {currentTab === AuthPage.LOGIN && <LoginForm onTabChange={onTabChange} onMessage={onMessage} />}
             </Grid>
           </Grid>
         </div>

@@ -7,6 +7,13 @@ exports[`AuthContainer component should match the snapshot 1`] = `
     t={[Function]}
     tReady={false}
   >
+    <Head>
+      <_default
+        headManager={Object {}}
+        inAmpMode={false}
+        reduceComponentsToState={[Function]}
+      />
+    </Head>
     <WithStyles(ForwardRef(Grid))
       container={true}
       justify="center"

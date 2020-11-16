@@ -8,6 +8,7 @@ import LoginForm from './forms/LoginForm';
 import RegisterForm from './forms/RegisterForm';
 import { AlertType, AuthPage } from '../../common/enums';
 import { AlertMessage } from '../commom/AlertMesssage';
+import Head from 'next/head';
 
 function AuthContainer({ t }) {
   const [currentTab, setCurrentTab] = useState<AuthPage>(AuthPage.LOGIN);
@@ -21,29 +22,34 @@ function AuthContainer({ t }) {
   const onMessage = (type: AlertType, text: string) => setMessage({ type, text });
 
   return (
-    <Grid container justify='center'>
-      <div className={styles.authContainer}>
-        <AuthHeader onTabChange={onTabChange} activeTab={currentTab} />
-        {message && <AlertMessage type={message.type} message={message.text} />}
-        <div>
-          <Grid container justify='center'>
-            <Grid xs={10} item>
-              <div className={styles.formDescription}>
-                <Typography>
-                  {t(`auth:${currentTab === AuthPage.REGISTER ? 'registerFormDescription' : 'loginDescription'}`)}
-                </Typography>
-              </div>
+    <>
+      <Head>
+        <title>{currentTab === AuthPage.REGISTER ? t('auth:registerTitle') : t('auth:loginTitle')}</title>
+      </Head>
+      <Grid container justify='center'>
+        <div className={styles.authContainer}>
+          <AuthHeader onTabChange={onTabChange} activeTab={currentTab} />
+          {message && <AlertMessage type={message.type} message={message.text} />}
+          <div>
+            <Grid container justify='center'>
+              <Grid xs={10} item>
+                <div className={styles.formDescription}>
+                  <Typography>
+                    {t(`auth:${currentTab === AuthPage.REGISTER ? 'registerFormDescription' : 'loginDescription'}`)}
+                  </Typography>
+                </div>
+              </Grid>
+              <Grid item xs={10}>
+                {currentTab === AuthPage.REGISTER && (
+                  <RegisterForm onTabChange={(tab) => setCurrentTab(tab)} onMessage={onMessage} />
+                )}
+                {currentTab === AuthPage.LOGIN && <LoginForm onTabChange={onTabChange} onMessage={onMessage} />}
+              </Grid>
             </Grid>
-            <Grid item xs={10}>
-              {currentTab === AuthPage.REGISTER && (
-                <RegisterForm onTabChange={(tab) => setCurrentTab(tab)} onMessage={onMessage} />
-              )}
-              {currentTab === AuthPage.LOGIN && <LoginForm onTabChange={onTabChange} onMessage={onMessage} />}
-            </Grid>
-          </Grid>
+          </div>
         </div>
-      </div>
-    </Grid>
+      </Grid>
+    </>
   );
 }
 

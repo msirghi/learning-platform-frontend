@@ -129,7 +129,7 @@ exports[`AuthContainer component should match the snapshot 1`] = `
             className="authContainer"
           >
             <AuthHeader
-              activeTab={1}
+              activeTab="login"
               onTabChange={[Function]}
             >
               <div

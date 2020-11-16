@@ -8,6 +8,7 @@ import TextField from '@material-ui/core/TextField';
 import RegexContants from '../../../common/constants/regex.constants';
 import Checkbox from '@material-ui/core/Checkbox';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
+import { AlertType, AuthPage } from '../../../common/enums';
 
 interface Values {
   email: string;
@@ -18,21 +19,28 @@ interface Values {
   checked: boolean | string;
 }
 
-function RegisterForm() {
+type Props = {
+  onMessage: (type: AlertType, text: string) => void;
+  onTabChange: (tab: AuthPage) => void;
+};
+
+function RegisterForm({ onMessage, onTabChange }: Props) {
   const { t } = useTranslation();
   const [isSubmitting, setSubmitting] = useState<boolean>(false);
   const { register, handleSubmit, errors, getValues, formState } = useForm<Values>({ mode: 'onChange' });
 
   const onSubmit = (values: Values) => {
     setSubmitting(true);
-    setTimeout(() => setSubmitting(false), 500);
+    setTimeout(() => {
+      setSubmitting(false);
+      onMessage(AlertType.SUCCESS, t('auth:registerSuccessMessage'));
+      onTabChange(AuthPage.LOGIN);
+    }, 500);
   };
 
   return (
     <form noValidate onSubmit={handleSubmit(onSubmit)}>
-      {errors.checked && (
-        <Typography color='secondary'>{t('auth:errorMessages.acceptTerms')}</Typography>
-      )}
+      {errors.checked && <Typography color='secondary'>{t('auth:errorMessages.acceptTerms')}</Typography>}
 
       {isSubmitting && (
         <div data-testid='progress'>
@@ -106,9 +114,7 @@ function RegisterForm() {
       <TextField
         error={!!errors.password}
         helperText={
-          (errors.password &&
-            errors.password.type === 'validate' &&
-            t('auth:errorMessages.weakPassword')) ||
+          (errors.password && errors.password.type === 'validate' && t('auth:errorMessages.weakPassword')) ||
           (errors.password && errors.password.message)
         }
         variant='outlined'

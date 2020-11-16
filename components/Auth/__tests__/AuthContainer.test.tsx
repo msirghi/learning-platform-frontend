@@ -1,7 +1,6 @@
-import { mount, shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import React from 'react';
-import { register } from 'ts-node';
 import AuthContainer from '../AuthContainer';
 import LoginForm from '../forms/LoginForm';
 import RegisterForm from '../forms/RegisterForm';

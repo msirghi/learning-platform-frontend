@@ -7,7 +7,7 @@ import AuthHeader from './AuthHeader';
 import LoginForm from './forms/LoginForm';
 import RegisterForm from './forms/RegisterForm';
 import { AlertType, AuthPage } from '../../common/enums';
-import { AlertMessage } from '../commom/AlertMesssage';
+import { AlertMessage } from '../common/AlertMesssage';
 import Head from 'next/head';
 
 function AuthContainer({ t }) {

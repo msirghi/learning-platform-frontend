@@ -3,13 +3,14 @@ import { Button, LinearProgress, Typography, TextField } from '@material-ui/core
 import { useTranslation } from '../../../i18n';
 import styles from '../../../styles/modules/Auth.module.scss';
 import Link from '@material-ui/core/Link';
-import { AlertType } from '../../../common/enums';
+import { AlertType, AuthPage } from '../../../common/enums';
 
 type Props = {
   onMessage: (type: AlertType, text: string) => void;
+  onTabChange: (tab: AuthPage) => void;
 };
 
-function LoginForm({ onMessage }: Props) {
+function LoginForm({ onMessage, onTabChange }: Props) {
   const { t } = useTranslation();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -66,7 +67,9 @@ function LoginForm({ onMessage }: Props) {
 
         <Typography className={styles.link}>
           {t('auth:dontHaveAnAccountLabel')}
-          <Link href='#'>{t('auth:signUp')}</Link>
+          <Link onClick={() => onTabChange(AuthPage.REGISTER)} href='#'>
+            {t('auth:signUp')}
+          </Link>
         </Typography>
 
         <div className={styles.submitButton}>

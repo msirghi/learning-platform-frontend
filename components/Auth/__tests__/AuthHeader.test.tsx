@@ -2,6 +2,7 @@ import React from 'react';
 import { shallow, ShallowWrapper } from 'enzyme';
 import AuthHeader from '../AuthHeader';
 import toJson from 'enzyme-to-json';
+import { AuthPage } from '../../../common/enums';
 
 describe('AuthHeader component', () => {
   let component: ShallowWrapper;
@@ -45,7 +46,7 @@ describe('AuthHeader component', () => {
   });
 
   it('should have inactive login tab if register tab is active', () => {
-    const component = shallow(<AuthHeader onTabChange={jest.fn()} activeTab={0} />);
+    const component = shallow(<AuthHeader onTabChange={jest.fn()} activeTab={AuthPage.REGISTER} />);
     const registerTab = component.find('.registerTab');
     const loginTab = component.find('.loginTab');
 

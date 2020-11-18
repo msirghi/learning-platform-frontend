@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import '../styles/globals.scss';
 import { appWithTranslation } from '../i18n';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import NextNprogress from 'nextjs-progressbar';
 
 const theme = createMuiTheme({
   palette: {
@@ -13,7 +14,6 @@ const theme = createMuiTheme({
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
-    // Remove the server-side injected CSS.
     const jssStyles = document.querySelector('#jss-server-side');
     if (jssStyles) {
       jssStyles.parentElement.removeChild(jssStyles);
@@ -21,9 +21,12 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   return (
-    <MuiThemeProvider theme={theme}>
-      <Component {...pageProps} />
-    </MuiThemeProvider>
+    <>
+      <NextNprogress color='#29D' startPosition={0.3} stopDelayMs={200} height='3' />
+      <MuiThemeProvider theme={theme}>
+        <Component {...pageProps} />
+      </MuiThemeProvider>
+    </>
   );
 }
 

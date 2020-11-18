@@ -7,6 +7,13 @@ exports[`AuthContainer component should match the snapshot 1`] = `
     t={[Function]}
     tReady={false}
   >
+    <Head>
+      <_default
+        headManager={Object {}}
+        inAmpMode={false}
+        reduceComponentsToState={[Function]}
+      />
+    </Head>
     <WithStyles(ForwardRef(Grid))
       container={true}
       justify="center"
@@ -129,7 +136,7 @@ exports[`AuthContainer component should match the snapshot 1`] = `
             className="authContainer"
           >
             <AuthHeader
-              activeTab={1}
+              activeTab="login"
               onTabChange={[Function]}
             >
               <div
@@ -561,6 +568,7 @@ exports[`AuthContainer component should match the snapshot 1`] = `
                         >
                           <LoginForm
                             onMessage={[Function]}
+                            onTabChange={[Function]}
                           >
                             <div>
                               <form
@@ -1410,6 +1418,7 @@ exports[`AuthContainer component should match the snapshot 1`] = `
                                       auth:dontHaveAnAccountLabel
                                       <WithStyles(ForwardRef(Link))
                                         href="#"
+                                        onClick={[Function]}
                                       >
                                         <ForwardRef(Link)
                                           classes={
@@ -1423,6 +1432,7 @@ exports[`AuthContainer component should match the snapshot 1`] = `
                                             }
                                           }
                                           href="#"
+                                          onClick={[Function]}
                                         >
                                           <WithStyles(ForwardRef(Typography))
                                             className="MuiLink-root MuiLink-underlineHover"
@@ -1430,6 +1440,7 @@ exports[`AuthContainer component should match the snapshot 1`] = `
                                             component="a"
                                             href="#"
                                             onBlur={[Function]}
+                                            onClick={[Function]}
                                             onFocus={[Function]}
                                             variant="inherit"
                                           >
@@ -1473,6 +1484,7 @@ exports[`AuthContainer component should match the snapshot 1`] = `
                                               component="a"
                                               href="#"
                                               onBlur={[Function]}
+                                              onClick={[Function]}
                                               onFocus={[Function]}
                                               variant="inherit"
                                             >
@@ -1480,6 +1492,7 @@ exports[`AuthContainer component should match the snapshot 1`] = `
                                                 className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
                                                 href="#"
                                                 onBlur={[Function]}
+                                                onClick={[Function]}
                                                 onFocus={[Function]}
                                               >
                                                 auth:signUp

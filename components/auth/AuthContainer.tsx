@@ -4,11 +4,11 @@ import styles from '../../styles/modules/Auth.module.scss';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import AuthHeader from './AuthHeader';
-import LoginForm from './forms/LoginForm';
-import RegisterForm from './forms/RegisterForm';
 import { AlertType, AuthPage } from '../../common/enums';
 import { AlertMessage } from '../common/AlertMesssage';
 import Head from 'next/head';
+import RegisterForm from './forms/RegisterForm';
+import LoginForm from './forms/LoginForm';
 
 function AuthContainer({ t }) {
   const [currentTab, setCurrentTab] = useState<AuthPage>(AuthPage.LOGIN);

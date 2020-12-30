@@ -31,6 +31,7 @@ function RegisterForm({ onMessage, onTabChange }: Props) {
 
   const onSubmit = (values: Values) => {
     setSubmitting(true);
+    /* istanbul ignore next */
     setTimeout(() => {
       setSubmitting(false);
       onMessage(AlertType.SUCCESS, t('auth:registerSuccessMessage'));

@@ -1,0 +1,50 @@
+@import "../base/variables.scss";
+
+.mainMenu {
+  &Color {
+    color: #fff;
+  }
+
+  &Active {
+    background: #fff;
+
+    &Icon {
+      fill: $primary-color !important;
+    }
+
+    &Text {
+      color: $primary-color;
+    }
+  }
+
+  &IconContainer {
+    margin-left: 1.5rem;
+    margin-top: 0.35rem;
+    margin-bottom: 0.35rem;
+  }
+
+  &Icon {
+    fill: #fff !important;
+    transform: scale(1.2) !important;
+  }
+
+  &AlignBottom {
+    position: absolute;
+    bottom: 2%;
+  }
+
+  &ListContainer {
+    height: 100%;
+  }
+}
+
+.navBar {
+  &RightIconsContainer {
+    margin-left: auto;
+  }
+
+  &DividerContainer {
+    margin-left: 72px;
+    margin-right: 72px;
+  }
+}

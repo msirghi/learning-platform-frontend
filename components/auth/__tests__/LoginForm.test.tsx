@@ -2,9 +2,9 @@ import { Button, LinearProgress } from '@material-ui/core';
 import { mount, shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import React from 'react';
-import LoginForm from '../forms/LoginForm';
 import { render, fireEvent } from '@testing-library/react';
 import { findByTestAttr } from '../../../common/testUtils';
+import LoginForm from '../forms/LoginForm';
 
 describe('LoginForm component', () => {
   it('should match snapshot', () => {

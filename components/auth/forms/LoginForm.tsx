@@ -19,7 +19,7 @@ function LoginForm({ onMessage, onTabChange }: Props) {
   const onSubmit = (e: FormEvent) => {
     e.preventDefault();
     setSubmitting(true);
-
+    /* istanbul ignore next */
     setTimeout(() => {
       setSubmitting(false);
       onMessage(AlertType.ERROR, t('auth:invalidCredentials'));

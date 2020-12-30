@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserAvatar component should match the snapshot 1`] = `
+<span
+  style={
+    Object {
+      "background": "#bbb",
+      "borderRadius": "50%",
+      "height": 35,
+      "width": 35,
+    }
+  }
+/>
+`;

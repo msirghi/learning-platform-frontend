@@ -7,7 +7,7 @@ import NextNprogress from 'nextjs-progressbar';
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: '#6200ee'
+      main: '#26816b'
     }
   }
 });

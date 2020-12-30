@@ -1,8 +1,8 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
-import RegisterForm from '../forms/RegisterForm';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
+import RegisterForm from '../forms/RegisterForm';
 
 describe('RegisterForm component', () => {
   it('should match snapshot', () => {

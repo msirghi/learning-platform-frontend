@@ -1,20 +1,20 @@
-import React, { useEffect } from 'react';
-import '../styles/globals.scss';
-import { appWithTranslation } from '../i18n';
-import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
-import NextNprogress from 'nextjs-progressbar';
+import React, { useEffect } from "react";
+import "../styles/globals.scss";
+import { appWithTranslation } from "../i18n";
+import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+import NextNprogress from "nextjs-progressbar";
 
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: '#26816b'
-    }
-  }
+      main: "#26816b",
+    },
+  },
 });
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
-    const jssStyles = document.querySelector('#jss-server-side');
+    const jssStyles = document.querySelector("#jss-server-side");
     if (jssStyles) {
       jssStyles.parentElement.removeChild(jssStyles);
     }

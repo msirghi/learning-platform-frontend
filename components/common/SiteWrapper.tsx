@@ -52,19 +52,19 @@ const useStyles = makeStyles((theme) => ({
 
 export const SiteWrapper: React.FC = ({ children }) => {
   const classes = useStyles();
-  const [open, setOpen] = React.useState(false);
+  const [desktopOpen, setDesktopOpen] = React.useState(false);
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const [width] = useWindowSize();
 
   useEffect(() => {
     if (width < 768) {
-      setOpen(false);
+      setDesktopOpen(false);
     }
   }, [width]);
 
   const handleDrawerOpen = () => {
     if (width > 768) {
-      setOpen(true);
+      setDesktopOpen(true);
       return;
     }
     setMobileOpen(true);
@@ -72,7 +72,7 @@ export const SiteWrapper: React.FC = ({ children }) => {
 
   const handleDrawerClose = () => {
     if (width > 768) {
-      setOpen(false);
+      setDesktopOpen(false);
       return;
     }
     setMobileOpen(false);
@@ -82,8 +82,12 @@ export const SiteWrapper: React.FC = ({ children }) => {
     <div>
       <div className={classes.root}>
         <CssBaseline />
-        <NavBar classes={classes} handleDrawerOpen={handleDrawerOpen} open={open} />
-        <MainDrawer mobileOpen={mobileOpen} handleDrawerClose={handleDrawerClose} open={open} />
+        <NavBar classes={classes} handleDrawerOpen={handleDrawerOpen} open={desktopOpen} />
+        <MainDrawer
+          mobileOpen={mobileOpen}
+          handleDrawerClose={handleDrawerClose}
+          open={desktopOpen}
+        />
         <main className={classes.content}>
           <div className={classes.toolbar} />
           {children}

@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsRow component should match the snapshot 1`] = `
+<WithStyles(ForwardRef(Grid))
+  alignItems="center"
+  container={true}
+  spacing={1}
+>
+  <WithStyles(ForwardRef(Grid))
+    item={true}
+    xs={10}
+  >
+    <div>
+      News 1
+    </div>
+    <div
+      className="cardNewsDescription"
+    >
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos nihil, commodi alias at debiti...
+    </div>
+    <div>
+      Nov 22, 2000
+    </div>
+  </WithStyles(ForwardRef(Grid))>
+  <WithStyles(ForwardRef(Grid))
+    item={true}
+    xs={1}
+  >
+    <WithStyles(ForwardRef(IconButton))>
+      <Memo([object Object])
+        color="primary"
+      />
+    </WithStyles(ForwardRef(IconButton))>
+  </WithStyles(ForwardRef(Grid))>
+</WithStyles(ForwardRef(Grid))>
+`;
+
+exports[`NewsRow component should match the snapshot if description length is short 1`] = `
+<WithStyles(ForwardRef(Grid))
+  alignItems="center"
+  container={true}
+  spacing={1}
+>
+  <WithStyles(ForwardRef(Grid))
+    item={true}
+    xs={10}
+  >
+    <div>
+      News 1
+    </div>
+    <div
+      className="cardNewsDescription"
+    >
+      Lorem ipsum, dolor.
+    </div>
+    <div>
+      Nov 22, 2000
+    </div>
+  </WithStyles(ForwardRef(Grid))>
+  <WithStyles(ForwardRef(Grid))
+    item={true}
+    xs={1}
+  >
+    <WithStyles(ForwardRef(IconButton))>
+      <Memo([object Object])
+        color="primary"
+      />
+    </WithStyles(ForwardRef(IconButton))>
+  </WithStyles(ForwardRef(Grid))>
+</WithStyles(ForwardRef(Grid))>
+`;

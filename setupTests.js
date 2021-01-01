@@ -7,6 +7,7 @@ import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 import { setConfig } from 'next/config';
 import { publicRuntimeConfig } from './next.config';
 import "@testing-library/jest-dom/extend-expect";
+import MockDate from 'mockdate';
 
 setConfig({ publicRuntimeConfig });
 
@@ -17,3 +18,4 @@ Enzyme.configure({
 
 console.error = jest.fn();
 console.warn = jest.fn();
+MockDate.set('2000-11-22');

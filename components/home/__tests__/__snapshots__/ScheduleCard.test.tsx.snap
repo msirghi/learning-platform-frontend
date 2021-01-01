@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ScheduleCard component should match the snapshot 1`] = `
+<div
+  className="scheduleContainer"
+>
+  <div
+    className="scheduleHeader"
+  >
+    <div
+      className="scheduleDate"
+    >
+      <div
+        className="scheduleDateNumber"
+      >
+        27
+      </div>
+      <div
+        className="scheduleDateMonth"
+      >
+        Nov
+      </div>
+    </div>
+    <div
+      className="scheduleHeaderText"
+    >
+      <div>
+        home:scheduleCard.welcomeBack
+        , Nicolay.
+      </div>
+      <div>
+        home:scheduleCard.todayYouHave
+         4 
+        home:scheduleCard.lessons
+        .
+      </div>
+    </div>
+  </div>
+  <div
+    className="scheduleContent"
+  >
+    <div
+      className="scheduleContentHeader"
+    >
+      Your schedule for this day:
+    </div>
+    <div
+      className="scheduleContentLessonRow"
+      key="1"
+    >
+      <LessonRow
+        lesson={
+          Object {
+            "id": "1",
+            "status": "ended",
+            "time": "8:00",
+            "title": "Lorem ipsum dolor sit amet.",
+            "topic": "Topic 1",
+          }
+        }
+      />
+      <div
+        className="scheduleContentVerticalLine"
+      />
+    </div>
+    <div
+      className="scheduleContentLessonRow"
+      key="2"
+    >
+      <LessonRow
+        lesson={
+          Object {
+            "id": "2",
+            "status": "ongoing",
+            "time": "9:30",
+            "title": "Lesson 2",
+            "topic": "Lorem ipsum dolor sit amet.",
+          }
+        }
+      />
+      <div
+        className="scheduleContentVerticalLine scheduleContentVerticalLineNotEnded"
+      />
+    </div>
+    <div
+      className="scheduleContentLessonRow"
+      key="3"
+    >
+      <LessonRow
+        lesson={
+          Object {
+            "id": "3",
+            "status": "not started",
+            "time": "11:00",
+            "title": "Lesson 3",
+            "topic": "Topic 3",
+          }
+        }
+      />
+      <div
+        className="scheduleContentVerticalLine scheduleContentVerticalLineNotEnded"
+      />
+    </div>
+    <div
+      className="scheduleContentLessonRow"
+      key="4"
+    >
+      <LessonRow
+        lesson={
+          Object {
+            "id": "4",
+            "status": "not started",
+            "time": "13:00",
+            "title": "Lesson 4",
+            "topic": "Topic 4",
+          }
+        }
+      />
+    </div>
+  </div>
+</div>
+`;

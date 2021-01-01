@@ -1,0 +1,182 @@
+@import '../base/variables.scss';
+
+.card {
+  &Title {
+    background-color: $primary-color;
+    color: #fff;
+  }
+
+  &News {
+    &Description {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    &Divider {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      background-color: $primary-color;
+    }
+
+    &Margin {
+      margin-top: 2.5rem;
+    }
+  }
+}
+
+.schedule {
+  &Container {
+    height: 100%;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+  }
+
+  &Header {
+    display: flex;
+    background: $primary-color;
+    height: 120px;
+    border-radius: 4;
+
+    &Text {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      color: #fff;
+      font-size: 23px;
+      margin-left: 25%;
+    }
+  }
+
+  &Date {
+    box-shadow: 2.8px 2.8px 3.6px 0.4px rgba(0, 0, 0, 0.21);
+    border-top-right-radius: 0;
+    position: absolute;
+    margin-left: 20px;
+    background: #fff;
+    height: 130px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $primary-color;
+
+    &Number {
+      font-size: 60px;
+    }
+
+    &Month {
+      font-size: 20px;
+      margin-top: -10px;
+    }
+  }
+
+  &Content {
+    padding: 50px;
+    font-size: 16px;
+
+    &Header {
+      color: $primary-color;
+    }
+
+    &LessonRow {
+      margin-top: 30px;
+      position: relative;
+    }
+
+    &VerticalLine {
+      height: 30px;
+      position: absolute;
+      right: 13px;
+      top: 38px;
+      border: 1px solid $grey-color;
+
+      &NotEnded {
+        border: 1px solid $primary-color;
+      }
+    }
+  }
+}
+
+.lessonRow {
+  &Container {
+    display: flex;
+    color: #26816b;
+    font-size: 16px;
+    position: relative;
+  }
+
+  &Time {
+    width: 98px;
+  }
+
+  &Topic {
+    margin-left: 97px;
+    margin-top: -5px;
+  }
+
+  &StatusShape {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-left: auto;
+    background: $grey-color;
+
+    &Ongoing {
+      background: $blue-color;
+    }
+
+    &NotStarted {
+      background: $primary-color;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .scheduleHeaderText {
+    margin-left: 30%;
+  }
+
+  .scheduleDate {
+    margin-left: 10px;
+  }
+
+  .lessonRow {
+    &Time {
+      width: 50px;
+    }
+
+    &Title {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      width: 150px;
+      overflow: hidden;
+    }
+
+    &Topic {
+      margin-left: 50px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      width: 200px;
+      overflow: hidden;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .scheduleHeaderText {
+    font-size: 16px;
+    margin-left: 37%;
+  }
+
+  .scheduleContent {
+    padding: 25px;
+  }
+
+  .lessonRow {
+    &Topic {
+      width: 150px;
+    }
+  }
+}

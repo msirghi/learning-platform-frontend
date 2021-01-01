@@ -1,0 +1,41 @@
+import React from 'react';
+import styles from '../../styles/modules/Home.module.scss';
+import { LessonRow } from './LessonRow';
+import { LessonStatus } from '../../common/enums';
+import { lessonMock } from '../../mocks/lessonMocks';
+import { useTranslation } from '../../i18n';
+
+export const ScheduleCard: React.FC = () => {
+  const { t } = useTranslation();
+
+  return (
+    <div className={styles.scheduleContainer}>
+      <div className={styles.scheduleHeader}>
+        <div className={styles.scheduleDate}>
+          <div className={styles.scheduleDateNumber}>27</div>
+          <div className={styles.scheduleDateMonth}>Nov</div>
+        </div>
+        <div className={styles.scheduleHeaderText}>
+          <div>{t('home:scheduleCard.welcomeBack')}, Nicolay.</div>
+          <div>{t('home:scheduleCard.todayYouHave')} 4 {t('home:scheduleCard.lessons')}.</div>
+        </div>
+      </div>
+
+      <div className={styles.scheduleContent}>
+        <div className={styles.scheduleContentHeader}>Your schedule for this day:</div>
+        {lessonMock.map((lesson, idx) => {
+          let lineClassname = styles.scheduleContentVerticalLine;
+          if (lesson.status !== LessonStatus.ENDED) {
+            lineClassname += ` ${styles.scheduleContentVerticalLineNotEnded}`;
+          }
+          return (
+            <div key={lesson.id} className={styles.scheduleContentLessonRow}>
+              <LessonRow lesson={lesson} />
+              {idx !== lessonMock.length - 1 && <div className={lineClassname} />}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+};

@@ -9,6 +9,11 @@ import { useWindowSize } from './hooks/useWindowResize';
 const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
+  wrapper: {
+    display: 'flex',
+    flexDirection: 'column',
+    minHeight: '100vh'
+  },
   root: {
     display: 'flex'
   },
@@ -79,11 +84,17 @@ export const SiteWrapper: React.FC = ({ children }) => {
   };
 
   return (
-    <div>
+    <div className={classes.wrapper}>
       <div className={classes.root}>
         <CssBaseline />
-        <NavBar classes={classes} handleDrawerOpen={handleDrawerOpen} open={desktopOpen} />
+        <NavBar
+          classes={classes}
+          handleDrawerClose={handleDrawerClose}
+          handleDrawerOpen={handleDrawerOpen}
+          open={desktopOpen}
+        />
         <MainDrawer
+          handleDrawerOpen={handleDrawerOpen}
           mobileOpen={mobileOpen}
           handleDrawerClose={handleDrawerClose}
           open={desktopOpen}
@@ -93,7 +104,7 @@ export const SiteWrapper: React.FC = ({ children }) => {
           {children}
         </main>
       </div>
-      {/* <SiteFooter /> */}
+      <SiteFooter />
     </div>
   );
 };

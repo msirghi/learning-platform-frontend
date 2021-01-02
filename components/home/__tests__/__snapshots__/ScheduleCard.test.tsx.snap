@@ -13,7 +13,7 @@ exports[`ScheduleCard component should match the snapshot 1`] = `
       <div
         className="scheduleDateNumber"
       >
-        27
+        22
       </div>
       <div
         className="scheduleDateMonth"
@@ -42,7 +42,8 @@ exports[`ScheduleCard component should match the snapshot 1`] = `
     <div
       className="scheduleContentHeader"
     >
-      Your schedule for this day:
+      home:scheduleCard.scheduleForThisDay
+      :
     </div>
     <div
       className="scheduleContentLessonRow"
@@ -90,7 +91,7 @@ exports[`ScheduleCard component should match the snapshot 1`] = `
         lesson={
           Object {
             "id": "3",
-            "status": "not started",
+            "status": "notStarted",
             "time": "11:00",
             "title": "Lesson 3",
             "topic": "Topic 3",
@@ -109,7 +110,7 @@ exports[`ScheduleCard component should match the snapshot 1`] = `
         lesson={
           Object {
             "id": "4",
-            "status": "not started",
+            "status": "notStarted",
             "time": "13:00",
             "title": "Lesson 4",
             "topic": "Topic 4",

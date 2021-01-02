@@ -19,5 +19,5 @@ export enum AuthPage {
 export enum LessonStatus {
   ENDED = 'ended',
   ONGOING = 'ongoing',
-  NOT_STARTED = 'not started'
+  NOT_STARTED = 'notStarted'
 }

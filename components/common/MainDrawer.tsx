@@ -1,62 +1,68 @@
-import React, { useEffect, useState } from "react";
-import Drawer from "@material-ui/core/Drawer";
-import IconButton from "@material-ui/core/IconButton";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
-import ListItemText from "@material-ui/core/ListItemText";
-import { makeStyles } from "@material-ui/core/styles";
-import clsx from "clsx";
-import { menuItems } from "./utils/menuItems";
-import styles from "../../styles/modules/Shared.module.scss";
-import { Hidden } from "@material-ui/core";
+import React, { useEffect, useState } from 'react';
+import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
+import IconButton from '@material-ui/core/IconButton';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText';
+import { makeStyles } from '@material-ui/core/styles';
+import clsx from 'clsx';
+import { menuItems } from './utils/menuItems';
+import styles from '../../styles/modules/Shared.module.scss';
+import { Hidden } from '@material-ui/core';
 
 const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
   drawer: {
-    width: drawerWidth,
+    width: drawerWidth
   },
   drawerOpen: {
     background: theme.palette.primary.main,
     width: drawerWidth,
-    transition: theme.transitions.create("width", {
+    transition: theme.transitions.create('width', {
       easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.enteringScreen,
-    }),
+      duration: theme.transitions.duration.enteringScreen
+    })
   },
   drawerClose: {
     background: theme.palette.primary.main,
-    transition: theme.transitions.create("width", {
+    transition: theme.transitions.create('width', {
       easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.leavingScreen,
+      duration: theme.transitions.duration.leavingScreen
     }),
-    overflowX: "hidden",
+    overflowX: 'hidden',
     width: theme.spacing(8) + 1,
-    [theme.breakpoints.up("sm")]: {
-      width: 110,
-    },
+    [theme.breakpoints.up('sm')]: {
+      width: 110
+    }
   },
   toolbar: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
     padding: theme.spacing(0, 1),
-    ...theme.mixins.toolbar,
+    ...theme.mixins.toolbar
   },
   drawerPaper: {
     width: drawerWidth,
-    background: theme.palette.primary.main,
-  },
+    background: theme.palette.primary.main
+  }
 }));
 
 type Props = {
   handleDrawerClose: () => void;
+  handleDrawerOpen: () => void;
   open: boolean;
   mobileOpen: boolean;
 };
 
-export const MainDrawer: React.FC<Props> = ({ handleDrawerClose, open, mobileOpen }) => {
+export const MainDrawer: React.FC<Props> = ({
+  handleDrawerClose,
+  open,
+  mobileOpen,
+  handleDrawerOpen
+}) => {
   const classes = useStyles();
   const [activeTab, setActiveTab] = useState<string | null>(null);
 
@@ -97,7 +103,7 @@ export const MainDrawer: React.FC<Props> = ({ handleDrawerClose, open, mobileOpe
                   </ListItemIcon>
                   {(open || mobileOpen) && (
                     <ListItemText
-                      className={isActiveTab ? styles.mainMenuActiveText : ""}
+                      className={isActiveTab ? styles.mainMenuActiveText : ''}
                       primary={item.label}
                     />
                   )}
@@ -112,36 +118,39 @@ export const MainDrawer: React.FC<Props> = ({ handleDrawerClose, open, mobileOpe
 
   return (
     <>
-      <Drawer
+      <SwipeableDrawer
+        onOpen={handleDrawerOpen}
         variant='temporary'
         open={mobileOpen}
         onClose={handleDrawerClose}
         classes={{
-          paper: classes.drawerPaper,
+          paper: classes.drawerPaper
         }}
         ModalProps={{
-          keepMounted: true,
+          keepMounted: true
         }}
       >
         {drawerContent()}
-      </Drawer>
+      </SwipeableDrawer>
       <Hidden xsDown implementation='css'>
-        <Drawer
+        <SwipeableDrawer
+          onClose={handleDrawerClose}
+          onOpen={handleDrawerOpen}
           classes={{
             paper: clsx({
               [classes.drawerOpen]: open,
-              [classes.drawerClose]: !open,
-            }),
+              [classes.drawerClose]: !open
+            })
           }}
           className={clsx(classes.drawer, {
             [classes.drawerOpen]: open,
-            [classes.drawerClose]: !open,
+            [classes.drawerClose]: !open
           })}
           variant='permanent'
           open={open}
         >
           {drawerContent()}
-        </Drawer>
+        </SwipeableDrawer>
       </Hidden>
     </>
   );

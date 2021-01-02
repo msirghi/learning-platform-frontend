@@ -3,6 +3,7 @@ import { LessonStatus } from '../../common/enums';
 import { Lesson } from '../../common/types';
 import styles from '../../styles/modules/Home.module.scss';
 import { useTranslation } from '../../i18n';
+import Tooltip from '@material-ui/core/Tooltip';
 
 type Props = {
   lesson: Lesson;
@@ -23,7 +24,9 @@ export const LessonRow: React.FC<Props> = ({ lesson: { status, time, title, topi
       <div className={styles.lessonRowContainer}>
         <div className={styles.lessonRowTime}>{time}</div>
         <div className={styles.lessonRowTitle}>{title}</div>
-        <span className={shapeClassName} />
+        <Tooltip title={t(`home:scheduleCard.${status}`)}>
+          <span className={shapeClassName} />
+        </Tooltip>
       </div>
       <div className={styles.lessonRowTopic}>
         {t('home:scheduleCard.topic')}: {topic}

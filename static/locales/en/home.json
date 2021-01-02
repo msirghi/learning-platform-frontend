@@ -7,6 +7,10 @@
         "todayYouHave": "Today you have",
         "lessons": "lessons",
         "scheduleForThisDay": "Your schedule for this day",
-        "topic": "Topic"
+        "topic": "Topic",
+        "ongoing": "Ongoing",
+        "ended": "Ended",
+        "notStarted": "Not started",
+        "seeOlderNews": "See older news"
     }
 }

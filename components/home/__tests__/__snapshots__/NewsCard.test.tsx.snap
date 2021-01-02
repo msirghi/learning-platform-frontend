@@ -42,6 +42,15 @@ exports[`NewsCard component should match the snapshot 1`] = `
         }
       />
     </div>
+    <div
+      className="cardNewsButtonContainer"
+    >
+      <WithStyles(ForwardRef(Button))
+        size="small"
+      >
+        home:scheduleCard.seeOlderNews
+      </WithStyles(ForwardRef(Button))>
+    </div>
   </WithStyles(ForwardRef(CardContent))>
 </WithStyles(ForwardRef(Card))>
 `;

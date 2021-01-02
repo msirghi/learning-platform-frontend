@@ -15,24 +15,31 @@ exports[`NavBar component should match the snapshot 1`] = `
     >
       <Memo([object Object]) />
     </WithStyles(ForwardRef(IconButton))>
+    <WithStyles(ForwardRef(IconButton))
+      aria-label="close drawer"
+      className=""
+      color="inherit"
+      edge="start"
+    >
+      <Memo([object Object]) />
+    </WithStyles(ForwardRef(IconButton))>
     <WithStyles(ForwardRef(Typography))
       noWrap={true}
       variant="h6"
-    >
-      Home
-    </WithStyles(ForwardRef(Typography))>
+    />
     <div
       className="navBarRightIconsContainer"
     >
+      <LanguageSelect />
       <WithStyles(ForwardRef(IconButton))>
-        <Memo([object Object])
+        <WithStyles(ForwardRef(Badge))
+          badgeContent={4}
           color="primary"
-        />
-      </WithStyles(ForwardRef(IconButton))>
-      <WithStyles(ForwardRef(IconButton))>
-        <Memo([object Object])
-          color="primary"
-        />
+        >
+          <Memo([object Object])
+            color="primary"
+          />
+        </WithStyles(ForwardRef(Badge))>
       </WithStyles(ForwardRef(IconButton))>
       <WithStyles(ForwardRef(IconButton))>
         <UserAvatar />

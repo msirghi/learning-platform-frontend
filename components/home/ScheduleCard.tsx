@@ -12,17 +12,21 @@ export const ScheduleCard: React.FC = () => {
     <div className={styles.scheduleContainer}>
       <div className={styles.scheduleHeader}>
         <div className={styles.scheduleDate}>
-          <div className={styles.scheduleDateNumber}>27</div>
-          <div className={styles.scheduleDateMonth}>Nov</div>
+          <div className={styles.scheduleDateNumber}>{new Date().getDate()}</div>
+          <div className={styles.scheduleDateMonth}>
+            {new Date().toLocaleDateString('default', { month: 'short' })}
+          </div>
         </div>
         <div className={styles.scheduleHeaderText}>
           <div>{t('home:scheduleCard.welcomeBack')}, Nicolay.</div>
-          <div>{t('home:scheduleCard.todayYouHave')} 4 {t('home:scheduleCard.lessons')}.</div>
+          <div>
+            {t('home:scheduleCard.todayYouHave')} 4 {t('home:scheduleCard.lessons')}.
+          </div>
         </div>
       </div>
 
       <div className={styles.scheduleContent}>
-        <div className={styles.scheduleContentHeader}>Your schedule for this day:</div>
+        <div className={styles.scheduleContentHeader}>{t('home:scheduleCard.scheduleForThisDay')}:</div>
         {lessonMock.map((lesson, idx) => {
           let lineClassname = styles.scheduleContentVerticalLine;
           if (lesson.status !== LessonStatus.ENDED) {

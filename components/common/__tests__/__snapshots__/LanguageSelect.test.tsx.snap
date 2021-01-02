@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LanguageSelect component should match the snapshot 1`] = `
+<Fragment>
+  <WithStyles(ForwardRef(IconButton))
+    onClick={[Function]}
+  >
+    <Memo([object Object])
+      color="primary"
+    />
+  </WithStyles(ForwardRef(IconButton))>
+  <WithStyles(ForwardRef(Menu))
+    anchorEl={null}
+    keepMounted={true}
+    onClose={[Function]}
+    open={false}
+  >
+    <WithStyles(ForwardRef(List))>
+      <WithStyles(ForwardRef(ListItem))
+        button={true}
+        key="en"
+        onClick={[Function]}
+      >
+        English
+      </WithStyles(ForwardRef(ListItem))>
+      <WithStyles(ForwardRef(ListItem))
+        button={true}
+        key="ru"
+        onClick={[Function]}
+      >
+        Русский
+      </WithStyles(ForwardRef(ListItem))>
+    </WithStyles(ForwardRef(List))>
+  </WithStyles(ForwardRef(Menu))>
+</Fragment>
+`;

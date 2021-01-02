@@ -15,9 +15,13 @@ exports[`LessonRow component should match the snapshot 1`] = `
     >
       Lorem ipsum dolor sit amet.
     </div>
-    <span
-      className="lessonRowStatusShape"
-    />
+    <WithStyles(ForwardRef(Tooltip))
+      title="home:scheduleCard.ended"
+    >
+      <span
+        className="lessonRowStatusShape"
+      />
+    </WithStyles(ForwardRef(Tooltip))>
   </div>
   <div
     className="lessonRowTopic"

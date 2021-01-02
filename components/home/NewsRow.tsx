@@ -15,9 +15,9 @@ export const NewsRow: React.FC<Props> = ({ news: { date, description, title } })
     description.length > 80 ? `${description.substring(0, 100)}...` : description;
 
   return (
-    <Grid container alignItems='center' spacing={1}>
+    <Grid container alignItems='center' spacing={1}  className={styles.cardArrowButton}>
       <Grid item xs={10}>
-        <div>{title}</div>
+        <div className={styles.cardNewsTitle}>{title}</div>
         <div className={styles.cardNewsDescription}>{formattedDescription}</div>
         <div>{dateFormat(date, "mediumDate")}</div>
       </Grid>

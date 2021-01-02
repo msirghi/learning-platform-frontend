@@ -5,6 +5,8 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import Menu from '@material-ui/core/Menu';
 import { useTranslation } from '../../i18n';
+import { useDispatch } from 'react-redux';
+import { setInterfaceLocale } from '../../redux/actions/preference/preferenceAction';
 
 const languageChoice = [
   {
@@ -20,8 +22,10 @@ const languageChoice = [
 export const LanguageSelect: React.FC = () => {
   const [notificationMenuOpen, setNotificationMenuOpen] = useState<null | HTMLElement>(null);
   const { i18n } = useTranslation();
+  const dispatch = useDispatch();
 
   const handleChange = (val: string) => {
+    dispatch(setInterfaceLocale(val));
     i18n.changeLanguage(val);
     handleClose();
   };

@@ -13,6 +13,8 @@ import Badge from '@material-ui/core/Badge';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import { LanguageSelect } from './LanguageSelect';
 import { useTranslation } from '../../i18n';
+import { useSelector } from 'react-redux';
+import { RootState } from '../../redux/reducers';
 
 type Props = {
   classes: { [key: string]: string };
@@ -23,15 +25,16 @@ type Props = {
 
 export const NavBar: React.FC<Props> = ({ classes, handleDrawerOpen, open, handleDrawerClose }) => {
   const [activeTab, setActiveTab] = useState<string | undefined>();
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
+  const locale = useSelector((state: RootState) => state.preference.locale);
 
   useEffect(() => {
+    /* istanbul ignore next */
     if (global.window) {
-      console.log('global.window.location :>> ', global.window.location.pathname);
       const href = global.window.location.pathname.replaceAll('/', '');
-      setActiveTab(t(`common:headerTabs.${href}`));
+      setTimeout(() => setActiveTab(t(`common:headerTabs.${href}`)), 100);
     }
-  }, [global.window, i18n]);
+  }, [locale]);
 
   return (
     <AppBar

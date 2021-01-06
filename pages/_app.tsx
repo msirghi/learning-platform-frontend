@@ -4,9 +4,8 @@ import { appWithTranslation, useTranslation } from '../i18n';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import NextNprogress from 'nextjs-progressbar';
 import store from '../redux/store';
-import { Provider } from 'react-redux';
+import { Provider, useDispatch } from 'react-redux';
 import { createWrapper } from 'next-redux-wrapper';
-import { useDispatch } from 'react-redux';
 import { setInterfaceLocale } from '../redux/actions/preference/preferenceAction';
 
 const theme = createMuiTheme({
@@ -31,7 +30,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <Provider store={store}>
-      <NextNprogress color='#29D' startPosition={0.3} stopDelayMs={200} height='3' />
+      <NextNprogress color='#29D' startPosition={0.3} stopDelayMs={200} />
       <MuiThemeProvider theme={theme}>
         <Component {...pageProps} />
       </MuiThemeProvider>

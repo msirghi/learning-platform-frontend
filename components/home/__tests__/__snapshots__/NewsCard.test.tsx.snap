@@ -5,10 +5,25 @@ exports[`NewsCard component should match the snapshot 1`] = `
   variant="outlined"
 >
   <WithStyles(ForwardRef(CardHeader))
+    action={
+      <div
+        className="cardHeaderContainer"
+      >
+        <WithStyles(ForwardRef(Button))
+          className="cardHeaderButton"
+          size="small"
+          variant="outlined"
+        >
+          home:scheduleCard.seeOlderNews
+        </WithStyles(ForwardRef(Button))>
+      </div>
+    }
     className="cardTitle"
     title="Title"
   />
-  <WithStyles(ForwardRef(CardContent))>
+  <WithStyles(ForwardRef(CardContent))
+    className="makeStyles-content-1"
+  >
     <div
       key="News 1"
     >
@@ -41,15 +56,6 @@ exports[`NewsCard component should match the snapshot 1`] = `
           }
         }
       />
-    </div>
-    <div
-      className="cardNewsButtonContainer"
-    >
-      <WithStyles(ForwardRef(Button))
-        size="small"
-      >
-        home:scheduleCard.seeOlderNews
-      </WithStyles(ForwardRef(Button))>
     </div>
   </WithStyles(ForwardRef(CardContent))>
 </WithStyles(ForwardRef(Card))>

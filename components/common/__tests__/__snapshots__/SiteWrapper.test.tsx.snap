@@ -1681,6 +1681,7 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
             classes={
               Object {
                 "paper": "makeStyles-drawerPaper-14",
+                "paperAnchorDockedLeft": "makeStyles-paperAnchorDockedLeft-15",
               }
             }
             onClose={[Function]}
@@ -1913,6 +1914,7 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
               classes={
                 Object {
                   "paper": "makeStyles-drawerPaper-14",
+                  "paperAnchorDockedLeft": "makeStyles-paperAnchorDockedLeft-15",
                 }
               }
               onClose={[Function]}
@@ -2154,7 +2156,7 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                     "paper": "MuiDrawer-paper makeStyles-drawerPaper-14",
                     "paperAnchorBottom": "MuiDrawer-paperAnchorBottom",
                     "paperAnchorDockedBottom": "MuiDrawer-paperAnchorDockedBottom",
-                    "paperAnchorDockedLeft": "MuiDrawer-paperAnchorDockedLeft",
+                    "paperAnchorDockedLeft": "MuiDrawer-paperAnchorDockedLeft makeStyles-paperAnchorDockedLeft-15",
                     "paperAnchorDockedRight": "MuiDrawer-paperAnchorDockedRight",
                     "paperAnchorDockedTop": "MuiDrawer-paperAnchorDockedTop",
                     "paperAnchorLeft": "MuiDrawer-paperAnchorLeft",
@@ -4242,17 +4244,17 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                   anchor="left"
                   classes={
                     Object {
-                      "anchorBottom": "PrivateSwipeArea-anchorBottom-35",
-                      "anchorLeft": "PrivateSwipeArea-anchorLeft-32",
-                      "anchorRight": "PrivateSwipeArea-anchorRight-33",
-                      "anchorTop": "PrivateSwipeArea-anchorTop-34",
-                      "root": "PrivateSwipeArea-root-31",
+                      "anchorBottom": "PrivateSwipeArea-anchorBottom-36",
+                      "anchorLeft": "PrivateSwipeArea-anchorLeft-33",
+                      "anchorRight": "PrivateSwipeArea-anchorRight-34",
+                      "anchorTop": "PrivateSwipeArea-anchorTop-35",
+                      "root": "PrivateSwipeArea-root-32",
                     }
                   }
                   width={20}
                 >
                   <div
-                    className="PrivateSwipeArea-root-31 PrivateSwipeArea-anchorLeft-32"
+                    className="PrivateSwipeArea-root-32 PrivateSwipeArea-anchorLeft-33"
                     style={
                       Object {
                         "width": 20,
@@ -4282,21 +4284,21 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
               <HiddenCss
                 classes={
                   Object {
-                    "lgDown": "PrivateHiddenCss-lgDown-27",
-                    "lgUp": "PrivateHiddenCss-lgUp-26",
-                    "mdDown": "PrivateHiddenCss-mdDown-24",
-                    "mdUp": "PrivateHiddenCss-mdUp-23",
-                    "onlyLg": "PrivateHiddenCss-onlyLg-25",
-                    "onlyMd": "PrivateHiddenCss-onlyMd-22",
-                    "onlySm": "PrivateHiddenCss-onlySm-19",
-                    "onlyXl": "PrivateHiddenCss-onlyXl-28",
-                    "onlyXs": "PrivateHiddenCss-onlyXs-16",
-                    "smDown": "PrivateHiddenCss-smDown-21",
-                    "smUp": "PrivateHiddenCss-smUp-20",
-                    "xlDown": "PrivateHiddenCss-xlDown-30",
-                    "xlUp": "PrivateHiddenCss-xlUp-29",
-                    "xsDown": "PrivateHiddenCss-xsDown-18",
-                    "xsUp": "PrivateHiddenCss-xsUp-17",
+                    "lgDown": "PrivateHiddenCss-lgDown-28",
+                    "lgUp": "PrivateHiddenCss-lgUp-27",
+                    "mdDown": "PrivateHiddenCss-mdDown-25",
+                    "mdUp": "PrivateHiddenCss-mdUp-24",
+                    "onlyLg": "PrivateHiddenCss-onlyLg-26",
+                    "onlyMd": "PrivateHiddenCss-onlyMd-23",
+                    "onlySm": "PrivateHiddenCss-onlySm-20",
+                    "onlyXl": "PrivateHiddenCss-onlyXl-29",
+                    "onlyXs": "PrivateHiddenCss-onlyXs-17",
+                    "smDown": "PrivateHiddenCss-smDown-22",
+                    "smUp": "PrivateHiddenCss-smUp-21",
+                    "xlDown": "PrivateHiddenCss-xlDown-31",
+                    "xlUp": "PrivateHiddenCss-xlUp-30",
+                    "xsDown": "PrivateHiddenCss-xsDown-19",
+                    "xsUp": "PrivateHiddenCss-xsUp-18",
                   }
                 }
                 lgDown={false}
@@ -4311,13 +4313,14 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                 xsUp={false}
               >
                 <div
-                  className="PrivateHiddenCss-xsDown-18"
+                  className="PrivateHiddenCss-xsDown-19"
                 >
                   <ForwardRef(SwipeableDrawer)
                     className="makeStyles-drawer-10 makeStyles-drawerClose-12"
                     classes={
                       Object {
                         "paper": "makeStyles-drawerClose-12",
+                        "paperAnchorDockedLeft": "makeStyles-paperAnchorDockedLeft-15",
                       }
                     }
                     onClose={[Function]}
@@ -4337,7 +4340,7 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                         Object {
                           "ref": Object {
                             "current": <div
-                              class="MuiPaper-root MuiDrawer-paper makeStyles-drawerClose-12 MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft MuiPaper-elevation0"
+                              class="MuiPaper-root MuiDrawer-paper makeStyles-drawerClose-12 MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft makeStyles-paperAnchorDockedLeft-15 MuiPaper-elevation0"
                             >
                               <div
                                 class="makeStyles-toolbar-13"
@@ -4548,6 +4551,7 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                       classes={
                         Object {
                           "paper": "makeStyles-drawerClose-12",
+                          "paperAnchorDockedLeft": "makeStyles-paperAnchorDockedLeft-15",
                         }
                       }
                       onClose={[Function]}
@@ -4572,7 +4576,7 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                           Object {
                             "ref": Object {
                               "current": <div
-                                class="MuiPaper-root MuiDrawer-paper makeStyles-drawerClose-12 MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft MuiPaper-elevation0"
+                                class="MuiPaper-root MuiDrawer-paper makeStyles-drawerClose-12 MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft makeStyles-paperAnchorDockedLeft-15 MuiPaper-elevation0"
                               >
                                 <div
                                   class="makeStyles-toolbar-13"
@@ -4787,7 +4791,7 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                             "paper": "MuiDrawer-paper makeStyles-drawerClose-12",
                             "paperAnchorBottom": "MuiDrawer-paperAnchorBottom",
                             "paperAnchorDockedBottom": "MuiDrawer-paperAnchorDockedBottom",
-                            "paperAnchorDockedLeft": "MuiDrawer-paperAnchorDockedLeft",
+                            "paperAnchorDockedLeft": "MuiDrawer-paperAnchorDockedLeft makeStyles-paperAnchorDockedLeft-15",
                             "paperAnchorDockedRight": "MuiDrawer-paperAnchorDockedRight",
                             "paperAnchorDockedTop": "MuiDrawer-paperAnchorDockedTop",
                             "paperAnchorLeft": "MuiDrawer-paperAnchorLeft",
@@ -4810,7 +4814,7 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                           className="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-10 makeStyles-drawerClose-12"
                         >
                           <WithStyles(ForwardRef(Paper))
-                            className="MuiDrawer-paper makeStyles-drawerClose-12 MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft"
+                            className="MuiDrawer-paper makeStyles-drawerClose-12 MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft makeStyles-paperAnchorDockedLeft-15"
                             elevation={0}
                             square={true}
                             style={
@@ -4820,7 +4824,7 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                             }
                           >
                             <ForwardRef(Paper)
-                              className="MuiDrawer-paper makeStyles-drawerClose-12 MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft"
+                              className="MuiDrawer-paper makeStyles-drawerClose-12 MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft makeStyles-paperAnchorDockedLeft-15"
                               classes={
                                 Object {
                                   "elevation0": "MuiPaper-elevation0",
@@ -4862,7 +4866,7 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                               }
                             >
                               <div
-                                className="MuiPaper-root MuiDrawer-paper makeStyles-drawerClose-12 MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft MuiPaper-elevation0"
+                                className="MuiPaper-root MuiDrawer-paper makeStyles-drawerClose-12 MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft makeStyles-paperAnchorDockedLeft-15 MuiPaper-elevation0"
                                 style={
                                   Object {
                                     "pointerEvents": "",
@@ -5913,7 +5917,7 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
       </div>
       <SiteFooter>
         <footer
-          className="makeStyles-footer-15"
+          className="makeStyles-footer-16"
         >
           <WithStyles(ForwardRef(Container))
             maxWidth="sm"

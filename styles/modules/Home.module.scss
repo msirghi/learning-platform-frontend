@@ -6,10 +6,22 @@
     color: #fff;
   }
 
+  &Header {
+    &Container {
+      margin-right: 0.6rem;
+      margin-top: 8px;
+    }
+
+    &Button {
+      color: #fff !important;
+      border: 1px solid #fff !important;
+    }
+  }
+
   &ArrowButton:hover {
-    background-color: rgba(0, 0, 0, 0.04);
-    border-radius: 5;
-    cursor: pointer;
+    // background-color: rgba(0, 0, 0, 0.04);
+    // border-radius: 5px;
+    // cursor: pointer;
   }
 
   &News {
@@ -52,7 +64,10 @@
     display: flex;
     background: $primary-color;
     height: 120px;
-    border-radius: 4;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 
     &Text {
       display: flex;

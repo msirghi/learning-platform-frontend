@@ -18,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
     width: drawerWidth
   },
   drawerOpen: {
+    boxShadow: '2.8px 2.8px 16px 0 rgba(0, 0, 0, 0.5)',
     background: theme.palette.primary.main,
     width: drawerWidth,
     transition: theme.transitions.create('width', {
@@ -26,6 +27,7 @@ const useStyles = makeStyles((theme) => ({
     })
   },
   drawerClose: {
+    boxShadow: '2.8px 2.8px 16px 0 rgba(0, 0, 0, 0.5)',
     background: theme.palette.primary.main,
     transition: theme.transitions.create('width', {
       easing: theme.transitions.easing.sharp,
@@ -47,6 +49,9 @@ const useStyles = makeStyles((theme) => ({
   drawerPaper: {
     width: drawerWidth,
     background: theme.palette.primary.main
+  },
+  paperAnchorDockedLeft: {
+    borderRight: 'none'
   }
 }));
 
@@ -124,7 +129,8 @@ export const MainDrawer: React.FC<Props> = ({
         open={mobileOpen}
         onClose={handleDrawerClose}
         classes={{
-          paper: classes.drawerPaper
+          paper: classes.drawerPaper,
+          paperAnchorDockedLeft: classes.paperAnchorDockedLeft
         }}
         ModalProps={{
           keepMounted: true
@@ -137,6 +143,7 @@ export const MainDrawer: React.FC<Props> = ({
           onClose={handleDrawerClose}
           onOpen={handleDrawerOpen}
           classes={{
+            paperAnchorDockedLeft: classes.paperAnchorDockedLeft,
             paper: clsx({
               [classes.drawerOpen]: open,
               [classes.drawerClose]: !open

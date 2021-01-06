@@ -15,6 +15,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
     classes={
       Object {
         "paper": "makeStyles-drawerPaper-5",
+        "paperAnchorDockedLeft": "makeStyles-paperAnchorDockedLeft-6",
       }
     }
     onClose={[MockFunction]}
@@ -299,6 +300,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
       classes={
         Object {
           "paper": "makeStyles-drawerPaper-5",
+          "paperAnchorDockedLeft": "makeStyles-paperAnchorDockedLeft-6",
         }
       }
       onClose={[MockFunction]}
@@ -593,7 +595,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
             "paper": "MuiDrawer-paper makeStyles-drawerPaper-5",
             "paperAnchorBottom": "MuiDrawer-paperAnchorBottom",
             "paperAnchorDockedBottom": "MuiDrawer-paperAnchorDockedBottom",
-            "paperAnchorDockedLeft": "MuiDrawer-paperAnchorDockedLeft",
+            "paperAnchorDockedLeft": "MuiDrawer-paperAnchorDockedLeft makeStyles-paperAnchorDockedLeft-6",
             "paperAnchorDockedRight": "MuiDrawer-paperAnchorDockedRight",
             "paperAnchorDockedTop": "MuiDrawer-paperAnchorDockedTop",
             "paperAnchorLeft": "MuiDrawer-paperAnchorLeft",
@@ -3201,17 +3203,17 @@ exports[`MainDrawer component should render match the snapshot on defined active
           anchor="left"
           classes={
             Object {
-              "anchorBottom": "PrivateSwipeArea-anchorBottom-25",
-              "anchorLeft": "PrivateSwipeArea-anchorLeft-22",
-              "anchorRight": "PrivateSwipeArea-anchorRight-23",
-              "anchorTop": "PrivateSwipeArea-anchorTop-24",
-              "root": "PrivateSwipeArea-root-21",
+              "anchorBottom": "PrivateSwipeArea-anchorBottom-26",
+              "anchorLeft": "PrivateSwipeArea-anchorLeft-23",
+              "anchorRight": "PrivateSwipeArea-anchorRight-24",
+              "anchorTop": "PrivateSwipeArea-anchorTop-25",
+              "root": "PrivateSwipeArea-root-22",
             }
           }
           width={20}
         >
           <div
-            className="PrivateSwipeArea-root-21 PrivateSwipeArea-anchorLeft-22"
+            className="PrivateSwipeArea-root-22 PrivateSwipeArea-anchorLeft-23"
             style={
               Object {
                 "width": 20,
@@ -3241,21 +3243,21 @@ exports[`MainDrawer component should render match the snapshot on defined active
       <HiddenCss
         classes={
           Object {
-            "lgDown": "PrivateHiddenCss-lgDown-17",
-            "lgUp": "PrivateHiddenCss-lgUp-16",
-            "mdDown": "PrivateHiddenCss-mdDown-14",
-            "mdUp": "PrivateHiddenCss-mdUp-13",
-            "onlyLg": "PrivateHiddenCss-onlyLg-15",
-            "onlyMd": "PrivateHiddenCss-onlyMd-12",
-            "onlySm": "PrivateHiddenCss-onlySm-9",
-            "onlyXl": "PrivateHiddenCss-onlyXl-18",
-            "onlyXs": "PrivateHiddenCss-onlyXs-6",
-            "smDown": "PrivateHiddenCss-smDown-11",
-            "smUp": "PrivateHiddenCss-smUp-10",
-            "xlDown": "PrivateHiddenCss-xlDown-20",
-            "xlUp": "PrivateHiddenCss-xlUp-19",
-            "xsDown": "PrivateHiddenCss-xsDown-8",
-            "xsUp": "PrivateHiddenCss-xsUp-7",
+            "lgDown": "PrivateHiddenCss-lgDown-18",
+            "lgUp": "PrivateHiddenCss-lgUp-17",
+            "mdDown": "PrivateHiddenCss-mdDown-15",
+            "mdUp": "PrivateHiddenCss-mdUp-14",
+            "onlyLg": "PrivateHiddenCss-onlyLg-16",
+            "onlyMd": "PrivateHiddenCss-onlyMd-13",
+            "onlySm": "PrivateHiddenCss-onlySm-10",
+            "onlyXl": "PrivateHiddenCss-onlyXl-19",
+            "onlyXs": "PrivateHiddenCss-onlyXs-7",
+            "smDown": "PrivateHiddenCss-smDown-12",
+            "smUp": "PrivateHiddenCss-smUp-11",
+            "xlDown": "PrivateHiddenCss-xlDown-21",
+            "xlUp": "PrivateHiddenCss-xlUp-20",
+            "xsDown": "PrivateHiddenCss-xsDown-9",
+            "xsUp": "PrivateHiddenCss-xsUp-8",
           }
         }
         lgDown={false}
@@ -3270,13 +3272,14 @@ exports[`MainDrawer component should render match the snapshot on defined active
         xsUp={false}
       >
         <div
-          className="PrivateHiddenCss-xsDown-8"
+          className="PrivateHiddenCss-xsDown-9"
         >
           <ForwardRef(SwipeableDrawer)
             className="makeStyles-drawer-1 makeStyles-drawerClose-3"
             classes={
               Object {
                 "paper": "makeStyles-drawerClose-3",
+                "paperAnchorDockedLeft": "makeStyles-paperAnchorDockedLeft-6",
               }
             }
             onClose={[MockFunction]}
@@ -3295,7 +3298,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                 Object {
                   "ref": Object {
                     "current": <div
-                      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerClose-3 MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft MuiPaper-elevation0"
+                      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerClose-3 MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft makeStyles-paperAnchorDockedLeft-6 MuiPaper-elevation0"
                     >
                       <div
                         class="makeStyles-toolbar-4"
@@ -3560,6 +3563,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
               classes={
                 Object {
                   "paper": "makeStyles-drawerClose-3",
+                  "paperAnchorDockedLeft": "makeStyles-paperAnchorDockedLeft-6",
                 }
               }
               onClose={[MockFunction]}
@@ -3584,7 +3588,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                   Object {
                     "ref": Object {
                       "current": <div
-                        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerClose-3 MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft MuiPaper-elevation0"
+                        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerClose-3 MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft makeStyles-paperAnchorDockedLeft-6 MuiPaper-elevation0"
                       >
                         <div
                           class="makeStyles-toolbar-4"
@@ -3853,7 +3857,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                     "paper": "MuiDrawer-paper makeStyles-drawerClose-3",
                     "paperAnchorBottom": "MuiDrawer-paperAnchorBottom",
                     "paperAnchorDockedBottom": "MuiDrawer-paperAnchorDockedBottom",
-                    "paperAnchorDockedLeft": "MuiDrawer-paperAnchorDockedLeft",
+                    "paperAnchorDockedLeft": "MuiDrawer-paperAnchorDockedLeft makeStyles-paperAnchorDockedLeft-6",
                     "paperAnchorDockedRight": "MuiDrawer-paperAnchorDockedRight",
                     "paperAnchorDockedTop": "MuiDrawer-paperAnchorDockedTop",
                     "paperAnchorLeft": "MuiDrawer-paperAnchorLeft",
@@ -3876,7 +3880,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                   className="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-1 makeStyles-drawerClose-3"
                 >
                   <WithStyles(ForwardRef(Paper))
-                    className="MuiDrawer-paper makeStyles-drawerClose-3 MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft"
+                    className="MuiDrawer-paper makeStyles-drawerClose-3 MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft makeStyles-paperAnchorDockedLeft-6"
                     elevation={0}
                     square={true}
                     style={
@@ -3886,7 +3890,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                     }
                   >
                     <ForwardRef(Paper)
-                      className="MuiDrawer-paper makeStyles-drawerClose-3 MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft"
+                      className="MuiDrawer-paper makeStyles-drawerClose-3 MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft makeStyles-paperAnchorDockedLeft-6"
                       classes={
                         Object {
                           "elevation0": "MuiPaper-elevation0",
@@ -3928,7 +3932,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                       }
                     >
                       <div
-                        className="MuiPaper-root MuiDrawer-paper makeStyles-drawerClose-3 MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft MuiPaper-elevation0"
+                        className="MuiPaper-root MuiDrawer-paper makeStyles-drawerClose-3 MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft makeStyles-paperAnchorDockedLeft-6 MuiPaper-elevation0"
                         style={
                           Object {
                             "pointerEvents": "",

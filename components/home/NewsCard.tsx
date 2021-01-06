@@ -8,19 +8,41 @@ import { NewsRow } from './NewsRow';
 import Divider from '@material-ui/core/Divider';
 import Button from '@material-ui/core/Button';
 import { useTranslation } from '../../i18n';
+import { makeStyles, createStyles } from '@material-ui/core/styles';
 
 type Props = {
   title: string;
   news: News[];
 };
 
+const useStyles = makeStyles(() =>
+  createStyles({
+    content: {
+      '&:last-child': {
+        paddingBottom: 16
+      }
+    }
+  })
+);
+
 export const NewsCard: React.FC<Props> = ({ title, news }) => {
   const { t } = useTranslation();
+  const classes = useStyles();
 
   return (
     <Card variant='outlined'>
-      <CardHeader title={title} className={styles.cardTitle} />
-      <CardContent>
+      <CardHeader
+        action={
+          <div className={styles.cardHeaderContainer}>
+            <Button variant='outlined' className={styles.cardHeaderButton} size='small'>
+              {t('home:scheduleCard.seeOlderNews')}
+            </Button>
+          </div>
+        }
+        title={title}
+        className={styles.cardTitle}
+      />
+      <CardContent className={classes.content}>
         {news.map((item, idx) => (
           <div key={item.title}>
             <NewsRow news={item} />
@@ -31,9 +53,6 @@ export const NewsCard: React.FC<Props> = ({ title, news }) => {
             )}
           </div>
         ))}
-        <div className={styles.cardNewsButtonContainer}>
-          <Button size='small'>{t('home:scheduleCard.seeOlderNews')}</Button>
-        </div>
       </CardContent>
     </Card>
   );

@@ -10,6 +10,7 @@
         "topic": "Topic",
         "ongoing": "Ongoing",
         "ended": "Ended",
-        "notStarted": "Not started"
+        "notStarted": "Not started",
+        "seeOlderNews": "See all"
     }
 }

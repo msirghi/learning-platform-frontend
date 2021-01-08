@@ -10,6 +10,7 @@
         "topic": "Тема",
         "ongoing": "В процессе",
         "ended": "Закончилось",
-        "notStarted": "Не началось"
+        "notStarted": "Не началось",
+        "seeOlderNews": "Посмотреть все"
     }
 }

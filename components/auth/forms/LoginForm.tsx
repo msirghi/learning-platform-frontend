@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { FormEvent, useState } from 'react';
 import { Button, LinearProgress, Typography, TextField } from '@material-ui/core';
 import { useTranslation } from '../../../i18n';

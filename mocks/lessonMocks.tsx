@@ -2,7 +2,13 @@ import { LessonStatus } from '../common/enums';
 import { Lesson } from '../common/types';
 
 export const lessonMock: Lesson[] = [
-  { id: '1', status: LessonStatus.ENDED, topic: 'Topic 1', title: `Lorem ipsum dolor sit amet.`, time: '8:00' },
+  {
+    id: '1',
+    status: LessonStatus.ENDED,
+    topic: 'Topic 1',
+    title: `Lorem ipsum dolor sit amet.`,
+    time: '8:00'
+  },
   {
     id: '2',
     status: LessonStatus.ONGOING,

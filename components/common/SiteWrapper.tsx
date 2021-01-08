@@ -62,8 +62,13 @@ export const SiteWrapper: React.FC = ({ children }) => {
   const [width] = useWindowSize();
 
   useEffect(() => {
-    if (width < 768) {
+    if (width < 768 && desktopOpen) {
       setDesktopOpen(false);
+      return;
+    }
+
+    if(width > 768 && mobileOpen) {
+      setMobileOpen(false);
     }
   }, [width]);
 

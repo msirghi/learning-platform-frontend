@@ -79,4 +79,19 @@ describe('SiteWrapper component', () => {
     nav.props().handleDrawerClose();
     expect(nav.props().mobileOpen).toBeFalsy();
   });
+
+  it('should open mobile drawer on screen size change with width 500', () => {
+    global.innerWidth = 1000;
+    const wrapper = mount(
+      <Provider store={store}>
+        <SiteWrapper>content</SiteWrapper>
+      </Provider>
+    );
+    global.dispatchEvent(new Event('resize'));
+    const nav = wrapper.find(MainDrawer);
+    global.innerWidth = 500;
+    global.dispatchEvent(new Event('resize'));
+    nav.props().handleDrawerClose();
+    expect(nav.props().open).toBeFalsy();
+  });
 });

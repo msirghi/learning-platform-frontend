@@ -6,6 +6,6 @@ module.exports = {
   moduleNameMapper: {
     '^.+\\.module\\.(css|sass|scss)$': 'identity-obj-proxy'
   },
-  coveragePathIgnorePatterns: ['/common/enums.ts', 'next.config.js', '/common/testUtils.ts'],
-  testURL: "http://test.com/login"
+  coveragePathIgnorePatterns: ['/common/enums.ts', 'next.config.js', '/common/testUtils.ts', 'next.config.ts'],
+  testURL: 'http://test.com/login'
 };

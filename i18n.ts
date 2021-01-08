@@ -3,10 +3,12 @@ const NextI18Next = require('next-i18next').default;
 const { localeSubpaths } = require('next/config').default().publicRuntimeConfig;
 import { Trans as OriginalTrans } from 'react-i18next';
 
+const path = require('path')
+
 export const nextI18next = new NextI18Next({
   otherLanguages: ['en', 'ru'],
   localeSubpaths,
-  localePath: 'static/locales'
+  localePath: path.resolve('./public/static/locales')
 });
 
 export const appWithTranslation = nextI18next.appWithTranslation;

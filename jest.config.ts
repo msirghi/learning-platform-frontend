@@ -1,3 +1,5 @@
+import React from 'react';
+
 module.exports = {
   // collectCoverageFrom: ['**/*.{js,jsx,ts,tsx}', '!**/*.d.ts', '!**/node_modules/**'],
   setupFilesAfterEnv: ['<rootDir>/setupTests.ts'],

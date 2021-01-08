@@ -16,7 +16,7 @@ Enzyme.configure({
   disableLifecycleMethods: true
 });
 
-export const t = (key: string, params?: any) => {
+export const t = (key, params) => {
   if (key === 'key.with.params') {
     return `key.with.params.${params.param}`;
   }
@@ -33,11 +33,11 @@ jest.mock('next-i18next', () => {
             t,
             i18n: {
               language: 'en',
-              changeLanguage: jest.fn().mockImplementation((lang: string) => console.log(lang))
+              changeLanguage: jest.fn().mockImplementation((lang) => console.log(lang))
             }
           };
         },
-        withTranslation: () => (Component: React.ComponentClass) => {
+        withTranslation: () => (Component) => {
           Component.defaultProps = { ...Component.defaultProps, t };
           return Component;
         }

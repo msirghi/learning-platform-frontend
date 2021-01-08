@@ -15,7 +15,7 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": false,
+    "isolatedModules": true,
     "jsx": "preserve"
   },
   "include": [
@@ -23,7 +23,7 @@
     "**/*.ts",
     "**/*.tsx",
     "next.config.js"
-  ],
+, "setupTests.js"  ],
   "exclude": [
     "node_modules"
   ]

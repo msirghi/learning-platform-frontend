@@ -1,3 +1,4 @@
+/* eslint-disable */
 const { nextI18NextRewrites } = require('next-i18next/rewrites');
 const path = require('path');
 const localeSubpaths = {};
@@ -10,4 +11,5 @@ module.exports = {
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
+  publicRuntimeConfig: {}
 };

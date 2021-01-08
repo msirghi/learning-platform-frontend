@@ -9,7 +9,8 @@
     "test": "node ./common/preTestHook.ts && jest",
     "preTest": "node ./common/preTestHook.ts",
     "preStart": "node ./common/preStartHook.ts",
-    "test:coverage": "npm run preTest && jest --coverage",
+    "test:cov": "npm run preTest && jest --coverage",
+    "test:update": "npm run test:cov -- -u",
     "lint": "eslint . --ext .ts,.tsx",
     "lint:test": "npm run lint && npm run test-cover"
   },
@@ -23,6 +24,7 @@
     "@zeit/next-sass": "^1.0.1",
     "babel-jest": "^26.6.3",
     "check-password-strength": "^1.0.15",
+    "dateformat": "^4.4.1",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.5",
     "enzyme-to-json": "^3.6.1",
@@ -30,11 +32,15 @@
     "jest": "^26.6.3",
     "next": "10.0.0",
     "next-i18next": "^7.0.1",
+    "next-redux-wrapper": "^6.0.2",
     "nextjs-progressbar": "^0.0.7",
     "node-sass": "^5.0.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-hook-form": "^6.11.0",
+    "react-redux": "^7.2.2",
+    "react-spinners-kit": "^1.9.1",
+    "redux": "^4.0.5",
     "sass": "^1.29.0",
     "sinon": "^9.2.1",
     "ts-node": "^9.0.0"
@@ -43,6 +49,7 @@
     "@testing-library/dom": "^7.26.5",
     "@testing-library/jest-dom": "^5.11.5",
     "@testing-library/react": "^11.1.1",
+    "@testing-library/react-hooks": "^4.0.0",
     "@types/node": "^14.14.6",
     "@types/react": "^16.9.55",
     "@typescript-eslint/eslint-plugin": "^4.6.1",
@@ -52,13 +59,18 @@
     "eslint-plugin-react": "^7.21.5",
     "husky": "^4.3.0",
     "jest-dom": "^4.0.0",
+    "mockdate": "^3.0.2",
+    "react-test-renderer": "^17.0.1",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-mock-store": "^1.5.4",
     "ts-jest": "^26.4.3",
     "typescript": "^4.0.5"
   },
   "jest": {
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
-    ]
+    ],
+    "testURL": "http://test.com/login"
   },
   "husky": {
     "hooks": {

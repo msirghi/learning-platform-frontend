@@ -1,4 +1,4 @@
-@import "./base/variables.scss";
+@import './base/variables.scss';
 
 html,
 body {
@@ -7,6 +7,11 @@ body {
   height: 100%;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
     Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow-x: hidden;
+}
+
+footer {
+  margin-top: auto;
 }
 
 a {

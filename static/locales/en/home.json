@@ -1,0 +1,16 @@
+{
+    "title": "Home",
+    "groupNewsTitle": "Group news",
+    "unversityNewsTitle": "University news",
+    "scheduleCard": {
+        "welcomeBack": "Welcome back",
+        "todayYouHave": "Today you have",
+        "lessons": "lessons",
+        "scheduleForThisDay": "Your schedule for this day",
+        "topic": "Topic",
+        "ongoing": "Ongoing",
+        "ended": "Ended",
+        "notStarted": "Not started",
+        "seeOlderNews": "See all"
+    }
+}

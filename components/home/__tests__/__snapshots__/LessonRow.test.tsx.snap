@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LessonRow component should match the snapshot 1`] = `
+<div>
+  <div
+    className="lessonRowContainer"
+  >
+    <div
+      className="lessonRowTime"
+    >
+      8:00
+    </div>
+    <div
+      className="lessonRowTitle"
+    >
+      Lorem ipsum dolor sit amet.
+    </div>
+    <WithStyles(ForwardRef(Tooltip))
+      title="home:scheduleCard.ended"
+    >
+      <span
+        className="lessonRowStatusShape"
+      />
+    </WithStyles(ForwardRef(Tooltip))>
+  </div>
+  <div
+    className="lessonRowTopic"
+  >
+    home:scheduleCard.topic
+    : 
+    Topic 1
+  </div>
+</div>
+`;

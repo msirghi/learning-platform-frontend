@@ -1,3 +1,5 @@
+@import '../base/variables.scss';
+
 $container-border-radius: 5px;
 $transition-time: 0.5s;
 
@@ -25,11 +27,11 @@ $transition-time: 0.5s;
 
 .inactiveTab {
   height: 80px;
-  background-color: #6200ee;
+  background-color: $primary-color;
   color: #fff;
   transition: all $transition-time;
   &:hover {
-    background: darken(#6200ee, 10);
+    background: darken($primary-color, 10);
   }
 }
 

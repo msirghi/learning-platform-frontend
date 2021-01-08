@@ -1,3 +1,4 @@
+// @ts-nocheck
 import MenuBookIcon from "@material-ui/icons/MenuBook";
 import HomeIcon from "@material-ui/icons/Home";
 import GroupIcon from "@material-ui/icons/Group";

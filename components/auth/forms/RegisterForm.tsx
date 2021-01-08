@@ -10,8 +10,7 @@ import RegexContants from '../../../common/constants/regex.constants';
 import Checkbox from '@material-ui/core/Checkbox';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import { AlertType, AuthPage } from '../../../common/enums';
-let a = 1;
-a = '';
+
 interface Values {
   email: string;
   password: string;

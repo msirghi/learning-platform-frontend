@@ -1,4 +1,6 @@
 @import '../base/variables.scss';
+@import '../base/mixins.scss';
+@import '../base/functions.scss';
 
 .card {
   &Title {
@@ -18,25 +20,17 @@
     }
   }
 
-  &ArrowButton:hover {
-    // background-color: rgba(0, 0, 0, 0.04);
-    // border-radius: 5px;
-    // cursor: pointer;
-  }
-
   &News {
     &Title {
       font-weight: 500;
     }
 
     &Description {
-      margin-top: 0.5rem;
-      margin-bottom: 0.5rem;
+      @include margin-tb-sm;
     }
 
     &Divider {
-      margin-top: 0.5rem;
-      margin-bottom: 0.5rem;
+      @include margin-tb-sm;
       background-color: $primary-color;
     }
 
@@ -45,8 +39,7 @@
     }
 
     &ButtonContainer {
-      display: flex;
-      justify-content: flex-end;
+      @include flex-end;
     }
   }
 }
@@ -56,7 +49,7 @@
     height: 100%;
     background-color: #fff;
     border-radius: 4px;
-    border: 1px solid rgba(0, 0, 0, 0.12);
+    border: 1px solid $shadow-grey-dark;
   }
 
   &Header {
@@ -70,9 +63,7 @@
     border-bottom-right-radius: 0;
 
     &Text {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
+      @include flex-column-center;
       color: #fff;
       font-size: 23px;
       margin-left: 25%;
@@ -80,17 +71,14 @@
   }
 
   &Date {
-    box-shadow: 2.8px 2.8px 3.6px 0.4px rgba(0, 0, 0, 0.21);
+    box-shadow: 2.8px 2.8px 3.6px 0.4px getBlackShadow(0.21);
     border-top-right-radius: 0;
     position: absolute;
     margin-left: 20px;
     background: #fff;
     height: 130px;
     width: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;
     color: $primary-color;
 
     &Number {
@@ -133,7 +121,7 @@
 .lessonRow {
   &Container {
     display: flex;
-    color: #26816b;
+    color: $primary-color;
     font-size: 16px;
     position: relative;
   }
@@ -179,16 +167,14 @@
     }
 
     &Title {
-      white-space: nowrap;
-      text-overflow: ellipsis;
+      @include text-wrap-dots;
       width: 150px;
       overflow: hidden;
     }
 
     &Topic {
+      @include text-wrap-dots;
       margin-left: 50px;
-      white-space: nowrap;
-      text-overflow: ellipsis;
       width: 200px;
       overflow: hidden;
     }

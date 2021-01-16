@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { CssBaseline } from '@material-ui/core';
 import { NavBar } from './NavBar';
@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
     color: '#000',
     boxShadow: 'none',
     [theme.breakpoints.up('sm')]: {
-      width: `calc(100% - ${drawerWidth / 2}px)`
+      width: `calc(100% - ${drawerWidth / 2 - 10}px)`
     }
   },
   appBarShift: {
@@ -57,8 +57,8 @@ const useStyles = makeStyles((theme) => ({
 
 export const SiteWrapper: React.FC = ({ children }) => {
   const classes = useStyles();
-  const [desktopOpen, setDesktopOpen] = React.useState(false);
-  const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [desktopOpen, setDesktopOpen] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
   const [width] = useWindowSize();
 
   useEffect(() => {
@@ -67,7 +67,7 @@ export const SiteWrapper: React.FC = ({ children }) => {
       return;
     }
 
-    if(width > 768 && mobileOpen) {
+    if (width > 768 && mobileOpen) {
       setMobileOpen(false);
     }
   }, [width]);
@@ -109,7 +109,7 @@ export const SiteWrapper: React.FC = ({ children }) => {
           {children}
         </main>
       </div>
-      <SiteFooter />
+      <SiteFooter drawerOpened={desktopOpen} />
     </div>
   );
 };

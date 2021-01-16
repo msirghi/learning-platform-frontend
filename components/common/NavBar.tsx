@@ -25,8 +25,21 @@ type Props = {
 
 export const NavBar: React.FC<Props> = ({ classes, handleDrawerOpen, open, handleDrawerClose }) => {
   const [activeTab, setActiveTab] = useState<string | undefined>();
+  const [barShadow, setBarShadow] = useState('none');
   const { t } = useTranslation();
   const locale = useSelector((state: RootState) => state.preference.locale);
+
+  const onPageScroll = () => {
+    setBarShadow(window.pageYOffset === 0 ? 'none' : '0px 0px 11px 0px rgba(0,0,0,0.75)');
+  };
+
+  useEffect(() => {
+    document.addEventListener('scroll', onPageScroll);
+
+    return () => {
+      document.removeEventListener('scroll', onPageScroll);
+    };
+  }, []);
 
   useEffect(() => {
     /* istanbul ignore next */
@@ -42,6 +55,7 @@ export const NavBar: React.FC<Props> = ({ classes, handleDrawerOpen, open, handl
       className={clsx(classes.appBar, {
         [classes.appBarShift]: open
       })}
+      style={{ boxShadow: barShadow }}
     >
       <Toolbar>
         <IconButton

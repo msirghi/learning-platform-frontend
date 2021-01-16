@@ -1,0 +1,33 @@
+@mixin flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@mixin text-wrap-dots {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@mixin margin-tb-sm {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+@mixin reset-font {
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+}

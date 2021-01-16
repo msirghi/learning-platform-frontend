@@ -9,7 +9,7 @@ function Register({ t }) {
     <div className={styles.container}>
       <Head>
         <title>{t('auth:title')}</title>
-        <link rel='icon' href='../public/favicon.ico' />
+        <link rel='icon' href='/favicon.ico' />
       </Head>
       <div className={styles.registerLogo}>
         <img src='/images/register-logo-148.png' alt={'site-logo'} />

@@ -4244,17 +4244,17 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                   anchor="left"
                   classes={
                     Object {
-                      "anchorBottom": "PrivateSwipeArea-anchorBottom-36",
-                      "anchorLeft": "PrivateSwipeArea-anchorLeft-33",
-                      "anchorRight": "PrivateSwipeArea-anchorRight-34",
-                      "anchorTop": "PrivateSwipeArea-anchorTop-35",
-                      "root": "PrivateSwipeArea-root-32",
+                      "anchorBottom": "PrivateSwipeArea-anchorBottom-38",
+                      "anchorLeft": "PrivateSwipeArea-anchorLeft-35",
+                      "anchorRight": "PrivateSwipeArea-anchorRight-36",
+                      "anchorTop": "PrivateSwipeArea-anchorTop-37",
+                      "root": "PrivateSwipeArea-root-34",
                     }
                   }
                   width={20}
                 >
                   <div
-                    className="PrivateSwipeArea-root-32 PrivateSwipeArea-anchorLeft-33"
+                    className="PrivateSwipeArea-root-34 PrivateSwipeArea-anchorLeft-35"
                     style={
                       Object {
                         "width": 20,
@@ -4284,21 +4284,21 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
               <HiddenCss
                 classes={
                   Object {
-                    "lgDown": "PrivateHiddenCss-lgDown-28",
-                    "lgUp": "PrivateHiddenCss-lgUp-27",
-                    "mdDown": "PrivateHiddenCss-mdDown-25",
-                    "mdUp": "PrivateHiddenCss-mdUp-24",
-                    "onlyLg": "PrivateHiddenCss-onlyLg-26",
-                    "onlyMd": "PrivateHiddenCss-onlyMd-23",
-                    "onlySm": "PrivateHiddenCss-onlySm-20",
-                    "onlyXl": "PrivateHiddenCss-onlyXl-29",
-                    "onlyXs": "PrivateHiddenCss-onlyXs-17",
-                    "smDown": "PrivateHiddenCss-smDown-22",
-                    "smUp": "PrivateHiddenCss-smUp-21",
-                    "xlDown": "PrivateHiddenCss-xlDown-31",
-                    "xlUp": "PrivateHiddenCss-xlUp-30",
-                    "xsDown": "PrivateHiddenCss-xsDown-19",
-                    "xsUp": "PrivateHiddenCss-xsUp-18",
+                    "lgDown": "PrivateHiddenCss-lgDown-30",
+                    "lgUp": "PrivateHiddenCss-lgUp-29",
+                    "mdDown": "PrivateHiddenCss-mdDown-27",
+                    "mdUp": "PrivateHiddenCss-mdUp-26",
+                    "onlyLg": "PrivateHiddenCss-onlyLg-28",
+                    "onlyMd": "PrivateHiddenCss-onlyMd-25",
+                    "onlySm": "PrivateHiddenCss-onlySm-22",
+                    "onlyXl": "PrivateHiddenCss-onlyXl-31",
+                    "onlyXs": "PrivateHiddenCss-onlyXs-19",
+                    "smDown": "PrivateHiddenCss-smDown-24",
+                    "smUp": "PrivateHiddenCss-smUp-23",
+                    "xlDown": "PrivateHiddenCss-xlDown-33",
+                    "xlUp": "PrivateHiddenCss-xlUp-32",
+                    "xsDown": "PrivateHiddenCss-xsDown-21",
+                    "xsUp": "PrivateHiddenCss-xsUp-20",
                   }
                 }
                 lgDown={false}
@@ -4313,7 +4313,7 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                 xsUp={false}
               >
                 <div
-                  className="PrivateHiddenCss-xsDown-19"
+                  className="PrivateHiddenCss-xsDown-21"
                 >
                   <ForwardRef(SwipeableDrawer)
                     className="makeStyles-drawer-10 makeStyles-drawerClose-12"
@@ -4324,6 +4324,8 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                       }
                     }
                     onClose={[Function]}
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
                     onOpen={[Function]}
                     open={false}
                     variant="permanent"
@@ -4555,6 +4557,8 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                         }
                       }
                       onClose={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
                       open={false}
                       transitionDuration={
                         Object {
@@ -4801,6 +4805,8 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                           }
                         }
                         onClose={[Function]}
+                        onMouseEnter={[Function]}
+                        onMouseLeave={[Function]}
                         open={false}
                         transitionDuration={
                           Object {
@@ -4812,6 +4818,8 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                       >
                         <div
                           className="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-10 makeStyles-drawerClose-12"
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
                         >
                           <WithStyles(ForwardRef(Paper))
                             className="MuiDrawer-paper makeStyles-drawerClose-12 MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft makeStyles-paperAnchorDockedLeft-15"
@@ -5915,33 +5923,467 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
           content
         </main>
       </div>
-      <SiteFooter>
+      <SiteFooter
+        drawerOpened={false}
+      >
         <footer
           className="makeStyles-footer-16"
         >
-          <WithStyles(ForwardRef(Container))
-            maxWidth="sm"
+          <div
+            className="footerWrapper makeStyles-wrapper-17 makeStyles-wrapper-18"
           >
-            <ForwardRef(Container)
-              classes={
-                Object {
-                  "disableGutters": "MuiContainer-disableGutters",
-                  "fixed": "MuiContainer-fixed",
-                  "maxWidthLg": "MuiContainer-maxWidthLg",
-                  "maxWidthMd": "MuiContainer-maxWidthMd",
-                  "maxWidthSm": "MuiContainer-maxWidthSm",
-                  "maxWidthXl": "MuiContainer-maxWidthXl",
-                  "maxWidthXs": "MuiContainer-maxWidthXs",
-                  "root": "MuiContainer-root",
-                }
-              }
-              maxWidth="sm"
+            <div
+              className="footerAboutUs"
             >
+              <div>
+                common:footer.aboutUs
+              </div>
+              <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio odit numquam, omnis adipisci ex aperiam ipsum consectetur assumenda cupiditate debitis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, nemo.
+              </div>
+            </div>
+            <div
+              className="footerUsefulLinks"
+            >
+              <div>
+                common:footer.usefulLinks
+              </div>
               <div
-                className="MuiContainer-root MuiContainer-maxWidthSm"
+                className="footerUsefulLinksContent"
+              >
+                <div>
+                  <WithStyles(ForwardRef(Link))
+                    color="inherit"
+                    href="https://material-ui.com/"
+                  >
+                    <ForwardRef(Link)
+                      classes={
+                        Object {
+                          "button": "MuiLink-button",
+                          "focusVisible": "Mui-focusVisible",
+                          "root": "MuiLink-root",
+                          "underlineAlways": "MuiLink-underlineAlways",
+                          "underlineHover": "MuiLink-underlineHover",
+                          "underlineNone": "MuiLink-underlineNone",
+                        }
+                      }
+                      color="inherit"
+                      href="https://material-ui.com/"
+                    >
+                      <WithStyles(ForwardRef(Typography))
+                        className="MuiLink-root MuiLink-underlineHover"
+                        color="inherit"
+                        component="a"
+                        href="https://material-ui.com/"
+                        onBlur={[Function]}
+                        onFocus={[Function]}
+                        variant="inherit"
+                      >
+                        <ForwardRef(Typography)
+                          className="MuiLink-root MuiLink-underlineHover"
+                          classes={
+                            Object {
+                              "alignCenter": "MuiTypography-alignCenter",
+                              "alignJustify": "MuiTypography-alignJustify",
+                              "alignLeft": "MuiTypography-alignLeft",
+                              "alignRight": "MuiTypography-alignRight",
+                              "body1": "MuiTypography-body1",
+                              "body2": "MuiTypography-body2",
+                              "button": "MuiTypography-button",
+                              "caption": "MuiTypography-caption",
+                              "colorError": "MuiTypography-colorError",
+                              "colorInherit": "MuiTypography-colorInherit",
+                              "colorPrimary": "MuiTypography-colorPrimary",
+                              "colorSecondary": "MuiTypography-colorSecondary",
+                              "colorTextPrimary": "MuiTypography-colorTextPrimary",
+                              "colorTextSecondary": "MuiTypography-colorTextSecondary",
+                              "displayBlock": "MuiTypography-displayBlock",
+                              "displayInline": "MuiTypography-displayInline",
+                              "gutterBottom": "MuiTypography-gutterBottom",
+                              "h1": "MuiTypography-h1",
+                              "h2": "MuiTypography-h2",
+                              "h3": "MuiTypography-h3",
+                              "h4": "MuiTypography-h4",
+                              "h5": "MuiTypography-h5",
+                              "h6": "MuiTypography-h6",
+                              "noWrap": "MuiTypography-noWrap",
+                              "overline": "MuiTypography-overline",
+                              "paragraph": "MuiTypography-paragraph",
+                              "root": "MuiTypography-root",
+                              "srOnly": "MuiTypography-srOnly",
+                              "subtitle1": "MuiTypography-subtitle1",
+                              "subtitle2": "MuiTypography-subtitle2",
+                            }
+                          }
+                          color="inherit"
+                          component="a"
+                          href="https://material-ui.com/"
+                          onBlur={[Function]}
+                          onFocus={[Function]}
+                          variant="inherit"
+                        >
+                          <a
+                            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit"
+                            href="https://material-ui.com/"
+                            onBlur={[Function]}
+                            onFocus={[Function]}
+                          >
+                            Link 1
+                          </a>
+                        </ForwardRef(Typography)>
+                      </WithStyles(ForwardRef(Typography))>
+                    </ForwardRef(Link)>
+                  </WithStyles(ForwardRef(Link))>
+                  <div
+                    className="footerUsefulLinksEvenLink"
+                  >
+                    <WithStyles(ForwardRef(Link))
+                      color="inherit"
+                      href="https://material-ui.com/"
+                    >
+                      <ForwardRef(Link)
+                        classes={
+                          Object {
+                            "button": "MuiLink-button",
+                            "focusVisible": "Mui-focusVisible",
+                            "root": "MuiLink-root",
+                            "underlineAlways": "MuiLink-underlineAlways",
+                            "underlineHover": "MuiLink-underlineHover",
+                            "underlineNone": "MuiLink-underlineNone",
+                          }
+                        }
+                        color="inherit"
+                        href="https://material-ui.com/"
+                      >
+                        <WithStyles(ForwardRef(Typography))
+                          className="MuiLink-root MuiLink-underlineHover"
+                          color="inherit"
+                          component="a"
+                          href="https://material-ui.com/"
+                          onBlur={[Function]}
+                          onFocus={[Function]}
+                          variant="inherit"
+                        >
+                          <ForwardRef(Typography)
+                            className="MuiLink-root MuiLink-underlineHover"
+                            classes={
+                              Object {
+                                "alignCenter": "MuiTypography-alignCenter",
+                                "alignJustify": "MuiTypography-alignJustify",
+                                "alignLeft": "MuiTypography-alignLeft",
+                                "alignRight": "MuiTypography-alignRight",
+                                "body1": "MuiTypography-body1",
+                                "body2": "MuiTypography-body2",
+                                "button": "MuiTypography-button",
+                                "caption": "MuiTypography-caption",
+                                "colorError": "MuiTypography-colorError",
+                                "colorInherit": "MuiTypography-colorInherit",
+                                "colorPrimary": "MuiTypography-colorPrimary",
+                                "colorSecondary": "MuiTypography-colorSecondary",
+                                "colorTextPrimary": "MuiTypography-colorTextPrimary",
+                                "colorTextSecondary": "MuiTypography-colorTextSecondary",
+                                "displayBlock": "MuiTypography-displayBlock",
+                                "displayInline": "MuiTypography-displayInline",
+                                "gutterBottom": "MuiTypography-gutterBottom",
+                                "h1": "MuiTypography-h1",
+                                "h2": "MuiTypography-h2",
+                                "h3": "MuiTypography-h3",
+                                "h4": "MuiTypography-h4",
+                                "h5": "MuiTypography-h5",
+                                "h6": "MuiTypography-h6",
+                                "noWrap": "MuiTypography-noWrap",
+                                "overline": "MuiTypography-overline",
+                                "paragraph": "MuiTypography-paragraph",
+                                "root": "MuiTypography-root",
+                                "srOnly": "MuiTypography-srOnly",
+                                "subtitle1": "MuiTypography-subtitle1",
+                                "subtitle2": "MuiTypography-subtitle2",
+                              }
+                            }
+                            color="inherit"
+                            component="a"
+                            href="https://material-ui.com/"
+                            onBlur={[Function]}
+                            onFocus={[Function]}
+                            variant="inherit"
+                          >
+                            <a
+                              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit"
+                              href="https://material-ui.com/"
+                              onBlur={[Function]}
+                              onFocus={[Function]}
+                            >
+                              Link 2
+                            </a>
+                          </ForwardRef(Typography)>
+                        </WithStyles(ForwardRef(Typography))>
+                      </ForwardRef(Link)>
+                    </WithStyles(ForwardRef(Link))>
+                  </div>
+                </div>
+                <div
+                  className="footerUsefulLinksSecondCol"
+                >
+                  <WithStyles(ForwardRef(Link))
+                    color="inherit"
+                    href="https://material-ui.com/"
+                  >
+                    <ForwardRef(Link)
+                      classes={
+                        Object {
+                          "button": "MuiLink-button",
+                          "focusVisible": "Mui-focusVisible",
+                          "root": "MuiLink-root",
+                          "underlineAlways": "MuiLink-underlineAlways",
+                          "underlineHover": "MuiLink-underlineHover",
+                          "underlineNone": "MuiLink-underlineNone",
+                        }
+                      }
+                      color="inherit"
+                      href="https://material-ui.com/"
+                    >
+                      <WithStyles(ForwardRef(Typography))
+                        className="MuiLink-root MuiLink-underlineHover"
+                        color="inherit"
+                        component="a"
+                        href="https://material-ui.com/"
+                        onBlur={[Function]}
+                        onFocus={[Function]}
+                        variant="inherit"
+                      >
+                        <ForwardRef(Typography)
+                          className="MuiLink-root MuiLink-underlineHover"
+                          classes={
+                            Object {
+                              "alignCenter": "MuiTypography-alignCenter",
+                              "alignJustify": "MuiTypography-alignJustify",
+                              "alignLeft": "MuiTypography-alignLeft",
+                              "alignRight": "MuiTypography-alignRight",
+                              "body1": "MuiTypography-body1",
+                              "body2": "MuiTypography-body2",
+                              "button": "MuiTypography-button",
+                              "caption": "MuiTypography-caption",
+                              "colorError": "MuiTypography-colorError",
+                              "colorInherit": "MuiTypography-colorInherit",
+                              "colorPrimary": "MuiTypography-colorPrimary",
+                              "colorSecondary": "MuiTypography-colorSecondary",
+                              "colorTextPrimary": "MuiTypography-colorTextPrimary",
+                              "colorTextSecondary": "MuiTypography-colorTextSecondary",
+                              "displayBlock": "MuiTypography-displayBlock",
+                              "displayInline": "MuiTypography-displayInline",
+                              "gutterBottom": "MuiTypography-gutterBottom",
+                              "h1": "MuiTypography-h1",
+                              "h2": "MuiTypography-h2",
+                              "h3": "MuiTypography-h3",
+                              "h4": "MuiTypography-h4",
+                              "h5": "MuiTypography-h5",
+                              "h6": "MuiTypography-h6",
+                              "noWrap": "MuiTypography-noWrap",
+                              "overline": "MuiTypography-overline",
+                              "paragraph": "MuiTypography-paragraph",
+                              "root": "MuiTypography-root",
+                              "srOnly": "MuiTypography-srOnly",
+                              "subtitle1": "MuiTypography-subtitle1",
+                              "subtitle2": "MuiTypography-subtitle2",
+                            }
+                          }
+                          color="inherit"
+                          component="a"
+                          href="https://material-ui.com/"
+                          onBlur={[Function]}
+                          onFocus={[Function]}
+                          variant="inherit"
+                        >
+                          <a
+                            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit"
+                            href="https://material-ui.com/"
+                            onBlur={[Function]}
+                            onFocus={[Function]}
+                          >
+                            Link 4
+                          </a>
+                        </ForwardRef(Typography)>
+                      </WithStyles(ForwardRef(Typography))>
+                    </ForwardRef(Link)>
+                  </WithStyles(ForwardRef(Link))>
+                  <div
+                    className="footerUsefulLinksEvenLink"
+                  >
+                    <WithStyles(ForwardRef(Link))
+                      color="inherit"
+                      href="https://material-ui.com/"
+                    >
+                      <ForwardRef(Link)
+                        classes={
+                          Object {
+                            "button": "MuiLink-button",
+                            "focusVisible": "Mui-focusVisible",
+                            "root": "MuiLink-root",
+                            "underlineAlways": "MuiLink-underlineAlways",
+                            "underlineHover": "MuiLink-underlineHover",
+                            "underlineNone": "MuiLink-underlineNone",
+                          }
+                        }
+                        color="inherit"
+                        href="https://material-ui.com/"
+                      >
+                        <WithStyles(ForwardRef(Typography))
+                          className="MuiLink-root MuiLink-underlineHover"
+                          color="inherit"
+                          component="a"
+                          href="https://material-ui.com/"
+                          onBlur={[Function]}
+                          onFocus={[Function]}
+                          variant="inherit"
+                        >
+                          <ForwardRef(Typography)
+                            className="MuiLink-root MuiLink-underlineHover"
+                            classes={
+                              Object {
+                                "alignCenter": "MuiTypography-alignCenter",
+                                "alignJustify": "MuiTypography-alignJustify",
+                                "alignLeft": "MuiTypography-alignLeft",
+                                "alignRight": "MuiTypography-alignRight",
+                                "body1": "MuiTypography-body1",
+                                "body2": "MuiTypography-body2",
+                                "button": "MuiTypography-button",
+                                "caption": "MuiTypography-caption",
+                                "colorError": "MuiTypography-colorError",
+                                "colorInherit": "MuiTypography-colorInherit",
+                                "colorPrimary": "MuiTypography-colorPrimary",
+                                "colorSecondary": "MuiTypography-colorSecondary",
+                                "colorTextPrimary": "MuiTypography-colorTextPrimary",
+                                "colorTextSecondary": "MuiTypography-colorTextSecondary",
+                                "displayBlock": "MuiTypography-displayBlock",
+                                "displayInline": "MuiTypography-displayInline",
+                                "gutterBottom": "MuiTypography-gutterBottom",
+                                "h1": "MuiTypography-h1",
+                                "h2": "MuiTypography-h2",
+                                "h3": "MuiTypography-h3",
+                                "h4": "MuiTypography-h4",
+                                "h5": "MuiTypography-h5",
+                                "h6": "MuiTypography-h6",
+                                "noWrap": "MuiTypography-noWrap",
+                                "overline": "MuiTypography-overline",
+                                "paragraph": "MuiTypography-paragraph",
+                                "root": "MuiTypography-root",
+                                "srOnly": "MuiTypography-srOnly",
+                                "subtitle1": "MuiTypography-subtitle1",
+                                "subtitle2": "MuiTypography-subtitle2",
+                              }
+                            }
+                            color="inherit"
+                            component="a"
+                            href="https://material-ui.com/"
+                            onBlur={[Function]}
+                            onFocus={[Function]}
+                            variant="inherit"
+                          >
+                            <a
+                              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit"
+                              href="https://material-ui.com/"
+                              onBlur={[Function]}
+                              onFocus={[Function]}
+                            >
+                              Link 3
+                            </a>
+                          </ForwardRef(Typography)>
+                        </WithStyles(ForwardRef(Typography))>
+                      </ForwardRef(Link)>
+                    </WithStyles(ForwardRef(Link))>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div>
+                common:footer.contacts
+              </div>
+              <div
+                className="footerIconText"
+              >
+                <ForwardRef(MailIcon)>
+                  <WithStyles(ForwardRef(SvgIcon))>
+                    <ForwardRef(SvgIcon)
+                      classes={
+                        Object {
+                          "colorAction": "MuiSvgIcon-colorAction",
+                          "colorDisabled": "MuiSvgIcon-colorDisabled",
+                          "colorError": "MuiSvgIcon-colorError",
+                          "colorPrimary": "MuiSvgIcon-colorPrimary",
+                          "colorSecondary": "MuiSvgIcon-colorSecondary",
+                          "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
+                          "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
+                          "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
+                          "root": "MuiSvgIcon-root",
+                        }
+                      }
+                    >
+                      <svg
+                        aria-hidden={true}
+                        className="MuiSvgIcon-root"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                        />
+                      </svg>
+                    </ForwardRef(SvgIcon)>
+                  </WithStyles(ForwardRef(SvgIcon))>
+                </ForwardRef(MailIcon)>
+                 
+                <span>
+                  support@site.com
+                </span>
+              </div>
+              <div
+                className="footerIconText"
+              >
+                <ForwardRef(HomeIcon)>
+                  <WithStyles(ForwardRef(SvgIcon))>
+                    <ForwardRef(SvgIcon)
+                      classes={
+                        Object {
+                          "colorAction": "MuiSvgIcon-colorAction",
+                          "colorDisabled": "MuiSvgIcon-colorDisabled",
+                          "colorError": "MuiSvgIcon-colorError",
+                          "colorPrimary": "MuiSvgIcon-colorPrimary",
+                          "colorSecondary": "MuiSvgIcon-colorSecondary",
+                          "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
+                          "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
+                          "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
+                          "root": "MuiSvgIcon-root",
+                        }
+                      }
+                    >
+                      <svg
+                        aria-hidden={true}
+                        className="MuiSvgIcon-root"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+                        />
+                      </svg>
+                    </ForwardRef(SvgIcon)>
+                  </WithStyles(ForwardRef(SvgIcon))>
+                </ForwardRef(HomeIcon)>
+                 
+                <span>
+                  Chisinau, str.Cilene Bune 69
+                </span>
+              </div>
+            </div>
+            <div
+              className="footerCopyright"
+            >
+              <Copyright
+                siteName="common:siteName"
               >
                 <WithStyles(ForwardRef(Typography))
-                  variant="body1"
+                  variant="body2"
                 >
                   <ForwardRef(Typography)
                     classes={
@@ -5978,80 +6420,75 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                         "subtitle2": "MuiTypography-subtitle2",
                       }
                     }
-                    variant="body1"
-                  >
-                    <p
-                      className="MuiTypography-root MuiTypography-body1"
-                    >
-                      My sticky footer can be found here.
-                    </p>
-                  </ForwardRef(Typography)>
-                </WithStyles(ForwardRef(Typography))>
-                <Copyright>
-                  <WithStyles(ForwardRef(Typography))
                     variant="body2"
                   >
-                    <ForwardRef(Typography)
-                      classes={
-                        Object {
-                          "alignCenter": "MuiTypography-alignCenter",
-                          "alignJustify": "MuiTypography-alignJustify",
-                          "alignLeft": "MuiTypography-alignLeft",
-                          "alignRight": "MuiTypography-alignRight",
-                          "body1": "MuiTypography-body1",
-                          "body2": "MuiTypography-body2",
-                          "button": "MuiTypography-button",
-                          "caption": "MuiTypography-caption",
-                          "colorError": "MuiTypography-colorError",
-                          "colorInherit": "MuiTypography-colorInherit",
-                          "colorPrimary": "MuiTypography-colorPrimary",
-                          "colorSecondary": "MuiTypography-colorSecondary",
-                          "colorTextPrimary": "MuiTypography-colorTextPrimary",
-                          "colorTextSecondary": "MuiTypography-colorTextSecondary",
-                          "displayBlock": "MuiTypography-displayBlock",
-                          "displayInline": "MuiTypography-displayInline",
-                          "gutterBottom": "MuiTypography-gutterBottom",
-                          "h1": "MuiTypography-h1",
-                          "h2": "MuiTypography-h2",
-                          "h3": "MuiTypography-h3",
-                          "h4": "MuiTypography-h4",
-                          "h5": "MuiTypography-h5",
-                          "h6": "MuiTypography-h6",
-                          "noWrap": "MuiTypography-noWrap",
-                          "overline": "MuiTypography-overline",
-                          "paragraph": "MuiTypography-paragraph",
-                          "root": "MuiTypography-root",
-                          "srOnly": "MuiTypography-srOnly",
-                          "subtitle1": "MuiTypography-subtitle1",
-                          "subtitle2": "MuiTypography-subtitle2",
-                        }
-                      }
-                      variant="body2"
+                    <p
+                      className="MuiTypography-root MuiTypography-body2"
                     >
-                      <p
-                        className="MuiTypography-root MuiTypography-body2"
+                      Copyright © 
+                      <WithStyles(ForwardRef(Link))
+                        color="inherit"
+                        href="https://material-ui.com/"
                       >
-                        Copyright © 
-                        <WithStyles(ForwardRef(Link))
+                        <ForwardRef(Link)
+                          classes={
+                            Object {
+                              "button": "MuiLink-button",
+                              "focusVisible": "Mui-focusVisible",
+                              "root": "MuiLink-root",
+                              "underlineAlways": "MuiLink-underlineAlways",
+                              "underlineHover": "MuiLink-underlineHover",
+                              "underlineNone": "MuiLink-underlineNone",
+                            }
+                          }
                           color="inherit"
                           href="https://material-ui.com/"
                         >
-                          <ForwardRef(Link)
-                            classes={
-                              Object {
-                                "button": "MuiLink-button",
-                                "focusVisible": "Mui-focusVisible",
-                                "root": "MuiLink-root",
-                                "underlineAlways": "MuiLink-underlineAlways",
-                                "underlineHover": "MuiLink-underlineHover",
-                                "underlineNone": "MuiLink-underlineNone",
-                              }
-                            }
+                          <WithStyles(ForwardRef(Typography))
+                            className="MuiLink-root MuiLink-underlineHover"
                             color="inherit"
+                            component="a"
                             href="https://material-ui.com/"
+                            onBlur={[Function]}
+                            onFocus={[Function]}
+                            variant="inherit"
                           >
-                            <WithStyles(ForwardRef(Typography))
+                            <ForwardRef(Typography)
                               className="MuiLink-root MuiLink-underlineHover"
+                              classes={
+                                Object {
+                                  "alignCenter": "MuiTypography-alignCenter",
+                                  "alignJustify": "MuiTypography-alignJustify",
+                                  "alignLeft": "MuiTypography-alignLeft",
+                                  "alignRight": "MuiTypography-alignRight",
+                                  "body1": "MuiTypography-body1",
+                                  "body2": "MuiTypography-body2",
+                                  "button": "MuiTypography-button",
+                                  "caption": "MuiTypography-caption",
+                                  "colorError": "MuiTypography-colorError",
+                                  "colorInherit": "MuiTypography-colorInherit",
+                                  "colorPrimary": "MuiTypography-colorPrimary",
+                                  "colorSecondary": "MuiTypography-colorSecondary",
+                                  "colorTextPrimary": "MuiTypography-colorTextPrimary",
+                                  "colorTextSecondary": "MuiTypography-colorTextSecondary",
+                                  "displayBlock": "MuiTypography-displayBlock",
+                                  "displayInline": "MuiTypography-displayInline",
+                                  "gutterBottom": "MuiTypography-gutterBottom",
+                                  "h1": "MuiTypography-h1",
+                                  "h2": "MuiTypography-h2",
+                                  "h3": "MuiTypography-h3",
+                                  "h4": "MuiTypography-h4",
+                                  "h5": "MuiTypography-h5",
+                                  "h6": "MuiTypography-h6",
+                                  "noWrap": "MuiTypography-noWrap",
+                                  "overline": "MuiTypography-overline",
+                                  "paragraph": "MuiTypography-paragraph",
+                                  "root": "MuiTypography-root",
+                                  "srOnly": "MuiTypography-srOnly",
+                                  "subtitle1": "MuiTypography-subtitle1",
+                                  "subtitle2": "MuiTypography-subtitle2",
+                                }
+                              }
                               color="inherit"
                               component="a"
                               href="https://material-ui.com/"
@@ -6059,71 +6496,27 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                               onFocus={[Function]}
                               variant="inherit"
                             >
-                              <ForwardRef(Typography)
-                                className="MuiLink-root MuiLink-underlineHover"
-                                classes={
-                                  Object {
-                                    "alignCenter": "MuiTypography-alignCenter",
-                                    "alignJustify": "MuiTypography-alignJustify",
-                                    "alignLeft": "MuiTypography-alignLeft",
-                                    "alignRight": "MuiTypography-alignRight",
-                                    "body1": "MuiTypography-body1",
-                                    "body2": "MuiTypography-body2",
-                                    "button": "MuiTypography-button",
-                                    "caption": "MuiTypography-caption",
-                                    "colorError": "MuiTypography-colorError",
-                                    "colorInherit": "MuiTypography-colorInherit",
-                                    "colorPrimary": "MuiTypography-colorPrimary",
-                                    "colorSecondary": "MuiTypography-colorSecondary",
-                                    "colorTextPrimary": "MuiTypography-colorTextPrimary",
-                                    "colorTextSecondary": "MuiTypography-colorTextSecondary",
-                                    "displayBlock": "MuiTypography-displayBlock",
-                                    "displayInline": "MuiTypography-displayInline",
-                                    "gutterBottom": "MuiTypography-gutterBottom",
-                                    "h1": "MuiTypography-h1",
-                                    "h2": "MuiTypography-h2",
-                                    "h3": "MuiTypography-h3",
-                                    "h4": "MuiTypography-h4",
-                                    "h5": "MuiTypography-h5",
-                                    "h6": "MuiTypography-h6",
-                                    "noWrap": "MuiTypography-noWrap",
-                                    "overline": "MuiTypography-overline",
-                                    "paragraph": "MuiTypography-paragraph",
-                                    "root": "MuiTypography-root",
-                                    "srOnly": "MuiTypography-srOnly",
-                                    "subtitle1": "MuiTypography-subtitle1",
-                                    "subtitle2": "MuiTypography-subtitle2",
-                                  }
-                                }
-                                color="inherit"
-                                component="a"
+                              <a
+                                className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit"
                                 href="https://material-ui.com/"
                                 onBlur={[Function]}
                                 onFocus={[Function]}
-                                variant="inherit"
                               >
-                                <a
-                                  className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit"
-                                  href="https://material-ui.com/"
-                                  onBlur={[Function]}
-                                  onFocus={[Function]}
-                                >
-                                  Your Website
-                                </a>
-                              </ForwardRef(Typography)>
-                            </WithStyles(ForwardRef(Typography))>
-                          </ForwardRef(Link)>
-                        </WithStyles(ForwardRef(Link))>
-                         
-                        2000
-                        .
-                      </p>
-                    </ForwardRef(Typography)>
-                  </WithStyles(ForwardRef(Typography))>
-                </Copyright>
-              </div>
-            </ForwardRef(Container)>
-          </WithStyles(ForwardRef(Container))>
+                                common:siteName
+                              </a>
+                            </ForwardRef(Typography)>
+                          </WithStyles(ForwardRef(Typography))>
+                        </ForwardRef(Link)>
+                      </WithStyles(ForwardRef(Link))>
+                       
+                      2000
+                      .
+                    </p>
+                  </ForwardRef(Typography)>
+                </WithStyles(ForwardRef(Typography))>
+              </Copyright>
+            </div>
+          </div>
         </footer>
       </SiteFooter>
     </div>

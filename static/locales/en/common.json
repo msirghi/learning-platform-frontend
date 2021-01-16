@@ -1,5 +1,11 @@
 {
+  "siteName": "Learning Platform",
   "headerTabs": {
     "home": "Home"
+  },
+  "footer": {
+    "usefulLinks": "Userful Links",
+    "contacts": "Contacts",
+    "aboutUs": "About Us"
   }
 }

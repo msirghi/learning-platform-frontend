@@ -3283,6 +3283,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
               }
             }
             onClose={[MockFunction]}
+            onMouseLeave={[MockFunction]}
             open={false}
             variant="permanent"
           >
@@ -3567,6 +3568,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                 }
               }
               onClose={[MockFunction]}
+              onMouseLeave={[MockFunction]}
               open={false}
               transitionDuration={
                 Object {
@@ -3867,6 +3869,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                   }
                 }
                 onClose={[MockFunction]}
+                onMouseLeave={[MockFunction]}
                 open={false}
                 transitionDuration={
                   Object {
@@ -3878,6 +3881,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
               >
                 <div
                   className="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-1 makeStyles-drawerClose-3"
+                  onMouseLeave={[MockFunction]}
                 >
                   <WithStyles(ForwardRef(Paper))
                     className="MuiDrawer-paper makeStyles-drawerClose-3 MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft makeStyles-paperAnchorDockedLeft-6"

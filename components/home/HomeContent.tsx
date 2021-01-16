@@ -27,11 +27,11 @@ export const HomeContent: React.FC = () => {
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={width < 768 ? 5 : 10} className={classes.grid}>
-        <Grid item xs={12} sm={12} md={6}>
+      <Grid container spacing={width < 900 ? 5 : 10} className={classes.grid}>
+        <Grid item xs={12} sm={12} md={12} lg={6}>
           <ScheduleCard />
         </Grid>
-        <Grid item xs={12} sm={12} md={6}>
+        <Grid item xs={12} sm={12} md={12} lg={6}>
           <NewsCard title={t('home:groupNewsTitle')} news={newsMock} />
           <div className={styles.cardNewsMargin}>
             <NewsCard title={t('home:unversityNewsTitle')} news={newsMock} />

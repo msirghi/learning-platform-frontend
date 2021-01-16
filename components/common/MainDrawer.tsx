@@ -140,6 +140,8 @@ export const MainDrawer: React.FC<Props> = ({
       </SwipeableDrawer>
       <Hidden xsDown implementation='css'>
         <SwipeableDrawer
+          onMouseLeave={handleDrawerClose}
+          onMouseEnter={handleDrawerOpen}
           onClose={handleDrawerClose}
           onOpen={handleDrawerOpen}
           classes={{

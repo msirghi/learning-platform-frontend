@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CourseCard component should match the snapshot 1`] = `
+<div
+  className="cardWrapper"
+>
+  <div
+    className="cardImage"
+  >
+    <img
+      alt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero non illum est fuga beatae ab, assumenda reiciendis nesciunt numquam similique!"
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png"
+    />
+  </div>
+  <div
+    className="cardTeacherPhoto"
+  >
+    <img
+      alt="Course 1"
+      src="https://dyl80ryjxr1ke.cloudfront.net/external_assets/hero_examples/hair_beach_v1785392215/original.jpeg"
+    />
+  </div>
+  <div
+    className="cardContent"
+  >
+    <div
+      className="cardContentTitle"
+    >
+      Course 1
+    </div>
+    <div
+      className="cardContentDescription"
+    >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero non illum est fuga beatae ab, assumenda reiciendis nesciunt numquam similique!
+    </div>
+  </div>
+  <div
+    className="cardButtonContainer"
+  >
+    <WithStyles(ForwardRef(Button))
+      color="primary"
+      variant="outlined"
+    >
+      Enter
+    </WithStyles(ForwardRef(Button))>
+  </div>
+</div>
+`;

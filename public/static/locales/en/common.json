@@ -1,7 +1,8 @@
 {
   "siteName": "Learning Platform",
   "headerTabs": {
-    "home": "Home"
+    "home": "Home",
+    "my-courses": "My courses"
   },
   "footer": {
     "usefulLinks": "Userful Links",

@@ -16,8 +16,8 @@ export const menuItems: MenuItem[] = [
   },
   {
     icon: MenuBookIcon,
-    link: "/book",
-    label: "Book",
+    link: "/my-courses",
+    label: "My Courses",
   },
   {
     icon: GroupIcon,

@@ -21,3 +21,11 @@ export interface Lesson {
   time: string;
   status: LessonStatus;
 }
+
+export interface Course {
+  id: string;
+  name: string;
+  description: string;
+  coverImg?: string;
+  teacherImg?: string;
+}

@@ -10,7 +10,10 @@ import configureStore from 'redux-mock-store';
 describe('SiteWrapper component', () => {
   const initWidth = global.innerWidth;
   const mockStore = configureStore();
-  const store = mockStore({ preference: { locale: 'en' } });
+  const store = mockStore({
+    preference: { locale: 'en' },
+    interface: { desktopLeftDrawerOpen: false }
+  });
 
   beforeAll(() => {
     String.prototype.replaceAll = jest.fn();

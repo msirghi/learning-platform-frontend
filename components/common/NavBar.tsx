@@ -35,7 +35,9 @@ export const NavBar: React.FC<Props> = ({ classes, handleDrawerOpen, open, handl
 
   useEffect(() => {
     document.addEventListener('scroll', onPageScroll);
-
+    const href = global.window.location.pathname.replaceAll('/', '');
+    setActiveTab(t(`common:headerTabs.${href}`));
+    
     return () => {
       document.removeEventListener('scroll', onPageScroll);
     };

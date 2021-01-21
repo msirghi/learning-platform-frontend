@@ -57,4 +57,16 @@ describe('NavBar component', () => {
     icon.simulate('click');
     expect(props.handleDrawerClose).toHaveBeenCalled();
   });
+
+  it('should have boxShadow on page scroll', () => {
+    const wrapper = mount(
+      <Provider store={store}>
+        <NavBar {...props} />
+      </Provider>
+    );
+    const container = wrapper.find(NavBar);
+    const icon = container.find(IconButton).at(1);
+    icon.simulate('click');
+    expect(props.handleDrawerClose).toHaveBeenCalled();
+  });
 });

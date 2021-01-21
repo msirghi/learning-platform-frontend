@@ -10,6 +10,7 @@ import clsx from 'clsx';
 import { menuItems } from './utils/menuItems';
 import styles from '../../styles/modules/Shared.module.scss';
 import { Hidden } from '@material-ui/core';
+import Link from 'next/link';
 
 const drawerWidth = 240;
 
@@ -100,19 +101,23 @@ export const MainDrawer: React.FC<Props> = ({
                 }`}
                 key={item.label}
               >
-                <ListItem button>
-                  <ListItemIcon className={styles.mainMenuIconContainer}>
-                    <item.icon
-                      className={`${isActiveTab ? styles.mainMenuActiveIcon : styles.mainMenuIcon}`}
-                    />
-                  </ListItemIcon>
-                  {(open || mobileOpen) && (
-                    <ListItemText
-                      className={isActiveTab ? styles.mainMenuActiveText : ''}
-                      primary={item.label}
-                    />
-                  )}
-                </ListItem>
+                <Link href={item.link}>
+                  <ListItem button>
+                    <ListItemIcon className={styles.mainMenuIconContainer}>
+                      <item.icon
+                        className={`${
+                          isActiveTab ? styles.mainMenuActiveIcon : styles.mainMenuIcon
+                        }`}
+                      />
+                    </ListItemIcon>
+                    {(open || mobileOpen) && (
+                      <ListItemText
+                        className={isActiveTab ? styles.mainMenuActiveText : ''}
+                        primary={item.label}
+                      />
+                    )}
+                  </ListItem>
+                </Link>
               </div>
             );
           })}
@@ -140,8 +145,8 @@ export const MainDrawer: React.FC<Props> = ({
       </SwipeableDrawer>
       <Hidden xsDown implementation='css'>
         <SwipeableDrawer
-          onMouseLeave={handleDrawerClose}
-          onMouseEnter={handleDrawerOpen}
+          // onMouseLeave={handleDrawerClose}
+          // onMouseEnter={handleDrawerOpen}
           onClose={handleDrawerClose}
           onOpen={handleDrawerOpen}
           classes={{

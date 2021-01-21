@@ -5,6 +5,9 @@ import { NavBar } from './NavBar';
 import { MainDrawer } from './MainDrawer';
 import { SiteFooter } from './Footer';
 import { useWindowSize } from './hooks/useWindowResize';
+import { useSelector, useDispatch } from 'react-redux';
+import { RootState } from '../../redux/reducers';
+import { setDesktopDrawerStatus } from '../../redux/actions/interface/interfaceAction';
 
 const drawerWidth = 240;
 
@@ -57,12 +60,18 @@ const useStyles = makeStyles((theme) => ({
 
 export const SiteWrapper: React.FC = ({ children }) => {
   const classes = useStyles();
-  const [desktopOpen, setDesktopOpen] = useState(false);
+  const desktopDrawerStatus = useSelector(
+    (state: RootState) => state.interface.desktopLeftDrawerOpen
+  );
+  const dispatch = useDispatch();
+
+  const setDesktopOpen = (value: boolean) => dispatch(setDesktopDrawerStatus(value));
+
   const [mobileOpen, setMobileOpen] = useState(false);
   const [width] = useWindowSize();
 
   useEffect(() => {
-    if (width < 768 && desktopOpen) {
+    if (width < 768 && desktopDrawerStatus) {
       setDesktopOpen(false);
       return;
     }
@@ -96,20 +105,20 @@ export const SiteWrapper: React.FC = ({ children }) => {
           classes={classes}
           handleDrawerClose={handleDrawerClose}
           handleDrawerOpen={handleDrawerOpen}
-          open={desktopOpen}
+          open={desktopDrawerStatus}
         />
         <MainDrawer
           handleDrawerOpen={handleDrawerOpen}
           mobileOpen={mobileOpen}
           handleDrawerClose={handleDrawerClose}
-          open={desktopOpen}
+          open={desktopDrawerStatus}
         />
         <main className={classes.content}>
           <div className={classes.toolbar} />
           {children}
         </main>
       </div>
-      <SiteFooter drawerOpened={desktopOpen} />
+      <SiteFooter drawerOpened={desktopDrawerStatus} />
     </div>
   );
 };

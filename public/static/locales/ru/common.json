@@ -1,11 +1,12 @@
 {
   "siteName": "Learning Platform",
   "headerTabs": {
-    "home": "Главная"
+    "home": "Home",
+    "my-courses": "Мои курсы"
   },
   "footer": {
-    "usefulLinks": "Полезные ссылки",
-    "contacts": "Контакты",
-    "aboutUs": "О нас"
+    "usefulLinks": "Userful Links",
+    "contacts": "Contacts",
+    "aboutUs": "About Us"
   }
 }

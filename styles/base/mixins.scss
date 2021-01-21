@@ -5,10 +5,20 @@
   justify-content: center;
 }
 
+@mixin flex-horizontal-center {
+  display: flex;
+  justify-content: center;
+}
+
 @mixin flex-column-center {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+@mixin flex-vert-align {
+  display: flex;
+  align-items: center;
 }
 
 @mixin text-wrap-dots {

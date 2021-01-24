@@ -21,3 +21,8 @@ export enum LessonStatus {
   ONGOING = 'ongoing',
   NOT_STARTED = 'notStarted'
 }
+
+export enum InterfaceMode {
+  DARK = 'dark',
+  LIGHT = 'light'
+}

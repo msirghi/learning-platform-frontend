@@ -17,4 +17,20 @@ describe('Interface Actions', () => {
     };
     expect(actions.getDesktopDrawerStatus()).toEqual(expectedAction);
   });
+
+  it('should return action for getting the interface mode', () => {
+    const expectedAction = {
+      type: types.GET_INTERFACE_MODE
+    };
+    expect(actions.getInterfaceMode()).toEqual(expectedAction);
+  });
+
+  it('should return action for setting interface mode', () => {
+    const payload = 'light';
+    const expectedAction = {
+      type: types.SET_INTERFACE_MODE,
+      payload
+    };
+    expect(actions.setInterfaceMode(payload)).toEqual(expectedAction);
+  });
 });

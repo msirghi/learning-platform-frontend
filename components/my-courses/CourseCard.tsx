@@ -8,7 +8,7 @@ type Props = {
   course: Course;
 };
 
-export const CourseCard: React.FC<Props> = ({
+const CourseCard: React.FC<Props> = ({
   course: { id, teacherImg, coverImg, name, description }
 }) => {
   return (
@@ -31,3 +31,5 @@ export const CourseCard: React.FC<Props> = ({
     </div>
   );
 };
+
+export default CourseCard;

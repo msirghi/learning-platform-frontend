@@ -1,7 +1,8 @@
 import * as types from '../../types';
 
 const initialState = {
-  desktopLeftDrawerOpen: false
+  desktopLeftDrawerOpen: false,
+  interfaceMode: 'light'
 };
 
 export const interfaceReducer = (state = initialState, action: types.InterfaceActionTypes) => {
@@ -10,6 +11,11 @@ export const interfaceReducer = (state = initialState, action: types.InterfaceAc
       return {
         ...state,
         desktopLeftDrawerOpen: action.payload
+      };
+    case types.SET_INTERFACE_MODE:
+      return {
+        ...state,
+        interfaceMode: action.payload
       };
     default:
       return state;

@@ -1,6 +1,6 @@
 import { shallow } from 'enzyme';
 import React from 'react';
-import { CourseCard } from '../CourseCard';
+import CourseCard from '../CourseCard';
 import { coursesMock } from '../../../mocks/coursesMock';
 import toJson from 'enzyme-to-json';
 import { COURSE_DEFAULT_COVER_IMAGE } from '../../../common/constants/common.constants';

@@ -152,6 +152,59 @@
   }
 }
 
+.noContent {
+  &Container {
+    text-align: center;
+    > img {
+      width: 720px;
+      height: 409px;
+    }
+  }
+
+  &Title {
+    font-size: 34px;
+  }
+
+  &Subtitle {
+    font-size: 16px;
+  }
+
+  &ButtonContainer {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    padding-bottom: 4rem;
+  }
+
+  &InterButtonText {
+    padding: 0 2rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .noContent {
+    &Container {
+      > img {
+        width: 360px;
+        height: 204px;
+      }
+    }
+
+    &ButtonContainer {
+      width: 100%;
+      margin: 0 auto;
+      display: block;
+      margin-top: 3rem;
+    }
+
+    &InterButtonText {
+      padding: 0.5rem 2rem;
+    }
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   .scheduleHeaderText {
     margin-left: 30%;
@@ -194,6 +247,19 @@
   .lessonRow {
     &Topic {
       width: 150px;
+    }
+  }
+
+  .noContent {
+    &Container {
+      > img {
+        width: 250px;
+        height: 154px;
+      }
+    }
+
+    &Title {
+      font-size: 28px;
     }
   }
 }

@@ -7,6 +7,7 @@ import { ScheduleCard } from './ScheduleCard';
 import { useWindowSize } from '../common/hooks/useWindowResize';
 import styles from '../../styles/modules/Home.module.scss';
 import { useTranslation } from '../../i18n';
+import { NoContent } from './NoContent';
 
 const useStyles = makeStyles(() =>
   createStyles({

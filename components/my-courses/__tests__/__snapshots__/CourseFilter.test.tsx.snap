@@ -5,7 +5,7 @@ exports[`CourseFilter component should match the snapshot 1`] = `
   className="myCoursesHeaderRightWrapper"
 >
   <WithStyles(ForwardRef(TextField))
-    label="Search"
+    label="courses:searchCourse"
     onChange={[Function]}
     size="small"
     value="val"

@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, Suspense } from 'react';
 import { coursesMock } from '../../mocks/coursesMock';
-import { CourseCard } from './CourseCard';
 import styles from '../../styles/modules/MyCourses.module.scss';
 import { MyCoursesHeader } from './MyCoursesHeader';
 import { Course } from '../../common/types';
@@ -9,8 +8,11 @@ import { CourseNotFound } from './CourseNotFound';
 import { PageDots } from './PageDots';
 import { MAX_COURSE_CARDS_PER_PAGE } from '../../common/constants/common.constants';
 import { useWindowSize } from '../common/hooks/useWindowResize';
+import { CardSkeleton } from './CardSkeleton';
 
 let initCourses: Course[] = [];
+
+const LazyCourseCard = React.lazy(() => import('./CourseCard'));
 
 export const MyCoursesContent = () => {
   const [filteredCourses, setFilteredCourses] = useState<Course[]>(null);
@@ -61,7 +63,9 @@ export const MyCoursesContent = () => {
         {filteredCourses.map((course) => {
           return (
             <div key={course.id} className={styles.contentCard}>
-              <CourseCard course={course} />
+              <Suspense fallback={<CardSkeleton />}>
+                <LazyCourseCard course={course} />
+              </Suspense>
             </div>
           );
         })}

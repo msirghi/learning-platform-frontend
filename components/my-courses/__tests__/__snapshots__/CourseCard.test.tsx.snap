@@ -39,9 +39,10 @@ exports[`CourseCard component should match the snapshot 1`] = `
   >
     <WithStyles(ForwardRef(Button))
       color="primary"
+      onClick={[Function]}
       variant="outlined"
     >
-      Enter
+      courses:enterButtonLabel
     </WithStyles(ForwardRef(Button))>
   </div>
 </div>

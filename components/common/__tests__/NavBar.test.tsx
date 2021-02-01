@@ -5,6 +5,7 @@ import { NavBar } from '../NavBar';
 import IconButton from '@material-ui/core/IconButton';
 import { Provider } from 'react-redux';
 import configureStore from 'redux-mock-store';
+import { Typography } from '@material-ui/core';
 
 describe('NavBar component', () => {
   const props = {
@@ -18,7 +19,7 @@ describe('NavBar component', () => {
   const store = mockStore({ preference: { locale: 'en' } });
 
   beforeAll(() => {
-    String.prototype.replaceAll = jest.fn();
+    String.prototype.replaceAll = jest.fn(() => 'localhost:3000');
   });
 
   afterAll(() => {
@@ -68,5 +69,20 @@ describe('NavBar component', () => {
     const icon = container.find(IconButton).at(1);
     icon.simulate('click');
     expect(props.handleDrawerClose).toHaveBeenCalled();
+  });
+
+  it('should set active tab if it includes my courses in it', () => {
+    String.prototype.includes = jest.fn(() => true);
+    const wrapper = mount(
+      <Provider store={store}>
+        <NavBar {...props} />
+      </Provider>
+    );
+    const container = wrapper.find(NavBar);
+    const icon = container.find(IconButton).at(1);
+    icon.simulate('click');
+
+    const title = wrapper.find(Typography);
+    expect(title.props().children).toEqual('common:headerTabs.myCourses');
   });
 });

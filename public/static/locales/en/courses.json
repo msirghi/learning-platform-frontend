@@ -1,3 +1,7 @@
 {
-  "searchCourse": "Search"
+  "searchCourse": "Search",
+  "seeMyGrades": "See my grades",
+  "quitCourse": "Quit course",
+  "enterButtonLabel": "Enter",
+  "findTopic": "Find topic"
 }

@@ -2,7 +2,7 @@
   "siteName": "Learning Platform",
   "headerTabs": {
     "home": "Главная",
-    "my-courses": "Мои курсы"
+    "myCourses": "Мои курсы"
   },
   "footer": {
     "usefulLinks": "Полезные ссылки",

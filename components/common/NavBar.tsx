@@ -36,8 +36,12 @@ export const NavBar: React.FC<Props> = ({ classes, handleDrawerOpen, open, handl
   useEffect(() => {
     document.addEventListener('scroll', onPageScroll);
     const href = global.window.location.pathname.replaceAll('/', '');
+    if (href.includes('myCourses')) {
+      setActiveTab(t(`common:headerTabs.myCourses`));
+      return;
+    }
     setActiveTab(t(`common:headerTabs.${href}`));
-    
+
     return () => {
       document.removeEventListener('scroll', onPageScroll);
     };
@@ -47,6 +51,10 @@ export const NavBar: React.FC<Props> = ({ classes, handleDrawerOpen, open, handl
     /* istanbul ignore next */
     if (global.window) {
       const href = global.window.location.pathname.replaceAll('/', '');
+      if (href.includes('myCourses')) {
+        setActiveTab(t(`common:headerTabs.myCourses`));
+        return;
+      }
       setTimeout(() => setActiveTab(t(`common:headerTabs.${href}`)), 100);
     }
   }, [locale]);

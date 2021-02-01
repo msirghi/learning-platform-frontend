@@ -1,10 +1,11 @@
 import React from 'react';
 import Head from 'next/head';
-import { withTranslation } from '../i18n';
+import { useTranslation } from '../i18n';
 import { SiteWrapper } from '../components/common/SiteWrapper';
 import { HomeContent } from '../components/home/HomeContent';
 
-function Home({ t }) {
+function Home() {
+  const { t } = useTranslation();
   return (
     <div>
       <Head>
@@ -22,4 +23,4 @@ Home.getInitialProps = async () => ({
   namespacesRequired: ['home', 'common']
 });
 
-export default withTranslation()(Home);
+export default Home;

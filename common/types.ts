@@ -28,4 +28,5 @@ export interface Course {
   description: string;
   coverImg?: string;
   teacherImg?: string;
+  teacherName?: string;
 }

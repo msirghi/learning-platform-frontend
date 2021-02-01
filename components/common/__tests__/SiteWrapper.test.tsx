@@ -16,7 +16,7 @@ describe('SiteWrapper component', () => {
   });
 
   beforeAll(() => {
-    String.prototype.replaceAll = jest.fn();
+    String.prototype.replaceAll = jest.fn(() => 'localhost:3000');
   });
 
   afterAll(() => {

@@ -10,7 +10,7 @@ const MyCourses = () => {
   return (
     <div>
       <Head>
-        <title>{t('common:headerTabs.my-courses')}</title>
+        <title>{t('common:headerTabs.myCourses')}</title>
         <link rel='icon' href='favicon.ico' />
       </Head>
       <SiteWrapper>

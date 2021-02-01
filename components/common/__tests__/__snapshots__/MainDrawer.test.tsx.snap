@@ -2056,7 +2056,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                     key="My Courses"
                                   >
                                     <Link
-                                      href="/my-courses"
+                                      href="/myCourses"
                                     >
                                       <WithStyles(ForwardRef(ListItem))
                                         button={true}
@@ -4390,7 +4390,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                 key="My Courses"
                               >
                                 <Link
-                                  href="/my-courses"
+                                  href="/myCourses"
                                 >
                                   <WithStyles(ForwardRef(ListItem))
                                     button={true}

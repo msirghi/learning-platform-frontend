@@ -1,3 +1,7 @@
 {
-  "searchCourse": "Найти"
+  "searchCourse": "Найти",
+  "seeMyGrades": "Посмотреть мои оценки",
+  "quitCourse": "Покинуть курс",
+  "findTopic": "Найти тему",
+  "enterButtonLabel": "Зайти"
 }

@@ -3568,6 +3568,7 @@ exports[`MyCoursesContent component should match the snapshot on mobile screen w
                 "id": "1",
                 "name": "Course 1",
                 "teacherImg": "https://dyl80ryjxr1ke.cloudfront.net/external_assets/hero_examples/hair_beach_v1785392215/original.jpeg",
+                "teacherName": "Teacher 1",
               }
             }
           >
@@ -3609,6 +3610,7 @@ exports[`MyCoursesContent component should match the snapshot on mobile screen w
               >
                 <WithStyles(ForwardRef(Button))
                   color="primary"
+                  onClick={[Function]}
                   variant="outlined"
                 >
                   <ForwardRef(Button)
@@ -3646,6 +3648,7 @@ exports[`MyCoursesContent component should match the snapshot on mobile screen w
                       }
                     }
                     color="primary"
+                    onClick={[Function]}
                     variant="outlined"
                   >
                     <WithStyles(ForwardRef(ButtonBase))
@@ -3654,6 +3657,7 @@ exports[`MyCoursesContent component should match the snapshot on mobile screen w
                       disabled={false}
                       focusRipple={true}
                       focusVisibleClassName="Mui-focusVisible"
+                      onClick={[Function]}
                       type="button"
                     >
                       <ForwardRef(ButtonBase)
@@ -3669,12 +3673,14 @@ exports[`MyCoursesContent component should match the snapshot on mobile screen w
                         disabled={false}
                         focusRipple={true}
                         focusVisibleClassName="Mui-focusVisible"
+                        onClick={[Function]}
                         type="button"
                       >
                         <button
                           className="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary"
                           disabled={false}
                           onBlur={[Function]}
+                          onClick={[Function]}
                           onDragLeave={[Function]}
                           onFocus={[Function]}
                           onKeyDown={[Function]}
@@ -3691,7 +3697,7 @@ exports[`MyCoursesContent component should match the snapshot on mobile screen w
                           <span
                             className="MuiButton-label"
                           >
-                            Enter
+                            courses:enterButtonLabel
                           </span>
                           <WithStyles(memo)
                             center={false}
@@ -3746,6 +3752,7 @@ exports[`MyCoursesContent component should match the snapshot on mobile screen w
                 "id": "2",
                 "name": "Course 2",
                 "teacherImg": "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+                "teacherName": "Teacher 2",
               }
             }
           >
@@ -3787,6 +3794,7 @@ exports[`MyCoursesContent component should match the snapshot on mobile screen w
               >
                 <WithStyles(ForwardRef(Button))
                   color="primary"
+                  onClick={[Function]}
                   variant="outlined"
                 >
                   <ForwardRef(Button)
@@ -3824,6 +3832,7 @@ exports[`MyCoursesContent component should match the snapshot on mobile screen w
                       }
                     }
                     color="primary"
+                    onClick={[Function]}
                     variant="outlined"
                   >
                     <WithStyles(ForwardRef(ButtonBase))
@@ -3832,6 +3841,7 @@ exports[`MyCoursesContent component should match the snapshot on mobile screen w
                       disabled={false}
                       focusRipple={true}
                       focusVisibleClassName="Mui-focusVisible"
+                      onClick={[Function]}
                       type="button"
                     >
                       <ForwardRef(ButtonBase)
@@ -3847,12 +3857,14 @@ exports[`MyCoursesContent component should match the snapshot on mobile screen w
                         disabled={false}
                         focusRipple={true}
                         focusVisibleClassName="Mui-focusVisible"
+                        onClick={[Function]}
                         type="button"
                       >
                         <button
                           className="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary"
                           disabled={false}
                           onBlur={[Function]}
+                          onClick={[Function]}
                           onDragLeave={[Function]}
                           onFocus={[Function]}
                           onKeyDown={[Function]}
@@ -3869,7 +3881,7 @@ exports[`MyCoursesContent component should match the snapshot on mobile screen w
                           <span
                             className="MuiButton-label"
                           >
-                            Enter
+                            courses:enterButtonLabel
                           </span>
                           <WithStyles(memo)
                             center={false}
@@ -3924,6 +3936,7 @@ exports[`MyCoursesContent component should match the snapshot on mobile screen w
                 "id": "3",
                 "name": "Course 3",
                 "teacherImg": "https://i2-prod.mirror.co.uk/incoming/article14334083.ece/ALTERNATES/s1200c/3_Beautiful-girl-with-a-gentle-smile.jpg",
+                "teacherName": "Teacher 3",
               }
             }
           >
@@ -3965,6 +3978,7 @@ exports[`MyCoursesContent component should match the snapshot on mobile screen w
               >
                 <WithStyles(ForwardRef(Button))
                   color="primary"
+                  onClick={[Function]}
                   variant="outlined"
                 >
                   <ForwardRef(Button)
@@ -4002,6 +4016,7 @@ exports[`MyCoursesContent component should match the snapshot on mobile screen w
                       }
                     }
                     color="primary"
+                    onClick={[Function]}
                     variant="outlined"
                   >
                     <WithStyles(ForwardRef(ButtonBase))
@@ -4010,6 +4025,7 @@ exports[`MyCoursesContent component should match the snapshot on mobile screen w
                       disabled={false}
                       focusRipple={true}
                       focusVisibleClassName="Mui-focusVisible"
+                      onClick={[Function]}
                       type="button"
                     >
                       <ForwardRef(ButtonBase)
@@ -4025,12 +4041,14 @@ exports[`MyCoursesContent component should match the snapshot on mobile screen w
                         disabled={false}
                         focusRipple={true}
                         focusVisibleClassName="Mui-focusVisible"
+                        onClick={[Function]}
                         type="button"
                       >
                         <button
                           className="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary"
                           disabled={false}
                           onBlur={[Function]}
+                          onClick={[Function]}
                           onDragLeave={[Function]}
                           onFocus={[Function]}
                           onKeyDown={[Function]}
@@ -4047,7 +4065,7 @@ exports[`MyCoursesContent component should match the snapshot on mobile screen w
                           <span
                             className="MuiButton-label"
                           >
-                            Enter
+                            courses:enterButtonLabel
                           </span>
                           <WithStyles(memo)
                             center={false}
@@ -4102,6 +4120,7 @@ exports[`MyCoursesContent component should match the snapshot on mobile screen w
                 "id": "4",
                 "name": "Course 4",
                 "teacherImg": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Woman_7.jpg",
+                "teacherName": "Teacher 4",
               }
             }
           >
@@ -4143,6 +4162,7 @@ exports[`MyCoursesContent component should match the snapshot on mobile screen w
               >
                 <WithStyles(ForwardRef(Button))
                   color="primary"
+                  onClick={[Function]}
                   variant="outlined"
                 >
                   <ForwardRef(Button)
@@ -4180,6 +4200,7 @@ exports[`MyCoursesContent component should match the snapshot on mobile screen w
                       }
                     }
                     color="primary"
+                    onClick={[Function]}
                     variant="outlined"
                   >
                     <WithStyles(ForwardRef(ButtonBase))
@@ -4188,6 +4209,7 @@ exports[`MyCoursesContent component should match the snapshot on mobile screen w
                       disabled={false}
                       focusRipple={true}
                       focusVisibleClassName="Mui-focusVisible"
+                      onClick={[Function]}
                       type="button"
                     >
                       <ForwardRef(ButtonBase)
@@ -4203,12 +4225,14 @@ exports[`MyCoursesContent component should match the snapshot on mobile screen w
                         disabled={false}
                         focusRipple={true}
                         focusVisibleClassName="Mui-focusVisible"
+                        onClick={[Function]}
                         type="button"
                       >
                         <button
                           className="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary"
                           disabled={false}
                           onBlur={[Function]}
+                          onClick={[Function]}
                           onDragLeave={[Function]}
                           onFocus={[Function]}
                           onKeyDown={[Function]}
@@ -4225,7 +4249,7 @@ exports[`MyCoursesContent component should match the snapshot on mobile screen w
                           <span
                             className="MuiButton-label"
                           >
-                            Enter
+                            courses:enterButtonLabel
                           </span>
                           <WithStyles(memo)
                             center={false}
@@ -4279,6 +4303,7 @@ exports[`MyCoursesContent component should match the snapshot on mobile screen w
                 "id": "5",
                 "name": "Course 5",
                 "teacherImg": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Woman_7.jpg",
+                "teacherName": "Teacher 5",
               }
             }
           >
@@ -4320,6 +4345,7 @@ exports[`MyCoursesContent component should match the snapshot on mobile screen w
               >
                 <WithStyles(ForwardRef(Button))
                   color="primary"
+                  onClick={[Function]}
                   variant="outlined"
                 >
                   <ForwardRef(Button)
@@ -4357,6 +4383,7 @@ exports[`MyCoursesContent component should match the snapshot on mobile screen w
                       }
                     }
                     color="primary"
+                    onClick={[Function]}
                     variant="outlined"
                   >
                     <WithStyles(ForwardRef(ButtonBase))
@@ -4365,6 +4392,7 @@ exports[`MyCoursesContent component should match the snapshot on mobile screen w
                       disabled={false}
                       focusRipple={true}
                       focusVisibleClassName="Mui-focusVisible"
+                      onClick={[Function]}
                       type="button"
                     >
                       <ForwardRef(ButtonBase)
@@ -4380,12 +4408,14 @@ exports[`MyCoursesContent component should match the snapshot on mobile screen w
                         disabled={false}
                         focusRipple={true}
                         focusVisibleClassName="Mui-focusVisible"
+                        onClick={[Function]}
                         type="button"
                       >
                         <button
                           className="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary"
                           disabled={false}
                           onBlur={[Function]}
+                          onClick={[Function]}
                           onDragLeave={[Function]}
                           onFocus={[Function]}
                           onKeyDown={[Function]}
@@ -4402,7 +4432,7 @@ exports[`MyCoursesContent component should match the snapshot on mobile screen w
                           <span
                             className="MuiButton-label"
                           >
-                            Enter
+                            courses:enterButtonLabel
                           </span>
                           <WithStyles(memo)
                             center={false}

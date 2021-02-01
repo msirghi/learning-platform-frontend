@@ -16,7 +16,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     icon: MenuBookIcon,
-    link: "/my-courses",
+    link: "/myCourses",
     label: "My Courses",
   },
   {

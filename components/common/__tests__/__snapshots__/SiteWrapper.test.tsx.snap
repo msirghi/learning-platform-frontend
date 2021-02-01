@@ -469,7 +469,7 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                               <h6
                                 className="MuiTypography-root MuiTypography-h6 MuiTypography-noWrap"
                               >
-                                common:headerTabs.undefined
+                                common:headerTabs.localhost:3000
                               </h6>
                             </ForwardRef(Typography)>
                           </WithStyles(ForwardRef(Typography))>
@@ -3514,7 +3514,7 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                                             key="My Courses"
                                           >
                                             <Link
-                                              href="/my-courses"
+                                              href="/myCourses"
                                             >
                                               <WithStyles(ForwardRef(ListItem))
                                                 button={true}
@@ -5273,7 +5273,7 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                                         key="My Courses"
                                       >
                                         <Link
-                                          href="/my-courses"
+                                          href="/myCourses"
                                         >
                                           <WithStyles(ForwardRef(ListItem))
                                             button={true}

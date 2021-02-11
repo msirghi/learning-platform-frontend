@@ -6,7 +6,9 @@ exports[`MobileChatContainer component should match the snapshot on valid props 
 >
   <MobileChatHeader
     onBackClick={[MockFunction]}
+    online={8}
     toggleSettings={[Function]}
+    total={1}
   />
   <ForwardRef(Fade)
     in={false}

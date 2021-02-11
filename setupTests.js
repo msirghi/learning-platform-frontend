@@ -8,6 +8,7 @@ import { setConfig } from 'next/config';
 import { publicRuntimeConfig } from './next.config';
 import '@testing-library/jest-dom/extend-expect';
 import MockDate from 'mockdate';
+import '@testing-library/jest-dom';
 
 setConfig({ publicRuntimeConfig });
 
@@ -33,7 +34,7 @@ jest.mock('next-i18next', () => {
             t,
             i18n: {
               language: 'en',
-              changeLanguage: jest.fn().mockImplementation((lang) => console.log(lang))
+              changeLanguage: jest.fn().mockImplementation((lang) => {})
             }
           };
         },

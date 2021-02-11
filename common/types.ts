@@ -30,3 +30,20 @@ export interface Course {
   teacherImg?: string;
   teacherName?: string;
 }
+
+export interface ChatMessage {
+  id: string | number;
+  message: string;
+  author: string;
+  date: Date;
+}
+
+export interface Student {
+  id: string | number;
+  firstName: string;
+  lastName: string;
+}
+
+export interface ChatTheme {
+  color: string;
+}

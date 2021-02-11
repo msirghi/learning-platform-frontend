@@ -3680,7 +3680,7 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                                             key="Group"
                                           >
                                             <Link
-                                              href="/group"
+                                              href="/myGroup"
                                             >
                                               <WithStyles(ForwardRef(ListItem))
                                                 button={true}
@@ -5439,7 +5439,7 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                                         key="Group"
                                       >
                                         <Link
-                                          href="/group"
+                                          href="/myGroup"
                                         >
                                           <WithStyles(ForwardRef(ListItem))
                                             button={true}
@@ -6103,6 +6103,7 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
         </MainDrawer>
         <main
           className="makeStyles-content-9"
+          id="content"
         >
           <div
             className="makeStyles-toolbar-8"

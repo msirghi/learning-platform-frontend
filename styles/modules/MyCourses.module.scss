@@ -176,15 +176,21 @@ $padding: 17px;
   }
 
   .info {
+    box-shadow: 5.7px 5.7px 7.4px 0.6px getBlackShadow(0.2);
+    background-color: $grey-light-color-1;
+
     @media screen and (max-width: 768px) {
       margin-top: 1rem;
     }
 
-    background-color: $grey-light-color-1;
+    @media screen and (min-width: 768px) and (max-width: 1270px) {
+      background-color: initial;
+      box-shadow: none;
+    }
+
     padding: 20px;
     border-radius: 5px;
     text-align: center;
-    box-shadow: 5.7px 5.7px 7.4px 0.6px getBlackShadow(0.2);
 
     .teacher {
       &Image {
@@ -209,7 +215,6 @@ $padding: 17px;
           margin-top: 0;
         }
       }
-
 
       @media screen and (max-width: 768px) {
         &Image {

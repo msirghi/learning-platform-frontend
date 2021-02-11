@@ -54,7 +54,10 @@ const useStyles = makeStyles((theme) => ({
   },
   content: {
     flexGrow: 1,
-    padding: theme.spacing(3)
+    padding: theme.spacing(3),
+    // [theme.breakpoints.between(0, 500)]: {
+    //   padding: theme.spacing(1)
+    // }
   }
 }));
 
@@ -113,7 +116,7 @@ export const SiteWrapper: React.FC = ({ children }) => {
           handleDrawerClose={handleDrawerClose}
           open={desktopDrawerStatus}
         />
-        <main className={classes.content}>
+        <main className={classes.content} id='content'>
           <div className={classes.toolbar} />
           {children}
         </main>

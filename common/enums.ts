@@ -26,3 +26,11 @@ export enum InterfaceMode {
   DARK = 'dark',
   LIGHT = 'light'
 }
+
+export enum ChatThemes {
+  WHITE = '#fafafa',
+  BLUE = 'aliceblue',
+  LIGHT_BLUE = 'lightblue',
+  WHEAT = 'wheat',
+  GREY = 'grey'
+}

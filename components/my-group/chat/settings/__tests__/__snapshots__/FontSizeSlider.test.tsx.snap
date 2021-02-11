@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FontSizeSlider component should match the snapshot 1`] = `
+<WithStyles(ForwardRef(Slider))
+  aria-labelledby="discrete-slider-custom"
+  marks={
+    Array [
+      Object {
+        "label": "10",
+        "value": 10,
+      },
+      Object {
+        "label": "12",
+        "value": 12,
+      },
+      Object {
+        "label": "14",
+        "value": 14,
+      },
+      Object {
+        "label": "16",
+        "value": 16,
+      },
+    ]
+  }
+  max={16}
+  min={10}
+  onChange={[Function]}
+  step={1}
+  value={12}
+  valueLabelDisplay="auto"
+/>
+`;

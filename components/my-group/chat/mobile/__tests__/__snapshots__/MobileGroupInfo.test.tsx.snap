@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MobileGroupInfo component should match the snapshot 1`] = `
+<div>
+  <div
+    className="studentsContainer"
+  >
+    <div
+      className="chatInfoContainer"
+    >
+      <div
+        className="newsTitle"
+      >
+        News
+      </div>
+      <NewsRow
+        author="Nicolae"
+        date={2000-11-22T00:00:00.000Z}
+        description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos nihil, commodi alias at debitis in."
+        key="1"
+        title="News 1"
+      />
+      <hr
+        className="separator"
+      />
+      <NewsRow
+        author="Nicolae"
+        date={2000-11-22T00:00:00.000Z}
+        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis numquam nobis, nihil quis error repudiandae."
+        key="2"
+        title="News 2"
+      />
+    </div>
+    <WithStyles(ForwardRef(Button))
+      className="seeMoreButton"
+      color="primary"
+      fullWidth={true}
+      variant="outlined"
+    >
+      See more
+    </WithStyles(ForwardRef(Button))>
+    <GroupInfo
+      chevronDown={true}
+      groupName="Name"
+      onChevronClick={[Function]}
+      showChevron={true}
+      totalMembers={7}
+      totalOnline={3}
+    />
+    <div
+      className="studentsContainer"
+    >
+      <StudentRow
+        key="1"
+        name="First Last"
+      />
+      <StudentRow
+        key="2"
+        name="Nicolae Budulae"
+      />
+      <StudentRow
+        key="3"
+        name="Budulae Nicolae"
+      />
+      <StudentRow
+        key="4"
+        name="Aron Pumnul"
+      />
+      <StudentRow
+        key="5"
+        name="First Last"
+      />
+      <StudentRow
+        key="6"
+        name="First Last"
+      />
+      <StudentRow
+        key="7"
+        name="First Last"
+      />
+    </div>
+    <ForwardRef(Fade)
+      in={true}
+    >
+      <div
+        className="chatButton"
+      >
+        <WithStyles(ForwardRef(Fab))
+          aria-label="add"
+          className="chatButton"
+          color="primary"
+          onClick={[Function]}
+        >
+          <Memo([object Object]) />
+        </WithStyles(ForwardRef(Fab))>
+      </div>
+    </ForwardRef(Fade)>
+  </div>
+</div>
+`;

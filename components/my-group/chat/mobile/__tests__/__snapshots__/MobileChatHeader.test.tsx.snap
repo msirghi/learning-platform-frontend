@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MobileChatHeader component should match the snapshot 1`] = `
+<div
+  className="mobileHeader"
+>
+  <div>
+    <WithStyles(ForwardRef(IconButton))
+      onClick={[Function]}
+    >
+      <Memo([object Object])
+        className="backIcon"
+      />
+    </WithStyles(ForwardRef(IconButton))>
+  </div>
+  <div>
+    <div
+      className="groupName"
+    >
+      Group name
+    </div>
+    <div
+      className="stats"
+    >
+      <span>
+        3
+         members
+      </span>
+      <span>
+         / 
+        4
+         online
+      </span>
+    </div>
+  </div>
+  <div
+    className="settingsIcon"
+  >
+    <WithStyles(ForwardRef(IconButton))
+      onClick={[Function]}
+    >
+      <Memo([object Object]) />
+    </WithStyles(ForwardRef(IconButton))>
+  </div>
+</div>
+`;
+
+exports[`MobileChatHeader component should not render online memebers if online prop is 0 1`] = `
+<div
+  className="mobileHeader"
+>
+  <div>
+    <WithStyles(ForwardRef(IconButton))
+      onClick={[Function]}
+    >
+      <Memo([object Object])
+        className="backIcon"
+      />
+    </WithStyles(ForwardRef(IconButton))>
+  </div>
+  <div>
+    <div
+      className="groupName"
+    >
+      Group name
+    </div>
+    <div
+      className="stats"
+    >
+      <span>
+        3
+         members
+      </span>
+    </div>
+  </div>
+  <div
+    className="settingsIcon"
+  >
+    <WithStyles(ForwardRef(IconButton))
+      onClick={[Function]}
+    >
+      <Memo([object Object]) />
+    </WithStyles(ForwardRef(IconButton))>
+  </div>
+</div>
+`;

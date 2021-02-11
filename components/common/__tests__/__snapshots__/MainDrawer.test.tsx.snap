@@ -2300,7 +2300,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                     key="Group"
                                   >
                                     <Link
-                                      href="/group"
+                                      href="/myGroup"
                                     >
                                       <WithStyles(ForwardRef(ListItem))
                                         button={true}
@@ -4634,7 +4634,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                 key="Group"
                               >
                                 <Link
-                                  href="/group"
+                                  href="/myGroup"
                                 >
                                   <WithStyles(ForwardRef(ListItem))
                                     button={true}

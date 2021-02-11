@@ -21,7 +21,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     icon: GroupIcon,
-    link: "/group",
+    link: "/myGroup",
     label: "Group",
   },
   {

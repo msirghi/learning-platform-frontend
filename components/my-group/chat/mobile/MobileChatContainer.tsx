@@ -67,6 +67,8 @@ export const MobileChatContainer: React.FC<Props> = ({
   return (
     <div className={styles.mobileChatContent}>
       <MobileChatHeader
+        online={8}
+        total={1}
         onBackClick={onBackClick}
         toggleSettings={() => setChatSettingsOpened(!chatSettingsOpened)}
       />

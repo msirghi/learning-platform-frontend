@@ -9,6 +9,7 @@ import { newsMock } from '../../../../mocks/newsMocks';
 import { NewsRow } from '../../news/NewsRow';
 import { Button } from '@material-ui/core';
 import Fade from '@material-ui/core/Fade';
+import { useTranslation } from '../../../../i18n';
 
 type Props = {
   openChatHandler: () => void;
@@ -16,6 +17,7 @@ type Props = {
 
 export const MobileGroupInfo: React.FC<Props> = ({ openChatHandler }) => {
   const [showMembers, setShowMembers] = useState(true);
+  const { t } = useTranslation();
 
   const toggleShowMembers = () => setShowMembers(!showMembers);
 
@@ -23,7 +25,7 @@ export const MobileGroupInfo: React.FC<Props> = ({ openChatHandler }) => {
     <div>
       <div className={styles.studentsContainer}>
         <div className={styles.chatInfoContainer}>
-          <div className={styles.newsTitle}>News</div>
+          <div className={styles.newsTitle}>{t('myGroup:news')}</div>
           {newsMock.map(({ id, description, date, title }, idx) => {
             return (
               <>
@@ -41,7 +43,7 @@ export const MobileGroupInfo: React.FC<Props> = ({ openChatHandler }) => {
         </div>
 
         <Button color='primary' variant='outlined' fullWidth className={styles.seeMoreButton}>
-          See more
+          {t('myGroup:seeMore')}
         </Button>
 
         <GroupInfo

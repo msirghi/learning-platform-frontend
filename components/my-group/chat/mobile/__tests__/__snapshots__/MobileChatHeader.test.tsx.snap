@@ -24,12 +24,14 @@ exports[`MobileChatHeader component should match the snapshot 1`] = `
     >
       <span>
         3
-         members
+         
+        myGroup:members
       </span>
       <span>
          / 
         4
-         online
+         
+        myGroup:online
       </span>
     </div>
   </div>
@@ -69,7 +71,8 @@ exports[`MobileChatHeader component should not render online memebers if online 
     >
       <span>
         3
-         members
+         
+        myGroup:members
       </span>
     </div>
   </div>

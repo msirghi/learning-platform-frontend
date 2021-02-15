@@ -3,6 +3,7 @@ import styles from '../../../../styles/modules/MyGroup.module.scss';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import { IconButton } from '@material-ui/core';
 import SettingsIcon from '@material-ui/icons/Settings';
+import { useTranslation } from '../../../../i18n';
 
 type Props = {
   onBackClick: () => void;
@@ -17,6 +18,8 @@ export const MobileChatHeader: React.FC<Props> = ({
   online,
   total
 }) => {
+  const { t } = useTranslation();
+
   return (
     <div className={styles.mobileHeader}>
       <div>
@@ -27,8 +30,8 @@ export const MobileChatHeader: React.FC<Props> = ({
       <div>
         <div className={styles.groupName}>Group name</div>
         <div className={styles.stats}>
-          <span>{total} members</span>
-          {online > 0 && <span> / {online} online</span>}
+          <span>{total} {t('myGroup:members')}</span>
+          {online > 0 && <span> / {online} {t('myGroup:online')}</span>}
         </div>
       </div>
       <div className={styles.settingsIcon}>

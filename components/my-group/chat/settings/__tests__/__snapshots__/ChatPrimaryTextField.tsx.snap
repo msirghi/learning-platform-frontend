@@ -35,7 +35,7 @@ exports[`ValidationTextField component should match the snapshot if all props ar
     onChange={[Function]}
     onFocus={[Function]}
     onKeyDown={[MockFunction]}
-    placeholder="Write a message..."
+    placeholder="myGroup:inputMessagePlaceholder"
     size="small"
     value="default"
     variant="outlined"

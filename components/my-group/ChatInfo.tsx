@@ -1,13 +1,16 @@
 import React from 'react';
+import { useTranslation } from '../../i18n';
 import { newsMock } from '../../mocks/newsMocks';
 import styles from '../../styles/modules/MyGroup.module.scss';
 import { NewsRow } from './news/NewsRow';
 
 export const ChatInfo = () => {
+  const { t } = useTranslation();
+
   return (
     <div className={styles.chatInfoContainer}>
       <div className={styles.header}>
-        <span>Group news</span>
+        <span>{t('myGroup:groupNews')}</span>
       </div>
 
       <div className={styles.newsContent}>

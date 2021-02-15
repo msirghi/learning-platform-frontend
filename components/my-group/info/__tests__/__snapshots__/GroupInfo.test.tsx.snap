@@ -14,9 +14,12 @@ exports[`GroupInfo component should match the snapshot 1`] = `
       className="subheader"
     >
       1
-       members / 
+       
+      myGroup:members
+       / 
       1
-       online
+       
+      myGroup:online
     </div>
   </div>
   <div

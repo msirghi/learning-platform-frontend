@@ -3,6 +3,7 @@ import React from 'react';
 import AttachFileIcon from '@material-ui/icons/AttachFile';
 import SendIcon from '@material-ui/icons/Send';
 import styles from '../../../styles/modules/MyGroup.module.scss';
+import { useTranslation } from '../../../i18n';
 
 type Props = {
   onKeyDown: (e: React.KeyboardEvent<HTMLDivElement>) => void;
@@ -37,6 +38,8 @@ export const ChatPrimaryTextField: React.FC<Props> = ({
   onMessageSend,
   onFocus
 }) => {
+  const { t } = useTranslation();
+
   return (
     <div>
       <ValidationTextField
@@ -46,7 +49,7 @@ export const ChatPrimaryTextField: React.FC<Props> = ({
         value={value}
         onChange={(e) => onChange(e.target.value)}
         variant='outlined'
-        placeholder='Write a message...'
+        placeholder={t('myGroup:inputMessagePlaceholder')}
         onKeyDown={onKeyDown}
         inputProps={{
           'data-testid': 'message-field'

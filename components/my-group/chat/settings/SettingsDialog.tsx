@@ -8,6 +8,7 @@ import { ColorPaletteTemplate } from './ColorPaletteTemplate';
 import { chatThemes } from '../../../common/utils/chatThemes';
 import styles from '../../../../styles/modules/MyGroup.module.scss';
 import { FontSizeSlider } from './FontSizeSlider';
+import { useTranslation } from '../../../../i18n';
 
 type Props = {
   open: boolean;
@@ -26,6 +27,8 @@ export const SettingsDialog: React.FC<Props> = ({
   chatFontSize,
   handleFontChange
 }) => {
+  const { t } = useTranslation();
+
   return (
     <div>
       <Dialog
@@ -36,7 +39,7 @@ export const SettingsDialog: React.FC<Props> = ({
       >
         <DialogTitle id='alert-dialog-title'>{'Chat settings'}</DialogTitle>
         <DialogContent>
-          <span>Theme</span>
+          <span>{t('myGroup:themesTitle')}</span>
           <div className={styles.chatThemesContainer}>
             {chatThemes.map(({ color }) => {
               return (
@@ -51,15 +54,15 @@ export const SettingsDialog: React.FC<Props> = ({
             })}
           </div>
 
-          <span>Font size</span>
+          <span>{t('myGroup:fontSizeTitle')}</span>
           <FontSizeSlider value={chatFontSize} handleFontChange={handleFontChange} />
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose} color='primary'>
-            Close
+            {t('myGroup:close')}
           </Button>
           <Button onClick={handleClose} color='primary' autoFocus>
-            Apply
+            {t('myGroup:apply')}
           </Button>
         </DialogActions>
       </Dialog>

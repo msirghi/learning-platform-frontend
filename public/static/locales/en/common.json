@@ -3,7 +3,8 @@
   "headerTabs": {
     "home": "Home",
     "myCourses": "My courses",
-    "myGroup": "My group"
+    "myGroup": "My group",
+    "performance": "Performance"
   },
   "footer": {
     "usefulLinks": "Userful Links",

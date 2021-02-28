@@ -1,0 +1,15 @@
+{
+  "viewAll": "View all",
+  "pageDescription": "Lorem ipsum dolor sit amet.",
+  "searchInputLabel": "Search",
+  "gradesLabel": "Grades",
+  "statisticsLabel": "Statistics",
+  "testTypes": {
+    "attestation1": "Attestation 11",
+    "attestation2": "Attestation 2",
+    "exam": "Exam",
+    "individualWork": "Individual work",
+    "final": "Final"
+  },
+  "presence": "Presence"
+}

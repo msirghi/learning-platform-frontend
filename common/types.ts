@@ -1,4 +1,4 @@
-import { LessonStatus } from './enums';
+import { GradeType, LessonStatus } from './enums';
 
 export interface MenuItem {
   icon: React.ComponentClass<{ className: string }>;
@@ -46,4 +46,20 @@ export interface Student {
 
 export interface ChatTheme {
   color: string;
+}
+
+export interface Mark {
+  mark: string;
+  test: GradeType;
+  updatedAt: Date;
+}
+
+export interface Grade {
+  id: string | number;
+  year: string;
+  course: string;
+  teacher: string;
+  marks: Array<Mark>;
+  presence: number;
+  maxPresence: number;
 }

@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Button, LinearProgress, Typography } from '@material-ui/core';
 import styles from '../../../styles/modules/Auth.module.scss';
 import { useTranslation } from '../../../i18n';
-import ValidationService from '../../../services/ValidationService';
+import ValidationService from '../../services/ValidationService';
 import { useForm } from 'react-hook-form';
 import TextField from '@material-ui/core/TextField';
 import RegexContants from '../../../common/constants/regex.constants';

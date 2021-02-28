@@ -1,0 +1,173 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LessonGradeCard component should match the snapshot 1`] = `
+<ReactCardFlip
+  cardStyles={
+    Object {
+      "back": Object {},
+      "front": Object {},
+    }
+  }
+  cardZIndex="auto"
+  containerStyle={Object {}}
+  flipDirection="vertical"
+  flipSpeedBackToFront={0.6}
+  flipSpeedFrontToBack={0.6}
+  infinite={false}
+  isFlipped={false}
+>
+  <div
+    className="lessonGradeCardWrapper"
+  >
+    <div>
+      <WithStyles(ForwardRef(Avatar))
+        className="avatar"
+        style={
+          Object {
+            "backgroundColor": "#f55723",
+          }
+        }
+      >
+        Co
+      </WithStyles(ForwardRef(Avatar))>
+    </div>
+    <div
+      className="lessonInfo"
+    >
+      <div
+        className="year"
+      >
+        First year
+      </div>
+      <div
+        className="name"
+      >
+        Computer Science Computer Science
+      </div>
+      <div
+        className="teacher"
+      >
+        Teacher 2
+      </div>
+    </div>
+    <div
+      className="gradeWrapper"
+    >
+      <div
+        className="mark"
+      >
+        9.12
+      </div>
+      <div
+        className="name"
+      />
+      <div
+        className="date"
+      >
+        Nov 22, 2000
+      </div>
+    </div>
+    <div
+      className="buttonContainer"
+    >
+      <WithStyles(ForwardRef(Button))
+        color="primary"
+        fullWidth={true}
+        onClick={[Function]}
+        variant="outlined"
+      >
+        performance:viewAll
+      </WithStyles(ForwardRef(Button))>
+    </div>
+  </div>
+  <div
+    className="marksContainer"
+  >
+    <div
+      className="decor"
+    />
+    <div
+      className="cellRow"
+    >
+      <Cell
+        mark={
+          Object {
+            "mark": "9.12",
+            "test": "ATTESTATION_1",
+            "updatedAt": 2000-11-22T00:00:00.000Z,
+          }
+        }
+        type="ATTESTATION_1"
+      />
+      <Cell
+        mark={
+          Object {
+            "mark": "9.12",
+            "test": "ATTESTATION_2",
+            "updatedAt": 2000-11-22T00:00:00.000Z,
+          }
+        }
+        type="ATTESTATION_2"
+      />
+    </div>
+    <div
+      className="cellRow"
+    >
+      <Cell
+        mark={
+          Object {
+            "mark": "9.12",
+            "test": "EXAM",
+            "updatedAt": 2000-11-22T00:00:00.000Z,
+          }
+        }
+        type="EXAM"
+      />
+      <Cell
+        mark={
+          Object {
+            "mark": "9.12",
+            "test": "INDIVIDUAL_WORK",
+            "updatedAt": 2000-11-22T00:00:00.000Z,
+          }
+        }
+        type="INDIVIDUAL_WORK"
+      />
+    </div>
+    <div
+      className="cellRow"
+    >
+      <div
+        className="cell"
+      >
+        <span
+          className="title"
+        >
+          performance:presence
+        </span>
+        <span
+          className="mark"
+        >
+          7
+           / 
+          15
+        </span>
+      </div>
+      <Cell
+        type="FINAL"
+      />
+    </div>
+    <div
+      className="undoButton"
+    >
+      <WithStyles(ForwardRef(IconButton))
+        onClick={[Function]}
+      >
+        <Memo([object Object])
+          color="primary"
+        />
+      </WithStyles(ForwardRef(IconButton))>
+    </div>
+  </div>
+</ReactCardFlip>
+`;

@@ -34,3 +34,16 @@ export enum ChatThemes {
   WHEAT = 'wheat',
   GREY = 'grey'
 }
+
+export enum PerformanceTabs {
+  GRADES = 'GRADES',
+  STATISTICS = 'STATISTICS'
+}
+
+export enum GradeType {
+  ATTESTATION_1 = 'ATTESTATION_1',
+  ATTESTATION_2 = 'ATTESTATION_2',
+  EXAM = 'EXAM',
+  FINAL = 'FINAL',
+  INDIVIDUAL_WORK = 'INDIVIDUAL_WORK'
+}

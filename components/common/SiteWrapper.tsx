@@ -40,7 +40,10 @@ const useStyles = makeStyles((theme) => ({
     })
   },
   menuButton: {
-    marginRight: 36
+    marginRight: 36,
+    [theme.breakpoints.between(0, 768)]: {
+      marginRight: 'initial'
+    }
   },
   hide: {
     display: 'none'
@@ -54,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
   },
   content: {
     flexGrow: 1,
-    padding: theme.spacing(3),
+    padding: theme.spacing(3)
     // [theme.breakpoints.between(0, 500)]: {
     //   padding: theme.spacing(1)
     // }

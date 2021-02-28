@@ -2,7 +2,7 @@
 import MenuBookIcon from "@material-ui/icons/MenuBook";
 import HomeIcon from "@material-ui/icons/Home";
 import GroupIcon from "@material-ui/icons/Group";
-import StarIcon from "@material-ui/icons/Star";
+import TrendingUpIcon from '@material-ui/icons/TrendingUp';
 import CalendarTodayIcon from "@material-ui/icons/CalendarToday";
 import { MenuItem } from "../../../common/types";
 import HelpIcon from '@material-ui/icons/Help';
@@ -25,9 +25,9 @@ export const menuItems: MenuItem[] = [
     label: "Group",
   },
   {
-    icon: StarIcon,
-    link: "/star",
-    label: "Star",
+    icon: TrendingUpIcon,
+    link: "/performance",
+    label: "My performance",
   },
   {
     icon: CalendarTodayIcon,

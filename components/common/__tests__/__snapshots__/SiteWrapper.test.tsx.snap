@@ -909,7 +909,7 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                                                               viewBox="0 0 24 24"
                                                             >
                                                               <path
-                                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                                                d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"
                                                               />
                                                             </svg>
                                                           </div>
@@ -1864,7 +1864,7 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                                 viewBox="0 0 24 24"
                               >
                                 <path
-                                  d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                  d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"
                                 />
                               </svg>
                             </div>
@@ -2102,7 +2102,7 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                                   viewBox="0 0 24 24"
                                 >
                                   <path
-                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                    d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"
                                   />
                                 </svg>
                               </div>
@@ -2742,7 +2742,7 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                                         viewBox="0 0 24 24"
                                       >
                                         <path
-                                          d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                          d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"
                                         />
                                       </svg>
                                     </div>
@@ -3075,7 +3075,7 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                                               viewBox="0 0 24 24"
                                             >
                                               <path
-                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                                d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"
                                               />
                                             </svg>
                                           </div>
@@ -3840,10 +3840,10 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                                           </div>
                                           <div
                                             className="mainMenuColor false undefined"
-                                            key="Star"
+                                            key="My performance"
                                           >
                                             <Link
-                                              href="/star"
+                                              href="/performance"
                                             >
                                               <WithStyles(ForwardRef(ListItem))
                                                 button={true}
@@ -3928,7 +3928,7 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                                                             <div
                                                               className="MuiListItemIcon-root mainMenuIconContainer"
                                                             >
-                                                              <ForwardRef(StarIcon)
+                                                              <ForwardRef(TrendingUpIcon)
                                                                 className="mainMenuIcon"
                                                               >
                                                                 <WithStyles(ForwardRef(SvgIcon))
@@ -3957,12 +3957,12 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                                                                       viewBox="0 0 24 24"
                                                                     >
                                                                       <path
-                                                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                                                        d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"
                                                                       />
                                                                     </svg>
                                                                   </ForwardRef(SvgIcon)>
                                                                 </WithStyles(ForwardRef(SvgIcon))>
-                                                              </ForwardRef(StarIcon)>
+                                                              </ForwardRef(TrendingUpIcon)>
                                                             </div>
                                                           </ForwardRef(ListItemIcon)>
                                                         </WithStyles(ForwardRef(ListItemIcon))>
@@ -4584,7 +4584,7 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                                         viewBox="0 0 24 24"
                                       >
                                         <path
-                                          d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                          d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"
                                         />
                                       </svg>
                                     </div>
@@ -4820,7 +4820,7 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                                           viewBox="0 0 24 24"
                                         >
                                           <path
-                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                            d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"
                                           />
                                         </svg>
                                       </div>
@@ -5599,10 +5599,10 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                                       </div>
                                       <div
                                         className="mainMenuColor false undefined"
-                                        key="Star"
+                                        key="My performance"
                                       >
                                         <Link
-                                          href="/star"
+                                          href="/performance"
                                         >
                                           <WithStyles(ForwardRef(ListItem))
                                             button={true}
@@ -5687,7 +5687,7 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                                                         <div
                                                           className="MuiListItemIcon-root mainMenuIconContainer"
                                                         >
-                                                          <ForwardRef(StarIcon)
+                                                          <ForwardRef(TrendingUpIcon)
                                                             className="mainMenuIcon"
                                                           >
                                                             <WithStyles(ForwardRef(SvgIcon))
@@ -5716,12 +5716,12 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                                                                   viewBox="0 0 24 24"
                                                                 >
                                                                   <path
-                                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                                                    d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"
                                                                   />
                                                                 </svg>
                                                               </ForwardRef(SvgIcon)>
                                                             </WithStyles(ForwardRef(SvgIcon))>
-                                                          </ForwardRef(StarIcon)>
+                                                          </ForwardRef(TrendingUpIcon)>
                                                         </div>
                                                       </ForwardRef(ListItemIcon)>
                                                     </WithStyles(ForwardRef(ListItemIcon))>

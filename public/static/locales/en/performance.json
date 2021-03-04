@@ -5,11 +5,12 @@
   "gradesLabel": "Grades",
   "statisticsLabel": "Statistics",
   "testTypes": {
-    "attestation1": "Attestation 11",
+    "attestation1": "Attestation 1",
     "attestation2": "Attestation 2",
     "exam": "Exam",
     "individualWork": "Individual work",
     "final": "Final"
   },
-  "presence": "Presence"
+  "presence": "Presence",
+  "lessonsNotFound": "No lessons were found."
 }

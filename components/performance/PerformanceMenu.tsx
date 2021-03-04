@@ -17,7 +17,7 @@ export const PerformanceMenu: React.FC<Props> = ({ currentTab, changeTab }) => {
         onClick={() => changeTab(PerformanceTabs.GRADES)}
         className={`${styles.tab} ${currentTab === PerformanceTabs.GRADES ? styles.active : ''}`}
       >
-        <span>{t('performance:grades')}</span>
+        <span>{t('performance:gradesLabel')}</span>
       </div>
       <div
         onClick={() => changeTab(PerformanceTabs.STATISTICS)}

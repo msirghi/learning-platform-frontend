@@ -6,13 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "npm run preTest && jest",
+    "test:local": "npm run preTest && jest",
     "preTest": "bash ./common/scripts/preTest.sh true",
     "preStart": "node ./common/preStartHook.ts",
     "test:cov": "npm run preTest && jest --coverage",
     "test:update": "npm run test:cov -- -u",
     "lint": "eslint . --ext .ts,.tsx",
-    "lint:test": "npm run lint && npm run test-cover"
+    "lint:test": "npm run lint && npm run test-cover",
+    "test": "cross-env CI=true react-scripts test --silent --env=jsdom --coverage --testResultsProcessor jest-sonar-reporter",
+    "sonar": "node sonar-project.js"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.0",
@@ -54,6 +56,7 @@
     "@typescript-eslint/eslint-plugin": "^4.6.1",
     "@typescript-eslint/parser": "^4.6.1",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.3.1",
+    "cross-env": "^7.0.3",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.5",
     "enzyme-to-json": "^3.6.1",
@@ -61,10 +64,12 @@
     "eslint-plugin-react": "^7.21.5",
     "husky": "^4.3.0",
     "jest-dom": "^4.0.0",
+    "jest-sonar-reporter": "^2.0.0",
     "mockdate": "^3.0.2",
     "react-test-renderer": "^17.0.1",
     "redux-devtools-extension": "^2.13.8",
     "redux-mock-store": "^1.5.4",
+    "sonarqube-scanner": "^2.8.0",
     "ts-jest": "^26.4.3",
     "typescript": "^4.0.5"
   },
@@ -73,6 +78,11 @@
       "enzyme-to-json/serializer"
     ],
     "testURL": "http://test.com/login"
+  },
+  "jestSonar": {
+    "reportPath": "reports",
+    "reportFile": "test-report.xml",
+    "indent": 4
   },
   "husky": {
     "hooks": {

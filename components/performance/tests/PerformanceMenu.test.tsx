@@ -22,7 +22,7 @@ describe('PerformanceMenu component', () => {
     const tabText = active.find('span');
 
     expect(tabText).toHaveLength(1);
-    expect(tabText.text()).toEqual('performance:grades');
+    expect(tabText.text()).toEqual('performance:gradesLabel');
   });
 
   it('should have active tab if the current tab is STATISTICS', () => {

@@ -9,7 +9,8 @@ const localeSubpaths = {};
 module.exports = withPWA({
   pwa: {
     dest: 'public',
-    runtimeCaching
+    disable: process.env.NODE_ENV === 'development',
+    register: false
   },
   rewrites: async () => nextI18NextRewrites(localeSubpaths),
   publicRuntimeConfig: {
@@ -17,5 +18,8 @@ module.exports = withPWA({
   },
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')]
+  },
+  env: {
+    RECAPTCHA_SITEKEY: process.env.RECAPTCHA_SITEKEY
   }
 });

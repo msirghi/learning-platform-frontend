@@ -11,6 +11,7 @@ import { RootState } from '../redux/reducers';
 import { setInterfaceMode } from '../redux/actions/interface/interfaceAction';
 import { orange } from '@material-ui/core/colors';
 import { InterfaceMode } from '../common/enums';
+import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3';
 
 function MyApp({ Component, pageProps }) {
   const dispatch = useDispatch();
@@ -48,10 +49,12 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <Provider store={store}>
-      <NextNprogress color='#29D' startPosition={0.3} stopDelayMs={200} />
-      <MuiThemeProvider theme={darkTheme}>
-        <Component {...pageProps} />
-      </MuiThemeProvider>
+      <GoogleReCaptchaProvider reCaptchaKey={process.env.RECAPTCHA_SITEKEY}>
+        <NextNprogress color='#29D' startPosition={0.3} stopDelayMs={200} />
+        <MuiThemeProvider theme={darkTheme}>
+          <Component {...pageProps} />
+        </MuiThemeProvider>
+      </GoogleReCaptchaProvider>
     </Provider>
   );
 }

@@ -1,5 +1,5 @@
 // @ts-nocheck
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, LinearProgress, Typography } from '@material-ui/core';
 import styles from '../../../styles/modules/Auth.module.scss';
 import { useTranslation } from '../../../i18n';
@@ -10,6 +10,7 @@ import RegexContants from '../../../common/constants/regex.constants';
 import Checkbox from '@material-ui/core/Checkbox';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import { AlertType, AuthPage } from '../../../common/enums';
+import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
 
 interface Values {
   email: string;
@@ -28,9 +29,17 @@ type Props = {
 function RegisterForm({ onMessage, onTabChange }: Props) {
   const { t } = useTranslation();
   const [isSubmitting, setSubmitting] = useState<boolean>(false);
-  const { register, handleSubmit, errors, getValues, formState } = useForm<Values>({ mode: 'onChange' });
+  const { register, handleSubmit, errors, getValues, formState } = useForm<Values>({
+    mode: 'onChange'
+  });
 
-  const onSubmit = (values: Values) => {
+  const { executeRecaptcha } = useGoogleReCaptcha();
+
+  useEffect(async () => {
+    await executeRecaptcha('registration');
+  }, []);
+
+  const onSubmit = async (values: Values) => {
     setSubmitting(true);
     /* istanbul ignore next */
     setTimeout(() => {
@@ -38,11 +47,14 @@ function RegisterForm({ onMessage, onTabChange }: Props) {
       onMessage(AlertType.SUCCESS, t('auth:registerSuccessMessage'));
       onTabChange(AuthPage.LOGIN);
     }, 500);
+    await executeRecaptcha('registration_submit');
   };
 
   return (
     <form noValidate onSubmit={handleSubmit(onSubmit)}>
-      {errors.checked && <Typography color='secondary'>{t('auth:errorMessages.acceptTerms')}</Typography>}
+      {errors.checked && (
+        <Typography color='secondary'>{t('auth:errorMessages.acceptTerms')}</Typography>
+      )}
 
       {isSubmitting && (
         <div data-testid='progress'>
@@ -116,7 +128,9 @@ function RegisterForm({ onMessage, onTabChange }: Props) {
       <TextField
         error={!!errors.password}
         helperText={
-          (errors.password && errors.password.type === 'validate' && t('auth:errorMessages.weakPassword')) ||
+          (errors.password &&
+            errors.password.type === 'validate' &&
+            t('auth:errorMessages.weakPassword')) ||
           (errors.password && errors.password.message)
         }
         variant='outlined'

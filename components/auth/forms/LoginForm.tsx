@@ -1,10 +1,11 @@
 // @ts-nocheck
-import React, { FormEvent, useState } from 'react';
+import React, { FormEvent, useEffect, useState } from 'react';
 import { Button, LinearProgress, Typography, TextField } from '@material-ui/core';
 import { useTranslation } from '../../../i18n';
 import styles from '../../../styles/modules/Auth.module.scss';
 import Link from '@material-ui/core/Link';
 import { AlertType, AuthPage } from '../../../common/enums';
+import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
 
 type Props = {
   onMessage: (type: AlertType, text: string) => void;
@@ -16,8 +17,13 @@ function LoginForm({ onMessage, onTabChange }: Props) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [isSubmitting, setSubmitting] = useState(false);
+  const { executeRecaptcha } = useGoogleReCaptcha();
 
-  const onSubmit = (e: FormEvent) => {
+  useEffect(async () => {
+    await executeRecaptcha('login');
+  }, []);
+
+  const onSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setSubmitting(true);
     /* istanbul ignore next */
@@ -25,6 +31,7 @@ function LoginForm({ onMessage, onTabChange }: Props) {
       setSubmitting(false);
       onMessage(AlertType.ERROR, t('auth:invalidCredentials'));
     }, 500);
+    await executeRecaptcha('login_submit');
   };
 
   return (

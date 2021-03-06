@@ -24,7 +24,7 @@ export const PerformanceContent = () => {
       setDisplayLessons(initialLessons);
       return;
     }
-    const filtered = initialLessons.filter((l) => l.course.toLowerCase().includes(val));
+    const filtered = initialLessons.filter((l) => l.course.toLowerCase().includes(val.toLowerCase()));
     setDisplayLessons(filtered);
     setSearchValue(val);
   };

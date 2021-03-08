@@ -1,4 +1,3 @@
-import { InputAdornment } from '@material-ui/core';
 import { mount, shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import React from 'react';
@@ -25,7 +24,9 @@ describe('ValidationTextField component', () => {
 
     const input = wrapper.find(ValidationTextField);
     expect(input).toHaveLength(1);
-    input.props().onFocus();
+    input
+      .props()
+      .onFocus(({} as unknown) as React.FocusEvent<HTMLInputElement | HTMLTextAreaElement>);
     expect(spy).toBeCalled();
   });
 
@@ -47,7 +48,7 @@ describe('ValidationTextField component', () => {
 
     const input = wrapper.find(ValidationTextField);
     expect(input).toHaveLength(1);
-    input.props().onKeyDown();
+    input.props().onKeyDown(({} as unknown) as React.KeyboardEvent<HTMLDivElement>);
 
     expect(spy).toBeCalled();
   });

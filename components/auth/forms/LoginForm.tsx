@@ -7,11 +7,26 @@ import Link from '@material-ui/core/Link';
 import { AlertType, AuthPage } from '../../../common/enums';
 import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
 
+/**
+ * Login page props.
+ */
 type Props = {
+  /**
+   * Function for triggering the diplay of AlertMessage component.
+   */
   onMessage: (type: AlertType, text: string) => void;
+  /**
+   * Function for changing the current tab.
+   */
   onTabChange: (tab: AuthPage) => void;
 };
 
+/**
+ * Login form page. Uses google recaptcha v3 to trigger actions.
+ *
+ * @version 0.1
+ * @author [Sirghi Mihail](https://github.com/msirghi)
+ */
 function LoginForm({ onMessage, onTabChange }: Props) {
   const { t } = useTranslation();
   const [email, setEmail] = useState('');

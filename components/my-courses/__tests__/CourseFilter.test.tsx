@@ -16,7 +16,11 @@ describe('CourseFilter component', () => {
 
     const input = wrapper.find(TextField);
     expect(input).toHaveLength(1);
-    input.props().onChange({ target: { value: 'value' } });
+    input
+      .props()
+      .onChange({ target: { value: 'value' } } as React.ChangeEvent<
+        HTMLTextAreaElement | HTMLInputElement
+      >);
     expect(spy).toBeCalled();
   });
 

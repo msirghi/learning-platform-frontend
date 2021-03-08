@@ -8,12 +8,12 @@ import LoginForm from '../forms/LoginForm';
 
 describe('LoginForm component', () => {
   it('should match snapshot', () => {
-    const wrapper = shallow(<LoginForm onMessage={jest.fn()} />);
+    const wrapper = shallow(<LoginForm onTabChange={jest.fn()} onMessage={jest.fn()} />);
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 
   it('should have disabled button by default', () => {
-    const wrapper = shallow(<LoginForm onMessage={jest.fn()} />);
+    const wrapper = shallow(<LoginForm onMessage={jest.fn()} onTabChange={jest.fn()} />);
     const button = wrapper.find(Button);
 
     expect(button).toHaveLength(1);
@@ -21,7 +21,7 @@ describe('LoginForm component', () => {
   });
 
   it('should have enabled button on fullfiled fields', () => {
-    const { getByTestId } = render(<LoginForm onMessage={jest.fn()} />);
+    const { getByTestId } = render(<LoginForm onMessage={jest.fn()} onTabChange={jest.fn()} />);
 
     const emailField = getByTestId('email-field');
     expect(emailField).toBeInTheDocument();
@@ -39,7 +39,7 @@ describe('LoginForm component', () => {
   });
 
   it('should submit the form and show LinearProgress', () => {
-    const wrapper = mount(<LoginForm onMessage={jest.fn()} />);
+    const wrapper = mount(<LoginForm onMessage={jest.fn()} onTabChange={jest.fn()} />);
 
     const emailField = findByTestAttr(wrapper, 'email');
     expect(emailField).toHaveLength(1);

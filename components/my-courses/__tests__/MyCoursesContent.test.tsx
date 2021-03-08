@@ -34,7 +34,11 @@ describe('MyCoursesContent component', () => {
     const input = wrapper.find(TextField);
 
     expect(input).toHaveLength(1);
-    input.props().onChange({ target: { value: 'not found' } });
+    input
+      .props()
+      .onChange({ target: { value: 'not found' } } as React.ChangeEvent<
+        HTMLTextAreaElement | HTMLInputElement
+      >);
 
     wrapper.update();
     expect(wrapper.find(CourseNotFound)).toHaveLength(1);
@@ -53,11 +57,19 @@ describe('MyCoursesContent component', () => {
     const input = wrapper.find(TextField);
 
     expect(input).toHaveLength(1);
-    input.props().onChange({ target: { value: 'not found' } });
+    input
+      .props()
+      .onChange({ target: { value: 'not found' } } as React.ChangeEvent<
+        HTMLTextAreaElement | HTMLInputElement
+      >);
 
     wrapper.update();
 
-    input.props().onChange({ target: { value: '' } });
+    input
+      .props()
+      .onChange({ target: { value: '' } } as React.ChangeEvent<
+        HTMLTextAreaElement | HTMLInputElement
+      >);
     wrapper.update();
     expect(wrapper.find(CourseNotFound)).toHaveLength(0);
   });

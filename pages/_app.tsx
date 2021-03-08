@@ -13,6 +13,10 @@ import { orange } from '@material-ui/core/colors';
 import { InterfaceMode } from '../common/enums';
 import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3';
 
+import '@fullcalendar/common/main.css';
+import '@fullcalendar/daygrid/main.css';
+import '@fullcalendar/timegrid/main.css';
+
 function MyApp({ Component, pageProps }) {
   const dispatch = useDispatch();
   const { i18n } = useTranslation();

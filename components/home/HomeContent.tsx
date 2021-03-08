@@ -21,6 +21,12 @@ const useStyles = makeStyles(() =>
   })
 );
 
+/**
+ * Home content wrapper.
+ *
+ * @version 0.1
+ * @author [Sirghi Mihail](https://github.com/msirghi)
+ */
 export const HomeContent: React.FC = () => {
   const classes = useStyles();
   const [width] = useWindowSize();

@@ -22,10 +22,22 @@ interface Values {
 }
 
 type Props = {
+  /**
+   * Function for triggering the diplay of AlertMessage component.
+   */
   onMessage: (type: AlertType, text: string) => void;
+  /**
+   * Function for changing the current tab.
+   */
   onTabChange: (tab: AuthPage) => void;
 };
 
+/**
+ * Registration form page. Uses google recaptcha v3 and 'react-hook-form' library for form handling.
+ *
+ * @version 0.1
+ * @author [Sirghi Mihail](https://github.com/msirghi)
+ */
 function RegisterForm({ onMessage, onTabChange }: Props) {
   const { t } = useTranslation();
   const [isSubmitting, setSubmitting] = useState<boolean>(false);

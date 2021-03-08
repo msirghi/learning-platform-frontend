@@ -1,3 +1,4 @@
+import { InterfaceMode } from '../../../common/enums';
 import * as types from '../../types';
 import * as actions from './interfaceAction';
 
@@ -26,7 +27,7 @@ describe('Interface Actions', () => {
   });
 
   it('should return action for setting interface mode', () => {
-    const payload = 'light';
+    const payload = InterfaceMode.LIGHT;
     const expectedAction = {
       type: types.SET_INTERFACE_MODE,
       payload

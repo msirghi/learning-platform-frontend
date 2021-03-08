@@ -56,7 +56,11 @@ describe('TopicFilter component', () => {
     const input = wrapper.find(TextField);
 
     expect(input).toHaveLength(1);
-    input.props().onChange({ target: { value: 'new value' } });
+    input
+      .props()
+      .onChange({ target: { value: 'new value' } } as React.ChangeEvent<
+        HTMLTextAreaElement | HTMLInputElement
+      >);
     expect(spy).toBeCalled();
     expect(spy).toBeCalledWith('new value');
   });

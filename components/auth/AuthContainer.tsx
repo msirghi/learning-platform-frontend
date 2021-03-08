@@ -10,6 +10,12 @@ import Head from 'next/head';
 import RegisterForm from './forms/RegisterForm';
 import LoginForm from './forms/LoginForm';
 
+/**
+ * Auth container component. Includes auth form handler.
+ *
+ * @version 0.1
+ * @author [Sirghi Mihail](https://github.com/msirghi)
+ */
 function AuthContainer({ t }) {
   const [currentTab, setCurrentTab] = useState<AuthPage>(AuthPage.LOGIN);
   const [message, setMessage] = useState<{ type: AlertType; text: string } | null>();
@@ -24,7 +30,9 @@ function AuthContainer({ t }) {
   return (
     <>
       <Head>
-        <title>{currentTab === AuthPage.REGISTER ? t('auth:registerTitle') : t('auth:loginTitle')}</title>
+        <title>
+          {currentTab === AuthPage.REGISTER ? t('auth:registerTitle') : t('auth:loginTitle')}
+        </title>
       </Head>
       <Grid container justify='center'>
         <div className={styles.authContainer}>
@@ -35,7 +43,13 @@ function AuthContainer({ t }) {
               <Grid xs={10} item>
                 <div className={styles.formDescription}>
                   <Typography>
-                    {t(`auth:${currentTab === AuthPage.REGISTER ? 'registerFormDescription' : 'loginDescription'}`)}
+                    {t(
+                      `auth:${
+                        currentTab === AuthPage.REGISTER
+                          ? 'registerFormDescription'
+                          : 'loginDescription'
+                      }`
+                    )}
                   </Typography>
                 </div>
               </Grid>
@@ -43,7 +57,9 @@ function AuthContainer({ t }) {
                 {currentTab === AuthPage.REGISTER && (
                   <RegisterForm onTabChange={(tab) => setCurrentTab(tab)} onMessage={onMessage} />
                 )}
-                {currentTab === AuthPage.LOGIN && <LoginForm onTabChange={onTabChange} onMessage={onMessage} />}
+                {currentTab === AuthPage.LOGIN && (
+                  <LoginForm onTabChange={onTabChange} onMessage={onMessage} />
+                )}
               </Grid>
             </Grid>
           </div>

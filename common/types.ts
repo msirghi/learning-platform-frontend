@@ -20,6 +20,8 @@ export interface Lesson {
   topic: string;
   time: string;
   status: LessonStatus;
+  start: Date;
+  end: Date;
 }
 
 export interface Course {

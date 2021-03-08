@@ -24,7 +24,7 @@ describe('FontSizeSlider component', () => {
     const slider = wrapper.find(Slider);
     expect(slider).toHaveLength(1);
 
-    slider.props().onChange({}, 12);
+    slider.props().onChange({} as React.ChangeEvent, 12);
     expect(spy).toBeCalled();
     expect(spy).toBeCalledWith(12);
   });

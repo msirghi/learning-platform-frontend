@@ -5,6 +5,12 @@ import { LessonStatus } from '../../common/enums';
 import { lessonMock } from '../../mocks/lessonMocks';
 import { useTranslation } from '../../i18n';
 
+/**
+ * Custom card component, used specifically showing the day schedule.
+ *
+ * @version 0.1
+ * @author [Sirghi Mihail](https://github.com/msirghi)
+ */
 export const ScheduleCard: React.FC = () => {
   const { t } = useTranslation();
 
@@ -26,7 +32,9 @@ export const ScheduleCard: React.FC = () => {
       </div>
 
       <div className={styles.scheduleContent}>
-        <div className={styles.scheduleContentHeader}>{t('home:scheduleCard.scheduleForThisDay')}:</div>
+        <div className={styles.scheduleContentHeader}>
+          {t('home:scheduleCard.scheduleForThisDay')}:
+        </div>
         {lessonMock.map((lesson, idx) => {
           let lineClassname = styles.scheduleContentVerticalLine;
           if (lesson.status !== LessonStatus.ENDED) {

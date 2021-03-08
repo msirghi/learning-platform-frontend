@@ -1,30 +1,31 @@
-import React from "react";
-import { mount, shallow } from "enzyme";
-import toJson from "enzyme-to-json";
-import { MainDrawer } from "../MainDrawer";
+import React from 'react';
+import { mount, shallow } from 'enzyme';
+import toJson from 'enzyme-to-json';
+import { MainDrawer } from '../MainDrawer';
 
-describe("MainDrawer component", () => {
+describe('MainDrawer component', () => {
   const props = {
     handleDrawerClose: jest.fn(),
     open: false,
     mobileOpen: true,
+    handleDrawerOpen: jest.fn()
   };
 
   afterAll(() => {
     jest.clearAllMocks();
   });
 
-  it("should render container on no active tab", () => {
+  it('should render container on no active tab', () => {
     const wrapper = shallow(<MainDrawer {...props} />);
-    const div = wrapper.find("div");
+    const div = wrapper.find('div');
     expect(div).toHaveLength(1);
   });
 
-  it("should render match the snapshot on defined active tab", () => {
-    Object.defineProperty(window, "location", {
+  it('should render match the snapshot on defined active tab', () => {
+    Object.defineProperty(window, 'location', {
       value: {
-        href: "/home",
-      },
+        href: '/home'
+      }
     });
     const wrapper = mount(<MainDrawer {...props} />);
     expect(toJson(wrapper)).toMatchSnapshot();

@@ -3,6 +3,12 @@ import styles from '../../styles/modules/Home.module.scss';
 import Button from '@material-ui/core/Button';
 import { useTranslation } from '../../i18n';
 
+/**
+ * Component used on first site entrance when there are no courses/news to display.
+ *
+ * @version 0.1
+ * @author [Sirghi Mihail](https://github.com/msirghi)
+ */
 export const NoContent: React.FC = () => {
   const { t } = useTranslation();
 

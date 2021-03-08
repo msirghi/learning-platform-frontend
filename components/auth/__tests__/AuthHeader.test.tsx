@@ -9,7 +9,7 @@ describe('AuthHeader component', () => {
 
   const defaultProps = {
     onTabChange: jest.fn(),
-    activeTab: 1
+    activeTab: AuthPage.LOGIN
   };
 
   beforeEach(() => {

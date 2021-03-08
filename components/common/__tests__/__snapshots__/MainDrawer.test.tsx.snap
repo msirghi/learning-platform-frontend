@@ -3,6 +3,7 @@
 exports[`MainDrawer component should render match the snapshot on defined active tab 1`] = `
 <MainDrawer
   handleDrawerClose={[MockFunction]}
+  handleDrawerOpen={[MockFunction]}
   mobileOpen={true}
   open={false}
 >
@@ -19,6 +20,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
       }
     }
     onClose={[MockFunction]}
+    onOpen={[MockFunction]}
     open={true}
     variant="temporary"
   >
@@ -1693,7 +1695,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                               className="makeStyles-toolbar-4"
                             >
                               <WithStyles(ForwardRef(IconButton))
-                                onClick={[MockFunction]}
+                                onClick={[Function]}
                               >
                                 <ForwardRef(IconButton)
                                   classes={
@@ -1709,14 +1711,14 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                       "sizeSmall": "MuiIconButton-sizeSmall",
                                     }
                                   }
-                                  onClick={[MockFunction]}
+                                  onClick={[Function]}
                                 >
                                   <WithStyles(ForwardRef(ButtonBase))
                                     centerRipple={true}
                                     className="MuiIconButton-root"
                                     disabled={false}
                                     focusRipple={true}
-                                    onClick={[MockFunction]}
+                                    onClick={[Function]}
                                   >
                                     <ForwardRef(ButtonBase)
                                       centerRipple={true}
@@ -1730,13 +1732,13 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                       }
                                       disabled={false}
                                       focusRipple={true}
-                                      onClick={[MockFunction]}
+                                      onClick={[Function]}
                                     >
                                       <button
                                         className="MuiButtonBase-root MuiIconButton-root"
                                         disabled={false}
                                         onBlur={[Function]}
-                                        onClick={[MockFunction]}
+                                        onClick={[Function]}
                                         onDragLeave={[Function]}
                                         onFocus={[Function]}
                                         onKeyDown={[Function]}
@@ -3367,6 +3369,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
               }
             }
             onClose={[MockFunction]}
+            onOpen={[MockFunction]}
             open={false}
             variant="permanent"
           >
@@ -4027,7 +4030,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                           className="makeStyles-toolbar-4"
                         >
                           <WithStyles(ForwardRef(IconButton))
-                            onClick={[MockFunction]}
+                            onClick={[Function]}
                           >
                             <ForwardRef(IconButton)
                               classes={
@@ -4043,14 +4046,14 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                   "sizeSmall": "MuiIconButton-sizeSmall",
                                 }
                               }
-                              onClick={[MockFunction]}
+                              onClick={[Function]}
                             >
                               <WithStyles(ForwardRef(ButtonBase))
                                 centerRipple={true}
                                 className="MuiIconButton-root"
                                 disabled={false}
                                 focusRipple={true}
-                                onClick={[MockFunction]}
+                                onClick={[Function]}
                               >
                                 <ForwardRef(ButtonBase)
                                   centerRipple={true}
@@ -4064,13 +4067,13 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                   }
                                   disabled={false}
                                   focusRipple={true}
-                                  onClick={[MockFunction]}
+                                  onClick={[Function]}
                                 >
                                   <button
                                     className="MuiButtonBase-root MuiIconButton-root"
                                     disabled={false}
                                     onBlur={[Function]}
-                                    onClick={[MockFunction]}
+                                    onClick={[Function]}
                                     onDragLeave={[Function]}
                                     onFocus={[Function]}
                                     onKeyDown={[Function]}

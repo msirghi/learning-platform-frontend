@@ -21,6 +21,9 @@ module.exports = withTM(
     },
     env: {
       RECAPTCHA_SITEKEY: process.env.RECAPTCHA_SITEKEY
+    },
+    serverRuntimeConfig: {
+      PROJECT_ROOT: __dirname
     }
   })
 );

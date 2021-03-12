@@ -91,7 +91,7 @@ export const SiteFooter: React.FC<Props> = ({ drawerOpened }) => {
             <MailIcon /> <span>support@site.com</span>
           </div>
           <div className={styles.footerIconText}>
-            <HomeIcon /> <span>Chisinau, str.Cilene Bune 69</span>
+            <HomeIcon /> <span>Chisinau, str. Street 3/2</span>
           </div>
         </div>
         <div className={styles.footerCopyright}>

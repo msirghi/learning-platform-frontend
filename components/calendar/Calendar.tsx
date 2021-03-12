@@ -71,8 +71,9 @@ const Calendar: React.FC<Props> = ({ selectLesson }) => {
       ref={calendarRef}
       contentHeight={'auto'}
       headerToolbar={calendarView}
-      initialView={'timeGridDay'}
+      initialView={width < 768 ? 'timeGridDay' : 'dayGridMonth'}
       plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
+      nowIndicator
     />
   );
 };

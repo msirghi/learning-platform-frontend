@@ -1,4 +1,4 @@
-name: CTP-Front CI
+name: LP-Front CI
 
 on: [push]
 

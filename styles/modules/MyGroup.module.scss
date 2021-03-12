@@ -58,7 +58,7 @@
   }
 
   .header {
-    border-top-right-radius: 6px;
+    // border-top-right-radius: 6px;
     height: 76px;
     display: flex;
     align-items: center;
@@ -102,9 +102,8 @@
 }
 
 .myGroupContainer {
-  border-radius: 4px;
-  box-shadow: 2.8px 2.8px 4.6px 0.4px rgba(0, 0, 0, 0.4);
-
+  // box-shadow: 2.8px 2.8px 4.6px 0.4px rgba(0, 0, 0, 0.4);
+  border: 1px solid lightgrey;
   margin: 1rem;
   @media screen and (max-width: 768px) {
     margin: initial !important;
@@ -191,9 +190,6 @@
   padding-right: 66px;
 }
 
-.notMyMessageDate {
-}
-
 .notMyMessageContent {
   margin-left: 10px;
 }
@@ -228,9 +224,6 @@
       }
     }
 
-    @media screen and (min-width: 1200px) {
-      border-top-left-radius: 6px;
-    }
     height: 76px;
 
     .header {

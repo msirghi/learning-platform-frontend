@@ -6562,7 +6562,7 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                 </ForwardRef(HomeIcon)>
                  
                 <span>
-                  Chisinau, str.Cilene Bune 69
+                  Chisinau, str. Street 3/2
                 </span>
               </div>
             </div>

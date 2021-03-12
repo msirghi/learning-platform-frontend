@@ -1,4 +1,4 @@
-import React, { useEffect, useState, Suspense } from 'react';
+import React, { useEffect, useState, Suspense, useCallback } from 'react';
 import { coursesMock } from '../../mocks/coursesMock';
 import styles from '../../styles/modules/MyCourses.module.scss';
 import { MyCoursesHeader } from './MyCoursesHeader';
@@ -39,10 +39,10 @@ export const MyCoursesContent = () => {
     setFilteredCourses(filtered);
   };
 
-  const onSearchInputChange = (value: string) => {
+  const onSearchInputChange = useCallback((value: string) => {
     setSearchValue(value);
     filterCourses(value);
-  };
+  }, []);
 
   const onPageChange = (page: number) => {
     window.scrollTo({ top: 0 });

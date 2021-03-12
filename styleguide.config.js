@@ -47,6 +47,15 @@ module.exports = {
           .filter(function (module) {
             return /\/[A-Z]\w*\.tsx$/.test(module);
           });
+      },
+      content: function () {
+        return glob
+          .sync(path.resolve(__dirname, 'components/auth/**/*.md'))
+          .filter(function (module) {
+            console.log(module);
+            console.log('/\/[A-Z]\w*\.md$/.test(module)', /\/[A-Z]\w*\.md$/.test(module))
+            return /\/[A-Z]\w*\.md$/.test(module);
+          });
       }
     },
     {

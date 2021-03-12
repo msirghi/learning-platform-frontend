@@ -1,6 +1,6 @@
 {
   "name": "learning-platform-frontend",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -16,8 +16,10 @@
     "lint:test": "npm run lint && npm run test-cover",
     "test": "cross-env CI=true react-scripts test --silent --env=jsdom --coverage --testResultsProcessor jest-sonar-reporter",
     "sonar": "node sonar-project.js",
-    "doc:gen": "styleguidist server",
-    "doc:build": "styleguidist build"
+    "doc:pre": "bash ./common/scripts/preDocGen.sh react",
+    "doc:gen": "npm run doc:pre && styleguidist server",
+    "doc:build": "styleguidist build",
+    "patch": "npm run version --patch"
   },
   "dependencies": {
     "@fullcalendar/core": "^5.5.1",
@@ -107,7 +109,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint & npm run test:local"
+      "pre-commit": "npm run lint & npm run test:local && npm --no-git-tag-version version patch && git add ."
     }
   }
 }

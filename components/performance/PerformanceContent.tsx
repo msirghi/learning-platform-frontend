@@ -7,6 +7,9 @@ import { PerformanceMenu } from './PerformanceMenu';
 import styles from '../../styles/modules/Performance.module.scss';
 import { PageInfo } from './PageInfo';
 import { useTranslation } from '../../i18n';
+import InputLabel from '@material-ui/core/InputLabel';
+import InputAdornment from '@material-ui/core/InputAdornment';
+import SearchIcon from '@material-ui/icons/Search';
 
 const initialLessons = GradesMock;
 
@@ -24,7 +27,9 @@ export const PerformanceContent = () => {
       setDisplayLessons(initialLessons);
       return;
     }
-    const filtered = initialLessons.filter((l) => l.course.toLowerCase().includes(val.toLowerCase()));
+    const filtered = initialLessons.filter((l) =>
+      l.course.toLowerCase().includes(val.toLowerCase())
+    );
     setDisplayLessons(filtered);
     setSearchValue(val);
   };
@@ -39,7 +44,14 @@ export const PerformanceContent = () => {
           <TextField
             value={searchValue}
             onChange={(e) => onInputChange(e.target.value)}
-            label={t('performance:searchInputLabel')}
+            placeholder={t('performance:searchInputLabel')}
+            InputProps={{
+              startAdornment: (
+                <InputAdornment position='start'>
+                  <SearchIcon />
+                </InputAdornment>
+              )
+            }}
           />
         </div>
       </div>

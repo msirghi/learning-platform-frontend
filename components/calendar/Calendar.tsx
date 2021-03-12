@@ -42,7 +42,7 @@ const Calendar: React.FC<Props> = ({ selectLesson }) => {
       setCalendarView({
         left: 'prev,next',
         center: '',
-        right: 'dayGridMonth'
+        right: 'dayGridMonth,timeGridDay'
       });
       return;
     }
@@ -69,7 +69,7 @@ const Calendar: React.FC<Props> = ({ selectLesson }) => {
       slotMaxTime={'20:00'}
       windowResize={handleResize}
       ref={calendarRef}
-      contentHeight={width < 768 ? 'auto' : 'auto'}
+      contentHeight={'auto'}
       headerToolbar={calendarView}
       initialView={'timeGridDay'}
       plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}

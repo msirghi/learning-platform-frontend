@@ -164,6 +164,7 @@ $tab-desktop-font-size: 16px;
       justify-content: center;
     }
   }
+
   .cell {
     display: flex;
     flex-direction: column;
@@ -174,7 +175,7 @@ $tab-desktop-font-size: 16px;
     }
 
     .mark {
-      color: $light-gren-color;
+      color: $primary-color;
     }
   }
 }
@@ -184,21 +185,23 @@ $tab-desktop-font-size: 16px;
 }
 
 .performanceHeader {
+  margin-top: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
+}
+
+.pageInfo {
+  display: flex;
+  align-items: center;
+
   svg {
     fill: $yellow-dark-color;
   }
 
-  .pageInfo {
-    display: flex;
-    align-items: center;
-
-    span {
-      margin-left: 0.5rem;
-    }
+  span {
+    margin-left: 0.5rem;
   }
 }
 

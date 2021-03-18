@@ -1,7 +1,7 @@
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import React from 'react';
-import { PageDots } from '../PageDots';
+import { PageDots } from './PageDots';
 import IconButton from '@material-ui/core/IconButton';
 
 describe('PageDots component', () => {

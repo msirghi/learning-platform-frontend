@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from '../../styles/modules/MyCourses.module.scss';
 import Button from '@material-ui/core/Button';
-import { Course } from '../../common/types';
-import { COURSE_DEFAULT_COVER_IMAGE } from '../../common/constants/common.constants';
-import { useTranslation } from '../../i18n';
 import { useRouter } from 'next/router';
+import { Course } from '../../../common/types';
+import { useTranslation } from '../../../i18n';
+import { COURSE_DEFAULT_COVER_IMAGE } from '../../../common/constants/common.constants';
+import styles from './CourseCard.module.scss';
 
 type Props = {
   course: Course;

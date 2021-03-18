@@ -1,3 +1,35 @@
 {
-  "searchCourse": "Найти"
+  "searchCourse": "Search",
+  "seeMyGrades": "See my grades",
+  "quitCourse": "Quit course",
+  "enterButtonLabel": "Enter",
+  "findTopic": "Find topic",
+  "backButtonLabel": "Back",
+  "addNewLessonLabel": "Add new lesson",
+  "attachFilesLabel": "Attach files",
+  "addFileLabel": "Add file",
+  "errorMessages": {
+    "fileIsTooBig": "File is too big",
+    "maximumAmountReached": "You have reached maximum file amount",
+    "fillRequiredFields": "Please, fill all the required fields",
+    "platformNotSelected": "You have not selected platform. Are you sure you want to continue?"
+  },
+  "specifyLink": "Please specify the link",
+  "whereTitle": "Where?",
+  "submitButtonLabel": "Create lesson",
+  "informationLabel": "Information",
+  "confirmationDialogTitle": "Confirmation",
+  "addLessonTitle": "Add a lesson",
+  "cancel": "Cancel",
+  "continue": "Continue",
+  "editor": {
+    "subjectHelperText": "Subject of a new lesson",
+    "subjectLabel": "Subject",
+    "startDateLabel": "Start date",
+    "startTimeLabel": "Start time",
+    "endDateLabel": "End date",
+    "endTimeLabel": "End time",
+    "descriptionLabel": "Description",
+    "descriptionHelperText": "Short lesson description"
+  }
 }

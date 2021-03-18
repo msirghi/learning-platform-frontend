@@ -2,7 +2,7 @@ import { TextField } from '@material-ui/core';
 import { mount, shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import React from 'react';
-import { TopicFilter } from '../TopicFilter';
+import { TopicFilter } from './TopicFilter';
 
 describe('TopicFilter component', () => {
   beforeAll(() => {

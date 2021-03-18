@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../styles/modules/MyCourses.module.scss';
+import styles from './CourseLesson.module.scss';
 import InsertDriveFileIcon from '@material-ui/icons/InsertDriveFile';
 
 type Props = {

@@ -1,7 +1,7 @@
 import React from 'react';
-import { Course } from '../../common/types';
-import styles from '../../styles/modules/MyCourses.module.scss';
+import styles from './CoursePage.module.scss';
 import MailIcon from '@material-ui/icons/Mail';
+import { Course } from '../../../common/types';
 
 type Props = {
   course: Course;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { CourseLesson } from './CourseLesson';
+import { CourseLesson } from '../courseLesson/CourseLesson';
 
 export const CourseContent: React.FC = () => {
   return (

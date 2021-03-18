@@ -65,3 +65,12 @@ export interface Grade {
   presence: number;
   maxPresence: number;
 }
+
+export interface LessonCreationFormValues {
+  subject: string;
+  startDate: Date;
+  endDate: Date;
+  startTime: Date;
+  endTime: Date;
+  description?: string;
+}

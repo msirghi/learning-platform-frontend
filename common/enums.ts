@@ -47,3 +47,11 @@ export enum GradeType {
   FINAL = 'FINAL',
   INDIVIDUAL_WORK = 'INDIVIDUAL_WORK'
 }
+
+export enum LessonPlatform {
+  ZOOM = 'ZOOM',
+  TEAMS = 'TEAMS',
+  DISCORD = 'DISCORD',
+  SKYPE = 'STYPE',
+  OTHER = 'OTHER'
+}

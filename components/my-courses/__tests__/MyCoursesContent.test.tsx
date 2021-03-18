@@ -5,7 +5,7 @@ import { FullscreenSpinner } from '../../common/spinners/FullscreenSpinner';
 import { MyCoursesContent } from '../MyCoursesContent';
 import TextField from '@material-ui/core/TextField';
 import { CourseNotFound } from '../CourseNotFound';
-import { PageDots } from '../PageDots';
+import { PageDots } from '../pageDots/PageDots';
 
 describe('MyCoursesContent component', () => {
   it('should match the snapshot', () => {

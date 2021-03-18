@@ -2,7 +2,7 @@ import { Card } from '@material-ui/core';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import React from 'react';
-import { CardSkeleton } from '../CardSkeleton';
+import { CardSkeleton } from './CardSkeleton';
 
 describe('CardSkeleton component', () => {
   const initWidth = global.innerWidth;

@@ -3,10 +3,7 @@ import Head from 'next/head';
 import React from 'react';
 import { Course } from '../../common/types';
 import { SiteWrapper } from '../../components/common/SiteWrapper';
-import { CoursePage } from '../../components/my-courses/CoursePage';
-import ArrowBackIcon from '@material-ui/icons/ArrowBack';
-import { useRouter } from 'next/router';
-import styles from '../../styles/modules/Shared.module.scss';
+import { CoursePage } from '../../components/my-courses/coursePage/CoursePage';
 import { GetServerSideProps } from 'next';
 
 type Props = {
@@ -14,7 +11,6 @@ type Props = {
 };
 
 export default function SingleCoursePage({ course }: Props) {
-  const router = useRouter();
   return (
     <div>
       <Head>
@@ -22,13 +18,6 @@ export default function SingleCoursePage({ course }: Props) {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <SiteWrapper>
-        <Button
-          className={styles.backButton}
-          color='primary'
-          onClick={() => router.push('/myCourses')}
-        >
-          <ArrowBackIcon color='primary' /> Back
-        </Button>
         <CoursePage course={course} />
       </SiteWrapper>
     </div>

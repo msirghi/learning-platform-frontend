@@ -1,8 +1,8 @@
 import React from 'react';
 import { TextField } from '@material-ui/core';
-import styles from '../../styles/modules/MyCourses.module.scss';
-import { useWindowSize } from '../common/hooks/useWindowResize';
-import { useTranslation } from '../../i18n';
+import styles from './TopicFilter.module.scss';
+import { useWindowSize } from '../../common/hooks/useWindowResize';
+import { useTranslation } from '../../../i18n';
 
 type Props = {
   value: string;

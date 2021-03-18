@@ -5,14 +5,14 @@ import { MyCoursesHeader } from './MyCoursesHeader';
 import { Course } from '../../common/types';
 import { FullscreenSpinner } from '../common/spinners/FullscreenSpinner';
 import { CourseNotFound } from './CourseNotFound';
-import { PageDots } from './PageDots';
+import { PageDots } from './pageDots/PageDots';
 import { MAX_COURSE_CARDS_PER_PAGE } from '../../common/constants/common.constants';
 import { useWindowSize } from '../common/hooks/useWindowResize';
-import { CardSkeleton } from './CardSkeleton';
+import { CardSkeleton } from './cardSkeleton/CardSkeleton';
 
 let initCourses: Course[] = [];
 
-const LazyCourseCard = React.lazy(() => import('./CourseCard'));
+const LazyCourseCard = React.lazy(() => import('./courseCard/CourseCard'));
 
 export const MyCoursesContent = () => {
   const [filteredCourses, setFilteredCourses] = useState<Course[]>(null);

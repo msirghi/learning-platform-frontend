@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../styles/modules/MyCourses.module.scss';
+import styles from './PageDots.module.scss';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import IconButton from '@material-ui/core/IconButton';

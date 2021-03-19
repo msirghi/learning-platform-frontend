@@ -19,7 +19,6 @@ type Props = {
 
 export const CoursePage: React.FC<Props> = ({ course }) => {
   const [searchValue, setSearchValue] = useState('');
-  const [selectedCourse, setSelectedCourse] = useState<Course>();
   const [editMode, setEditMode] = useState(false);
   const router = useRouter();
   const { t } = useTranslation();

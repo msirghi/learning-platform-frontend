@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FileEditor component should match the snapshot 1`] = `
+<div
+  className="attachementsContainer"
+>
+  <div
+    className="sectionTitle"
+  >
+    courses:attachFilesLabel
+  </div>
+  <div
+    className="singleFileContainer"
+    key="0"
+  >
+    <Memo([object Object])
+      color="primary"
+    />
+    <span />
+    <Memo([object Object])
+      className="deleteIcon"
+      color="secondary"
+      fontSize="small"
+      onClick={[Function]}
+    />
+  </div>
+  <input
+    color="primary"
+    id="icon-button-file"
+    onChange={[Function]}
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+    type="file"
+  />
+  <label
+    htmlFor="icon-button-file"
+  >
+    <WithStyles(ForwardRef(Button))
+      className="addFileButton"
+      color="primary"
+      component="span"
+      size="large"
+      startIcon={<Memo />}
+    >
+      courses:addFileLabel
+    </WithStyles(ForwardRef(Button))>
+  </label>
+</div>
+`;

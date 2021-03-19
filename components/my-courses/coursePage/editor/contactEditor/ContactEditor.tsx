@@ -1,7 +1,7 @@
 import React from 'react';
 import { LessonPlatform } from '../../../../../common/enums';
 import styles from '../CourseEditor.module.scss';
-import { PlatformBadge } from '../PlatformBadge';
+import { PlatformBadge } from '../../badge/PlatformBadge';
 
 type Props = {
   setSelectedPlatform: (platform: LessonPlatform) => void;

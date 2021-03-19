@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CourseEditorForm component should match the snapshot if all the props are provided 1`] = `
+<div>
+  <div
+    className="sectionTitle"
+  >
+    courses:informationLabel
+  </div>
+  <div>
+    <WithStyles(ForwardRef(TextField))
+      fullWidth={true}
+      helperText="courses:editor.subjectHelperText"
+      label="courses:editor.subjectLabel"
+      name="subject"
+      onChange={[Function]}
+      required={true}
+      value="Subject"
+      variant="outlined"
+    />
+  </div>
+  <div
+    className="dateTimeRow"
+  >
+    <PickerWithState
+      allowKeyboardControl={true}
+      fullWidth={true}
+      helperText="courses:editor.startDateLabel"
+      inputVariant="outlined"
+      invalidDateMessage="Invalid Date Format"
+      maxDate={2100-01-01T00:00:00.000Z}
+      maxDateMessage="Date should not be after maximal date"
+      minDate={1900-01-01T00:00:00.000Z}
+      minDateMessage="Date should not be before minimal date"
+      name="startDate"
+      onChange={[Function]}
+      openTo="date"
+      value={2000-11-22T00:00:00.000Z}
+      views={
+        Array [
+          "year",
+          "date",
+        ]
+      }
+    />
+    <PickerWithState
+      ampm={true}
+      className="timepicker"
+      fullWidth={true}
+      helperText="courses:editor.startTimeLabel"
+      inputVariant="outlined"
+      invalidDateMessage="Invalid Time Format"
+      name="startTime"
+      onChange={[Function]}
+      openTo="hours"
+      value={2000-11-22T00:00:00.000Z}
+      views={
+        Array [
+          "hours",
+          "minutes",
+        ]
+      }
+    />
+  </div>
+  <div
+    className="dateTimeRow"
+  >
+    <PickerWithState
+      allowKeyboardControl={true}
+      fullWidth={true}
+      helperText="courses:editor.endDateLabel"
+      inputVariant="outlined"
+      invalidDateMessage="Invalid Date Format"
+      maxDate={2100-01-01T00:00:00.000Z}
+      maxDateMessage="Date should not be after maximal date"
+      minDate={1900-01-01T00:00:00.000Z}
+      minDateMessage="Date should not be before minimal date"
+      name="endDate"
+      onChange={[Function]}
+      openTo="date"
+      value={2000-11-22T00:00:00.000Z}
+      views={
+        Array [
+          "year",
+          "date",
+        ]
+      }
+    />
+    <PickerWithState
+      ampm={true}
+      className="timepicker"
+      fullWidth={true}
+      helperText="courses:editor.endTimeLabel"
+      inputVariant="outlined"
+      invalidDateMessage="Invalid Time Format"
+      name="endTime"
+      onChange={[Function]}
+      openTo="hours"
+      value={2000-11-22T00:00:00.000Z}
+      views={
+        Array [
+          "hours",
+          "minutes",
+        ]
+      }
+    />
+  </div>
+  <div>
+    <WithStyles(ForwardRef(TextField))
+      fullWidth={true}
+      helperText="courses:editor.descriptionHelperText"
+      label="courses:editor.descriptionLabel"
+      multiline={true}
+      name="description"
+      onChange={[Function]}
+      rows={4}
+      value="description"
+      variant="outlined"
+    />
+  </div>
+</div>
+`;

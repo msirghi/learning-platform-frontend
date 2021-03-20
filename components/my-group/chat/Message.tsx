@@ -13,7 +13,7 @@ type Props = {
 
 export const Message: React.FC<Props> = ({
   hideAvatar,
-  chatMessage: { author, date, message },
+  chatMessage: { date, message },
   fromMe,
   fontSize
 }) => {
@@ -32,11 +32,9 @@ export const Message: React.FC<Props> = ({
           }`}
         >
           <div style={{ fontSize }}>{message}</div>
-          {/* <div className={styles.author}>{author}</div> */}
         </div>
         {fromMe && !hideAvatar && <ChatAvatar />}
         {!fromMe && <div className={styles.date}>{dateformat(date, 'h:MM')}</div>}
-        {/* <div className={styles.author}>{author}</div> */}
       </div>
     </div>
   );

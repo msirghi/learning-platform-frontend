@@ -22,7 +22,9 @@ exports[`CourseEditor component should match the snapshot 1`] = `
           onSubmit={[Function]}
           open={false}
         >
-          <div>
+          <div
+            data-testid="confirmation-dialog"
+          >
             <WithStyles(ForwardRef(Dialog))
               aria-describedby="alert-dialog-description"
               aria-labelledby="alert-dialog-title"
@@ -412,6 +414,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
               <WithStyles(ForwardRef(TextField))
                 fullWidth={true}
                 helperText="courses:editor.subjectHelperText"
+                inputProps={
+                  Object {
+                    "data-testid": "subject-field",
+                  }
+                }
                 label="courses:editor.subjectLabel"
                 name="subject"
                 onChange={[Function]}
@@ -427,6 +434,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                   }
                   fullWidth={true}
                   helperText="courses:editor.subjectHelperText"
+                  inputProps={
+                    Object {
+                      "data-testid": "subject-field",
+                    }
+                  }
                   label="courses:editor.subjectLabel"
                   name="subject"
                   onChange={[Function]}
@@ -531,6 +543,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                         <WithStyles(ForwardRef(OutlinedInput))
                           autoFocus={false}
                           fullWidth={true}
+                          inputProps={
+                            Object {
+                              "data-testid": "subject-field",
+                            }
+                          }
                           label={
                             <React.Fragment>
                               courses:editor.subjectLabel
@@ -564,6 +581,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                               }
                             }
                             fullWidth={true}
+                            inputProps={
+                              Object {
+                                "data-testid": "subject-field",
+                              }
+                            }
                             label={
                               <React.Fragment>
                                 courses:editor.subjectLabel
@@ -598,6 +620,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                               }
                               fullWidth={true}
                               inputComponent="input"
+                              inputProps={
+                                Object {
+                                  "data-testid": "subject-field",
+                                }
+                              }
                               multiline={false}
                               name="subject"
                               onChange={[Function]}
@@ -631,6 +658,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                                 }
                                 fullWidth={true}
                                 inputComponent="input"
+                                inputProps={
+                                  Object {
+                                    "data-testid": "subject-field",
+                                  }
+                                }
                                 multiline={false}
                                 name="subject"
                                 onChange={[Function]}
@@ -646,6 +678,7 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                                     aria-invalid={false}
                                     autoFocus={false}
                                     className="MuiInputBase-input MuiOutlinedInput-input"
+                                    data-testid="subject-field"
                                     disabled={false}
                                     name="subject"
                                     onAnimationStart={[Function]}
@@ -741,6 +774,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                 allowKeyboardControl={true}
                 fullWidth={true}
                 helperText="courses:editor.startDateLabel"
+                inputProps={
+                  Object {
+                    "data-testid": "start-date-field",
+                  }
+                }
                 inputVariant="outlined"
                 invalidDateMessage="Invalid Date Format"
                 maxDate={2100-01-01T00:00:00.000Z}
@@ -770,6 +808,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                   format="MMMM do"
                   fullWidth={true}
                   helperText="courses:editor.startDateLabel"
+                  inputProps={
+                    Object {
+                      "data-testid": "start-date-field",
+                    }
+                  }
                   inputVariant="outlined"
                   name="startDate"
                   onAccept={[Function]}
@@ -793,6 +836,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                     format="MMMM do"
                     fullWidth={true}
                     helperText="courses:editor.startDateLabel"
+                    inputProps={
+                      Object {
+                        "data-testid": "start-date-field",
+                      }
+                    }
                     inputVariant="outlined"
                     name="startDate"
                     okLabel="OK"
@@ -808,6 +856,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                       format="MMMM do"
                       fullWidth={true}
                       helperText="courses:editor.startDateLabel"
+                      inputProps={
+                        Object {
+                          "data-testid": "start-date-field",
+                        }
+                      }
                       inputValue="November 22nd"
                       inputVariant="outlined"
                       name="startDate"
@@ -824,6 +877,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                         format="MMMM do"
                         fullWidth={true}
                         helperText="courses:editor.startDateLabel"
+                        inputProps={
+                          Object {
+                            "data-testid": "start-date-field",
+                          }
+                        }
                         name="startDate"
                         onClick={[Function]}
                         onKeyDown={[Function]}
@@ -845,6 +903,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                           format="MMMM do"
                           fullWidth={true}
                           helperText="courses:editor.startDateLabel"
+                          inputProps={
+                            Object {
+                              "data-testid": "start-date-field",
+                            }
+                          }
                           name="startDate"
                           onClick={[Function]}
                           onKeyDown={[Function]}
@@ -892,6 +955,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                                 <WithStyles(ForwardRef(OutlinedInput))
                                   autoFocus={false}
                                   fullWidth={true}
+                                  inputProps={
+                                    Object {
+                                      "data-testid": "start-date-field",
+                                    }
+                                  }
                                   multiline={false}
                                   name="startDate"
                                   readOnly={true}
@@ -919,6 +987,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                                       }
                                     }
                                     fullWidth={true}
+                                    inputProps={
+                                      Object {
+                                        "data-testid": "start-date-field",
+                                      }
+                                    }
                                     multiline={false}
                                     name="startDate"
                                     readOnly={true}
@@ -947,6 +1020,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                                       }
                                       fullWidth={true}
                                       inputComponent="input"
+                                      inputProps={
+                                        Object {
+                                          "data-testid": "start-date-field",
+                                        }
+                                      }
                                       multiline={false}
                                       name="startDate"
                                       readOnly={true}
@@ -980,6 +1058,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                                         }
                                         fullWidth={true}
                                         inputComponent="input"
+                                        inputProps={
+                                          Object {
+                                            "data-testid": "start-date-field",
+                                          }
+                                        }
                                         multiline={false}
                                         name="startDate"
                                         readOnly={true}
@@ -995,6 +1078,7 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                                             aria-invalid={false}
                                             autoFocus={false}
                                             className="MuiInputBase-input MuiOutlinedInput-input"
+                                            data-testid="start-date-field"
                                             disabled={false}
                                             name="startDate"
                                             onAnimationStart={[Function]}
@@ -1496,6 +1580,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                 className="timepicker"
                 fullWidth={true}
                 helperText="courses:editor.startTimeLabel"
+                inputProps={
+                  Object {
+                    "data-testid": "start-time-field",
+                  }
+                }
                 inputVariant="outlined"
                 invalidDateMessage="Invalid Time Format"
                 name="startTime"
@@ -1522,6 +1611,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                   format="hh:mm a"
                   fullWidth={true}
                   helperText="courses:editor.startTimeLabel"
+                  inputProps={
+                    Object {
+                      "data-testid": "start-time-field",
+                    }
+                  }
                   inputVariant="outlined"
                   name="startTime"
                   onAccept={[Function]}
@@ -1546,6 +1640,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                     format="hh:mm a"
                     fullWidth={true}
                     helperText="courses:editor.startTimeLabel"
+                    inputProps={
+                      Object {
+                        "data-testid": "start-time-field",
+                      }
+                    }
                     inputVariant="outlined"
                     name="startTime"
                     okLabel="OK"
@@ -1562,6 +1661,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                       format="hh:mm a"
                       fullWidth={true}
                       helperText="courses:editor.startTimeLabel"
+                      inputProps={
+                        Object {
+                          "data-testid": "start-time-field",
+                        }
+                      }
                       inputValue="02:00 AM"
                       inputVariant="outlined"
                       name="startTime"
@@ -1579,6 +1683,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                         format="hh:mm a"
                         fullWidth={true}
                         helperText="courses:editor.startTimeLabel"
+                        inputProps={
+                          Object {
+                            "data-testid": "start-time-field",
+                          }
+                        }
                         name="startTime"
                         onClick={[Function]}
                         onKeyDown={[Function]}
@@ -1601,6 +1710,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                           format="hh:mm a"
                           fullWidth={true}
                           helperText="courses:editor.startTimeLabel"
+                          inputProps={
+                            Object {
+                              "data-testid": "start-time-field",
+                            }
+                          }
                           name="startTime"
                           onClick={[Function]}
                           onKeyDown={[Function]}
@@ -1648,6 +1762,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                                 <WithStyles(ForwardRef(OutlinedInput))
                                   autoFocus={false}
                                   fullWidth={true}
+                                  inputProps={
+                                    Object {
+                                      "data-testid": "start-time-field",
+                                    }
+                                  }
                                   multiline={false}
                                   name="startTime"
                                   readOnly={true}
@@ -1675,6 +1794,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                                       }
                                     }
                                     fullWidth={true}
+                                    inputProps={
+                                      Object {
+                                        "data-testid": "start-time-field",
+                                      }
+                                    }
                                     multiline={false}
                                     name="startTime"
                                     readOnly={true}
@@ -1703,6 +1827,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                                       }
                                       fullWidth={true}
                                       inputComponent="input"
+                                      inputProps={
+                                        Object {
+                                          "data-testid": "start-time-field",
+                                        }
+                                      }
                                       multiline={false}
                                       name="startTime"
                                       readOnly={true}
@@ -1736,6 +1865,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                                         }
                                         fullWidth={true}
                                         inputComponent="input"
+                                        inputProps={
+                                          Object {
+                                            "data-testid": "start-time-field",
+                                          }
+                                        }
                                         multiline={false}
                                         name="startTime"
                                         readOnly={true}
@@ -1751,6 +1885,7 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                                             aria-invalid={false}
                                             autoFocus={false}
                                             className="MuiInputBase-input MuiOutlinedInput-input"
+                                            data-testid="start-time-field"
                                             disabled={false}
                                             name="startTime"
                                             onAnimationStart={[Function]}
@@ -2255,6 +2390,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                 allowKeyboardControl={true}
                 fullWidth={true}
                 helperText="courses:editor.endDateLabel"
+                inputProps={
+                  Object {
+                    "data-testid": "end-date-field",
+                  }
+                }
                 inputVariant="outlined"
                 invalidDateMessage="Invalid Date Format"
                 maxDate={2100-01-01T00:00:00.000Z}
@@ -2284,6 +2424,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                   format="MMMM do"
                   fullWidth={true}
                   helperText="courses:editor.endDateLabel"
+                  inputProps={
+                    Object {
+                      "data-testid": "end-date-field",
+                    }
+                  }
                   inputVariant="outlined"
                   name="endDate"
                   onAccept={[Function]}
@@ -2307,6 +2452,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                     format="MMMM do"
                     fullWidth={true}
                     helperText="courses:editor.endDateLabel"
+                    inputProps={
+                      Object {
+                        "data-testid": "end-date-field",
+                      }
+                    }
                     inputVariant="outlined"
                     name="endDate"
                     okLabel="OK"
@@ -2322,6 +2472,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                       format="MMMM do"
                       fullWidth={true}
                       helperText="courses:editor.endDateLabel"
+                      inputProps={
+                        Object {
+                          "data-testid": "end-date-field",
+                        }
+                      }
                       inputValue="November 22nd"
                       inputVariant="outlined"
                       name="endDate"
@@ -2338,6 +2493,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                         format="MMMM do"
                         fullWidth={true}
                         helperText="courses:editor.endDateLabel"
+                        inputProps={
+                          Object {
+                            "data-testid": "end-date-field",
+                          }
+                        }
                         name="endDate"
                         onClick={[Function]}
                         onKeyDown={[Function]}
@@ -2359,6 +2519,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                           format="MMMM do"
                           fullWidth={true}
                           helperText="courses:editor.endDateLabel"
+                          inputProps={
+                            Object {
+                              "data-testid": "end-date-field",
+                            }
+                          }
                           name="endDate"
                           onClick={[Function]}
                           onKeyDown={[Function]}
@@ -2406,6 +2571,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                                 <WithStyles(ForwardRef(OutlinedInput))
                                   autoFocus={false}
                                   fullWidth={true}
+                                  inputProps={
+                                    Object {
+                                      "data-testid": "end-date-field",
+                                    }
+                                  }
                                   multiline={false}
                                   name="endDate"
                                   readOnly={true}
@@ -2433,6 +2603,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                                       }
                                     }
                                     fullWidth={true}
+                                    inputProps={
+                                      Object {
+                                        "data-testid": "end-date-field",
+                                      }
+                                    }
                                     multiline={false}
                                     name="endDate"
                                     readOnly={true}
@@ -2461,6 +2636,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                                       }
                                       fullWidth={true}
                                       inputComponent="input"
+                                      inputProps={
+                                        Object {
+                                          "data-testid": "end-date-field",
+                                        }
+                                      }
                                       multiline={false}
                                       name="endDate"
                                       readOnly={true}
@@ -2494,6 +2674,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                                         }
                                         fullWidth={true}
                                         inputComponent="input"
+                                        inputProps={
+                                          Object {
+                                            "data-testid": "end-date-field",
+                                          }
+                                        }
                                         multiline={false}
                                         name="endDate"
                                         readOnly={true}
@@ -2509,6 +2694,7 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                                             aria-invalid={false}
                                             autoFocus={false}
                                             className="MuiInputBase-input MuiOutlinedInput-input"
+                                            data-testid="end-date-field"
                                             disabled={false}
                                             name="endDate"
                                             onAnimationStart={[Function]}
@@ -3010,6 +3196,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                 className="timepicker"
                 fullWidth={true}
                 helperText="courses:editor.endTimeLabel"
+                inputProps={
+                  Object {
+                    "data-testid": "end-time-field",
+                  }
+                }
                 inputVariant="outlined"
                 invalidDateMessage="Invalid Time Format"
                 name="endTime"
@@ -3036,6 +3227,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                   format="hh:mm a"
                   fullWidth={true}
                   helperText="courses:editor.endTimeLabel"
+                  inputProps={
+                    Object {
+                      "data-testid": "end-time-field",
+                    }
+                  }
                   inputVariant="outlined"
                   name="endTime"
                   onAccept={[Function]}
@@ -3060,6 +3256,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                     format="hh:mm a"
                     fullWidth={true}
                     helperText="courses:editor.endTimeLabel"
+                    inputProps={
+                      Object {
+                        "data-testid": "end-time-field",
+                      }
+                    }
                     inputVariant="outlined"
                     name="endTime"
                     okLabel="OK"
@@ -3076,6 +3277,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                       format="hh:mm a"
                       fullWidth={true}
                       helperText="courses:editor.endTimeLabel"
+                      inputProps={
+                        Object {
+                          "data-testid": "end-time-field",
+                        }
+                      }
                       inputValue="02:00 AM"
                       inputVariant="outlined"
                       name="endTime"
@@ -3093,6 +3299,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                         format="hh:mm a"
                         fullWidth={true}
                         helperText="courses:editor.endTimeLabel"
+                        inputProps={
+                          Object {
+                            "data-testid": "end-time-field",
+                          }
+                        }
                         name="endTime"
                         onClick={[Function]}
                         onKeyDown={[Function]}
@@ -3115,6 +3326,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                           format="hh:mm a"
                           fullWidth={true}
                           helperText="courses:editor.endTimeLabel"
+                          inputProps={
+                            Object {
+                              "data-testid": "end-time-field",
+                            }
+                          }
                           name="endTime"
                           onClick={[Function]}
                           onKeyDown={[Function]}
@@ -3162,6 +3378,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                                 <WithStyles(ForwardRef(OutlinedInput))
                                   autoFocus={false}
                                   fullWidth={true}
+                                  inputProps={
+                                    Object {
+                                      "data-testid": "end-time-field",
+                                    }
+                                  }
                                   multiline={false}
                                   name="endTime"
                                   readOnly={true}
@@ -3189,6 +3410,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                                       }
                                     }
                                     fullWidth={true}
+                                    inputProps={
+                                      Object {
+                                        "data-testid": "end-time-field",
+                                      }
+                                    }
                                     multiline={false}
                                     name="endTime"
                                     readOnly={true}
@@ -3217,6 +3443,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                                       }
                                       fullWidth={true}
                                       inputComponent="input"
+                                      inputProps={
+                                        Object {
+                                          "data-testid": "end-time-field",
+                                        }
+                                      }
                                       multiline={false}
                                       name="endTime"
                                       readOnly={true}
@@ -3250,6 +3481,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                                         }
                                         fullWidth={true}
                                         inputComponent="input"
+                                        inputProps={
+                                          Object {
+                                            "data-testid": "end-time-field",
+                                          }
+                                        }
                                         multiline={false}
                                         name="endTime"
                                         readOnly={true}
@@ -3265,6 +3501,7 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                                             aria-invalid={false}
                                             autoFocus={false}
                                             className="MuiInputBase-input MuiOutlinedInput-input"
+                                            data-testid="end-time-field"
                                             disabled={false}
                                             name="endTime"
                                             onAnimationStart={[Function]}
@@ -3766,6 +4003,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
               <WithStyles(ForwardRef(TextField))
                 fullWidth={true}
                 helperText="courses:editor.descriptionHelperText"
+                inputProps={
+                  Object {
+                    "data-testid": "description-field",
+                  }
+                }
                 label="courses:editor.descriptionLabel"
                 multiline={true}
                 name="description"
@@ -3782,6 +4024,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                   }
                   fullWidth={true}
                   helperText="courses:editor.descriptionHelperText"
+                  inputProps={
+                    Object {
+                      "data-testid": "description-field",
+                    }
+                  }
                   label="courses:editor.descriptionLabel"
                   multiline={true}
                   name="description"
@@ -3880,6 +4127,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                         <WithStyles(ForwardRef(OutlinedInput))
                           autoFocus={false}
                           fullWidth={true}
+                          inputProps={
+                            Object {
+                              "data-testid": "description-field",
+                            }
+                          }
                           label={
                             <React.Fragment>
                               courses:editor.descriptionLabel
@@ -3913,6 +4165,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                               }
                             }
                             fullWidth={true}
+                            inputProps={
+                              Object {
+                                "data-testid": "description-field",
+                              }
+                            }
                             label={
                               <React.Fragment>
                                 courses:editor.descriptionLabel
@@ -3947,6 +4204,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                               }
                               fullWidth={true}
                               inputComponent="input"
+                              inputProps={
+                                Object {
+                                  "data-testid": "description-field",
+                                }
+                              }
                               multiline={true}
                               name="description"
                               onChange={[Function]}
@@ -3981,6 +4243,11 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                                 }
                                 fullWidth={true}
                                 inputComponent="input"
+                                inputProps={
+                                  Object {
+                                    "data-testid": "description-field",
+                                  }
+                                }
                                 multiline={true}
                                 name="description"
                                 onChange={[Function]}
@@ -3997,6 +4264,7 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                                     aria-invalid={false}
                                     autoFocus={false}
                                     className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMultiline MuiOutlinedInput-inputMultiline"
+                                    data-testid="description-field"
                                     disabled={false}
                                     name="description"
                                     onAnimationStart={[Function]}
@@ -4085,6 +4353,7 @@ exports[`CourseEditor component should match the snapshot 1`] = `
             <WithStyles(ForwardRef(Button))
               className="addButton"
               color="primary"
+              data-testid="course-submit"
               fullWidth={true}
               onClick={[Function]}
               type="submit"
@@ -4126,6 +4395,7 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                   }
                 }
                 color="primary"
+                data-testid="course-submit"
                 fullWidth={true}
                 onClick={[Function]}
                 type="submit"
@@ -4134,6 +4404,7 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                 <WithStyles(ForwardRef(ButtonBase))
                   className="MuiButton-root MuiButton-contained addButton MuiButton-containedPrimary MuiButton-fullWidth"
                   component="button"
+                  data-testid="course-submit"
                   disabled={false}
                   focusRipple={true}
                   focusVisibleClassName="Mui-focusVisible"
@@ -4150,6 +4421,7 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                       }
                     }
                     component="button"
+                    data-testid="course-submit"
                     disabled={false}
                     focusRipple={true}
                     focusVisibleClassName="Mui-focusVisible"
@@ -4158,6 +4430,7 @@ exports[`CourseEditor component should match the snapshot 1`] = `
                   >
                     <button
                       className="MuiButtonBase-root MuiButton-root MuiButton-contained addButton MuiButton-containedPrimary MuiButton-fullWidth"
+                      data-testid="course-submit"
                       disabled={false}
                       onBlur={[Function]}
                       onClick={[Function]}

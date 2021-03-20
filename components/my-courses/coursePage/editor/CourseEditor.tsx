@@ -49,6 +49,7 @@ export const CourseEditor: React.FC = () => {
       return;
     }
 
+    console.log('selectedFiles.length :>> ', selectedFiles.length);
     if (isFileAmountReached()) {
       enqueueSnackbar(t('courses:errorMessages.maximumAmountReached'), { variant: 'error' });
       return;
@@ -73,8 +74,8 @@ export const CourseEditor: React.FC = () => {
       setConfirmationDialogOpen(true);
     }
 
-    // TODO: Backend call
-  };
+      // TODO: Backend call
+    };
 
   return (
     <MuiPickersUtilsProvider utils={DateFnsUtils}>
@@ -112,7 +113,13 @@ export const CourseEditor: React.FC = () => {
         </div>
 
         {width <= 768 && (
-          <Button fullWidth className={styles.addButton} color='primary' variant='contained'>
+          <Button
+            data-testid='course-submit'
+            fullWidth
+            className={styles.addButton}
+            color='primary'
+            variant='contained'
+          >
             {t('courses:submitButtonLabel')}
           </Button>
         )}

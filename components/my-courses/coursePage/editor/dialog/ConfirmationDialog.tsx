@@ -18,7 +18,7 @@ export const ConfirmationDialog: React.FC<Props> = ({ open, message, onSubmit, o
   const { t } = useTranslation();
 
   return (
-    <div>
+    <div data-testid='confirmation-dialog'>
       <Dialog
         open={open}
         onClose={onCancel}
@@ -26,7 +26,7 @@ export const ConfirmationDialog: React.FC<Props> = ({ open, message, onSubmit, o
         aria-describedby='alert-dialog-description'
       >
         <DialogTitle id='alert-dialog-title'>{t('courses:confirmationDialogTitle')}</DialogTitle>
-        <DialogContent>
+        <DialogContent data-testid='confirmation-dialog-content'>
           <DialogContentText id='alert-dialog-description'>{message}</DialogContentText>
         </DialogContent>
         <DialogActions>

@@ -11,6 +11,11 @@ exports[`CourseEditorForm component should match the snapshot if all the props a
     <WithStyles(ForwardRef(TextField))
       fullWidth={true}
       helperText="courses:editor.subjectHelperText"
+      inputProps={
+        Object {
+          "data-testid": "subject-field",
+        }
+      }
       label="courses:editor.subjectLabel"
       name="subject"
       onChange={[Function]}
@@ -26,6 +31,11 @@ exports[`CourseEditorForm component should match the snapshot if all the props a
       allowKeyboardControl={true}
       fullWidth={true}
       helperText="courses:editor.startDateLabel"
+      inputProps={
+        Object {
+          "data-testid": "start-date-field",
+        }
+      }
       inputVariant="outlined"
       invalidDateMessage="Invalid Date Format"
       maxDate={2100-01-01T00:00:00.000Z}
@@ -48,6 +58,11 @@ exports[`CourseEditorForm component should match the snapshot if all the props a
       className="timepicker"
       fullWidth={true}
       helperText="courses:editor.startTimeLabel"
+      inputProps={
+        Object {
+          "data-testid": "start-time-field",
+        }
+      }
       inputVariant="outlined"
       invalidDateMessage="Invalid Time Format"
       name="startTime"
@@ -69,6 +84,11 @@ exports[`CourseEditorForm component should match the snapshot if all the props a
       allowKeyboardControl={true}
       fullWidth={true}
       helperText="courses:editor.endDateLabel"
+      inputProps={
+        Object {
+          "data-testid": "end-date-field",
+        }
+      }
       inputVariant="outlined"
       invalidDateMessage="Invalid Date Format"
       maxDate={2100-01-01T00:00:00.000Z}
@@ -91,6 +111,11 @@ exports[`CourseEditorForm component should match the snapshot if all the props a
       className="timepicker"
       fullWidth={true}
       helperText="courses:editor.endTimeLabel"
+      inputProps={
+        Object {
+          "data-testid": "end-time-field",
+        }
+      }
       inputVariant="outlined"
       invalidDateMessage="Invalid Time Format"
       name="endTime"
@@ -109,6 +134,11 @@ exports[`CourseEditorForm component should match the snapshot if all the props a
     <WithStyles(ForwardRef(TextField))
       fullWidth={true}
       helperText="courses:editor.descriptionHelperText"
+      inputProps={
+        Object {
+          "data-testid": "description-field",
+        }
+      }
       label="courses:editor.descriptionLabel"
       multiline={true}
       name="description"

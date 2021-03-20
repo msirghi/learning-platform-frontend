@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ConfirmationDialog component should match the snapshot if all props are provided 1`] = `
-<div>
+<div
+  data-testid="confirmation-dialog"
+>
   <WithStyles(ForwardRef(Dialog))
     aria-describedby="alert-dialog-description"
     aria-labelledby="alert-dialog-title"
@@ -13,7 +15,9 @@ exports[`ConfirmationDialog component should match the snapshot if all props are
     >
       courses:confirmationDialogTitle
     </WithStyles(ForwardRef(DialogTitle))>
-    <WithStyles(ForwardRef(DialogContent))>
+    <WithStyles(ForwardRef(DialogContent))
+      data-testid="confirmation-dialog-content"
+    >
       <WithStyles(ForwardRef(DialogContentText))
         id="alert-dialog-description"
       >

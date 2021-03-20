@@ -10,6 +10,7 @@ import { CourseEditorForm } from '../mainEditor/CourseEditorForm';
 import { FileEditor } from '../fileEditor/FileEditor';
 import InsertDriveFileIcon from '@material-ui/icons/InsertDriveFile';
 import { MAXIMUM_LESSON_FILES } from '../../../../../common/constants/common.constants';
+import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3';
 
 describe('CourseEditor component', () => {
   const mockEnqueue = jest.fn();
@@ -29,18 +30,22 @@ describe('CourseEditor component', () => {
 
   it('should match the snapshot', () => {
     const wrapper = mount(
-      <SnackbarProvider maxSnack={3}>
-        <CourseEditor />
-      </SnackbarProvider>
+      <GoogleReCaptchaProvider reCaptchaKey={process.env.RECAPTCHA_SITEKEY}>
+        <SnackbarProvider maxSnack={3}>
+          <CourseEditor />
+        </SnackbarProvider>
+      </GoogleReCaptchaProvider>
     );
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 
   it('should render all the fields', () => {
     const { getByTestId } = render(
-      <SnackbarProvider maxSnack={3}>
-        <CourseEditor />
-      </SnackbarProvider>
+      <GoogleReCaptchaProvider reCaptchaKey={process.env.RECAPTCHA_SITEKEY}>
+        <SnackbarProvider maxSnack={3}>
+          <CourseEditor />
+        </SnackbarProvider>
+      </GoogleReCaptchaProvider>
     );
 
     const subjectField = getByTestId('subject-field');
@@ -64,9 +69,11 @@ describe('CourseEditor component', () => {
 
   it('should render confirmation dialog on filling the form and not selectin the platform', () => {
     const { getByTestId } = render(
-      <SnackbarProvider maxSnack={3}>
-        <CourseEditor />
-      </SnackbarProvider>
+      <GoogleReCaptchaProvider reCaptchaKey={process.env.RECAPTCHA_SITEKEY}>
+        <SnackbarProvider maxSnack={3}>
+          <CourseEditor />
+        </SnackbarProvider>
+      </GoogleReCaptchaProvider>
     );
 
     const subjectField = getByTestId('subject-field');
@@ -83,9 +90,11 @@ describe('CourseEditor component', () => {
 
   it('should not show confirmation dialog on onCancel prop call in the dialog', () => {
     const wrapper = mount(
-      <SnackbarProvider maxSnack={3}>
-        <CourseEditor />
-      </SnackbarProvider>
+      <GoogleReCaptchaProvider reCaptchaKey={process.env.RECAPTCHA_SITEKEY}>
+        <SnackbarProvider maxSnack={3}>
+          <CourseEditor />
+        </SnackbarProvider>
+      </GoogleReCaptchaProvider>
     );
 
     const dialog = wrapper.find(ConfirmationDialog);
@@ -97,9 +106,11 @@ describe('CourseEditor component', () => {
 
   it('should not show confirmation dialog if the subject field is not filled', () => {
     const wrapper = mount(
-      <SnackbarProvider maxSnack={3}>
-        <CourseEditor />
-      </SnackbarProvider>
+      <GoogleReCaptchaProvider reCaptchaKey={process.env.RECAPTCHA_SITEKEY}>
+        <SnackbarProvider maxSnack={3}>
+          <CourseEditor />
+        </SnackbarProvider>
+      </GoogleReCaptchaProvider>
     );
 
     const form = wrapper.find(CourseEditorForm);
@@ -115,9 +126,11 @@ describe('CourseEditor component', () => {
 
   it('should not show confirmation dialog if the platform is not selected', () => {
     const wrapper = mount(
-      <SnackbarProvider maxSnack={3}>
-        <CourseEditor />
-      </SnackbarProvider>
+      <GoogleReCaptchaProvider reCaptchaKey={process.env.RECAPTCHA_SITEKEY}>
+        <SnackbarProvider maxSnack={3}>
+          <CourseEditor />
+        </SnackbarProvider>
+      </GoogleReCaptchaProvider>
     );
 
     const form = wrapper.find(CourseEditorForm);
@@ -143,9 +156,11 @@ describe('CourseEditor component', () => {
 
   it('should not accept too big files', () => {
     const wrapper = mount(
-      <SnackbarProvider maxSnack={3}>
-        <CourseEditor />
-      </SnackbarProvider>
+      <GoogleReCaptchaProvider reCaptchaKey={process.env.RECAPTCHA_SITEKEY}>
+        <SnackbarProvider maxSnack={3}>
+          <CourseEditor />
+        </SnackbarProvider>
+      </GoogleReCaptchaProvider>
     );
 
     const fileEditor = wrapper.find(FileEditor);

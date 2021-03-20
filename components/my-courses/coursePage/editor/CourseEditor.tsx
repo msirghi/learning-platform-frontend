@@ -1,5 +1,5 @@
 import { Button, TextField } from '@material-ui/core';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './CourseEditor.module.scss';
 import DateFnsUtils from '@date-io/date-fns';
 import { MuiPickersUtilsProvider } from '@material-ui/pickers';
@@ -16,6 +16,7 @@ import {
   MAXIMUM_LESSON_FILE_SIZE
 } from '../../../../common/constants/common.constants';
 import { useTranslation } from '../../../../i18n';
+import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
 
 export const CourseEditor: React.FC = () => {
   const [selectedPlatform, setSelectedPlatform] = useState<LessonPlatform>();
@@ -24,6 +25,12 @@ export const CourseEditor: React.FC = () => {
   const [width] = useWindowSize();
   const { enqueueSnackbar } = useSnackbar();
   const { t } = useTranslation();
+
+  const { executeRecaptcha } = useGoogleReCaptcha();
+
+  useEffect(() => {
+    executeRecaptcha('course_edit_entrance');
+  }, []);
 
   const [lessonInfoForm, setLessonInfoForm] = useState<LessonCreationFormValues>({
     endDate: new Date(),
@@ -49,7 +56,6 @@ export const CourseEditor: React.FC = () => {
       return;
     }
 
-    console.log('selectedFiles.length :>> ', selectedFiles.length);
     if (isFileAmountReached()) {
       enqueueSnackbar(t('courses:errorMessages.maximumAmountReached'), { variant: 'error' });
       return;
@@ -74,8 +80,9 @@ export const CourseEditor: React.FC = () => {
       setConfirmationDialogOpen(true);
     }
 
-      // TODO: Backend call
-    };
+    executeRecaptcha('course_edit_creation');
+    // TODO: Backend call
+  };
 
   return (
     <MuiPickersUtilsProvider utils={DateFnsUtils}>

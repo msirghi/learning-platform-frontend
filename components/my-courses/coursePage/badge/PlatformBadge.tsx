@@ -1,7 +1,7 @@
 import { Avatar, Chip } from '@material-ui/core';
 import React from 'react';
 import { LessonPlatform } from '../../../../common/enums';
-import styles from './CourseEditor.module.scss';
+import styles from '../editor/CourseEditor.module.scss';
 import DoneIcon from '@material-ui/icons/Done';
 
 type Props = {

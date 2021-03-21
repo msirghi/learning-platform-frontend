@@ -11,6 +11,7 @@ import Checkbox from '@material-ui/core/Checkbox';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import { AlertType, AuthPage } from '../../../common/enums';
 import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
+import app from '../../config/firebase';
 
 interface Values {
   email: string;
@@ -53,13 +54,21 @@ function RegisterForm({ onMessage, onTabChange }: Props) {
 
   const onSubmit = async (values: Values) => {
     setSubmitting(true);
-    /* istanbul ignore next */
-    setTimeout(() => {
-      setSubmitting(false);
-      onMessage(AlertType.SUCCESS, t('auth:registerSuccessMessage'));
-      onTabChange(AuthPage.LOGIN);
-    }, 500);
+    await handleSignUp();
     await executeRecaptcha('registration_submit');
+  };
+
+  const handleSignUp = async () => {
+    try {
+      const email = getValues().email;
+      const password = getValues().password;
+      await app.auth().createUserWithEmailAndPassword(email, password);
+      setSubmitting(false);
+      onTabChange(AuthPage.LOGIN);
+    } catch (error) {
+      onMessage(AlertType.ERROR, error.message);
+      setSubmitting(false);
+    }
   };
 
   return (

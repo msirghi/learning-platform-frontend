@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { withTranslation } from '../../i18n';
 import styles from '../../styles/modules/Auth.module.scss';
 import Grid from '@material-ui/core/Grid';
@@ -9,6 +9,10 @@ import { AlertMessage } from '../common/AlertMesssage';
 import Head from 'next/head';
 import RegisterForm from './forms/RegisterForm';
 import LoginForm from './forms/LoginForm';
+import { useSelector } from 'react-redux';
+import { RootState } from '../../redux/reducers';
+import { useRouter } from 'next/router';
+import { FullscreenSpinner } from '../common/spinners/FullscreenSpinner';
 
 /**
  * Auth container component. Includes auth form handler.
@@ -19,6 +23,17 @@ import LoginForm from './forms/LoginForm';
 function AuthContainer({ t }) {
   const [currentTab, setCurrentTab] = useState<AuthPage>(AuthPage.LOGIN);
   const [message, setMessage] = useState<{ type: AlertType; text: string } | null>();
+  const loggedInUser = useSelector((state: RootState) => state.user.email);
+  const router = useRouter();
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    if (loggedInUser) {
+      router.push('/home');
+      return;
+    }
+    setLoading(false);
+  }, []);
 
   const onTabChange = (tab: AuthPage) => {
     setMessage(null);
@@ -26,6 +41,10 @@ function AuthContainer({ t }) {
   };
 
   const onMessage = (type: AlertType, text: string) => setMessage({ type, text });
+
+  if (loading) {
+    return <FullscreenSpinner />;
+  }
 
   return (
     <>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import { makeStyles, createStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import { NewsCard } from './NewsCard';
@@ -7,7 +7,9 @@ import { ScheduleCard } from './ScheduleCard';
 import { useWindowSize } from '../common/hooks/useWindowResize';
 import styles from '../../styles/modules/Home.module.scss';
 import { useTranslation } from '../../i18n';
-import { NoContent } from './NoContent';
+import { useRouter } from 'next/router';
+import { useSelector } from 'react-redux';
+import { RootState } from '../../redux/reducers';
 
 const useStyles = makeStyles(() =>
   createStyles({
@@ -31,6 +33,14 @@ export const HomeContent: React.FC = () => {
   const classes = useStyles();
   const [width] = useWindowSize();
   const { t } = useTranslation();
+  const router = useRouter();
+  const currentUser = useSelector((state: RootState) => state.user.email);
+
+  useEffect(() => {
+    if (!currentUser) {
+      router.push('/auth');
+    }
+  }, []);
 
   return (
     <div className={classes.root}>

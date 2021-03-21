@@ -1,19 +1,36 @@
-import { Button, LinearProgress } from '@material-ui/core';
-import { mount, shallow } from 'enzyme';
+import { Button } from '@material-ui/core';
+import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
-import { findByTestAttr } from '../../../common/testUtils';
 import LoginForm from '../forms/LoginForm';
+import { Provider } from 'react-redux';
+import configureStore from 'redux-mock-store';
+import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3';
 
 describe('LoginForm component', () => {
+  const mockStore = configureStore();
+  const store = mockStore({ user: { email: 'email' } });
+
   it('should match snapshot', () => {
-    const wrapper = shallow(<LoginForm onTabChange={jest.fn()} onMessage={jest.fn()} />);
+    const wrapper = mount(
+      <GoogleReCaptchaProvider reCaptchaKey={process.env.RECAPTCHA_SITEKEY}>
+        <Provider store={store}>
+          <LoginForm onTabChange={jest.fn()} onMessage={jest.fn()} />
+        </Provider>
+      </GoogleReCaptchaProvider>
+    );
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 
   it('should have disabled button by default', () => {
-    const wrapper = shallow(<LoginForm onMessage={jest.fn()} onTabChange={jest.fn()} />);
+    const wrapper = mount(
+      <GoogleReCaptchaProvider reCaptchaKey={process.env.RECAPTCHA_SITEKEY}>
+        <Provider store={store}>
+          <LoginForm onMessage={jest.fn()} onTabChange={jest.fn()} />
+        </Provider>
+      </GoogleReCaptchaProvider>
+    );
     const button = wrapper.find(Button);
 
     expect(button).toHaveLength(1);
@@ -21,7 +38,13 @@ describe('LoginForm component', () => {
   });
 
   it('should have enabled button on fullfiled fields', () => {
-    const { getByTestId } = render(<LoginForm onMessage={jest.fn()} onTabChange={jest.fn()} />);
+    const { getByTestId } = render(
+      <GoogleReCaptchaProvider reCaptchaKey={process.env.RECAPTCHA_SITEKEY}>
+        <Provider store={store}>
+          <LoginForm onMessage={jest.fn()} onTabChange={jest.fn()} />
+        </Provider>
+      </GoogleReCaptchaProvider>
+    );
 
     const emailField = getByTestId('email-field');
     expect(emailField).toBeInTheDocument();
@@ -36,24 +59,5 @@ describe('LoginForm component', () => {
     fireEvent.change(passwordField, { target: { value: 'password' } });
     expect(button).toBeEnabled();
     fireEvent.click(button);
-  });
-
-  it('should submit the form and show LinearProgress', () => {
-    const wrapper = mount(<LoginForm onMessage={jest.fn()} onTabChange={jest.fn()} />);
-
-    const emailField = findByTestAttr(wrapper, 'email');
-    expect(emailField).toHaveLength(1);
-
-    const passwordField = findByTestAttr(wrapper, 'password');
-    expect(passwordField).toHaveLength(1);
-
-    emailField.simulate('change', 'email@email.com');
-    passwordField.simulate('change', 'password');
-
-    const form = wrapper.find('form');
-    expect(form).toHaveLength(1);
-
-    form.simulate('submit');
-    expect(wrapper.find(LinearProgress)).toHaveLength(1);
   });
 });

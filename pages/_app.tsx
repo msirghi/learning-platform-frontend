@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/globals.scss';
 import { appWithTranslation, useTranslation } from '../i18n';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
@@ -12,6 +12,10 @@ import { setInterfaceMode } from '../redux/actions/interface/interfaceAction';
 import { orange } from '@material-ui/core/colors';
 import { InterfaceMode } from '../common/enums';
 import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3';
+import app from '../components/config/firebase';
+import { setUserInfo } from '../redux/actions/user/userAction';
+import { FullscreenSpinner } from '../components/common/spinners/FullscreenSpinner';
+import { useRouter } from 'next/router';
 
 import '@fullcalendar/common/main.css';
 import '@fullcalendar/daygrid/main.css';
@@ -22,6 +26,8 @@ function MyApp({ Component, pageProps }) {
   const { i18n } = useTranslation();
   const siteMode = useSelector((state: RootState) => state.interface.interfaceMode);
   const mainPrimaryColor = siteMode === InterfaceMode.DARK ? orange[500] : '#26816b';
+  const [loading, setLoading] = useState(true);
+  const router = useRouter();
 
   const darkTheme = createMuiTheme({
     palette: {
@@ -41,7 +47,20 @@ function MyApp({ Component, pageProps }) {
     localStorage.setItem('siteMode', siteMode);
   };
 
+  const checkLoggedInUser = () => {
+    app.auth().onAuthStateChanged((user) => {
+      if (!user || !user.email) {
+        router.push('/auth');
+        setLoading(false);
+        return;
+      }
+      dispatch(setUserInfo({ email: user.email }));
+      setLoading(false);
+    });
+  };
+
   useEffect(() => {
+    checkLoggedInUser();
     dispatch(setInterfaceLocale(i18n.language));
     const initialMode = localStorage.getItem('siteMode') as InterfaceMode;
     onInterfaceModeChange(initialMode || InterfaceMode.LIGHT);
@@ -50,6 +69,10 @@ function MyApp({ Component, pageProps }) {
       jssStyles.parentElement.removeChild(jssStyles);
     }
   }, []);
+
+  if (loading) {
+    return <FullscreenSpinner />;
+  }
 
   return (
     <Provider store={store}>

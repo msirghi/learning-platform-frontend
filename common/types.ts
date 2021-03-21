@@ -74,3 +74,7 @@ export interface LessonCreationFormValues {
   endTime: Date;
   description?: string;
 }
+
+export interface LoggedUser {
+  email: string;
+}

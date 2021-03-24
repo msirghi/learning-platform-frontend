@@ -7,9 +7,9 @@ import { PerformanceMenu } from './PerformanceMenu';
 import styles from '../../styles/modules/Performance.module.scss';
 import { PageInfo } from './PageInfo';
 import { useTranslation } from '../../i18n';
-import InputLabel from '@material-ui/core/InputLabel';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import SearchIcon from '@material-ui/icons/Search';
+import { PerformanceStatistics } from './statistics/PerformanceStatistics';
 
 const initialLessons = GradesMock;
 
@@ -72,7 +72,7 @@ export const PerformanceContent = () => {
             <div className={styles.lessonsNotFound}>{t('performance:lessonsNotFound')}</div>
           ))}
 
-        {currentTab === PerformanceTabs.STATISTICS && <div>Statistics</div>}
+        {currentTab === PerformanceTabs.STATISTICS && <PerformanceStatistics />}
       </div>
     </div>
   );

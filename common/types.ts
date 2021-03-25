@@ -78,3 +78,9 @@ export interface LessonCreationFormValues {
 export interface LoggedUser {
   email: string;
 }
+
+export interface HelpQuestion {
+  id: number;
+  title: string;
+  description: string;
+}

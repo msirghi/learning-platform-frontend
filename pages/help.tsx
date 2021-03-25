@@ -7,7 +7,7 @@ function Calendar({ t }) {
   return (
     <div>
       <Head>
-        <title>{t('help:title')}</title>
+        <title>{t('common:headerTitles.help')}</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <HelpContent />

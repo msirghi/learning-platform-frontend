@@ -16,6 +16,7 @@ import app from '../components/config/firebase';
 import { setUserInfo } from '../redux/actions/user/userAction';
 import { FullscreenSpinner } from '../components/common/spinners/FullscreenSpinner';
 import { useRouter } from 'next/router';
+import { SnackbarProvider } from 'notistack';
 
 import '@fullcalendar/common/main.css';
 import '@fullcalendar/daygrid/main.css';
@@ -77,10 +78,12 @@ function MyApp({ Component, pageProps }) {
   return (
     <Provider store={store}>
       <GoogleReCaptchaProvider reCaptchaKey={process.env.RECAPTCHA_SITEKEY}>
-        <NextNprogress color='#29D' startPosition={0.3} stopDelayMs={200} />
-        <MuiThemeProvider theme={darkTheme}>
-          <Component {...pageProps} />
-        </MuiThemeProvider>
+        <SnackbarProvider maxSnack={3}>
+          <NextNprogress color='#29D' startPosition={0.3} stopDelayMs={200} />
+          <MuiThemeProvider theme={darkTheme}>
+            <Component {...pageProps} />
+          </MuiThemeProvider>
+        </SnackbarProvider>
       </GoogleReCaptchaProvider>
     </Provider>
   );

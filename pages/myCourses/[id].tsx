@@ -26,8 +26,10 @@ export default function SingleCoursePage({ course }: Props) {
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const id = context.query.id;
-
-  const course = await fetch(`http://localhost:3000/api/courses/${id}`);
+  const { req } = context;
+  const protocol = req.headers.referer.split(':')[0];
+  const host = req.headers.host;
+  const course = await fetch(`${protocol}://${host}/api/courses/${id}`);
   const parsed = await course.json();
 
   return {

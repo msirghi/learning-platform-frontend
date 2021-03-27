@@ -23,6 +23,7 @@
 
   .header {
     height: 76px;
+    min-height: 76px;
     background-color: $primary-color;
     display: flex;
     align-items: center;

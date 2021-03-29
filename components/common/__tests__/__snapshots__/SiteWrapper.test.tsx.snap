@@ -3348,7 +3348,6 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                                         >
                                           <div
                                             className="mainMenuColor false undefined"
-                                            key="Home"
                                           >
                                             <Link
                                               href="/home"
@@ -3511,7 +3510,6 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                                           </div>
                                           <div
                                             className="mainMenuColor false undefined"
-                                            key="My Courses"
                                           >
                                             <Link
                                               href="/myCourses"
@@ -3677,7 +3675,6 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                                           </div>
                                           <div
                                             className="mainMenuColor false undefined"
-                                            key="Group"
                                           >
                                             <Link
                                               href="/myGroup"
@@ -3840,7 +3837,6 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                                           </div>
                                           <div
                                             className="mainMenuColor false undefined"
-                                            key="My performance"
                                           >
                                             <Link
                                               href="/performance"
@@ -4003,7 +3999,6 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                                           </div>
                                           <div
                                             className="mainMenuColor false undefined"
-                                            key="Calendar"
                                           >
                                             <Link
                                               href="/calendar"
@@ -4166,7 +4161,6 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                                           </div>
                                           <div
                                             className="mainMenuColor false mainMenuAlignBottom"
-                                            key="Help"
                                           >
                                             <Link
                                               href="/help"
@@ -5107,7 +5101,6 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                                     >
                                       <div
                                         className="mainMenuColor false undefined"
-                                        key="Home"
                                       >
                                         <Link
                                           href="/home"
@@ -5270,7 +5263,6 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                                       </div>
                                       <div
                                         className="mainMenuColor false undefined"
-                                        key="My Courses"
                                       >
                                         <Link
                                           href="/myCourses"
@@ -5436,7 +5428,6 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                                       </div>
                                       <div
                                         className="mainMenuColor false undefined"
-                                        key="Group"
                                       >
                                         <Link
                                           href="/myGroup"
@@ -5599,7 +5590,6 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                                       </div>
                                       <div
                                         className="mainMenuColor false undefined"
-                                        key="My performance"
                                       >
                                         <Link
                                           href="/performance"
@@ -5762,7 +5752,6 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                                       </div>
                                       <div
                                         className="mainMenuColor false undefined"
-                                        key="Calendar"
                                       >
                                         <Link
                                           href="/calendar"
@@ -5925,7 +5914,6 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                                       </div>
                                       <div
                                         className="mainMenuColor false mainMenuAlignBottom"
-                                        key="Help"
                                       >
                                         <Link
                                           href="/help"

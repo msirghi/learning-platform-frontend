@@ -90,13 +90,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                     </div>
                     <div
                       class="MuiListItemText-root mainMenuActiveText"
-                    >
-                      <span
-                        class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                      >
-                        Home
-                      </span>
-                    </div>
+                    />
                     <span
                       class="MuiTouchRipple-root"
                     />
@@ -130,13 +124,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                     </div>
                     <div
                       class="MuiListItemText-root"
-                    >
-                      <span
-                        class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                      >
-                        My Courses
-                      </span>
-                    </div>
+                    />
                     <span
                       class="MuiTouchRipple-root"
                     />
@@ -167,13 +155,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                     </div>
                     <div
                       class="MuiListItemText-root"
-                    >
-                      <span
-                        class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                      >
-                        Group
-                      </span>
-                    </div>
+                    />
                     <span
                       class="MuiTouchRipple-root"
                     />
@@ -204,13 +186,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                     </div>
                     <div
                       class="MuiListItemText-root"
-                    >
-                      <span
-                        class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                      >
-                        My performance
-                      </span>
-                    </div>
+                    />
                     <span
                       class="MuiTouchRipple-root"
                     />
@@ -241,13 +217,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                     </div>
                     <div
                       class="MuiListItemText-root"
-                    >
-                      <span
-                        class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                      >
-                        Calendar
-                      </span>
-                    </div>
+                    />
                     <span
                       class="MuiTouchRipple-root"
                     />
@@ -278,13 +248,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                     </div>
                     <div
                       class="MuiListItemText-root"
-                    >
-                      <span
-                        class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                      >
-                        Help
-                      </span>
-                    </div>
+                    />
                     <span
                       class="MuiTouchRipple-root"
                     />
@@ -381,13 +345,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                       </div>
                       <div
                         class="MuiListItemText-root mainMenuActiveText"
-                      >
-                        <span
-                          class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                        >
-                          Home
-                        </span>
-                      </div>
+                      />
                       <span
                         class="MuiTouchRipple-root"
                       />
@@ -421,13 +379,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                       </div>
                       <div
                         class="MuiListItemText-root"
-                      >
-                        <span
-                          class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                        >
-                          My Courses
-                        </span>
-                      </div>
+                      />
                       <span
                         class="MuiTouchRipple-root"
                       />
@@ -458,13 +410,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                       </div>
                       <div
                         class="MuiListItemText-root"
-                      >
-                        <span
-                          class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                        >
-                          Group
-                        </span>
-                      </div>
+                      />
                       <span
                         class="MuiTouchRipple-root"
                       />
@@ -495,13 +441,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                       </div>
                       <div
                         class="MuiListItemText-root"
-                      >
-                        <span
-                          class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                        >
-                          My performance
-                        </span>
-                      </div>
+                      />
                       <span
                         class="MuiTouchRipple-root"
                       />
@@ -532,13 +472,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                       </div>
                       <div
                         class="MuiListItemText-root"
-                      >
-                        <span
-                          class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                        >
-                          Calendar
-                        </span>
-                      </div>
+                      />
                       <span
                         class="MuiTouchRipple-root"
                       />
@@ -569,13 +503,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                       </div>
                       <div
                         class="MuiListItemText-root"
-                      >
-                        <span
-                          class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                        >
-                          Help
-                        </span>
-                      </div>
+                      />
                       <span
                         class="MuiTouchRipple-root"
                       />
@@ -1021,13 +949,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                             </div>
                             <div
                               class="MuiListItemText-root mainMenuActiveText"
-                            >
-                              <span
-                                class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                              >
-                                Home
-                              </span>
-                            </div>
+                            />
                             <span
                               class="MuiTouchRipple-root"
                             />
@@ -1061,13 +983,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                             </div>
                             <div
                               class="MuiListItemText-root"
-                            >
-                              <span
-                                class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                              >
-                                My Courses
-                              </span>
-                            </div>
+                            />
                             <span
                               class="MuiTouchRipple-root"
                             />
@@ -1098,13 +1014,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                             </div>
                             <div
                               class="MuiListItemText-root"
-                            >
-                              <span
-                                class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                              >
-                                Group
-                              </span>
-                            </div>
+                            />
                             <span
                               class="MuiTouchRipple-root"
                             />
@@ -1135,13 +1045,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                             </div>
                             <div
                               class="MuiListItemText-root"
-                            >
-                              <span
-                                class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                              >
-                                My performance
-                              </span>
-                            </div>
+                            />
                             <span
                               class="MuiTouchRipple-root"
                             />
@@ -1172,13 +1076,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                             </div>
                             <div
                               class="MuiListItemText-root"
-                            >
-                              <span
-                                class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                              >
-                                Calendar
-                              </span>
-                            </div>
+                            />
                             <span
                               class="MuiTouchRipple-root"
                             />
@@ -1209,13 +1107,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                             </div>
                             <div
                               class="MuiListItemText-root"
-                            >
-                              <span
-                                class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                              >
-                                Help
-                              </span>
-                            </div>
+                            />
                             <span
                               class="MuiTouchRipple-root"
                             />
@@ -1406,13 +1298,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                   </div>
                                   <div
                                     class="MuiListItemText-root mainMenuActiveText"
-                                  >
-                                    <span
-                                      class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                                    >
-                                      Home
-                                    </span>
-                                  </div>
+                                  />
                                   <span
                                     class="MuiTouchRipple-root"
                                   />
@@ -1446,13 +1332,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                   </div>
                                   <div
                                     class="MuiListItemText-root"
-                                  >
-                                    <span
-                                      class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                                    >
-                                      My Courses
-                                    </span>
-                                  </div>
+                                  />
                                   <span
                                     class="MuiTouchRipple-root"
                                   />
@@ -1483,13 +1363,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                   </div>
                                   <div
                                     class="MuiListItemText-root"
-                                  >
-                                    <span
-                                      class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                                    >
-                                      Group
-                                    </span>
-                                  </div>
+                                  />
                                   <span
                                     class="MuiTouchRipple-root"
                                   />
@@ -1520,13 +1394,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                   </div>
                                   <div
                                     class="MuiListItemText-root"
-                                  >
-                                    <span
-                                      class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                                    >
-                                      My performance
-                                    </span>
-                                  </div>
+                                  />
                                   <span
                                     class="MuiTouchRipple-root"
                                   />
@@ -1557,13 +1425,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                   </div>
                                   <div
                                     class="MuiListItemText-root"
-                                  >
-                                    <span
-                                      class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                                    >
-                                      Calendar
-                                    </span>
-                                  </div>
+                                  />
                                   <span
                                     class="MuiTouchRipple-root"
                                   />
@@ -1594,13 +1456,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                   </div>
                                   <div
                                     class="MuiListItemText-root"
-                                  >
-                                    <span
-                                      class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                                    >
-                                      Help
-                                    </span>
-                                  </div>
+                                  />
                                   <span
                                     class="MuiTouchRipple-root"
                                   />
@@ -1814,7 +1670,6 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                 >
                                   <div
                                     className="mainMenuColor mainMenuActive undefined"
-                                    key="Home"
                                   >
                                     <Link
                                       href="/home"
@@ -1943,7 +1798,6 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                                 <WithStyles(ForwardRef(ListItemText))
                                                   className="mainMenuActiveText"
                                                   key=".1"
-                                                  primary="Home"
                                                 >
                                                   <ForwardRef(ListItemText)
                                                     className="mainMenuActiveText"
@@ -1957,65 +1811,10 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                                         "secondary": "MuiListItemText-secondary",
                                                       }
                                                     }
-                                                    primary="Home"
                                                   >
                                                     <div
                                                       className="MuiListItemText-root mainMenuActiveText"
-                                                    >
-                                                      <WithStyles(ForwardRef(Typography))
-                                                        className="MuiListItemText-primary"
-                                                        component="span"
-                                                        display="block"
-                                                        variant="body1"
-                                                      >
-                                                        <ForwardRef(Typography)
-                                                          className="MuiListItemText-primary"
-                                                          classes={
-                                                            Object {
-                                                              "alignCenter": "MuiTypography-alignCenter",
-                                                              "alignJustify": "MuiTypography-alignJustify",
-                                                              "alignLeft": "MuiTypography-alignLeft",
-                                                              "alignRight": "MuiTypography-alignRight",
-                                                              "body1": "MuiTypography-body1",
-                                                              "body2": "MuiTypography-body2",
-                                                              "button": "MuiTypography-button",
-                                                              "caption": "MuiTypography-caption",
-                                                              "colorError": "MuiTypography-colorError",
-                                                              "colorInherit": "MuiTypography-colorInherit",
-                                                              "colorPrimary": "MuiTypography-colorPrimary",
-                                                              "colorSecondary": "MuiTypography-colorSecondary",
-                                                              "colorTextPrimary": "MuiTypography-colorTextPrimary",
-                                                              "colorTextSecondary": "MuiTypography-colorTextSecondary",
-                                                              "displayBlock": "MuiTypography-displayBlock",
-                                                              "displayInline": "MuiTypography-displayInline",
-                                                              "gutterBottom": "MuiTypography-gutterBottom",
-                                                              "h1": "MuiTypography-h1",
-                                                              "h2": "MuiTypography-h2",
-                                                              "h3": "MuiTypography-h3",
-                                                              "h4": "MuiTypography-h4",
-                                                              "h5": "MuiTypography-h5",
-                                                              "h6": "MuiTypography-h6",
-                                                              "noWrap": "MuiTypography-noWrap",
-                                                              "overline": "MuiTypography-overline",
-                                                              "paragraph": "MuiTypography-paragraph",
-                                                              "root": "MuiTypography-root",
-                                                              "srOnly": "MuiTypography-srOnly",
-                                                              "subtitle1": "MuiTypography-subtitle1",
-                                                              "subtitle2": "MuiTypography-subtitle2",
-                                                            }
-                                                          }
-                                                          component="span"
-                                                          display="block"
-                                                          variant="body1"
-                                                        >
-                                                          <span
-                                                            className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                                                          >
-                                                            Home
-                                                          </span>
-                                                        </ForwardRef(Typography)>
-                                                      </WithStyles(ForwardRef(Typography))>
-                                                    </div>
+                                                    />
                                                   </ForwardRef(ListItemText)>
                                                 </WithStyles(ForwardRef(ListItemText))>
                                                 <WithStyles(memo)
@@ -2055,7 +1854,6 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                   </div>
                                   <div
                                     className="mainMenuColor false undefined"
-                                    key="My Courses"
                                   >
                                     <Link
                                       href="/myCourses"
@@ -2187,7 +1985,6 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                                 <WithStyles(ForwardRef(ListItemText))
                                                   className=""
                                                   key=".1"
-                                                  primary="My Courses"
                                                 >
                                                   <ForwardRef(ListItemText)
                                                     className=""
@@ -2201,65 +1998,10 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                                         "secondary": "MuiListItemText-secondary",
                                                       }
                                                     }
-                                                    primary="My Courses"
                                                   >
                                                     <div
                                                       className="MuiListItemText-root"
-                                                    >
-                                                      <WithStyles(ForwardRef(Typography))
-                                                        className="MuiListItemText-primary"
-                                                        component="span"
-                                                        display="block"
-                                                        variant="body1"
-                                                      >
-                                                        <ForwardRef(Typography)
-                                                          className="MuiListItemText-primary"
-                                                          classes={
-                                                            Object {
-                                                              "alignCenter": "MuiTypography-alignCenter",
-                                                              "alignJustify": "MuiTypography-alignJustify",
-                                                              "alignLeft": "MuiTypography-alignLeft",
-                                                              "alignRight": "MuiTypography-alignRight",
-                                                              "body1": "MuiTypography-body1",
-                                                              "body2": "MuiTypography-body2",
-                                                              "button": "MuiTypography-button",
-                                                              "caption": "MuiTypography-caption",
-                                                              "colorError": "MuiTypography-colorError",
-                                                              "colorInherit": "MuiTypography-colorInherit",
-                                                              "colorPrimary": "MuiTypography-colorPrimary",
-                                                              "colorSecondary": "MuiTypography-colorSecondary",
-                                                              "colorTextPrimary": "MuiTypography-colorTextPrimary",
-                                                              "colorTextSecondary": "MuiTypography-colorTextSecondary",
-                                                              "displayBlock": "MuiTypography-displayBlock",
-                                                              "displayInline": "MuiTypography-displayInline",
-                                                              "gutterBottom": "MuiTypography-gutterBottom",
-                                                              "h1": "MuiTypography-h1",
-                                                              "h2": "MuiTypography-h2",
-                                                              "h3": "MuiTypography-h3",
-                                                              "h4": "MuiTypography-h4",
-                                                              "h5": "MuiTypography-h5",
-                                                              "h6": "MuiTypography-h6",
-                                                              "noWrap": "MuiTypography-noWrap",
-                                                              "overline": "MuiTypography-overline",
-                                                              "paragraph": "MuiTypography-paragraph",
-                                                              "root": "MuiTypography-root",
-                                                              "srOnly": "MuiTypography-srOnly",
-                                                              "subtitle1": "MuiTypography-subtitle1",
-                                                              "subtitle2": "MuiTypography-subtitle2",
-                                                            }
-                                                          }
-                                                          component="span"
-                                                          display="block"
-                                                          variant="body1"
-                                                        >
-                                                          <span
-                                                            className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                                                          >
-                                                            My Courses
-                                                          </span>
-                                                        </ForwardRef(Typography)>
-                                                      </WithStyles(ForwardRef(Typography))>
-                                                    </div>
+                                                    />
                                                   </ForwardRef(ListItemText)>
                                                 </WithStyles(ForwardRef(ListItemText))>
                                                 <WithStyles(memo)
@@ -2299,7 +2041,6 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                   </div>
                                   <div
                                     className="mainMenuColor false undefined"
-                                    key="Group"
                                   >
                                     <Link
                                       href="/myGroup"
@@ -2428,7 +2169,6 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                                 <WithStyles(ForwardRef(ListItemText))
                                                   className=""
                                                   key=".1"
-                                                  primary="Group"
                                                 >
                                                   <ForwardRef(ListItemText)
                                                     className=""
@@ -2442,65 +2182,10 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                                         "secondary": "MuiListItemText-secondary",
                                                       }
                                                     }
-                                                    primary="Group"
                                                   >
                                                     <div
                                                       className="MuiListItemText-root"
-                                                    >
-                                                      <WithStyles(ForwardRef(Typography))
-                                                        className="MuiListItemText-primary"
-                                                        component="span"
-                                                        display="block"
-                                                        variant="body1"
-                                                      >
-                                                        <ForwardRef(Typography)
-                                                          className="MuiListItemText-primary"
-                                                          classes={
-                                                            Object {
-                                                              "alignCenter": "MuiTypography-alignCenter",
-                                                              "alignJustify": "MuiTypography-alignJustify",
-                                                              "alignLeft": "MuiTypography-alignLeft",
-                                                              "alignRight": "MuiTypography-alignRight",
-                                                              "body1": "MuiTypography-body1",
-                                                              "body2": "MuiTypography-body2",
-                                                              "button": "MuiTypography-button",
-                                                              "caption": "MuiTypography-caption",
-                                                              "colorError": "MuiTypography-colorError",
-                                                              "colorInherit": "MuiTypography-colorInherit",
-                                                              "colorPrimary": "MuiTypography-colorPrimary",
-                                                              "colorSecondary": "MuiTypography-colorSecondary",
-                                                              "colorTextPrimary": "MuiTypography-colorTextPrimary",
-                                                              "colorTextSecondary": "MuiTypography-colorTextSecondary",
-                                                              "displayBlock": "MuiTypography-displayBlock",
-                                                              "displayInline": "MuiTypography-displayInline",
-                                                              "gutterBottom": "MuiTypography-gutterBottom",
-                                                              "h1": "MuiTypography-h1",
-                                                              "h2": "MuiTypography-h2",
-                                                              "h3": "MuiTypography-h3",
-                                                              "h4": "MuiTypography-h4",
-                                                              "h5": "MuiTypography-h5",
-                                                              "h6": "MuiTypography-h6",
-                                                              "noWrap": "MuiTypography-noWrap",
-                                                              "overline": "MuiTypography-overline",
-                                                              "paragraph": "MuiTypography-paragraph",
-                                                              "root": "MuiTypography-root",
-                                                              "srOnly": "MuiTypography-srOnly",
-                                                              "subtitle1": "MuiTypography-subtitle1",
-                                                              "subtitle2": "MuiTypography-subtitle2",
-                                                            }
-                                                          }
-                                                          component="span"
-                                                          display="block"
-                                                          variant="body1"
-                                                        >
-                                                          <span
-                                                            className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                                                          >
-                                                            Group
-                                                          </span>
-                                                        </ForwardRef(Typography)>
-                                                      </WithStyles(ForwardRef(Typography))>
-                                                    </div>
+                                                    />
                                                   </ForwardRef(ListItemText)>
                                                 </WithStyles(ForwardRef(ListItemText))>
                                                 <WithStyles(memo)
@@ -2540,7 +2225,6 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                   </div>
                                   <div
                                     className="mainMenuColor false undefined"
-                                    key="My performance"
                                   >
                                     <Link
                                       href="/performance"
@@ -2669,7 +2353,6 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                                 <WithStyles(ForwardRef(ListItemText))
                                                   className=""
                                                   key=".1"
-                                                  primary="My performance"
                                                 >
                                                   <ForwardRef(ListItemText)
                                                     className=""
@@ -2683,65 +2366,10 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                                         "secondary": "MuiListItemText-secondary",
                                                       }
                                                     }
-                                                    primary="My performance"
                                                   >
                                                     <div
                                                       className="MuiListItemText-root"
-                                                    >
-                                                      <WithStyles(ForwardRef(Typography))
-                                                        className="MuiListItemText-primary"
-                                                        component="span"
-                                                        display="block"
-                                                        variant="body1"
-                                                      >
-                                                        <ForwardRef(Typography)
-                                                          className="MuiListItemText-primary"
-                                                          classes={
-                                                            Object {
-                                                              "alignCenter": "MuiTypography-alignCenter",
-                                                              "alignJustify": "MuiTypography-alignJustify",
-                                                              "alignLeft": "MuiTypography-alignLeft",
-                                                              "alignRight": "MuiTypography-alignRight",
-                                                              "body1": "MuiTypography-body1",
-                                                              "body2": "MuiTypography-body2",
-                                                              "button": "MuiTypography-button",
-                                                              "caption": "MuiTypography-caption",
-                                                              "colorError": "MuiTypography-colorError",
-                                                              "colorInherit": "MuiTypography-colorInherit",
-                                                              "colorPrimary": "MuiTypography-colorPrimary",
-                                                              "colorSecondary": "MuiTypography-colorSecondary",
-                                                              "colorTextPrimary": "MuiTypography-colorTextPrimary",
-                                                              "colorTextSecondary": "MuiTypography-colorTextSecondary",
-                                                              "displayBlock": "MuiTypography-displayBlock",
-                                                              "displayInline": "MuiTypography-displayInline",
-                                                              "gutterBottom": "MuiTypography-gutterBottom",
-                                                              "h1": "MuiTypography-h1",
-                                                              "h2": "MuiTypography-h2",
-                                                              "h3": "MuiTypography-h3",
-                                                              "h4": "MuiTypography-h4",
-                                                              "h5": "MuiTypography-h5",
-                                                              "h6": "MuiTypography-h6",
-                                                              "noWrap": "MuiTypography-noWrap",
-                                                              "overline": "MuiTypography-overline",
-                                                              "paragraph": "MuiTypography-paragraph",
-                                                              "root": "MuiTypography-root",
-                                                              "srOnly": "MuiTypography-srOnly",
-                                                              "subtitle1": "MuiTypography-subtitle1",
-                                                              "subtitle2": "MuiTypography-subtitle2",
-                                                            }
-                                                          }
-                                                          component="span"
-                                                          display="block"
-                                                          variant="body1"
-                                                        >
-                                                          <span
-                                                            className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                                                          >
-                                                            My performance
-                                                          </span>
-                                                        </ForwardRef(Typography)>
-                                                      </WithStyles(ForwardRef(Typography))>
-                                                    </div>
+                                                    />
                                                   </ForwardRef(ListItemText)>
                                                 </WithStyles(ForwardRef(ListItemText))>
                                                 <WithStyles(memo)
@@ -2781,7 +2409,6 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                   </div>
                                   <div
                                     className="mainMenuColor false undefined"
-                                    key="Calendar"
                                   >
                                     <Link
                                       href="/calendar"
@@ -2910,7 +2537,6 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                                 <WithStyles(ForwardRef(ListItemText))
                                                   className=""
                                                   key=".1"
-                                                  primary="Calendar"
                                                 >
                                                   <ForwardRef(ListItemText)
                                                     className=""
@@ -2924,65 +2550,10 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                                         "secondary": "MuiListItemText-secondary",
                                                       }
                                                     }
-                                                    primary="Calendar"
                                                   >
                                                     <div
                                                       className="MuiListItemText-root"
-                                                    >
-                                                      <WithStyles(ForwardRef(Typography))
-                                                        className="MuiListItemText-primary"
-                                                        component="span"
-                                                        display="block"
-                                                        variant="body1"
-                                                      >
-                                                        <ForwardRef(Typography)
-                                                          className="MuiListItemText-primary"
-                                                          classes={
-                                                            Object {
-                                                              "alignCenter": "MuiTypography-alignCenter",
-                                                              "alignJustify": "MuiTypography-alignJustify",
-                                                              "alignLeft": "MuiTypography-alignLeft",
-                                                              "alignRight": "MuiTypography-alignRight",
-                                                              "body1": "MuiTypography-body1",
-                                                              "body2": "MuiTypography-body2",
-                                                              "button": "MuiTypography-button",
-                                                              "caption": "MuiTypography-caption",
-                                                              "colorError": "MuiTypography-colorError",
-                                                              "colorInherit": "MuiTypography-colorInherit",
-                                                              "colorPrimary": "MuiTypography-colorPrimary",
-                                                              "colorSecondary": "MuiTypography-colorSecondary",
-                                                              "colorTextPrimary": "MuiTypography-colorTextPrimary",
-                                                              "colorTextSecondary": "MuiTypography-colorTextSecondary",
-                                                              "displayBlock": "MuiTypography-displayBlock",
-                                                              "displayInline": "MuiTypography-displayInline",
-                                                              "gutterBottom": "MuiTypography-gutterBottom",
-                                                              "h1": "MuiTypography-h1",
-                                                              "h2": "MuiTypography-h2",
-                                                              "h3": "MuiTypography-h3",
-                                                              "h4": "MuiTypography-h4",
-                                                              "h5": "MuiTypography-h5",
-                                                              "h6": "MuiTypography-h6",
-                                                              "noWrap": "MuiTypography-noWrap",
-                                                              "overline": "MuiTypography-overline",
-                                                              "paragraph": "MuiTypography-paragraph",
-                                                              "root": "MuiTypography-root",
-                                                              "srOnly": "MuiTypography-srOnly",
-                                                              "subtitle1": "MuiTypography-subtitle1",
-                                                              "subtitle2": "MuiTypography-subtitle2",
-                                                            }
-                                                          }
-                                                          component="span"
-                                                          display="block"
-                                                          variant="body1"
-                                                        >
-                                                          <span
-                                                            className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                                                          >
-                                                            Calendar
-                                                          </span>
-                                                        </ForwardRef(Typography)>
-                                                      </WithStyles(ForwardRef(Typography))>
-                                                    </div>
+                                                    />
                                                   </ForwardRef(ListItemText)>
                                                 </WithStyles(ForwardRef(ListItemText))>
                                                 <WithStyles(memo)
@@ -3022,7 +2593,6 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                   </div>
                                   <div
                                     className="mainMenuColor false mainMenuAlignBottom"
-                                    key="Help"
                                   >
                                     <Link
                                       href="/help"
@@ -3151,7 +2721,6 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                                 <WithStyles(ForwardRef(ListItemText))
                                                   className=""
                                                   key=".1"
-                                                  primary="Help"
                                                 >
                                                   <ForwardRef(ListItemText)
                                                     className=""
@@ -3165,65 +2734,10 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                                         "secondary": "MuiListItemText-secondary",
                                                       }
                                                     }
-                                                    primary="Help"
                                                   >
                                                     <div
                                                       className="MuiListItemText-root"
-                                                    >
-                                                      <WithStyles(ForwardRef(Typography))
-                                                        className="MuiListItemText-primary"
-                                                        component="span"
-                                                        display="block"
-                                                        variant="body1"
-                                                      >
-                                                        <ForwardRef(Typography)
-                                                          className="MuiListItemText-primary"
-                                                          classes={
-                                                            Object {
-                                                              "alignCenter": "MuiTypography-alignCenter",
-                                                              "alignJustify": "MuiTypography-alignJustify",
-                                                              "alignLeft": "MuiTypography-alignLeft",
-                                                              "alignRight": "MuiTypography-alignRight",
-                                                              "body1": "MuiTypography-body1",
-                                                              "body2": "MuiTypography-body2",
-                                                              "button": "MuiTypography-button",
-                                                              "caption": "MuiTypography-caption",
-                                                              "colorError": "MuiTypography-colorError",
-                                                              "colorInherit": "MuiTypography-colorInherit",
-                                                              "colorPrimary": "MuiTypography-colorPrimary",
-                                                              "colorSecondary": "MuiTypography-colorSecondary",
-                                                              "colorTextPrimary": "MuiTypography-colorTextPrimary",
-                                                              "colorTextSecondary": "MuiTypography-colorTextSecondary",
-                                                              "displayBlock": "MuiTypography-displayBlock",
-                                                              "displayInline": "MuiTypography-displayInline",
-                                                              "gutterBottom": "MuiTypography-gutterBottom",
-                                                              "h1": "MuiTypography-h1",
-                                                              "h2": "MuiTypography-h2",
-                                                              "h3": "MuiTypography-h3",
-                                                              "h4": "MuiTypography-h4",
-                                                              "h5": "MuiTypography-h5",
-                                                              "h6": "MuiTypography-h6",
-                                                              "noWrap": "MuiTypography-noWrap",
-                                                              "overline": "MuiTypography-overline",
-                                                              "paragraph": "MuiTypography-paragraph",
-                                                              "root": "MuiTypography-root",
-                                                              "srOnly": "MuiTypography-srOnly",
-                                                              "subtitle1": "MuiTypography-subtitle1",
-                                                              "subtitle2": "MuiTypography-subtitle2",
-                                                            }
-                                                          }
-                                                          component="span"
-                                                          display="block"
-                                                          variant="body1"
-                                                        >
-                                                          <span
-                                                            className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                                                          >
-                                                            Help
-                                                          </span>
-                                                        </ForwardRef(Typography)>
-                                                      </WithStyles(ForwardRef(Typography))>
-                                                    </div>
+                                                    />
                                                   </ForwardRef(ListItemText)>
                                                 </WithStyles(ForwardRef(ListItemText))>
                                                 <WithStyles(memo)
@@ -3437,13 +2951,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                             </div>
                             <div
                               class="MuiListItemText-root mainMenuActiveText"
-                            >
-                              <span
-                                class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                              >
-                                Home
-                              </span>
-                            </div>
+                            />
                             <span
                               class="MuiTouchRipple-root"
                             />
@@ -3477,13 +2985,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                             </div>
                             <div
                               class="MuiListItemText-root"
-                            >
-                              <span
-                                class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                              >
-                                My Courses
-                              </span>
-                            </div>
+                            />
                             <span
                               class="MuiTouchRipple-root"
                             />
@@ -3514,13 +3016,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                             </div>
                             <div
                               class="MuiListItemText-root"
-                            >
-                              <span
-                                class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                              >
-                                Group
-                              </span>
-                            </div>
+                            />
                             <span
                               class="MuiTouchRipple-root"
                             />
@@ -3551,13 +3047,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                             </div>
                             <div
                               class="MuiListItemText-root"
-                            >
-                              <span
-                                class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                              >
-                                My performance
-                              </span>
-                            </div>
+                            />
                             <span
                               class="MuiTouchRipple-root"
                             />
@@ -3588,13 +3078,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                             </div>
                             <div
                               class="MuiListItemText-root"
-                            >
-                              <span
-                                class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                              >
-                                Calendar
-                              </span>
-                            </div>
+                            />
                             <span
                               class="MuiTouchRipple-root"
                             />
@@ -3625,13 +3109,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                             </div>
                             <div
                               class="MuiListItemText-root"
-                            >
-                              <span
-                                class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                              >
-                                Help
-                              </span>
-                            </div>
+                            />
                             <span
                               class="MuiTouchRipple-root"
                             />
@@ -3727,13 +3205,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                               </div>
                               <div
                                 class="MuiListItemText-root mainMenuActiveText"
-                              >
-                                <span
-                                  class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                                >
-                                  Home
-                                </span>
-                              </div>
+                              />
                               <span
                                 class="MuiTouchRipple-root"
                               />
@@ -3767,13 +3239,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                               </div>
                               <div
                                 class="MuiListItemText-root"
-                              >
-                                <span
-                                  class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                                >
-                                  My Courses
-                                </span>
-                              </div>
+                              />
                               <span
                                 class="MuiTouchRipple-root"
                               />
@@ -3804,13 +3270,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                               </div>
                               <div
                                 class="MuiListItemText-root"
-                              >
-                                <span
-                                  class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                                >
-                                  Group
-                                </span>
-                              </div>
+                              />
                               <span
                                 class="MuiTouchRipple-root"
                               />
@@ -3841,13 +3301,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                               </div>
                               <div
                                 class="MuiListItemText-root"
-                              >
-                                <span
-                                  class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                                >
-                                  My performance
-                                </span>
-                              </div>
+                              />
                               <span
                                 class="MuiTouchRipple-root"
                               />
@@ -3878,13 +3332,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                               </div>
                               <div
                                 class="MuiListItemText-root"
-                              >
-                                <span
-                                  class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                                >
-                                  Calendar
-                                </span>
-                              </div>
+                              />
                               <span
                                 class="MuiTouchRipple-root"
                               />
@@ -3915,13 +3363,7 @@ exports[`MainDrawer component should render match the snapshot on defined active
                               </div>
                               <div
                                 class="MuiListItemText-root"
-                              >
-                                <span
-                                  class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                                >
-                                  Help
-                                </span>
-                              </div>
+                              />
                               <span
                                 class="MuiTouchRipple-root"
                               />
@@ -4149,7 +3591,6 @@ exports[`MainDrawer component should render match the snapshot on defined active
                             >
                               <div
                                 className="mainMenuColor mainMenuActive undefined"
-                                key="Home"
                               >
                                 <Link
                                   href="/home"
@@ -4278,7 +3719,6 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                             <WithStyles(ForwardRef(ListItemText))
                                               className="mainMenuActiveText"
                                               key=".1"
-                                              primary="Home"
                                             >
                                               <ForwardRef(ListItemText)
                                                 className="mainMenuActiveText"
@@ -4292,65 +3732,10 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                                     "secondary": "MuiListItemText-secondary",
                                                   }
                                                 }
-                                                primary="Home"
                                               >
                                                 <div
                                                   className="MuiListItemText-root mainMenuActiveText"
-                                                >
-                                                  <WithStyles(ForwardRef(Typography))
-                                                    className="MuiListItemText-primary"
-                                                    component="span"
-                                                    display="block"
-                                                    variant="body1"
-                                                  >
-                                                    <ForwardRef(Typography)
-                                                      className="MuiListItemText-primary"
-                                                      classes={
-                                                        Object {
-                                                          "alignCenter": "MuiTypography-alignCenter",
-                                                          "alignJustify": "MuiTypography-alignJustify",
-                                                          "alignLeft": "MuiTypography-alignLeft",
-                                                          "alignRight": "MuiTypography-alignRight",
-                                                          "body1": "MuiTypography-body1",
-                                                          "body2": "MuiTypography-body2",
-                                                          "button": "MuiTypography-button",
-                                                          "caption": "MuiTypography-caption",
-                                                          "colorError": "MuiTypography-colorError",
-                                                          "colorInherit": "MuiTypography-colorInherit",
-                                                          "colorPrimary": "MuiTypography-colorPrimary",
-                                                          "colorSecondary": "MuiTypography-colorSecondary",
-                                                          "colorTextPrimary": "MuiTypography-colorTextPrimary",
-                                                          "colorTextSecondary": "MuiTypography-colorTextSecondary",
-                                                          "displayBlock": "MuiTypography-displayBlock",
-                                                          "displayInline": "MuiTypography-displayInline",
-                                                          "gutterBottom": "MuiTypography-gutterBottom",
-                                                          "h1": "MuiTypography-h1",
-                                                          "h2": "MuiTypography-h2",
-                                                          "h3": "MuiTypography-h3",
-                                                          "h4": "MuiTypography-h4",
-                                                          "h5": "MuiTypography-h5",
-                                                          "h6": "MuiTypography-h6",
-                                                          "noWrap": "MuiTypography-noWrap",
-                                                          "overline": "MuiTypography-overline",
-                                                          "paragraph": "MuiTypography-paragraph",
-                                                          "root": "MuiTypography-root",
-                                                          "srOnly": "MuiTypography-srOnly",
-                                                          "subtitle1": "MuiTypography-subtitle1",
-                                                          "subtitle2": "MuiTypography-subtitle2",
-                                                        }
-                                                      }
-                                                      component="span"
-                                                      display="block"
-                                                      variant="body1"
-                                                    >
-                                                      <span
-                                                        className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                                                      >
-                                                        Home
-                                                      </span>
-                                                    </ForwardRef(Typography)>
-                                                  </WithStyles(ForwardRef(Typography))>
-                                                </div>
+                                                />
                                               </ForwardRef(ListItemText)>
                                             </WithStyles(ForwardRef(ListItemText))>
                                             <WithStyles(memo)
@@ -4390,7 +3775,6 @@ exports[`MainDrawer component should render match the snapshot on defined active
                               </div>
                               <div
                                 className="mainMenuColor false undefined"
-                                key="My Courses"
                               >
                                 <Link
                                   href="/myCourses"
@@ -4522,7 +3906,6 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                             <WithStyles(ForwardRef(ListItemText))
                                               className=""
                                               key=".1"
-                                              primary="My Courses"
                                             >
                                               <ForwardRef(ListItemText)
                                                 className=""
@@ -4536,65 +3919,10 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                                     "secondary": "MuiListItemText-secondary",
                                                   }
                                                 }
-                                                primary="My Courses"
                                               >
                                                 <div
                                                   className="MuiListItemText-root"
-                                                >
-                                                  <WithStyles(ForwardRef(Typography))
-                                                    className="MuiListItemText-primary"
-                                                    component="span"
-                                                    display="block"
-                                                    variant="body1"
-                                                  >
-                                                    <ForwardRef(Typography)
-                                                      className="MuiListItemText-primary"
-                                                      classes={
-                                                        Object {
-                                                          "alignCenter": "MuiTypography-alignCenter",
-                                                          "alignJustify": "MuiTypography-alignJustify",
-                                                          "alignLeft": "MuiTypography-alignLeft",
-                                                          "alignRight": "MuiTypography-alignRight",
-                                                          "body1": "MuiTypography-body1",
-                                                          "body2": "MuiTypography-body2",
-                                                          "button": "MuiTypography-button",
-                                                          "caption": "MuiTypography-caption",
-                                                          "colorError": "MuiTypography-colorError",
-                                                          "colorInherit": "MuiTypography-colorInherit",
-                                                          "colorPrimary": "MuiTypography-colorPrimary",
-                                                          "colorSecondary": "MuiTypography-colorSecondary",
-                                                          "colorTextPrimary": "MuiTypography-colorTextPrimary",
-                                                          "colorTextSecondary": "MuiTypography-colorTextSecondary",
-                                                          "displayBlock": "MuiTypography-displayBlock",
-                                                          "displayInline": "MuiTypography-displayInline",
-                                                          "gutterBottom": "MuiTypography-gutterBottom",
-                                                          "h1": "MuiTypography-h1",
-                                                          "h2": "MuiTypography-h2",
-                                                          "h3": "MuiTypography-h3",
-                                                          "h4": "MuiTypography-h4",
-                                                          "h5": "MuiTypography-h5",
-                                                          "h6": "MuiTypography-h6",
-                                                          "noWrap": "MuiTypography-noWrap",
-                                                          "overline": "MuiTypography-overline",
-                                                          "paragraph": "MuiTypography-paragraph",
-                                                          "root": "MuiTypography-root",
-                                                          "srOnly": "MuiTypography-srOnly",
-                                                          "subtitle1": "MuiTypography-subtitle1",
-                                                          "subtitle2": "MuiTypography-subtitle2",
-                                                        }
-                                                      }
-                                                      component="span"
-                                                      display="block"
-                                                      variant="body1"
-                                                    >
-                                                      <span
-                                                        className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                                                      >
-                                                        My Courses
-                                                      </span>
-                                                    </ForwardRef(Typography)>
-                                                  </WithStyles(ForwardRef(Typography))>
-                                                </div>
+                                                />
                                               </ForwardRef(ListItemText)>
                                             </WithStyles(ForwardRef(ListItemText))>
                                             <WithStyles(memo)
@@ -4634,7 +3962,6 @@ exports[`MainDrawer component should render match the snapshot on defined active
                               </div>
                               <div
                                 className="mainMenuColor false undefined"
-                                key="Group"
                               >
                                 <Link
                                   href="/myGroup"
@@ -4763,7 +4090,6 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                             <WithStyles(ForwardRef(ListItemText))
                                               className=""
                                               key=".1"
-                                              primary="Group"
                                             >
                                               <ForwardRef(ListItemText)
                                                 className=""
@@ -4777,65 +4103,10 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                                     "secondary": "MuiListItemText-secondary",
                                                   }
                                                 }
-                                                primary="Group"
                                               >
                                                 <div
                                                   className="MuiListItemText-root"
-                                                >
-                                                  <WithStyles(ForwardRef(Typography))
-                                                    className="MuiListItemText-primary"
-                                                    component="span"
-                                                    display="block"
-                                                    variant="body1"
-                                                  >
-                                                    <ForwardRef(Typography)
-                                                      className="MuiListItemText-primary"
-                                                      classes={
-                                                        Object {
-                                                          "alignCenter": "MuiTypography-alignCenter",
-                                                          "alignJustify": "MuiTypography-alignJustify",
-                                                          "alignLeft": "MuiTypography-alignLeft",
-                                                          "alignRight": "MuiTypography-alignRight",
-                                                          "body1": "MuiTypography-body1",
-                                                          "body2": "MuiTypography-body2",
-                                                          "button": "MuiTypography-button",
-                                                          "caption": "MuiTypography-caption",
-                                                          "colorError": "MuiTypography-colorError",
-                                                          "colorInherit": "MuiTypography-colorInherit",
-                                                          "colorPrimary": "MuiTypography-colorPrimary",
-                                                          "colorSecondary": "MuiTypography-colorSecondary",
-                                                          "colorTextPrimary": "MuiTypography-colorTextPrimary",
-                                                          "colorTextSecondary": "MuiTypography-colorTextSecondary",
-                                                          "displayBlock": "MuiTypography-displayBlock",
-                                                          "displayInline": "MuiTypography-displayInline",
-                                                          "gutterBottom": "MuiTypography-gutterBottom",
-                                                          "h1": "MuiTypography-h1",
-                                                          "h2": "MuiTypography-h2",
-                                                          "h3": "MuiTypography-h3",
-                                                          "h4": "MuiTypography-h4",
-                                                          "h5": "MuiTypography-h5",
-                                                          "h6": "MuiTypography-h6",
-                                                          "noWrap": "MuiTypography-noWrap",
-                                                          "overline": "MuiTypography-overline",
-                                                          "paragraph": "MuiTypography-paragraph",
-                                                          "root": "MuiTypography-root",
-                                                          "srOnly": "MuiTypography-srOnly",
-                                                          "subtitle1": "MuiTypography-subtitle1",
-                                                          "subtitle2": "MuiTypography-subtitle2",
-                                                        }
-                                                      }
-                                                      component="span"
-                                                      display="block"
-                                                      variant="body1"
-                                                    >
-                                                      <span
-                                                        className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                                                      >
-                                                        Group
-                                                      </span>
-                                                    </ForwardRef(Typography)>
-                                                  </WithStyles(ForwardRef(Typography))>
-                                                </div>
+                                                />
                                               </ForwardRef(ListItemText)>
                                             </WithStyles(ForwardRef(ListItemText))>
                                             <WithStyles(memo)
@@ -4875,7 +4146,6 @@ exports[`MainDrawer component should render match the snapshot on defined active
                               </div>
                               <div
                                 className="mainMenuColor false undefined"
-                                key="My performance"
                               >
                                 <Link
                                   href="/performance"
@@ -5004,7 +4274,6 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                             <WithStyles(ForwardRef(ListItemText))
                                               className=""
                                               key=".1"
-                                              primary="My performance"
                                             >
                                               <ForwardRef(ListItemText)
                                                 className=""
@@ -5018,65 +4287,10 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                                     "secondary": "MuiListItemText-secondary",
                                                   }
                                                 }
-                                                primary="My performance"
                                               >
                                                 <div
                                                   className="MuiListItemText-root"
-                                                >
-                                                  <WithStyles(ForwardRef(Typography))
-                                                    className="MuiListItemText-primary"
-                                                    component="span"
-                                                    display="block"
-                                                    variant="body1"
-                                                  >
-                                                    <ForwardRef(Typography)
-                                                      className="MuiListItemText-primary"
-                                                      classes={
-                                                        Object {
-                                                          "alignCenter": "MuiTypography-alignCenter",
-                                                          "alignJustify": "MuiTypography-alignJustify",
-                                                          "alignLeft": "MuiTypography-alignLeft",
-                                                          "alignRight": "MuiTypography-alignRight",
-                                                          "body1": "MuiTypography-body1",
-                                                          "body2": "MuiTypography-body2",
-                                                          "button": "MuiTypography-button",
-                                                          "caption": "MuiTypography-caption",
-                                                          "colorError": "MuiTypography-colorError",
-                                                          "colorInherit": "MuiTypography-colorInherit",
-                                                          "colorPrimary": "MuiTypography-colorPrimary",
-                                                          "colorSecondary": "MuiTypography-colorSecondary",
-                                                          "colorTextPrimary": "MuiTypography-colorTextPrimary",
-                                                          "colorTextSecondary": "MuiTypography-colorTextSecondary",
-                                                          "displayBlock": "MuiTypography-displayBlock",
-                                                          "displayInline": "MuiTypography-displayInline",
-                                                          "gutterBottom": "MuiTypography-gutterBottom",
-                                                          "h1": "MuiTypography-h1",
-                                                          "h2": "MuiTypography-h2",
-                                                          "h3": "MuiTypography-h3",
-                                                          "h4": "MuiTypography-h4",
-                                                          "h5": "MuiTypography-h5",
-                                                          "h6": "MuiTypography-h6",
-                                                          "noWrap": "MuiTypography-noWrap",
-                                                          "overline": "MuiTypography-overline",
-                                                          "paragraph": "MuiTypography-paragraph",
-                                                          "root": "MuiTypography-root",
-                                                          "srOnly": "MuiTypography-srOnly",
-                                                          "subtitle1": "MuiTypography-subtitle1",
-                                                          "subtitle2": "MuiTypography-subtitle2",
-                                                        }
-                                                      }
-                                                      component="span"
-                                                      display="block"
-                                                      variant="body1"
-                                                    >
-                                                      <span
-                                                        className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                                                      >
-                                                        My performance
-                                                      </span>
-                                                    </ForwardRef(Typography)>
-                                                  </WithStyles(ForwardRef(Typography))>
-                                                </div>
+                                                />
                                               </ForwardRef(ListItemText)>
                                             </WithStyles(ForwardRef(ListItemText))>
                                             <WithStyles(memo)
@@ -5116,7 +4330,6 @@ exports[`MainDrawer component should render match the snapshot on defined active
                               </div>
                               <div
                                 className="mainMenuColor false undefined"
-                                key="Calendar"
                               >
                                 <Link
                                   href="/calendar"
@@ -5245,7 +4458,6 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                             <WithStyles(ForwardRef(ListItemText))
                                               className=""
                                               key=".1"
-                                              primary="Calendar"
                                             >
                                               <ForwardRef(ListItemText)
                                                 className=""
@@ -5259,65 +4471,10 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                                     "secondary": "MuiListItemText-secondary",
                                                   }
                                                 }
-                                                primary="Calendar"
                                               >
                                                 <div
                                                   className="MuiListItemText-root"
-                                                >
-                                                  <WithStyles(ForwardRef(Typography))
-                                                    className="MuiListItemText-primary"
-                                                    component="span"
-                                                    display="block"
-                                                    variant="body1"
-                                                  >
-                                                    <ForwardRef(Typography)
-                                                      className="MuiListItemText-primary"
-                                                      classes={
-                                                        Object {
-                                                          "alignCenter": "MuiTypography-alignCenter",
-                                                          "alignJustify": "MuiTypography-alignJustify",
-                                                          "alignLeft": "MuiTypography-alignLeft",
-                                                          "alignRight": "MuiTypography-alignRight",
-                                                          "body1": "MuiTypography-body1",
-                                                          "body2": "MuiTypography-body2",
-                                                          "button": "MuiTypography-button",
-                                                          "caption": "MuiTypography-caption",
-                                                          "colorError": "MuiTypography-colorError",
-                                                          "colorInherit": "MuiTypography-colorInherit",
-                                                          "colorPrimary": "MuiTypography-colorPrimary",
-                                                          "colorSecondary": "MuiTypography-colorSecondary",
-                                                          "colorTextPrimary": "MuiTypography-colorTextPrimary",
-                                                          "colorTextSecondary": "MuiTypography-colorTextSecondary",
-                                                          "displayBlock": "MuiTypography-displayBlock",
-                                                          "displayInline": "MuiTypography-displayInline",
-                                                          "gutterBottom": "MuiTypography-gutterBottom",
-                                                          "h1": "MuiTypography-h1",
-                                                          "h2": "MuiTypography-h2",
-                                                          "h3": "MuiTypography-h3",
-                                                          "h4": "MuiTypography-h4",
-                                                          "h5": "MuiTypography-h5",
-                                                          "h6": "MuiTypography-h6",
-                                                          "noWrap": "MuiTypography-noWrap",
-                                                          "overline": "MuiTypography-overline",
-                                                          "paragraph": "MuiTypography-paragraph",
-                                                          "root": "MuiTypography-root",
-                                                          "srOnly": "MuiTypography-srOnly",
-                                                          "subtitle1": "MuiTypography-subtitle1",
-                                                          "subtitle2": "MuiTypography-subtitle2",
-                                                        }
-                                                      }
-                                                      component="span"
-                                                      display="block"
-                                                      variant="body1"
-                                                    >
-                                                      <span
-                                                        className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                                                      >
-                                                        Calendar
-                                                      </span>
-                                                    </ForwardRef(Typography)>
-                                                  </WithStyles(ForwardRef(Typography))>
-                                                </div>
+                                                />
                                               </ForwardRef(ListItemText)>
                                             </WithStyles(ForwardRef(ListItemText))>
                                             <WithStyles(memo)
@@ -5357,7 +4514,6 @@ exports[`MainDrawer component should render match the snapshot on defined active
                               </div>
                               <div
                                 className="mainMenuColor false mainMenuAlignBottom"
-                                key="Help"
                               >
                                 <Link
                                   href="/help"
@@ -5486,7 +4642,6 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                             <WithStyles(ForwardRef(ListItemText))
                                               className=""
                                               key=".1"
-                                              primary="Help"
                                             >
                                               <ForwardRef(ListItemText)
                                                 className=""
@@ -5500,65 +4655,10 @@ exports[`MainDrawer component should render match the snapshot on defined active
                                                     "secondary": "MuiListItemText-secondary",
                                                   }
                                                 }
-                                                primary="Help"
                                               >
                                                 <div
                                                   className="MuiListItemText-root"
-                                                >
-                                                  <WithStyles(ForwardRef(Typography))
-                                                    className="MuiListItemText-primary"
-                                                    component="span"
-                                                    display="block"
-                                                    variant="body1"
-                                                  >
-                                                    <ForwardRef(Typography)
-                                                      className="MuiListItemText-primary"
-                                                      classes={
-                                                        Object {
-                                                          "alignCenter": "MuiTypography-alignCenter",
-                                                          "alignJustify": "MuiTypography-alignJustify",
-                                                          "alignLeft": "MuiTypography-alignLeft",
-                                                          "alignRight": "MuiTypography-alignRight",
-                                                          "body1": "MuiTypography-body1",
-                                                          "body2": "MuiTypography-body2",
-                                                          "button": "MuiTypography-button",
-                                                          "caption": "MuiTypography-caption",
-                                                          "colorError": "MuiTypography-colorError",
-                                                          "colorInherit": "MuiTypography-colorInherit",
-                                                          "colorPrimary": "MuiTypography-colorPrimary",
-                                                          "colorSecondary": "MuiTypography-colorSecondary",
-                                                          "colorTextPrimary": "MuiTypography-colorTextPrimary",
-                                                          "colorTextSecondary": "MuiTypography-colorTextSecondary",
-                                                          "displayBlock": "MuiTypography-displayBlock",
-                                                          "displayInline": "MuiTypography-displayInline",
-                                                          "gutterBottom": "MuiTypography-gutterBottom",
-                                                          "h1": "MuiTypography-h1",
-                                                          "h2": "MuiTypography-h2",
-                                                          "h3": "MuiTypography-h3",
-                                                          "h4": "MuiTypography-h4",
-                                                          "h5": "MuiTypography-h5",
-                                                          "h6": "MuiTypography-h6",
-                                                          "noWrap": "MuiTypography-noWrap",
-                                                          "overline": "MuiTypography-overline",
-                                                          "paragraph": "MuiTypography-paragraph",
-                                                          "root": "MuiTypography-root",
-                                                          "srOnly": "MuiTypography-srOnly",
-                                                          "subtitle1": "MuiTypography-subtitle1",
-                                                          "subtitle2": "MuiTypography-subtitle2",
-                                                        }
-                                                      }
-                                                      component="span"
-                                                      display="block"
-                                                      variant="body1"
-                                                    >
-                                                      <span
-                                                        className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                                                      >
-                                                        Help
-                                                      </span>
-                                                    </ForwardRef(Typography)>
-                                                  </WithStyles(ForwardRef(Typography))>
-                                                </div>
+                                                />
                                               </ForwardRef(ListItemText)>
                                             </WithStyles(ForwardRef(ListItemText))>
                                             <WithStyles(memo)

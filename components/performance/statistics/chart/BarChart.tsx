@@ -1,10 +1,10 @@
 import React from 'react';
-import { Line, Pie } from 'react-chartjs-2';
+import { Pie } from 'react-chartjs-2';
 import { useWindowSize } from '../../../common/hooks/useWindowResize';
 import styles from './BarChart.module.scss';
 
 const data = {
-  labels: ['Red', 'Blue', 'Yellow'],
+  labels: ['Mathematics', 'Physics', 'English'],
   datasets: [
     {
       data: [300, 50, 100],
@@ -19,7 +19,7 @@ const BarChart = () => {
   return (
     <div className={styles.barChartWrapper}>
       <Pie
-      key={Math.random()}
+        key={Math.random()}
         options={{
           responsive: true,
           maintainAspectRatio: false

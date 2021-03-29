@@ -31,7 +31,7 @@ describe('HomeContent component', () => {
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 
-  it('should have a Grid with spacing of 10 if the screen width is greater than 768px', () => {
+  it('should have a Grid with spacing of 7 if the screen width is greater than 768px', () => {
     global.innerWidth = 1200;
     global.dispatchEvent(new Event('resize'));
     const wrapper = mount(
@@ -40,7 +40,7 @@ describe('HomeContent component', () => {
       </Provider>
     );
     const grid = wrapper.find(Grid).at(0);
-    expect(grid.props().spacing).toBe(10);
+    expect(grid.props().spacing).toBe(7);
   });
 
   it('should have a Grid with spacing of 5 if the screen width is less than 768px', () => {

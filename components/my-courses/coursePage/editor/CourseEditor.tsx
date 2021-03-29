@@ -86,7 +86,7 @@ export const CourseEditor: React.FC = () => {
 
   return (
     <MuiPickersUtilsProvider utils={DateFnsUtils}>
-      <div className={styles.title}>{t('course:addLessonTitle')}</div>
+      <div className={styles.title}>{t('courses:addLessonTitle')}</div>
       <div className={styles.editorContainer}>
         <ConfirmationDialog
           open={confirmationDialogOpen}

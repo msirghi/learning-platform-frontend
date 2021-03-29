@@ -50,11 +50,9 @@ export const CoursePage: React.FC<Props> = ({ course }) => {
 
       <div className={styles.singlePage}>
         {editMode ? (
-          <Fade in>
-            <CourseEditor />
-          </Fade>
+          <CourseEditor />
         ) : (
-          <Fade in>
+          <Fade in={!editMode}>
             <Grid container spacing={4}>
               <Grid item lg={3} md={12} xs={12} sm={12}>
                 <TeacherInfo course={course} />

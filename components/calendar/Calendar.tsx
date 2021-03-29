@@ -6,6 +6,7 @@ import timeGridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction'; // needed for dayClick
 import { useTheme } from '@material-ui/core';
 import { lessonMock } from '../../mocks/lessonMocks';
+import { useTranslation } from '../../i18n';
 
 type HeaderToolbar = {
   left: string;
@@ -36,6 +37,7 @@ const Calendar: React.FC<Props> = ({ selectLesson }) => {
   const [width] = useWindowSize();
   const calendarRef = React.useRef<FullCalendar>();
   const theme = useTheme();
+  const { i18n } = useTranslation();
 
   useEffect(() => {
     if (width < 768) {
@@ -62,6 +64,7 @@ const Calendar: React.FC<Props> = ({ selectLesson }) => {
     <FullCalendar
       eventColor={theme.palette.primary.main}
       selectable
+      editable={false}
       eventClick={(arg) => selectLesson(arg.event.id)}
       events={lessonMock}
       allDaySlot={false}
@@ -74,6 +77,7 @@ const Calendar: React.FC<Props> = ({ selectLesson }) => {
       initialView={width < 768 ? 'timeGridDay' : 'dayGridMonth'}
       plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
       nowIndicator
+      locale={i18n.language}
     />
   );
 };

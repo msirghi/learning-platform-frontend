@@ -21,6 +21,7 @@ import { SnackbarProvider } from 'notistack';
 import '@fullcalendar/common/main.css';
 import '@fullcalendar/daygrid/main.css';
 import '@fullcalendar/timegrid/main.css';
+import '../components/calendar/Calendar.scss';
 
 function MyApp({ Component, pageProps }) {
   const dispatch = useDispatch();

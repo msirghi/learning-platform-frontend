@@ -44,7 +44,7 @@ export const HomeContent: React.FC = () => {
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={width < 900 ? 5 : 10} className={classes.grid}>
+      <Grid container spacing={width < 900 ? 5 : 7} className={classes.grid}>
         <Grid item xs={12} sm={12} md={12} lg={6}>
           <ScheduleCard />
         </Grid>

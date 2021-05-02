@@ -49,4 +49,4 @@ jest.mock('next-i18next', () => {
 
 console.error = jest.fn();
 console.warn = jest.fn();
-MockDate.set('2000-11-22');
+MockDate.set(1434319925275);

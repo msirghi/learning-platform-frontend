@@ -40,14 +40,14 @@ function LoginForm({ onMessage, onTabChange }: Props) {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    executeRecaptcha('login');
+    executeRecaptcha && executeRecaptcha('login');
   }, []);
 
   const onSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setSubmitting(true);
     await handleSignIn();
-    await executeRecaptcha('login_submit');
+    executeRecaptcha && await executeRecaptcha('login_submit');
   };
 
   const handleSignIn = async () => {

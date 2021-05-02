@@ -23,7 +23,7 @@ exports[`ChatMessage component should match the snapshot if all the props are pr
     <div
       className="date"
     >
-      2:00
+      1:12
     </div>
   </div>
 </div>

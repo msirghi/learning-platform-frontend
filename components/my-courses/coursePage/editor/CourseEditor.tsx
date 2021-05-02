@@ -29,7 +29,7 @@ export const CourseEditor: React.FC = () => {
   const { executeRecaptcha } = useGoogleReCaptcha();
 
   useEffect(() => {
-    executeRecaptcha('course_edit_entrance');
+    executeRecaptcha && executeRecaptcha('course_edit_entrance');
   }, []);
 
   const [lessonInfoForm, setLessonInfoForm] = useState<LessonCreationFormValues>({
@@ -80,7 +80,7 @@ export const CourseEditor: React.FC = () => {
       setConfirmationDialogOpen(true);
     }
 
-    executeRecaptcha('course_edit_creation');
+    executeRecaptcha && executeRecaptcha('course_edit_creation');
     // TODO: Backend call
   };
 

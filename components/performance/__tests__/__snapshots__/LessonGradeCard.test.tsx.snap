@@ -64,7 +64,7 @@ exports[`LessonGradeCard component should match the snapshot 1`] = `
       <div
         className="date"
       >
-        Nov 22, 2000
+        Jun 15, 2015
       </div>
     </div>
     <div
@@ -94,7 +94,7 @@ exports[`LessonGradeCard component should match the snapshot 1`] = `
           Object {
             "mark": "9.12",
             "test": "ATTESTATION_1",
-            "updatedAt": 2000-11-22T00:00:00.000Z,
+            "updatedAt": 2015-06-14T22:12:05.275Z,
           }
         }
         type="ATTESTATION_1"
@@ -104,7 +104,7 @@ exports[`LessonGradeCard component should match the snapshot 1`] = `
           Object {
             "mark": "9.12",
             "test": "ATTESTATION_2",
-            "updatedAt": 2000-11-22T00:00:00.000Z,
+            "updatedAt": 2015-06-14T22:12:05.275Z,
           }
         }
         type="ATTESTATION_2"
@@ -118,7 +118,7 @@ exports[`LessonGradeCard component should match the snapshot 1`] = `
           Object {
             "mark": "9.12",
             "test": "EXAM",
-            "updatedAt": 2000-11-22T00:00:00.000Z,
+            "updatedAt": 2015-06-14T22:12:05.275Z,
           }
         }
         type="EXAM"
@@ -128,7 +128,7 @@ exports[`LessonGradeCard component should match the snapshot 1`] = `
           Object {
             "mark": "9.12",
             "test": "INDIVIDUAL_WORK",
-            "updatedAt": 2000-11-22T00:00:00.000Z,
+            "updatedAt": 2015-06-14T22:12:05.275Z,
           }
         }
         type="INDIVIDUAL_WORK"

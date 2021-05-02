@@ -45,7 +45,7 @@ exports[`CourseEditorForm component should match the snapshot if all the props a
       name="startDate"
       onChange={[Function]}
       openTo="date"
-      value={2000-11-22T00:00:00.000Z}
+      value={2015-06-14T22:12:05.275Z}
       views={
         Array [
           "year",
@@ -68,7 +68,7 @@ exports[`CourseEditorForm component should match the snapshot if all the props a
       name="startTime"
       onChange={[Function]}
       openTo="hours"
-      value={2000-11-22T00:00:00.000Z}
+      value={2015-06-14T22:12:05.275Z}
       views={
         Array [
           "hours",
@@ -98,7 +98,7 @@ exports[`CourseEditorForm component should match the snapshot if all the props a
       name="endDate"
       onChange={[Function]}
       openTo="date"
-      value={2000-11-22T00:00:00.000Z}
+      value={2015-06-14T22:12:05.275Z}
       views={
         Array [
           "year",
@@ -121,7 +121,7 @@ exports[`CourseEditorForm component should match the snapshot if all the props a
       name="endTime"
       onChange={[Function]}
       openTo="hours"
-      value={2000-11-22T00:00:00.000Z}
+      value={2015-06-14T22:12:05.275Z}
       views={
         Array [
           "hours",

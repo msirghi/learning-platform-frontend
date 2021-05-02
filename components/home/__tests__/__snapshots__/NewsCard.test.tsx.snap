@@ -30,7 +30,7 @@ exports[`NewsCard component should match the snapshot 1`] = `
       <NewsRow
         news={
           Object {
-            "date": 2000-11-22T00:00:00.000Z,
+            "date": 2015-06-14T22:12:05.275Z,
             "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos nihil, commodi alias at debitis in.",
             "id": "1",
             "title": "News 1",
@@ -49,7 +49,7 @@ exports[`NewsCard component should match the snapshot 1`] = `
       <NewsRow
         news={
           Object {
-            "date": 2000-11-22T00:00:00.000Z,
+            "date": 2015-06-14T22:12:05.275Z,
             "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis numquam nobis, nihil quis error repudiandae.",
             "id": "2",
             "title": "News 2",

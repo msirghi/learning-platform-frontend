@@ -6,7 +6,9 @@
     "myGroup": "My group",
     "performance": "Performance",
     "calendar": "Calendar",
-    "help": "Help"
+    "help": "Help",
+    "profile": "Profile",
+    "account": "Account"
   },
   "footer": {
     "usefulLinks": "Userful Links",

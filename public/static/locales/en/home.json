@@ -14,8 +14,8 @@
     "seeOlderNews": "See all"
   },
   "noContent": {
-    "title": "Lorem ipsum dolor sit.",
-    "subtitle": "Lorem ipsum dolor sit amet.",
+    "title": "Welcome",
+    "subtitle": "You don't have any courses or groups available.",
     "exploreCourses": "Explore courses",
     "findGroup": "Find group",
     "or": "or"

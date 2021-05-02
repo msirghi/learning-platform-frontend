@@ -32,7 +32,7 @@ const useStyles = makeStyles<Theme, { drawerOpened: boolean }>((theme) => ({
       marginLeft: 0
     },
     '@media (min-width: 600px)': {
-      marginLeft: drawerOpened ? '35%' : '20%'
+      marginLeft: drawerOpened ? '25%' : '20%'
     },
     '@media (min-width: 1000px)': {
       marginLeft: drawerOpened ? '35%' : '15%'

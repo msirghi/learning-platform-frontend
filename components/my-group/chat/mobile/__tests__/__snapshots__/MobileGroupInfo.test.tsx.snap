@@ -56,11 +56,11 @@ exports[`MobileGroupInfo component should match the snapshot 1`] = `
       />
       <StudentRow
         key="2"
-        name="Nicolae Budulae"
+        name="Nicolae 1"
       />
       <StudentRow
         key="3"
-        name="Budulae Nicolae"
+        name="Nicolae 2"
       />
       <StudentRow
         key="4"

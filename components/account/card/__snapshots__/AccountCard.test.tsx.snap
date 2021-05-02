@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AccountCard component should match the snapshot 1`] = `
+<div
+  className="accountContentWrapper"
+>
+  <div
+    className="accountCard"
+  >
+    <div
+      className="avatar"
+    />
+    <div
+      className="cardActions"
+    >
+      <div
+        className="name"
+      >
+        Name Surname
+      </div>
+      <div
+        className="requestChange"
+        onClick={[Function]}
+      >
+        account:requestChange
+      </div>
+      <div
+        className="textField"
+      >
+        <WithStyles(ForwardRef(Input))
+          disabled={true}
+          endAdornment={
+            <WithStyles(ForwardRef(InputAdornment))
+              position="end"
+            >
+              <WithStyles(ForwardRef(IconButton))
+                onClick={[Function]}
+              >
+                <Memo
+                  color="primary"
+                />
+              </WithStyles(ForwardRef(IconButton))>
+            </WithStyles(ForwardRef(InputAdornment))>
+          }
+          value="someemail@mail.com"
+        />
+      </div>
+      <div
+        className="changePassword"
+        onClick={[Function]}
+      >
+        <span>
+          account:changePassword
+        </span>
+        <Memo([object Object])
+          color="primary"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

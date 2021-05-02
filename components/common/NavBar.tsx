@@ -15,6 +15,7 @@ import { LanguageSelect } from './LanguageSelect';
 import { useTranslation } from '../../i18n';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../redux/reducers';
+import { useRouter } from 'next/router';
 
 type Props = {
   classes: { [key: string]: string };
@@ -28,6 +29,7 @@ export const NavBar: React.FC<Props> = ({ classes, handleDrawerOpen, open, handl
   const [barShadow, setBarShadow] = useState('none');
   const { t } = useTranslation();
   const locale = useSelector((state: RootState) => state.preference.locale);
+  const router = useRouter();
 
   const onPageScroll = () => {
     setBarShadow(window.pageYOffset === 0 ? 'none' : '0px 0px 11px 0px rgba(0,0,0,0.75)');
@@ -101,7 +103,7 @@ export const NavBar: React.FC<Props> = ({ classes, handleDrawerOpen, open, handl
               <NotificationsIcon color={'primary'} />
             </Badge>
           </IconButton>
-          <IconButton>
+          <IconButton onClick={() => router.push('/account')}>
             <UserAvatar />
           </IconButton>
         </div>

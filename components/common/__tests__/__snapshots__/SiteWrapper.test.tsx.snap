@@ -1556,7 +1556,9 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                                 </WithStyles(ForwardRef(ButtonBase))>
                               </ForwardRef(IconButton)>
                             </WithStyles(ForwardRef(IconButton))>
-                            <WithStyles(ForwardRef(IconButton))>
+                            <WithStyles(ForwardRef(IconButton))
+                              onClick={[Function]}
+                            >
                               <ForwardRef(IconButton)
                                 classes={
                                   Object {
@@ -1571,12 +1573,14 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                                     "sizeSmall": "MuiIconButton-sizeSmall",
                                   }
                                 }
+                                onClick={[Function]}
                               >
                                 <WithStyles(ForwardRef(ButtonBase))
                                   centerRipple={true}
                                   className="MuiIconButton-root"
                                   disabled={false}
                                   focusRipple={true}
+                                  onClick={[Function]}
                                 >
                                   <ForwardRef(ButtonBase)
                                     centerRipple={true}
@@ -1590,11 +1594,13 @@ exports[`SiteWrapper component should match the snapshot 1`] = `
                                     }
                                     disabled={false}
                                     focusRipple={true}
+                                    onClick={[Function]}
                                   >
                                     <button
                                       className="MuiButtonBase-root MuiIconButton-root"
                                       disabled={false}
                                       onBlur={[Function]}
+                                      onClick={[Function]}
                                       onDragLeave={[Function]}
                                       onFocus={[Function]}
                                       onKeyDown={[Function]}

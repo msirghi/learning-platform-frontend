@@ -9,12 +9,12 @@ export const studentsMock: Student[] = [
   {
     id: 2,
     firstName: 'Nicolae',
-    lastName: 'Budulae'
+    lastName: '1'
   },
   {
     id: 3,
-    firstName: 'Budulae',
-    lastName: 'Nicolae'
+    firstName: 'Nicolae',
+    lastName: '2'
   },
   {
     id: 4,

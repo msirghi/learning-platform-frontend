@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import '../styles/globals.scss';
 import { appWithTranslation, useTranslation } from '../i18n';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import { PaletteType } from '@material-ui/core';
 import NextNprogress from 'nextjs-progressbar';
 import store from '../redux/store';
 import { Provider, useDispatch, useSelector } from 'react-redux';
@@ -33,7 +34,7 @@ function MyApp({ Component, pageProps }) {
 
   const darkTheme = createMuiTheme({
     palette: {
-      type: siteMode,
+      type: siteMode as PaletteType,
       primary: {
         main: mainPrimaryColor
       }

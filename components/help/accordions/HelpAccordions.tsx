@@ -12,32 +12,32 @@ type Props = {
 const questions: HelpQuestion[] = [
   {
     id: 1,
-    title: 'Title 1',
-    description: 'Description 1'
+    title: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, nisi?',
+    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit delectus beatae a exercitationem atque facilis labore repudiandae voluptatibus libero eum.'
   },
   {
     id: 2,
-    title: 'Title 2',
+    title: 'Lorem ipsum dolor sit amet?',
     description: 'Description 2'
   },
   {
     id: 3,
-    title: 'Title 3',
+    title: 'Lorem, ipsum dolor sit amet consectetur adipisicing?',
     description: 'Description 3'
   },
   {
     id: 4,
-    title: 'Title 4',
+    title: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit?',
     description: 'Description 4'
   },
   {
     id: 5,
-    title: 'Title 5',
+    title: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, voluptatibus?',
     description: 'Description 5'
   },
   {
     id: 6,
-    title: 'Title 6',
+    title: 'Lorem ipsum dolor sit?',
     description: 'Description 6'
   }
 ];

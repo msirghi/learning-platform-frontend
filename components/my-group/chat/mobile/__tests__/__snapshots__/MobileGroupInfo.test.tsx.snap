@@ -56,27 +56,23 @@ exports[`MobileGroupInfo component should match the snapshot 1`] = `
       />
       <StudentRow
         key="2"
-        name="Nicolae 1"
+        name="Nicolae Savastin"
       />
       <StudentRow
         key="3"
-        name="Nicolae 2"
+        name="Nichita Eremeev"
       />
       <StudentRow
         key="4"
-        name="Aron Pumnul"
+        name="Graeme Sacks"
       />
       <StudentRow
         key="5"
-        name="First Last"
+        name="Zeid Hadi"
       />
       <StudentRow
         key="6"
-        name="First Last"
-      />
-      <StudentRow
-        key="7"
-        name="First Last"
+        name="Dan Mil"
       />
     </div>
     <ForwardRef(Fade)

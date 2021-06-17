@@ -2,12 +2,13 @@ import React, { useEffect } from 'react';
 import Head from 'next/head';
 import styles from '../styles/modules/Home.module.scss';
 import { useRouter } from 'next/router';
+import { LandingContent } from '../components/landing/LandingContent';
 
 function Home() {
   const router = useRouter();
 
   useEffect(() => {
-    router.push('/home');
+    // router.push('/home');
   }, []);
 
   return (
@@ -17,7 +18,9 @@ function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <main className={styles.main}>Home page</main>
+      <main className={styles.main}>
+        <LandingContent />
+      </main>
     </div>
   );
 }

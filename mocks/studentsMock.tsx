@@ -9,31 +9,26 @@ export const studentsMock: Student[] = [
   {
     id: 2,
     firstName: 'Nicolae',
-    lastName: '1'
+    lastName: 'Savastin'
   },
   {
     id: 3,
-    firstName: 'Nicolae',
-    lastName: '2'
+    firstName: 'Nichita',
+    lastName: 'Eremeev'
   },
   {
     id: 4,
-    firstName: 'Aron',
-    lastName: 'Pumnul'
+    firstName: 'Graeme',
+    lastName: 'Sacks'
   },
   {
     id: 5,
-    firstName: 'First',
-    lastName: 'Last'
+    firstName: 'Zeid',
+    lastName: 'Hadi'
   },
   {
     id: 6,
-    firstName: 'First',
-    lastName: 'Last'
-  },
-  {
-    id: 7,
-    firstName: 'First',
-    lastName: 'Last'
+    firstName: 'Dan',
+    lastName: 'Mil'
   }
 ];

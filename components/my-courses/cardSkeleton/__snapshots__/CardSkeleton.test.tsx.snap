@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardSkeleton component should have specific card width on mobile 1`] = `
+<WithStyles(ForwardRef(Card))
+  className="makeStyles-card-1"
+>
+  <WithStyles(ForwardRef(CardHeader))
+    avatar={
+      <WithStyles(ForwardRef(Skeleton))
+        animation="wave"
+        height={40}
+        variant="circle"
+        width={40}
+      />
+    }
+    subheader={
+      <WithStyles(ForwardRef(Skeleton))
+        animation="wave"
+        height={10}
+        width="40%"
+      />
+    }
+    title={
+      <WithStyles(ForwardRef(Skeleton))
+        animation="wave"
+        height={10}
+        style={
+          Object {
+            "marginBottom": 6,
+          }
+        }
+        width="80%"
+      />
+    }
+  />
+  <WithStyles(ForwardRef(Skeleton))
+    animation="wave"
+    className="makeStyles-media-2"
+    variant="rect"
+  />
+  <WithStyles(ForwardRef(CardContent))>
+    <WithStyles(ForwardRef(Skeleton))
+      animation="wave"
+      height={10}
+      style={
+        Object {
+          "marginBottom": 6,
+        }
+      }
+    />
+    <WithStyles(ForwardRef(Skeleton))
+      animation="wave"
+      height={10}
+      width="80%"
+    />
+  </WithStyles(ForwardRef(CardContent))>
+</WithStyles(ForwardRef(Card))>
+`;
+
+exports[`CardSkeleton component should match the snapshot 1`] = `
+<WithStyles(ForwardRef(Card))
+  className="makeStyles-card-1"
+>
+  <WithStyles(ForwardRef(CardHeader))
+    avatar={
+      <WithStyles(ForwardRef(Skeleton))
+        animation="wave"
+        height={40}
+        variant="circle"
+        width={40}
+      />
+    }
+    subheader={
+      <WithStyles(ForwardRef(Skeleton))
+        animation="wave"
+        height={10}
+        width="40%"
+      />
+    }
+    title={
+      <WithStyles(ForwardRef(Skeleton))
+        animation="wave"
+        height={10}
+        style={
+          Object {
+            "marginBottom": 6,
+          }
+        }
+        width="80%"
+      />
+    }
+  />
+  <WithStyles(ForwardRef(Skeleton))
+    animation="wave"
+    className="makeStyles-media-2"
+    variant="rect"
+  />
+  <WithStyles(ForwardRef(CardContent))>
+    <WithStyles(ForwardRef(Skeleton))
+      animation="wave"
+      height={10}
+      style={
+        Object {
+          "marginBottom": 6,
+        }
+      }
+    />
+    <WithStyles(ForwardRef(Skeleton))
+      animation="wave"
+      height={10}
+      width="80%"
+    />
+  </WithStyles(ForwardRef(CardContent))>
+</WithStyles(ForwardRef(Card))>
+`;

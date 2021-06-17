@@ -1,0 +1,10 @@
+.barChartWrapper {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  height: 60vh;
+
+  canvas {
+    height: 100%;
+  }
+}

@@ -1,0 +1,55 @@
+@import '../../../styles/base/variables.scss';
+
+.accountCard {
+  width: 286px;
+  height: 364px;
+  border-radius: 4px;
+  box-shadow: -1px 1.7px 4.6px 0.4px rgba(0, 0, 0, 0.46);
+  background-color: #fff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  .avatar {
+    min-height: 120px;
+    min-width: 120px;
+    background-color: lightgrey;
+    border-radius: 50%;
+    border: 1px solid $primary-color;
+  }
+
+  .name {
+    font-size: 30px;
+    line-height: 1;
+  }
+
+  .requestChange {
+    color: $primary-color;
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .changePassword {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $primary-color;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .textField {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
+  .cardActions {
+    margin-top: 1rem;
+  }
+}

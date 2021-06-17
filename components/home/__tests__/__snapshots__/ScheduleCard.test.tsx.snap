@@ -13,12 +13,12 @@ exports[`ScheduleCard component should match the snapshot 1`] = `
       <div
         className="scheduleDateNumber"
       >
-        22
+        15
       </div>
       <div
         className="scheduleDateMonth"
       >
-        Nov
+        Jun
       </div>
     </div>
     <div
@@ -47,12 +47,14 @@ exports[`ScheduleCard component should match the snapshot 1`] = `
     </div>
     <div
       className="scheduleContentLessonRow"
-      key="1"
+      key="22"
     >
       <LessonRow
         lesson={
           Object {
-            "id": "1",
+            "end": 2015-06-15T07:30:00.000Z,
+            "id": "22",
+            "start": 2015-06-15T07:00:00.000Z,
             "status": "ended",
             "time": "8:00",
             "title": "Lorem ipsum dolor sit amet.",
@@ -71,7 +73,9 @@ exports[`ScheduleCard component should match the snapshot 1`] = `
       <LessonRow
         lesson={
           Object {
+            "end": 2015-06-15T11:00:00.000Z,
             "id": "2",
+            "start": 2015-06-15T10:00:00.000Z,
             "status": "ongoing",
             "time": "9:30",
             "title": "Lesson 2",
@@ -90,7 +94,9 @@ exports[`ScheduleCard component should match the snapshot 1`] = `
       <LessonRow
         lesson={
           Object {
+            "end": 2015-06-15T12:30:00.000Z,
             "id": "3",
+            "start": 2015-06-15T11:30:00.000Z,
             "status": "notStarted",
             "time": "11:00",
             "title": "Lesson 3",
@@ -109,7 +115,9 @@ exports[`ScheduleCard component should match the snapshot 1`] = `
       <LessonRow
         lesson={
           Object {
+            "end": 2015-06-15T14:30:00.000Z,
             "id": "4",
+            "start": 2015-06-15T13:00:00.000Z,
             "status": "notStarted",
             "time": "13:00",
             "title": "Lesson 4",

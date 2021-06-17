@@ -1,0 +1,35 @@
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    width: 60%;
+  }
+
+  .searchContainer {
+    text-align: center;
+
+    .title {
+      font-size: 25px;
+      margin-top: 2rem;
+    }
+
+    .inputField {
+      margin-top: 2rem;
+      width: 400px;
+    }
+  }
+
+  @media screen and(max-width: 768px) {
+    img {
+      width: 100%;
+    }
+
+    .searchContainer {
+      .inputField {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactEditor component should match the snapshot on all the props provided 1`] = `
+<div
+  className="chipContainer"
+>
+  <PlatformBadge
+    isActive={false}
+    label="Zoom"
+    onClick={[Function]}
+    selectedPlatform="STYPE"
+  />
+  <PlatformBadge
+    isActive={false}
+    label="Teams"
+    onClick={[Function]}
+    selectedPlatform="STYPE"
+  />
+  <PlatformBadge
+    isActive={true}
+    label="Skype"
+    onClick={[Function]}
+    selectedPlatform="STYPE"
+  />
+  <PlatformBadge
+    isActive={false}
+    label="Discord"
+    onClick={[Function]}
+    selectedPlatform="STYPE"
+  />
+  <PlatformBadge
+    isActive={false}
+    label="Other"
+    onClick={[Function]}
+    selectedPlatform="STYPE"
+  />
+</div>
+`;

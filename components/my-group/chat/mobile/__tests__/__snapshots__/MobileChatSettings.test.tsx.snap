@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MobileChatSettings should match the snapshot when all props are provided 1`] = `
+<div
+  className="mobileChatSettingsContainer"
+>
+  <div
+    className="mainTitle"
+  >
+    Chat settings
+  </div>
+  <div
+    className="themeTitle"
+  >
+    Theme
+  </div>
+  <div
+    className="themeSubtitle"
+  >
+    Select a theme for your chat
+  </div>
+  <div
+    className="mobileChatPalettes"
+  >
+    <div
+      className="theme"
+      key="#fafafa"
+    >
+      <ColorPaletteTemplate
+        checked={false}
+        color="#fafafa"
+        onChange={[Function]}
+      />
+    </div>
+    <div
+      className="theme"
+      key="aliceblue"
+    >
+      <ColorPaletteTemplate
+        checked={false}
+        color="aliceblue"
+        onChange={[Function]}
+      />
+    </div>
+    <div
+      className="theme"
+      key="grey"
+    >
+      <ColorPaletteTemplate
+        checked={false}
+        color="grey"
+        onChange={[Function]}
+      />
+    </div>
+    <div
+      className="theme"
+      key="lightblue"
+    >
+      <ColorPaletteTemplate
+        checked={false}
+        color="lightblue"
+        onChange={[Function]}
+      />
+    </div>
+    <div
+      className="theme"
+      key="wheat"
+    >
+      <ColorPaletteTemplate
+        checked={false}
+        color="wheat"
+        onChange={[Function]}
+      />
+    </div>
+  </div>
+  <div
+    className="fontSizeTitle"
+  >
+    Font size
+  </div>
+  <div
+    className="fontSizeSubtitle"
+  >
+    Adjust the chat font size
+  </div>
+  <FontSizeSlider
+    handleFontChange={[Function]}
+    value={14}
+  />
+  <div
+    className="applyButtonContainer"
+  >
+    <WithStyles(ForwardRef(Button))
+      color="primary"
+      fullWidth={true}
+      onClick={[Function]}
+      variant="contained"
+    >
+      Apply
+    </WithStyles(ForwardRef(Button))>
+  </div>
+</div>
+`;

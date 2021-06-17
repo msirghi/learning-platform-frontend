@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QuestionConfirmationDialog component should match the snapshot 1`] = `
+<div>
+  <WithStyles(ForwardRef(Dialog))
+    aria-describedby="alert-dialog-description"
+    aria-labelledby="alert-dialog-title"
+    maxWidth="lg"
+    onClose={[MockFunction]}
+    open={false}
+  >
+    <WithStyles(ForwardRef(DialogTitle))
+      id="alert-dialog-title"
+    >
+      help:confirmationDialog.title
+    </WithStyles(ForwardRef(DialogTitle))>
+    <WithStyles(ForwardRef(DialogContent))>
+      <WithStyles(ForwardRef(DialogContentText))
+        id="alert-dialog-description"
+      >
+        <div>
+          <div>
+            help:confirmationDialog.messageWillBeSentTitle
+            :
+          </div>
+          <div>
+            <b>
+              input value
+            </b>
+          </div>
+          <div>
+            help:confirmationDialog.confirmYourAction
+          </div>
+        </div>
+      </WithStyles(ForwardRef(DialogContentText))>
+    </WithStyles(ForwardRef(DialogContent))>
+    <WithStyles(ForwardRef(DialogActions))>
+      <WithStyles(ForwardRef(Button))
+        color="secondary"
+        onClick={[MockFunction]}
+        variant="outlined"
+      >
+        help:confirmationDialog.cancelButtonLabel
+      </WithStyles(ForwardRef(Button))>
+      <WithStyles(ForwardRef(Button))
+        color="primary"
+        onClick={[MockFunction]}
+        variant="outlined"
+      >
+        help:confirmationDialog.confirmButtonLabel
+      </WithStyles(ForwardRef(Button))>
+    </WithStyles(ForwardRef(DialogActions))>
+  </WithStyles(ForwardRef(Dialog))>
+</div>
+`;

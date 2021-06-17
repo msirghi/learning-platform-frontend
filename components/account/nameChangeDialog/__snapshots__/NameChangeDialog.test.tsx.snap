@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NameChangeDialog component should match the snapshot 1`] = `
+<WithStyles(ForwardRef(Dialog))
+  onClose={[Function]}
+  open={true}
+>
+  <WithStyles(ForwardRef(DialogTitle))>
+    account:nameChangeDialogTitle
+  </WithStyles(ForwardRef(DialogTitle))>
+  <WithStyles(ForwardRef(DialogContent))>
+    <WithStyles(ForwardRef(DialogContentText))>
+      account:nameChangeDialogDescription
+    </WithStyles(ForwardRef(DialogContentText))>
+    <WithStyles(ForwardRef(TextField))
+      fullWidth={true}
+      inputProps={
+        Object {
+          "data-testid": "firstname-field",
+        }
+      }
+      label="account:firstName"
+      onChange={[Function]}
+      value=""
+      variant="outlined"
+    />
+    <div
+      className="lastNameField"
+    >
+      <WithStyles(ForwardRef(TextField))
+        fullWidth={true}
+        inputProps={
+          Object {
+            "data-testid": "lastname-field",
+          }
+        }
+        label="account:lastName"
+        onChange={[Function]}
+        value=""
+        variant="outlined"
+      />
+    </div>
+  </WithStyles(ForwardRef(DialogContent))>
+  <WithStyles(ForwardRef(DialogActions))>
+    <WithStyles(ForwardRef(Button))
+      color="primary"
+      onClick={[Function]}
+    >
+      account:cancelButtonLabel
+    </WithStyles(ForwardRef(Button))>
+    <WithStyles(ForwardRef(Button))
+      color="primary"
+      data-testid="submit-button"
+      disabled={true}
+      onClick={[Function]}
+    >
+      account:submitButtonLabel
+    </WithStyles(ForwardRef(Button))>
+  </WithStyles(ForwardRef(DialogActions))>
+</WithStyles(ForwardRef(Dialog))>
+`;

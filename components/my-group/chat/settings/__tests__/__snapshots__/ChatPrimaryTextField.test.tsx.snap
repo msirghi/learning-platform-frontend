@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ValidationTextField component should match the snapshot if all props are provided 1`] = `
+<div>
+  <WithStyles(WithStyles(ForwardRef(TextField)))
+    InputProps={
+      Object {
+        "endAdornment": <WithStyles(ForwardRef(InputAdornment))
+          data-testid="send-button"
+          id="send-button"
+          position="end"
+        >
+          <Memo
+            className="icon"
+            color="primary"
+            onClick={[Function]}
+          />
+        </WithStyles(ForwardRef(InputAdornment))>,
+        "startAdornment": <WithStyles(ForwardRef(InputAdornment))
+          position="start"
+        >
+          <Memo
+            className="icon"
+            color="primary"
+          />
+        </WithStyles(ForwardRef(InputAdornment))>,
+      }
+    }
+    fullWidth={true}
+    inputProps={
+      Object {
+        "data-testid": "message-field",
+      }
+    }
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[MockFunction]}
+    placeholder="myGroup:inputMessagePlaceholder"
+    size="small"
+    value="default"
+    variant="outlined"
+  />
+</div>
+`;

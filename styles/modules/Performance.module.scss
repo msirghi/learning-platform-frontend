@@ -1,0 +1,224 @@
+@import '../base/variables.scss';
+
+$tab-desktop-font-size: 16px;
+
+.gradeGreedItem {
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.performanceMenuContainer {
+  transition: all 1s ease-in-out;
+  display: flex;
+  border-bottom: 3px $primary-color solid;
+  flex-direction: row;
+
+  @media screen and(max-width: 768px) {
+    flex-direction: column;
+    .tab {
+      background-color: $grey-light-color-1;
+    }
+
+    .secondTab {
+      margin-top: 2px;
+    }
+  }
+
+  .tab {
+    cursor: pointer;
+    min-width: 150px;
+    text-align: center;
+    color: $primary-color;
+    padding: 7px 0px;
+
+    span {
+      font-size: $tab-desktop-font-size;
+    }
+  }
+
+  .active {
+    background-color: $primary-color;
+    color: #fff;
+  }
+}
+
+@mixin card {
+  @media screen and (min-width: 768px) {
+    height: 150px;
+    min-width: 530px;
+    max-width: 33vh;
+  }
+  border-radius: 4px;
+  margin-top: 1rem;
+  box-shadow: 2.8px 2.8px 5.4px 0.6px rgba(0, 0, 0, 0.2);
+}
+
+.lessonGradeCardWrapper {
+  @include card;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+
+  .buttonContainer {
+    margin-left: auto;
+  }
+
+  @media screen and (max-width: 768px) {
+    .buttonContainer {
+      margin-top: 1rem;
+    }
+  }
+
+  padding: 1rem;
+  .avatar {
+    width: 95px;
+    height: 95px;
+
+    @media screen and(max-width: 768px) {
+      display: none;
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  .lessonInfo {
+    @media screen and (min-width: 768px) {
+      width: 175px;
+      margin: 0 1rem;
+    }
+    .year,
+    .teacher {
+      font-size: 16px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .year {
+        display: none;
+      }
+    }
+
+    .name {
+      font-size: 24px;
+      line-height: normal;
+      @media screen and(min-width: 768px) {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        max-width: 175px;
+      }
+    }
+  }
+
+  .gradeWrapper {
+    text-align: center;
+
+    .mark {
+      font-size: 30px;
+    }
+
+    .name {
+      font-size: 16px;
+    }
+
+    .date {
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.65);
+    }
+  }
+}
+
+.marksContainer {
+  @include card;
+
+  @media screen and(min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .decor {
+    width: 40px;
+    height: 100%;
+    background-image: url('/images/lesson-decor.jpg');
+    background-size: cover;
+  }
+
+  @media screen and(max-width: 768px) {
+    .cellRow {
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+
+      .cell {
+        width: 50%;
+      }
+    }
+
+    .undoButton {
+      width: 100%;
+
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .cell {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .title {
+      margin-top: 1rem;
+    }
+
+    .mark {
+      color: $primary-color;
+    }
+  }
+}
+
+.undoButton {
+  margin-right: 1rem;
+}
+
+.performanceHeader {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.pageInfo {
+  display: flex;
+  align-items: center;
+
+  svg {
+    fill: $yellow-dark-color;
+  }
+
+  span {
+    margin-left: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .performanceHeader {
+    flex-direction: column;
+    margin-top: 1rem;
+
+    .searchInput,
+    .searchInput div {
+      width: 100%;
+    }
+  }
+}
+
+.lessonsNotFound {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 18px;
+}

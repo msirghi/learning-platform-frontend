@@ -1,0 +1,35 @@
+{
+  "searchCourse": "Поиск",
+  "seeMyGrades": "Мои оценки",
+  "quitCourse": "Покинуть курс",
+  "enterButtonLabel": "Открыть",
+  "findTopic": "Найти лекцию",
+  "backButtonLabel": "Назад",
+  "addNewLessonLabel": "Добавить новый урок",
+  "attachFilesLabel": "Прикрепить файлы",
+  "addFileLabel": "Добавить файл",
+  "errorMessages": {
+    "fileIsTooBig": "Файл слишком большой",
+    "maximumAmountReached": "Вы достигли максимума количества файлов",
+    "fillRequiredFields": "Пожалуйста, заполните все необходимые поля",
+    "platformNotSelected": "Вы не выбрали платформу. Хотите продолжить?"
+  },
+  "specifyLink": "Пожалуйста, добавьте ссылку",
+  "whereTitle": "Где?",
+  "submitButtonLabel": "Создать урок",
+  "informationLabel": "Информация",
+  "confirmationDialogTitle": "Подтверждение",
+  "addLessonTitle": "Добавить урок",
+  "cancel": "Отмена",
+  "continue": "Продолжить",
+  "editor": {
+    "subjectHelperText": "Тема урока",
+    "subjectLabel": "Тема",
+    "startDateLabel": "Дата начада",
+    "startTimeLabel": "Время начала",
+    "endDateLabel": "Дата конца",
+    "endTimeLabel": "Время конца",
+    "descriptionLabel": "Описание",
+    "descriptionHelperText": "Короткое описание урока"
+  }
+}

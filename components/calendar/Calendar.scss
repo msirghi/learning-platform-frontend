@@ -1,0 +1,31 @@
+@import '../../styles/base/variables.scss';
+
+.fc-button {
+  background-color: $primary-color !important;
+  border: none !important;
+
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+
+.fc-timegrid-event .fc-event-time {
+  font-weight: bold !important;
+}
+
+.fc-timegrid-event {
+  border-radius: 0 !important;
+  cursor: pointer;
+}
+
+.fc-button-active {
+  background-color: darken($color: $primary-color, $amount: 10) !important;
+}
+
+.fc-day-today {
+  background: lighten($color: lightblue, $amount: 11) !important;
+}
+
+.fc-scrollgrid-sync-inner {
+  background: #fff;
+}

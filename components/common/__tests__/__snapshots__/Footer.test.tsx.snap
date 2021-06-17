@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component should match the snapshot 1`] = `
+<footer
+  className="makeStyles-footer-1"
+>
+  <div
+    className="footerWrapper makeStyles-wrapper-2 makeStyles-wrapper-3"
+  >
+    <div
+      className="footerAboutUs"
+    >
+      <div>
+        common:footer.aboutUs
+      </div>
+      <div
+        className="footerUsefulLinksEvenLink"
+      >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio odit numquam, omnis adipisci ex aperiam ipsum consectetur assumenda cupiditate debitis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, nemo.
+      </div>
+    </div>
+    <div
+      className="footerUsefulLinks"
+    >
+      <div>
+        common:footer.usefulLinks
+      </div>
+      <div
+        className="footerUsefulLinksContent"
+      >
+        <div>
+          <WithStyles(ForwardRef(Link))
+            color="inherit"
+            href="https://material-ui.com/"
+          >
+            Link 1
+          </WithStyles(ForwardRef(Link))>
+          <div
+            className="footerUsefulLinksEvenLink"
+          >
+            <WithStyles(ForwardRef(Link))
+              color="inherit"
+              href="https://material-ui.com/"
+            >
+              Link 2
+            </WithStyles(ForwardRef(Link))>
+          </div>
+        </div>
+        <div
+          className="footerUsefulLinksSecondCol"
+        >
+          <WithStyles(ForwardRef(Link))
+            color="inherit"
+            href="https://material-ui.com/"
+          >
+            Link 4
+          </WithStyles(ForwardRef(Link))>
+          <div
+            className="footerUsefulLinksEvenLink"
+          >
+            <WithStyles(ForwardRef(Link))
+              color="inherit"
+              href="https://material-ui.com/"
+            >
+              Link 3
+            </WithStyles(ForwardRef(Link))>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div>
+        common:footer.contacts
+      </div>
+      <div
+        className="footerIconText"
+      >
+        <Memo([object Object]) />
+         
+        <span>
+          support@site.com
+        </span>
+      </div>
+      <div
+        className="footerIconText"
+      >
+        <Memo([object Object]) />
+         
+        <span>
+          Chisinau, str. Street 3/2
+        </span>
+      </div>
+    </div>
+    <div
+      className="footerCopyright"
+    >
+      <Copyright
+        siteName="common:siteName"
+      />
+    </div>
+  </div>
+</footer>
+`;

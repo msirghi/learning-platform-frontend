@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ColorPaletteTemplate component should match the snapshot on default color 1`] = `
+<div
+  className="colorPaletteTemplate"
+  style={
+    Object {
+      "backgroundColor": "#fafafa",
+    }
+  }
+>
+  <div
+    className="firstMessage"
+  />
+  <div
+    className="secondMessage"
+  />
+  <div
+    className="radionButton"
+  >
+    <WithStyles(ForwardRef(Radio))
+      checked={true}
+      color="primary"
+      onChange={[Function]}
+    />
+  </div>
+</div>
+`;

@@ -1,0 +1,19 @@
+@import '../../../styles/base/variables.scss';
+
+.layoutWrapper {
+  margin-top: 2rem;
+  //   background: url('/images/landing-shape-1.png') no-repeat;
+  background-size: contain;
+  height: 500px;
+  background: $primary-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1.1);
+
+  .desktopLogo {
+    width: 75vw;
+    border: 1px solid #fff;
+    // transform: scale(0.8);
+  }
+}

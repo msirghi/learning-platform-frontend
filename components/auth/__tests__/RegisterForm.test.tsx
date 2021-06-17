@@ -5,13 +5,18 @@ import toJson from 'enzyme-to-json';
 import RegisterForm from '../forms/RegisterForm';
 
 describe('RegisterForm component', () => {
+  const defaultProps = {
+    onTabChange: jest.fn(),
+    onMessage: jest.fn()
+  };
+
   it('should match snapshot', () => {
-    const component = shallow(<RegisterForm />);
+    const component = shallow(<RegisterForm {...defaultProps} />);
     expect(toJson(component)).toMatchSnapshot();
   });
 
   it('should render all the fields properly', () => {
-    const { queryByTestId } = render(<RegisterForm />);
+    const { queryByTestId } = render(<RegisterForm {...defaultProps} />);
 
     const emailField = queryByTestId('email-field');
     expect(emailField).toBeInTheDocument();
@@ -36,7 +41,7 @@ describe('RegisterForm component', () => {
   });
 
   it('should have submit button enabled by default', () => {
-    const { queryByTestId } = render(<RegisterForm />);
+    const { queryByTestId } = render(<RegisterForm {...defaultProps} />);
 
     const submitButton = queryByTestId('submit-button');
     expect(submitButton).toBeInTheDocument();
@@ -44,7 +49,7 @@ describe('RegisterForm component', () => {
   });
 
   it('should have enabled submit button on valid form', () => {
-    const { queryByTestId } = render(<RegisterForm />);
+    const { queryByTestId } = render(<RegisterForm {...defaultProps} />);
 
     const emailField = queryByTestId('email-field');
     const firstNameField = queryByTestId('firstName-field');
@@ -66,7 +71,7 @@ describe('RegisterForm component', () => {
   });
 
   it('should submit the form if values are valid', async () => {
-    const { queryByTestId, getByRole } = render(<RegisterForm />);
+    const { queryByTestId, getByRole } = render(<RegisterForm {...defaultProps} />);
 
     const emailField = queryByTestId('email-field');
     const firstNameField = queryByTestId('firstName-field');
@@ -90,7 +95,7 @@ describe('RegisterForm component', () => {
   });
 
   it('should display error message on unchecked checkbox', () => {
-    const { queryByTestId, getByText } = render(<RegisterForm />);
+    const { queryByTestId, getByText } = render(<RegisterForm {...defaultProps} />);
     const submitButton = queryByTestId('submit-button');
     fireEvent.click(submitButton);
 

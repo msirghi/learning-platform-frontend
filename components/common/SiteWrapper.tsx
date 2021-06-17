@@ -1,10 +1,13 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { CssBaseline } from '@material-ui/core';
 import { NavBar } from './NavBar';
 import { MainDrawer } from './MainDrawer';
 import { SiteFooter } from './Footer';
 import { useWindowSize } from './hooks/useWindowResize';
+import { useSelector, useDispatch } from 'react-redux';
+import { RootState } from '../../redux/reducers';
+import { setDesktopDrawerStatus } from '../../redux/actions/interface/interfaceAction';
 
 const drawerWidth = 240;
 
@@ -26,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
     color: '#000',
     boxShadow: 'none',
     [theme.breakpoints.up('sm')]: {
-      width: `calc(100% - ${drawerWidth / 2}px)`
+      width: `calc(100% - ${drawerWidth / 2 - 10}px)`
     }
   },
   appBarShift: {
@@ -37,7 +40,10 @@ const useStyles = makeStyles((theme) => ({
     })
   },
   menuButton: {
-    marginRight: 36
+    marginRight: 36,
+    [theme.breakpoints.between(0, 768)]: {
+      marginRight: 'initial'
+    }
   },
   hide: {
     display: 'none'
@@ -52,22 +58,31 @@ const useStyles = makeStyles((theme) => ({
   content: {
     flexGrow: 1,
     padding: theme.spacing(3)
+    // [theme.breakpoints.between(0, 500)]: {
+    //   padding: theme.spacing(1)
+    // }
   }
 }));
 
 export const SiteWrapper: React.FC = ({ children }) => {
   const classes = useStyles();
-  const [desktopOpen, setDesktopOpen] = React.useState(false);
-  const [mobileOpen, setMobileOpen] = React.useState(false);
+  const desktopDrawerStatus = useSelector(
+    (state: RootState) => state.interface.desktopLeftDrawerOpen
+  );
+  const dispatch = useDispatch();
+
+  const setDesktopOpen = (value: boolean) => dispatch(setDesktopDrawerStatus(value));
+
+  const [mobileOpen, setMobileOpen] = useState(false);
   const [width] = useWindowSize();
 
   useEffect(() => {
-    if (width < 768 && desktopOpen) {
+    if (width < 768 && desktopDrawerStatus) {
       setDesktopOpen(false);
       return;
     }
 
-    if(width > 768 && mobileOpen) {
+    if (width > 768 && mobileOpen) {
       setMobileOpen(false);
     }
   }, [width]);
@@ -96,20 +111,20 @@ export const SiteWrapper: React.FC = ({ children }) => {
           classes={classes}
           handleDrawerClose={handleDrawerClose}
           handleDrawerOpen={handleDrawerOpen}
-          open={desktopOpen}
+          open={desktopDrawerStatus}
         />
         <MainDrawer
           handleDrawerOpen={handleDrawerOpen}
           mobileOpen={mobileOpen}
           handleDrawerClose={handleDrawerClose}
-          open={desktopOpen}
+          open={desktopDrawerStatus}
         />
-        <main className={classes.content}>
+        <main className={classes.content} id='content'>
           <div className={classes.toolbar} />
           {children}
         </main>
       </div>
-      <SiteFooter />
+      <SiteFooter drawerOpened={desktopDrawerStatus} />
     </div>
   );
 };

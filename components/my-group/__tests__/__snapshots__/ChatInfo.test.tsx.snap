@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChatInfo component should match the snapshot 1`] = `
+<div
+  className="chatInfoContainer"
+>
+  <div
+    className="header"
+  >
+    <span>
+      myGroup:groupNews
+    </span>
+  </div>
+  <div
+    className="newsContent"
+  >
+    <NewsRow
+      author="Nicolae"
+      date={2015-06-14T22:12:05.275Z}
+      description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos nihil, commodi alias at debitis in."
+      key="1"
+      title="News 1"
+    />
+    <hr
+      className="separator"
+    />
+    <NewsRow
+      author="Nicolae"
+      date={2015-06-14T22:12:05.275Z}
+      description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis numquam nobis, nihil quis error repudiandae."
+      key="2"
+      title="News 2"
+    />
+  </div>
+</div>
+`;

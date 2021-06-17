@@ -3,11 +3,26 @@ import { AuthPage } from '../../common/enums';
 import { useTranslation } from '../../i18n';
 import styles from '../../styles/modules/Auth.module.scss';
 
+/**
+ * AuthHeader component props
+ */
 type Props = {
+  /**
+   * Function fired on tab change.
+   */
   onTabChange: (tab: AuthPage) => void;
+  /**
+   * Currently active tab.
+   */
   activeTab: AuthPage;
 };
 
+/**
+ * Header from the auth page. Includes two tabs: Registration & Login.
+ *
+ * @version 0.1
+ * @author [Sirghi Mihail](https://github.com/msirghi)
+ */
 function AuthHeader({ onTabChange, activeTab }: Props) {
   const isRegisterTab = activeTab === AuthPage.REGISTER;
   const { t } = useTranslation();

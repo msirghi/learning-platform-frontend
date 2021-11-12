@@ -1,15 +1,17 @@
 // @ts-nocheck
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, LinearProgress, Typography } from '@material-ui/core';
 import styles from '../../../styles/modules/Auth.module.scss';
 import { useTranslation } from '../../../i18n';
-import ValidationService from '../../../services/ValidationService';
+import ValidationService from '../../services/ValidationService';
 import { useForm } from 'react-hook-form';
 import TextField from '@material-ui/core/TextField';
 import RegexContants from '../../../common/constants/regex.constants';
 import Checkbox from '@material-ui/core/Checkbox';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import { AlertType, AuthPage } from '../../../common/enums';
+import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
+import app from '../../config/firebase';
 
 interface Values {
   email: string;
@@ -21,28 +23,59 @@ interface Values {
 }
 
 type Props = {
+  /**
+   * Function for triggering the diplay of AlertMessage component.
+   */
   onMessage: (type: AlertType, text: string) => void;
+  /**
+   * Function for changing the current tab.
+   */
   onTabChange: (tab: AuthPage) => void;
 };
 
+/**
+ * Registration form page. Uses google recaptcha v3 and 'react-hook-form' library for form handling.
+ *
+ * @version 0.1
+ * @author [Sirghi Mihail](https://github.com/msirghi)
+ */
 function RegisterForm({ onMessage, onTabChange }: Props) {
   const { t } = useTranslation();
   const [isSubmitting, setSubmitting] = useState<boolean>(false);
-  const { register, handleSubmit, errors, getValues, formState } = useForm<Values>({ mode: 'onChange' });
+  const { register, handleSubmit, errors, getValues, formState } = useForm<Values>({
+    mode: 'onChange'
+  });
 
-  const onSubmit = (values: Values) => {
+  const { executeRecaptcha } = useGoogleReCaptcha();
+
+  useEffect(async () => {
+    await executeRecaptcha('registration');
+  }, []);
+
+  const onSubmit = async (values: Values) => {
     setSubmitting(true);
-    /* istanbul ignore next */
-    setTimeout(() => {
+    await handleSignUp();
+    await executeRecaptcha('registration_submit');
+  };
+
+  const handleSignUp = async () => {
+    try {
+      const email = getValues().email;
+      const password = getValues().password;
+      await app.auth().createUserWithEmailAndPassword(email, password);
       setSubmitting(false);
-      onMessage(AlertType.SUCCESS, t('auth:registerSuccessMessage'));
       onTabChange(AuthPage.LOGIN);
-    }, 500);
+    } catch (error) {
+      onMessage(AlertType.ERROR, error.message);
+      setSubmitting(false);
+    }
   };
 
   return (
     <form noValidate onSubmit={handleSubmit(onSubmit)}>
-      {errors.checked && <Typography color='secondary'>{t('auth:errorMessages.acceptTerms')}</Typography>}
+      {errors.checked && (
+        <Typography color='secondary'>{t('auth:errorMessages.acceptTerms')}</Typography>
+      )}
 
       {isSubmitting && (
         <div data-testid='progress'>
@@ -116,7 +149,9 @@ function RegisterForm({ onMessage, onTabChange }: Props) {
       <TextField
         error={!!errors.password}
         helperText={
-          (errors.password && errors.password.type === 'validate' && t('auth:errorMessages.weakPassword')) ||
+          (errors.password &&
+            errors.password.type === 'validate' &&
+            t('auth:errorMessages.weakPassword')) ||
           (errors.password && errors.password.message)
         }
         variant='outlined'

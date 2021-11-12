@@ -1,5 +1,18 @@
 {
+  "siteName": "Learning Platform",
   "headerTabs": {
-    "home": "Home"
+    "home": "Home",
+    "myCourses": "My courses",
+    "myGroup": "My group",
+    "performance": "Performance",
+    "calendar": "Calendar",
+    "help": "Help",
+    "profile": "Profile",
+    "account": "Account"
+  },
+  "footer": {
+    "usefulLinks": "Userful Links",
+    "contacts": "Contacts",
+    "aboutUs": "About Us"
   }
 }

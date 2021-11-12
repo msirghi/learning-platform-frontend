@@ -1,0 +1,451 @@
+@import '../base/variables.scss';
+@import '../base/functions.scss';
+@import '../base/mixins.scss';
+@import '../base/animations.scss';
+
+.hide {
+  display: none;
+}
+
+.groupChatContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .messages {
+    max-height: 80%;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    @include hide-scrollbar;
+  }
+
+  .header {
+    height: 76px;
+    min-height: 76px;
+    background-color: $primary-color;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    svg {
+      fill: #fff;
+    }
+  }
+}
+
+.newsGrid {
+  max-height: 100%;
+}
+
+.chatInfoContainer {
+  height: 100%;
+
+  .newsTitle {
+    font-size: 1.5rem;
+    // margin-left: 0.5rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .separator {
+    margin: 1rem 2rem;
+    opacity: 0.5;
+  }
+
+  .mobileSeparator {
+    margin: 1rem 0rem;
+    opacity: 0.5;
+  }
+
+  .header {
+    // border-top-right-radius: 6px;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    background-color: $primary-color;
+    color: #fff;
+    font-size: 30px;
+
+    @media screen and (max-width: 1200px) {
+      font-size: 20px;
+    }
+    span {
+      margin-left: 1rem;
+    }
+  }
+
+  .newsContent {
+    height: 87%;
+    margin-top: 0.5rem;
+    overflow-y: auto;
+    border-left: 1px solid lightgrey;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    @include hide-scrollbar;
+  }
+
+  .newsRow {
+    padding: 10px;
+
+    &:first-child {
+      margin-top: 10px;
+    }
+
+    .info {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 0.5rem;
+      color: grey;
+    }
+  }
+}
+
+.myGroupContainer {
+  // box-shadow: 2.8px 2.8px 4.6px 0.4px rgba(0, 0, 0, 0.4);
+  border: 1px solid lightgrey;
+  margin: 1rem;
+  @media screen and (max-width: 768px) {
+    margin: initial !important;
+  }
+  margin-right: 2rem;
+  height: 80vh;
+  width: auto !important;
+}
+
+.chatGrid {
+  max-height: -webkit-fill-available;
+}
+
+.messageContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  max-width: 50%;
+  margin-left: 1rem;
+
+  @media screen and (max-width: 1200px) {
+    max-width: 90%;
+  }
+
+  @media screen and (max-width: 768px) {
+    max-width: 90%;
+    margin-left: 0;
+  }
+
+  .content {
+    background: $grey-light-color-1;
+    border-radius: 6px;
+    padding: 0.6rem;
+  }
+
+  .date {
+    display: flex;
+    font-size: 0.7rem;
+    padding: 10px;
+    color: grey;
+  }
+
+  .author {
+  }
+
+  .messageContentContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  .avatar {
+    height: 50px;
+    width: 50px;
+    min-width: 50px;
+    background-color: #eaeaea;
+    border-radius: 50%;
+    margin-top: auto;
+  }
+}
+
+.messageContentContainer {
+  justify-content: flex-start;
+}
+
+.myMessageContainer {
+  justify-content: flex-end;
+}
+
+.myMessage {
+  margin-left: auto;
+  margin-right: 1rem;
+  @media screen and (max-width: 768px) {
+    max-width: 80%;
+    margin-right: 0;
+  }
+  justify-content: flex-end;
+}
+
+.myMessageContent {
+  margin-right: 10px;
+}
+
+.myMessageDate {
+  padding-right: 66px;
+}
+
+.notMyMessageContent {
+  margin-left: 10px;
+}
+
+.textFieldContainer {
+  margin: auto 0.7rem 0.3rem 0.7rem;
+}
+
+.studentsContainer {
+  height: 100%;
+
+  .seeMoreButton {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .content {
+    border-right: 1px solid lightgrey;
+    height: 87%;
+  }
+
+  .groupInfoContainer {
+    color: #fff;
+    background: $primary-color;
+    display: flex;
+    align-items: center;
+
+    .chevron {
+      margin-left: auto;
+      svg {
+        color: #fff;
+      }
+    }
+
+    height: 76px;
+
+    .header {
+      padding-top: 0.5rem;
+      margin-left: 1rem;
+      font-size: 30px;
+
+      @media screen and (max-width: 1200px) {
+        font-size: 20px;
+      }
+    }
+
+    .subheader {
+      margin-left: 18px;
+      padding-bottom: 0.5rem;
+      font-size: 13px;
+
+      @media screen and (max-width: 1200px) {
+        margin-top: 0.4rem;
+      }
+    }
+  }
+
+  .chatButton {
+    position: fixed;
+    bottom: 2vh;
+    right: 2vh;
+  }
+
+  .studentAvatar {
+    height: 40px;
+    width: 40px;
+    min-width: 40px;
+    border-radius: 50%;
+    background-color: $grey-light-color-1;
+  }
+
+  .studentRow {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    .onlineDot {
+      margin-left: auto;
+      margin-right: 1rem;
+      height: 8px;
+      width: 8px;
+      border-radius: 50%;
+      background-color: $blue-color;
+    }
+
+    &:not(:first-child) {
+      margin-top: 1rem;
+    }
+
+    &:first-child {
+      margin-top: 0.5rem;
+    }
+
+    margin-left: 1rem;
+
+    .name {
+      margin-left: 0.5rem;
+      word-break: break-word;
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.mobileChatContainer {
+  height: calc(93vh - 72px);
+  padding: 1rem;
+  background: #fff;
+  overflow-y: auto;
+}
+
+.myMessageMobile {
+  text-align: end;
+  margin-right: 1rem;
+  margin-top: 0.2rem;
+  color: grey;
+  font-size: 0.7rem;
+}
+
+.notMyMessageMobile {
+  margin-top: 0.2rem;
+  margin-left: 1rem;
+  font-size: 0.7rem;
+  color: grey;
+}
+
+.mobileHeader {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  background: #10806a;
+  color: #fff;
+  padding: 0.5rem;
+  z-index: 9999;
+  .groupName {
+    font-size: 1.5rem;
+  }
+
+  .stats {
+    margin-left: 0.2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .backIcon,
+  .settingsIcon svg {
+    fill: #fff;
+  }
+
+  .settingsIcon {
+    margin-left: auto;
+  }
+}
+
+.mobileTextFieldContainer {
+  margin: 1rem;
+}
+
+.mobileChatContent {
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  height: 100vh;
+}
+
+.fixedContainer {
+  position: absolute;
+  width: 100vw;
+  bottom: 0;
+  background: #fff;
+}
+
+.colorPaletteTemplate {
+  height: 100px;
+  width: 85px;
+  border-radius: 10px;
+  position: relative;
+  margin: 0.5rem;
+
+  .firstMessage {
+    background: #eaeaea;
+    height: 15px;
+    width: 50px;
+    position: absolute;
+    top: 20px;
+    left: 6px;
+    border-radius: 4px;
+  }
+
+  .secondMessage {
+    display: flex;
+    justify-content: flex-end;
+    height: 15px;
+    width: 50px;
+    position: absolute;
+    top: 44px;
+    right: 6px;
+    border-radius: 4px;
+    background: #eaeaea;
+  }
+
+  .radionButton {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+  }
+}
+
+.chatThemesContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+}
+
+.mobileChatSettingsContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 9vh;
+  width: 100vw;
+  padding: 1rem 2rem;
+
+  .mobileChatPalettes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .fontSizeTitle {
+    margin-top: 1rem;
+  }
+
+  .mainTitle {
+    font-size: 22px;
+  }
+
+  .applyButtonContainer,
+  .themeTitle {
+    margin-top: 1rem;
+  }
+
+  .themeSubtitle,
+  .fontSizeSubtitle {
+    font-size: 13px;
+    color: grey;
+  }
+
+  .fontSizeSubtitle {
+  }
+}

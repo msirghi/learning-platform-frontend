@@ -1,0 +1,18 @@
+{
+  "nameChangeDialogTitle": "Name change",
+  "passwordChangeDialogTitle": "Password change",
+  "nameChangeDialogDescription": "Enter your new first name and last names. After submission, the data will be sent to TBD and it will be changed.",
+  "passwordChangeDialogDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, neque!",
+  "oldPassword": "Old password",
+  "newPassword": "New password",
+  "repeatNewPassword": "Repeat new password",
+  "cancelButtonLabel": "Cancel",
+  "submitButtonLabel": "Submit",
+  "passwordMismatch": "Passwords do not match.",
+  "oldPasswordInvalid": "Wrong old password.",
+  "firstName": "First name",
+  "lastName": "Last name",
+  "requestChange": "Request change",
+  "saveEmail": "Save email",
+  "changePassword": "Change password"
+}

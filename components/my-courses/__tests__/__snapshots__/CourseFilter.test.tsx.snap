@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CourseFilter component should match the snapshot 1`] = `
+<div
+  className="myCoursesHeaderRightWrapper"
+>
+  <WithStyles(ForwardRef(TextField))
+    label="courses:searchCourse"
+    onChange={[Function]}
+    size="small"
+    value="val"
+  />
+  <WithStyles(ForwardRef(IconButton))>
+    <Memo([object Object]) />
+  </WithStyles(ForwardRef(IconButton))>
+</div>
+`;

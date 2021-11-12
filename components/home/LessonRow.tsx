@@ -6,9 +6,19 @@ import { useTranslation } from '../../i18n';
 import Tooltip from '@material-ui/core/Tooltip';
 
 type Props = {
+  /**
+   * Lesson to display.
+   */
   lesson: Lesson;
 };
 
+/**
+ * Lesson row in 'Schedule' card on home page.
+ * Depending on lesson status, renders shapes with different colors.
+ *
+ * @version 0.1
+ * @author [Sirghi Mihail](https://github.com/msirghi)
+ */
 export const LessonRow: React.FC<Props> = ({ lesson: { status, time, title, topic } }) => {
   let shapeClassName = styles.lessonRowStatusShape;
   const { t } = useTranslation();

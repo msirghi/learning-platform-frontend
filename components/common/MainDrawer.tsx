@@ -10,6 +10,8 @@ import clsx from 'clsx';
 import { menuItems } from './utils/menuItems';
 import styles from '../../styles/modules/Shared.module.scss';
 import { Hidden } from '@material-ui/core';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const drawerWidth = 240;
 
@@ -70,6 +72,7 @@ export const MainDrawer: React.FC<Props> = ({
 }) => {
   const classes = useStyles();
   const [activeTab, setActiveTab] = useState<string | null>(null);
+  const router = useRouter();
 
   useEffect(() => {
     /* istanbul ignore next */
@@ -82,11 +85,13 @@ export const MainDrawer: React.FC<Props> = ({
     return <div />;
   }
 
+  const onLogoClick = () => router.push('/home');
+
   const drawerContent = () => {
     return (
       <>
         <div className={classes.toolbar}>
-          <IconButton onClick={handleDrawerClose}>
+          <IconButton onClick={onLogoClick}>
             <img src='/images/register-logo-148.png' height={72} width={72} />
           </IconButton>
         </div>
@@ -100,19 +105,23 @@ export const MainDrawer: React.FC<Props> = ({
                 }`}
                 key={item.label}
               >
-                <ListItem button>
-                  <ListItemIcon className={styles.mainMenuIconContainer}>
-                    <item.icon
-                      className={`${isActiveTab ? styles.mainMenuActiveIcon : styles.mainMenuIcon}`}
-                    />
-                  </ListItemIcon>
-                  {(open || mobileOpen) && (
-                    <ListItemText
-                      className={isActiveTab ? styles.mainMenuActiveText : ''}
-                      primary={item.label}
-                    />
-                  )}
-                </ListItem>
+                <Link href={item.link}>
+                  <ListItem button>
+                    <ListItemIcon className={styles.mainMenuIconContainer}>
+                      <item.icon
+                        className={`${
+                          isActiveTab ? styles.mainMenuActiveIcon : styles.mainMenuIcon
+                        }`}
+                      />
+                    </ListItemIcon>
+                    {(open || mobileOpen) && (
+                      <ListItemText
+                        className={isActiveTab ? styles.mainMenuActiveText : ''}
+                        primary={item.label}
+                      />
+                    )}
+                  </ListItem>
+                </Link>
               </div>
             );
           })}
@@ -140,6 +149,8 @@ export const MainDrawer: React.FC<Props> = ({
       </SwipeableDrawer>
       <Hidden xsDown implementation='css'>
         <SwipeableDrawer
+          // onMouseLeave={handleDrawerClose}
+          // onMouseEnter={handleDrawerOpen}
           onClose={handleDrawerClose}
           onOpen={handleDrawerOpen}
           classes={{

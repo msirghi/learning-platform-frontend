@@ -1,30 +1,66 @@
-// @ts-nocheck
-import React, { FormEvent, useState } from 'react';
+import React, { FormEvent, useEffect, useState } from 'react';
 import { Button, LinearProgress, Typography, TextField } from '@material-ui/core';
 import { useTranslation } from '../../../i18n';
 import styles from '../../../styles/modules/Auth.module.scss';
 import Link from '@material-ui/core/Link';
 import { AlertType, AuthPage } from '../../../common/enums';
+import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
+import app from '../../config/firebase';
+import { useRouter } from 'next/router';
+import { useDispatch } from 'react-redux';
+import { setUserInfo } from '../../../redux/actions/user/userAction';
 
+/**
+ * Login page props.
+ */
 type Props = {
+  /**
+   * Function for triggering the diplay of AlertMessage component.
+   */
   onMessage: (type: AlertType, text: string) => void;
+  /**
+   * Function for changing the current tab.
+   */
   onTabChange: (tab: AuthPage) => void;
 };
 
+/**
+ * Login form page. Uses google recaptcha v3 to trigger actions.
+ *
+ * @version 0.1
+ * @author [Sirghi Mihail](https://github.com/msirghi)
+ */
 function LoginForm({ onMessage, onTabChange }: Props) {
   const { t } = useTranslation();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [isSubmitting, setSubmitting] = useState(false);
+  const { executeRecaptcha } = useGoogleReCaptcha();
+  const router = useRouter();
+  const dispatch = useDispatch();
 
-  const onSubmit = (e: FormEvent) => {
+  useEffect(() => {
+    executeRecaptcha && executeRecaptcha('login');
+  }, []);
+
+  const onSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setSubmitting(true);
-    /* istanbul ignore next */
-    setTimeout(() => {
+    await handleSignIn();
+    executeRecaptcha && await executeRecaptcha('login_submit');
+  };
+
+  const handleSignIn = async () => {
+    try {
+      const res = await app.auth().signInWithEmailAndPassword(email, password);
       setSubmitting(false);
-      onMessage(AlertType.ERROR, t('auth:invalidCredentials'));
-    }, 500);
+      dispatch(setUserInfo({ email: res.user.email }));
+      router.push('/home'
+      );
+    } catch (error) {
+      onMessage(AlertType.ERROR, error.message);
+      setSubmitting(false);
+    }
   };
 
   return (

@@ -11,7 +11,13 @@ import { useTranslation } from '../../i18n';
 import { makeStyles, createStyles } from '@material-ui/core/styles';
 
 type Props = {
+  /**
+   * News card title.
+   */
   title: string;
+  /**
+   * News to display.
+   */
   news: News[];
 };
 
@@ -25,6 +31,12 @@ const useStyles = makeStyles(() =>
   })
 );
 
+/**
+ * Home news card.
+ *
+ * @version 0.1
+ * @author [Sirghi Mihail](https://github.com/msirghi)
+ */
 export const NewsCard: React.FC<Props> = ({ title, news }) => {
   const { t } = useTranslation();
   const classes = useStyles();

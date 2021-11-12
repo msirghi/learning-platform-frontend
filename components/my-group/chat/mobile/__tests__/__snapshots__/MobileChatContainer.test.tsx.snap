@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MobileChatContainer component should match the snapshot on valid props 1`] = `
+<div
+  className="mobileChatContent"
+>
+  <MobileChatHeader
+    onBackClick={[MockFunction]}
+    online={8}
+    toggleSettings={[Function]}
+    total={1}
+  />
+  <ForwardRef(Fade)
+    in={false}
+  >
+    <div
+      className="fixedContainer"
+      style={
+        Object {
+          "backgroundColor": "#fafafa",
+        }
+      }
+    >
+      <div
+        className="mobileChatContainer"
+        style={
+          Object {
+            "backgroundColor": "#fafafa",
+          }
+        }
+      >
+        <Message
+          chatMessage={
+            Object {
+              "author": "Mihail",
+              "date": 2015-06-14T22:12:05.275Z,
+              "id": 1,
+              "message": "Lorem ipsum dolor sit amet.",
+            }
+          }
+          fontSize={14}
+          fromMe={true}
+          hideAvatar={true}
+          key="1"
+        />
+        <div
+          className="myMessageMobile"
+        >
+          Mihail
+        </div>
+        <Message
+          chatMessage={
+            Object {
+              "author": "Nicolae",
+              "date": 2015-06-14T22:12:05.275Z,
+              "id": 2,
+              "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, sapiente!",
+            }
+          }
+          fontSize={14}
+          fromMe={false}
+          hideAvatar={true}
+          key="2"
+        />
+        <div
+          className="notMyMessageMobile"
+        >
+          Nicolae
+        </div>
+        <Message
+          chatMessage={
+            Object {
+              "author": "Mihail 2",
+              "date": 2015-06-14T22:12:05.275Z,
+              "id": 3,
+              "message": "Lorem ipsum, dolor sit amet consectetur adipisicing.",
+            }
+          }
+          fontSize={14}
+          fromMe={true}
+          hideAvatar={true}
+          key="3"
+        />
+        <div
+          className="myMessageMobile"
+        >
+          Mihail 2
+        </div>
+        <Message
+          chatMessage={
+            Object {
+              "author": "Mihail 4",
+              "date": 2015-06-14T22:12:05.275Z,
+              "id": 4,
+              "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, repudiandae? Iusto labore dolores obcaecati maxime. Quaerat praesentium doloribus expedita voluptatum!",
+            }
+          }
+          fontSize={14}
+          fromMe={false}
+          hideAvatar={true}
+          key="4"
+        />
+        <div
+          className="notMyMessageMobile"
+        >
+          Mihail 4
+        </div>
+        <Message
+          chatMessage={
+            Object {
+              "author": "Mihail 4",
+              "date": 2015-06-14T22:12:05.275Z,
+              "id": 5,
+              "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, repudiandae? Iusto labore dolores obcaecati maxime. Quaerat praesentium doloribus expedita voluptatum!",
+            }
+          }
+          fontSize={14}
+          fromMe={true}
+          hideAvatar={true}
+          key="5"
+        />
+        <div
+          className="myMessageMobile"
+        >
+          Mihail 4
+        </div>
+        <Message
+          chatMessage={
+            Object {
+              "author": "Mihail 4",
+              "date": 2015-06-14T22:12:05.275Z,
+              "id": 6,
+              "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, repudiandae? Iusto labore dolores obcaecati maxime. Quaerat praesentium doloribus expedita voluptatum!",
+            }
+          }
+          fontSize={14}
+          fromMe={false}
+          hideAvatar={true}
+          key="6"
+        />
+        <div
+          className="notMyMessageMobile"
+        >
+          Mihail 4
+        </div>
+      </div>
+      <div
+        className="mobileTextFieldContainer"
+      >
+        <ChatPrimaryTextField
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onMessageSend={[Function]}
+          value=""
+        />
+      </div>
+    </div>
+  </ForwardRef(Fade)>
+</div>
+`;

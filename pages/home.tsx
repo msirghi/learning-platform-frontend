@@ -1,15 +1,16 @@
-import React from "react";
-import Head from "next/head";
-import { withTranslation } from "../i18n";
-import { SiteWrapper } from "../components/common/SiteWrapper";
-import { HomeContent } from "../components/home/HomeContent";
+import React from 'react';
+import Head from 'next/head';
+import { useTranslation } from '../i18n';
+import { SiteWrapper } from '../components/common/SiteWrapper';
+import { HomeContent } from '../components/home/HomeContent';
 
-function Home({ t }) {
+function Home() {
+  const { t } = useTranslation();
   return (
     <div>
       <Head>
-        <title>{t("home:title")}</title>
-        <link rel='icon' href='../public/favicon.ico' />
+        <title>{t('home:title')}</title>
+        <link rel='icon' href='favicon.ico' />
       </Head>
       <SiteWrapper>
         <HomeContent />
@@ -19,7 +20,7 @@ function Home({ t }) {
 }
 
 Home.getInitialProps = async () => ({
-  namespacesRequired: ["home"],
+  namespacesRequired: ['home', 'common']
 });
 
-export default withTranslation()(Home);
+export default Home;

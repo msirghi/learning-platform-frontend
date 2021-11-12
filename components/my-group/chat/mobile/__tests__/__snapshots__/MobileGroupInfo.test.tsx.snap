@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MobileGroupInfo component should match the snapshot 1`] = `
+<div>
+  <div
+    className="studentsContainer"
+  >
+    <div
+      className="chatInfoContainer"
+    >
+      <div
+        className="newsTitle"
+      >
+        myGroup:news
+      </div>
+      <NewsRow
+        author="Nicolae"
+        date={2015-06-14T22:12:05.275Z}
+        description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos nihil, commodi alias at debitis in."
+        key="1"
+        title="News 1"
+      />
+      <hr
+        className="separator"
+      />
+      <NewsRow
+        author="Nicolae"
+        date={2015-06-14T22:12:05.275Z}
+        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis numquam nobis, nihil quis error repudiandae."
+        key="2"
+        title="News 2"
+      />
+    </div>
+    <WithStyles(ForwardRef(Button))
+      className="seeMoreButton"
+      color="primary"
+      fullWidth={true}
+      variant="outlined"
+    >
+      myGroup:seeMore
+    </WithStyles(ForwardRef(Button))>
+    <GroupInfo
+      chevronDown={true}
+      groupName="Name"
+      onChevronClick={[Function]}
+      showChevron={true}
+      totalMembers={7}
+      totalOnline={3}
+    />
+    <div
+      className="studentsContainer"
+    >
+      <StudentRow
+        key="1"
+        name="First Last"
+      />
+      <StudentRow
+        key="2"
+        name="Nicolae Savastin"
+      />
+      <StudentRow
+        key="3"
+        name="Nichita Eremeev"
+      />
+      <StudentRow
+        key="4"
+        name="Graeme Sacks"
+      />
+      <StudentRow
+        key="5"
+        name="Zeid Hadi"
+      />
+      <StudentRow
+        key="6"
+        name="Dan Mil"
+      />
+    </div>
+    <ForwardRef(Fade)
+      in={true}
+    >
+      <div
+        className="chatButton"
+      >
+        <WithStyles(ForwardRef(Fab))
+          aria-label="add"
+          className="chatButton"
+          color="primary"
+          onClick={[Function]}
+        >
+          <Memo([object Object]) />
+        </WithStyles(ForwardRef(Fab))>
+      </div>
+    </ForwardRef(Fade)>
+  </div>
+</div>
+`;

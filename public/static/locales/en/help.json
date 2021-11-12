@@ -1,0 +1,14 @@
+{
+  "primaryTitle": "How can we help you?",
+  "searchInputTitle": "Describe your issue",
+  "messageSentSuccessMessage": "Your message was sent to the support team.",
+  "nothingWasFoundLabel": "Nothing was found. You can send the message to support team by click the button bellow.",
+  "sendMessageButtonLabel": "Send the message",
+  "confirmationDialog": {
+    "title": "Confirmation",
+    "messageWillBeSentTitle": "This message will be sent to the support team",
+    "confirmYourAction": "Please, confirm your action. ",
+    "cancelButtonLabel": "Cancel",
+    "confirmButtonLabel": "Confirm"
+  }
+}

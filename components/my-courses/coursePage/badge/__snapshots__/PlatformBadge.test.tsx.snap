@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PlatformBadge component should match the snapshot 1`] = `
+<div>
+  <WithStyles(ForwardRef(Chip))
+    avatar={
+      <WithStyles(ForwardRef(Avatar))>
+        L
+      </WithStyles(ForwardRef(Avatar))>
+    }
+    className="chip"
+    color="primary"
+    deleteIcon={<Memo />}
+    label="Label"
+    onClick={[Function]}
+    onDelete={[Function]}
+  />
+</div>
+`;

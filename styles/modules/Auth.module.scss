@@ -1,16 +1,17 @@
 @import '../base/variables.scss';
+@import '../base/functions.scss';
+@import '../base/mixins.scss';
 
 $container-border-radius: 5px;
 $transition-time: 0.5s;
+$image-size: 120px;
 
 .authHeader {
   display: flex;
   text-align: center;
   font-size: 34px;
   line-height: 70px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
+  @include reset-font;
 }
 
 .registerLogo {
@@ -20,8 +21,8 @@ $transition-time: 0.5s;
   z-index: -1;
 
   & img {
-    width: 120px;
-    height: 120px;
+    width: $image-size;
+    height: $image-size;
   }
 }
 
@@ -51,7 +52,7 @@ $transition-time: 0.5s;
   height: fit-content;
   max-width: 650px;
   border-radius: 4px;
-  box-shadow: 0px 1px 7.2px 0.8px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 1px 7.2px 0.8px getBlackShadow(0.35);
 }
 
 .tab {
@@ -89,7 +90,8 @@ $transition-time: 0.5s;
     height: 100%;
   }
 
-  .registerButton, .loginButton {
+  .registerButton,
+  .loginButton {
     width: 100%;
     margin-top: 1rem !important;
   }

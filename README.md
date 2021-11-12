@@ -1,8 +1,18 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Learning Platform (front-end)
 
-## Getting Started
+Learning platform written in Next.js.
 
-First, run the development server:
+### Scripts
+
+To install dependencies:
+
+```bash
+npm run install
+# or
+yarn install
+```
+
+To run the development server:
 
 ```bash
 npm run dev
@@ -10,21 +20,41 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To run tests:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```bash
+npm run test:local
+# or
+yarn test:local
+```
 
-## Learn More
+To build:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+# or
+yarn build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To start documentation server:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
+npm run doc:gen
+# or
+yarn doc:gen
+```
 
-## Deploy on Vercel
+### Configuration
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+In order to start the app on your local machine, create .env.local file and fill it with the following:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+RECAPTCHA_SITEKEY = YOUR_KEY // This is a site key which ReCAPTCHA component will use.
+// The following variables are needed for firebase support:
+FIREBASE_API_KEY= YOUR KEY
+FIREBASE_AUTH_DOMAIN= DOMAIN
+FIREBASE_PROJECT_ID= ID
+FIREBASE_STORAGE_BUCKET= BUCKET
+FIREBASE_MESSAGING_SENDER_ID= SENDER_ID
+FIREBASE_APP_ID= APP_ID
+```

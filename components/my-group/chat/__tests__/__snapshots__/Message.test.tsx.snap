@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChatMessage component should match the snapshot if all the props are provided 1`] = `
+<div
+  className="messageContainer undefined"
+>
+  <div
+    className="messageContentContainer undefined"
+  >
+    <div
+      className="content notMyMessageContent"
+    >
+      <div
+        style={
+          Object {
+            "fontSize": 14,
+          }
+        }
+      >
+        Message
+      </div>
+    </div>
+    <div
+      className="date"
+    >
+      1:12
+    </div>
+  </div>
+</div>
+`;

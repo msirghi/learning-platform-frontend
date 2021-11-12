@@ -11,7 +11,7 @@ describe('Preference Reducer', () => {
     expect(newState).toStrictEqual(initialState);
   });
 
-  it('should return updated updated state', () => {
+  it('should return updated  state', () => {
     const newState = preferenceReducer(undefined, {
       type: types.SET_INTERFACE_LOCALE,
       payload: 'ru'
